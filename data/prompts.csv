@@ -1,0 +1,121 @@
+Prompt,Type,Model,Input,Result,Result ok?,Problems / Notes
+Summarize the attached text in English in 3 to 4 sentences.,Summarization,gemini-2.0-flash-001,T 1470,Summaries table,Y,
+What is Mahayana Buddhism?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+How did Mahayana Buddhism arise?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the inscriptional evidence for Mahayana Buddhism in the Kushan empire?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are some examples of Buddhist inscriptions from the Kushan empire?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Give some examples of Buddhist inscriptions from that Mathura region during the Kushan Empire.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Describe the Mathura lion capital inscriptions.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Tell me about the oral transmission of Mahayana sutras,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about the stupa theory of the orgin of Mahayana Buddhism,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about the forest dwelling theory of the orgin of Mahayana Buddhism,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,"""The book does not discuss the forest dwelling theory ..."""
+Tell me about the Gandhari version of the Dharmapada,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Tell me about Buddhist stupas in Northwest India and Pakistan,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Tell me about royal sponsorship of Buddhism in the Kushan Empire,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Tell me about the stupas of King Asoka,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+Tell me about Buddhism in the kingdom of Magadha,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
+What were the most common scripts used in early Buddhist Sanskrit manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about the movement of Buddhist texts from India to China,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the oldest Mahayana text?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Got a corrupted name
+Who was Nagarjuna?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was role of the Kushans in the transmission of Buddhist texts to China?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Corrupted characters (skinner2017_chapter6b.pdf).
+Tell me about Amaravati Stūpa,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Corrupted characters
+How did the Prajnaparamita literature arise?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Some corrupted names
+What was the capital of the Kushan Empire?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,"No answer, corrupted characters"
+Where did Mahayana Buddhism emerge?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about the iconography of Mahayana Buddhism,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,"Poor match between best search result and question, limited references on this subject, need to filter to Marshal"
+What was the reason for the split between the Mahāsāṃghikas and the Sthaviras?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the connection between the Mahāsāṃghikas and Mahayana Buddhism?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was the role of the bodhisattva ideal in the transition from Early Buddhism to Mahayana?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Poor match between best search result and question
+How did the bodhisattva concept evolve in Buddhist literature?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are the differences in literary styles between Pali and Mahayana Buddhist literature?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What changes did did Buddhist literature undergo when it was committed to writing from the oral tradition?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the earliest Mahayana art?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Poor match between best search result and question
+What is the earliest Gandharan Buddhist art?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the role of Greek influence in Buddhist art?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Where was the oldest manuscript of the Lotus Sutra found?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Who was responsible for the split between the Mahāsāṃghikas and the Sthaviras?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,"Should be Mahadeva, as discussed by Lamotte but with Lamotte got an empty response."
+How did the Abhidharma begin?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the signifigance of the Buddha's footprint?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+How did the bodhisattva ideal begin?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the signifigance of the of the Thirty-two Marks of the Buddha?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about expansion and contraction of texts in oral transmission of Buddhist texts,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the significance of the the Khotan Dharmapada?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Result from Saloman is better than the top result from Baums.
+What is the importance of Buddhist texts written in Gandhari?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is menat by Sanskritization of Buddhist texts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Are there Iranian loan words in Chinese and in Buddhist texts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the importance of Khotanese in the transmission of Buddhist texts to China?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was the influence of trade along the Silk Road to transmission of Buddhism into China?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the origin of Brahmi?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was the role of the Kushan Empire in the transmission of Buddhism to China?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the difference between classical Sanskrit and Buddhist Sanskrit?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Who were the Indosythians?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is a satrap?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are the words related to the Sanskrit term 'bija' in other languages?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+When did Kaṇaiska live?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Who were the Saka people?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What Buddhist manuscripts do we have in Saka script?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about Buddhist inscriptions in the Swat Valley.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about Buddhist inscriptions in Afghanistan.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Tell me about Buddhist inscriptions discovered in Pakistan.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Where can I find a dictionary of Khotan Saka?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Who was King Odi?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What publications include Khotanese Buddhist manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are the sources of Gāndhārī manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What publications include Brahmi Buddhist manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What publications include Kharoṣṭrī Buddhist manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+List some examples of Gandharan Buddhist art.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Did Buddhist exists in Pre-Islamic Iran?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+When and where was Kharoṣṭrī used?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Describe the challenges of encoding Brahmi in digital form?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Describe the process of recovering text from ancient birch bark scrolls.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are the major collections of Buddhist manuscripts discovered in the former area of Gandhara?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Describe the Hoernle Collection,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was the Greek influence of Buddhism in Gandhara?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What manuscripts have been discovered at Niya?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Describe the dating methods that have been used for manuscripts and inscriptions discovered in the Gandhara area.,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What skills do you need to decipher Kharoṣṭrī manuscripts and inscriptions?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the physical material of the early Buddhist manuscripts discovered in Gandhara?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What evidence do Kharoṣṭhī inscriptions on coins provide of Buddhist history?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Need better articles on coins
+What is Gāndhārī?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the story presented in the Bhadrakalpikasūtra?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+At which museums in the United States can I view art from Gandhara?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,
+Was there an Indian Mahayana school?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Who were the preachers of Dharma of early Mahayana?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the date of the oldest image of Amitābha?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+Did Mahayana Buddhism begin with a single movement or multiple?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the forest dwelling theory of the origin of Mahayana Buddhism?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What are the Senior Manuscripts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What was the process of Sanskritisation of Budhist texts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,
+What is the earliest inscriptional evidence of the word 'mahāyāna'?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Allon and Salomon. “Evidence for Mahayana.”
+"What there evidence of Kuṣāṇa rulers, such as King Huveṣka, presented themselves as adherents of Mahayana Buddhism?",Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Allon and Salomon. “Evidence for Mahayana.”
+What is the earliest inscriptional reference to Amitābha?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Allon and Salomon. “Evidence for Mahayana.”
+What Gāndhārī Mahayana manuscripts have been identified?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Allon and Salomon. “Evidence for Mahayana.”
+What was the Cult of Aksobhya?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Sato. “Cult of Aksobhya.”
+What was the Chinese perception of early Mahāyāna Buddhism in India?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Schopen. “Chinese Looking-Glass.”
+What is the standard textbook on Mahayana Buddhism?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Williams. *Mahayana Buddhism.*
+What is the earliest mention of Vajrapani in Buddhist texts?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Not great. Some bibliographical entries are missing keys.
+What was the role of Aśvaghoṣa in the Kushan Empire?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,No answer. Need better coverage of this question
+What kinds of Gandharan Buddhist artifacts have been discovered?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Not great. Need to be able to combine information from multiple sources.
+What are the characteristics of Brāhmī-Kharoṣṭhī inscriptions on Indian coins?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Bergny. “Brāhmī-Kharoṣṭhī Inscriptions.”
+What is the evidence of Greek kingdoms in Central Asia?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Bernard. “Greek Kingdoms.”
+Who where the Indo-Parthians?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Azizipoor. “Indo-Parthian Kingdom.”
+What is the problem with the history of the Rāṣṭrapālaparipṛcchā,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,N,Expected Boucher. “History Of the Rāṣṭrapālaparipṛcchā.” but it was low on the list
+What was the role of Dharmarakṣa in the transmission of Buddhism to China?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Boucher. “Dharmarakṣa.”
+Who were the Bodhisattvas of the Forest?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Boucher. *Forest.*
+What are the storytelling strategies used in Buddhist oral traditions?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Brancaccio. “Art and Performance.”
+How did the British Library acquire Kharosthi Manuscript Fragments?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Brodie. “Circumstances.”
+How did Brahmanism attain its dominant position in Indian society?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expect Bronkhorst. *Shadow.*
+What is the Arapacana syllabary?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expected Brough. “Arapacana Syllabary.” got Strauch.
+What is the relationship between Sanskrit and European languages?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Burrow. *Sanskrit Language.*
+How was the spread of Buddhism to China related to the missionary ideal?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,Y,Expected Zürcher “Foreign Input” got Neelis “Overland Shortcuts for the Transmission of Buddhism.”
+What is the connection between Aśvaghoṣa and Mahayana Buddhism?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Salomon. “Aśvaghoṣa.”
+What was Aśvaghoṣa's sectarian affiliation?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Salomon. “Aśvaghoṣa.”
+When was Buddhism established in Khotan?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Skjærvø. “Khotan.”
+What changes did Buddhist stupas undergo in the transformation from Indian to Chinese architecture?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Kim. “Stūpa to Pagoda.”
+Who was Aśvaghoṣa?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Li. “Aśvaghoṣa.”
+Who was Faxian?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Li. “Faxian.”
+What is Dunhuang Studies?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Rong. *Dunhuang.* chapter 1.
+Who were the Xiongnu?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Rong. *Dunhuang.* chapter 2.
+What was the strategic importance of Dunhuang to the Chinese?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,Expect Rong. *Dunhuang.* chapter 2.
+What was the Silk Road?,Secondary literature search,Silk Road Corpus App with gemini-1.5-flash,,,,
