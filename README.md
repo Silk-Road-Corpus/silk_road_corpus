@@ -1,5 +1,6 @@
 # Silk Road Corpus
-Corpus documents and data
+
+This repository contains data for the Silk Road Corpus app.
 
 # Update the app
 
