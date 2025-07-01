@@ -1,0 +1,242 @@
+[
+  {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "CSZJJ No."
+  },
+  {
+    "name": "title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "fascicle",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Fascicle"
+  },
+  {
+    "name": "section",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Section No."
+  },
+  {
+    "name": "title_en",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ English title"
+  },
+  {
+    "name": "num_fascicles",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "CSZJJ No. fascicles"
+  },
+  {
+    "name": "cszjj_attribution",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ attribution"
+  },
+  {
+    "name": "cszjj_dynastic_date",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ translation dynastic date"
+  },
+  {
+    "name": "cszjj_date",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ translation date"
+  },
+  {
+    "name": "cszjj_location",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CZJJ location"
+  },
+  {
+    "name": "cszjj_manuscript",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CZJJ mentions translation from manuscript"
+  },
+  {
+    "name": "cszjj_oral",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Mentions oral transmission"
+  },
+  {
+    "name": "cszjj_production",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ mentions translated (譯), composed or compiled (撰), or an extract (抄)"
+  },
+  {
+    "name": "cszjj_other_versions",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ other versions"
+  },
+  {
+    "name": "cszjj_elaboration",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ elaboration on another entry"
+  },
+  {
+    "name": "cszjj_not_seen",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "CSZJJ mentions lost or not seen"
+  },
+  {
+    "name": "cszjj_daoan",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "In Dao’an Catalog"
+  },
+  {
+    "name": "cszjj_notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sengyou notes"
+  },
+  {
+    "name": "cszjj_kaiyuan",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Kaiyuan Lu fascicles"
+  },
+  {
+    "name": "modern_ref",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Modern collection reference"
+  },
+  {
+    "name": "modern_title",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Modern collection title"
+  },
+  {
+    "name": "taisho_num_fascicles",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Taishō number of fascicles"
+  },
+  {
+    "name": "taisho_attribution",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Taishō attribution"
+  },
+  {
+    "name": "taisho_dynasty",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Taishō colophon dynasty"
+  },
+  {
+    "name": "taisho_date",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Taishō converted date"
+  },
+  {
+    "name": "taisho_classification",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Taishō classification"
+  },
+  {
+    "name": "k_ref",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Korean Canon reference"
+  },
+  {
+    "name": "k_date",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Korean Canon Descriptive Catalog date"
+  },
+  {
+    "name": "k_date_source",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Korean Canon Descriptive Catalog date source"
+  },
+  {
+    "name": "k_date_reference",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Nanjio No."
+  },
+  {
+    "name": "nanjio_no",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Nanjio No."
+  },
+  {
+    "name": "fgdb_entry",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Fo Guang Dictionary of Buddhism entry"
+  },
+  {
+    "name": "cbc_url",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Chinese Buddhist Canon Attribution Database link"
+  },
+  {
+    "name": "cbc_accessed_date",
+    "type": "DATE",
+    "mode": "NULLABLE",
+    "description": "Chinese Buddhist Canon Attribution Database accessed date"
+  },
+  {
+    "name": "indic_manuscript",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Indic language manuscript"
+  },
+  {
+    "name": "pali_parallel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Pali parallel"
+  },
+  {
+    "name": "tibetan_parallel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Tibetan parallel"
+  },
+  {
+    "name": "tibetan_ref",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Tibetan canon ref"
+  },
+  {
+    "name": "secondary_lit_classification",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Secondary literature classification"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Notes"
+  }
+]
