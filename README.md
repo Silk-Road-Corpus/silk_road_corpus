@@ -103,6 +103,45 @@ FROM cszjj.chusanzangjiji
 |> AGGREGATE COUNT(*)
 ```
 
+## Running the Python Scripts
+
+Setup a virtual env:
+
+```shell
+python3 -m venv venv
+```
+
+Activate it
+
+```shell
+source venv/bin/activate
+```
+
+Install dependencies
+
+```shell
+pip install requests
+```
+
+To deactivate the virtual env:
+
+```shell
+deactivate
+```
+
+Enable the Gemini API in the Google Cloud Console. Generate an API in the
+Console and set it as an environment variable:
+
+```shell
+export API_KEY="YOUR_API_KEY_HERE"
+```
+
+To run the alternative titles script:
+
+```shell
+python3 scripts/alternative_titles.py
+```
+
 ## Updating the Flutter app
 
 To update the Silk Road Corpus app after changing the bibliography:
