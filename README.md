@@ -139,7 +139,7 @@ export API_KEY="YOUR_API_KEY_HERE"
 To run the alternative titles script:
 
 ```shell
-python3 scripts/alternative_titles.py
+python3 scripts/alt_titles.py
 ```
 
 ## Updating the Flutter app
