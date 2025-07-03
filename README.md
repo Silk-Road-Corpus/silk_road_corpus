@@ -11,11 +11,12 @@ Create a GCS bucket:
 gcloud storage buckets --project=${PROJECT_ID} create gs://${CSZJJ_BUCKET_NAME} --location=US --public-access-prevention
 ```
 
-Load the catalog file into the bucket:
+Load the CSV files into the bucket:
 
 ```shell
 gcloud storage cp data/chusanzangjiji.csv gs://${CSZJJ_BUCKET_NAME}/chusanzangjiji.csv
 gcloud storage cp data/cszjj_sections.csv gs://${CSZJJ_BUCKET_NAME}/cszjj_sections.csv
+gcloud storage cp data/cszjj_sections.csv gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv
 ```
 
 Create a BiqQuery dataset:
@@ -136,11 +137,29 @@ Console and set it as an environment variable:
 export API_KEY="YOUR_API_KEY_HERE"
 ```
 
-To run the alternative titles script:
+the alternative titles iterates over all the anonymous texts to find
+alternative titles and attempt to match them to Taisho entries.
+To run script:
 
 ```shell
 python3 scripts/alt_titles.py
 ```
+
+This script takes a long time to run. Edit the variable `restart_at` to
+restart the program if it is interupted.
+
+To analyze the language of all the texts in the collection, for example,
+for the presence of 如是我聞 and variants, first clone the NTI Reader
+project and then set the NTI environment variable:
+
+```shell
+cd ..
+git clone https://github.com/alexamies/buddhist-dictionary.git
+NTI = $PWD/uddhist-dictionary/corpus/taisho
+python3 scripts/language_analysis.py
+```
+
+The results will be written to data/lanaguage_analysis.csv.
 
 ## Updating the Flutter app
 

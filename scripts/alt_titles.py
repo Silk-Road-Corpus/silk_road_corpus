@@ -6,9 +6,10 @@ import csv
 import requests
 import json
 import os
+import cszjj
 
-
-restart_at = "菩薩莊嚴瓔珞經"
+# Edit the variable `restart_at` to restart the program if it is interupted.
+restart_at = "德女問經"
 prompt_template = """
 Is the title {title} a synonym for any other tiles listed in the given text (Kaiyuan Lu)?
 Return only the alternative titles in Chinese in the form ["Title 1", "Title 2", …].
@@ -17,37 +18,6 @@ Do not return any other output."
 kaiyuanlu_path = "taisho/t2154.txt"
 cszjj_path = "data/chusanzangjiji.csv"
 taisho_path = "data/taisho.csv"
-
-def parse_cszjj_file(file_path):
-    """
-    Parses the CSZJJ CSV file and returns its content as a list of dictionaries.
-
-    Args:
-        file_path (str): The path to the CSV file.
-
-    Returns:
-        list: A list of dictionaries, where each dictionary represents a row.
-    """
-    data = []
-    try:
-        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
-            csvreader = csv.reader(csvfile)
-            next(csvfile) # Skip header row
-            i = 0
-            for row in csvreader:
-                if len(row) > 2:
-                    entry = {
-                        "id": row[0],
-                        "title_zh": row[1],
-                        "fascicle": int(row[2]),
-                        "taisho_title_zh": row[19],
-                    }
-                    data.append(entry)
-    except FileNotFoundError:
-        print(f"Error: The file '{file_path}' was not found.")
-    except Exception as e:
-        print(f"An error occurred while parsing the CSV file: {e}")
-    return data
 
 
 def parse_taisho_file(file_path):
@@ -192,7 +162,7 @@ def append_to_csv(filename, data):
 
 
 if __name__ == "__main__":
-    entries = parse_cszjj_file(cszjj_path)
+    entries = cszjj.parse_cszjj_file(cszjj_path)
     taisho_entries = parse_taisho_file(taisho_path)
     num_taisho = len(taisho_entries)
     print(f"Taisho file opened with {num_taisho} entries.")
