@@ -37,6 +37,70 @@ Sutra on Receiving Five Fortunes from Food Offerings, 1 fascicle (Also known as:
 It is listed in 卷第三 (Fascicle 3) of the Kaiyuan Lu.
 
 The entry appears within the section for the Eastern Jin Dynasty (東晉), specifically under ""新集失譯諸經"" (Newly Collected Sutras with Lost Translators), which are listed at the end of the dynasty's records in that fascicle.",Y,
+,,gemini-2.5-flash,"施色力經, t2154.txt","Is the title 施色力經 a synonym for any other titles listed in the given text (Kaiyuan Lu)?
+Yes, the text explicitly states that 施色力經 (Shī sè lì jīng) is a synonym for two other titles:
+
+食施獲五福報經 (Shí shī huò wǔ fú bào jīng - Sutra of Obtaining Five Blessings from Giving Food) - The entry states: 食施獲五福報經一卷 (一名施色力經一名福德經出增一阿含第二十四卷異譯). This directly translates to ""One卷 of the Sutra of Obtaining Five Blessings from Giving Food (also named the Shī sè lì jīng, also named the Fú dé jīng, a different translation from Exottarāgama Chapter 24).""
+福德經 (Fú dé jīng - Sutra of Merit/Blessing) - As seen in the same parenthetical note above, it is also listed as an alternative name.
+Which fascicle is it listed in?
+It is listed in 開元釋教錄卷第二十 (Kaiyuan Shijiao Lu, Fascicle 20).
+
+You can find the entry on page 0692b23 within the 小乘入藏錄下 (Sutra Catalog of the Lesser Vehicle, Part 2) section.",Y,The answer is right but the model gave additional information that was wrong.
+,,gemini-2.0-flash,"施色力經, t2154.txt","Title 施色力經: This title appears in the following sentence on page 339: ""佛為婆羅門說四法經 佛為事火婆羅門說 悟道經 佛為婆羅門說耕田經 (或無田字) 佛為 憍慢婆羅門說偈經 (說四法等三十二經並出雜阿含) 佛為 頻頭婆羅門說像 類經 ....四意止本行經一卷 說人自說人骨不知腐經"". From context it seems that 安世高 did not translate it, because these texts are simply listed as ""出雜阿含""
+
+There is no other title listed within the provided text that is synonymous with this title.
+
+The fascicle: is mentioned as 總括群經錄上 and is mentioned towards the beginning of the text. At the end of the text the book can be identified as 開元釋教錄卷第一. So the specific location is 開元釋教錄卷第一總括群經錄上",N,Entirely wrong
+,,gemini-2.5-pro,"河中大聚沫經, t2154.txt","1. Is the title 河中大聚沫經 a synonym for any other titles listed in the given text?
+Yes, the title 河中大聚沫經 is explicitly listed with synonyms in the text. It is also related to another title through a shared synonym.
+
+In its own entry, it is listed as a synonym for 水沫所漂經 (Sutra on Being Carried Away by Water Foam) and 聚沫譬經 (Sutra on the Parable of Foam).
+
+[0485c01] 河中大聚沫經一卷 (或云水沫所漂經或云聚沫譬經眾經錄云出雜阿含今以安錄 先集雜含後譯是別譯本非從彼出)
+
+Translation: Hézhōng dà jù mò jīng, one fascicle (also called Shuǐ mò suǒ piāo jīng or Jù mò pì jīng. The Zhongjing Lu states it is from the Miscellaneous Āgama, but as the An Lu collected the Miscellaneous Āgama before this was translated, this is a separate translation and not an excerpt from it.)
+
+Furthermore, by cross-referencing within the text, we find that 水沫所漂經 is also listed as an alternate title for 五陰譬喻經 (Sutra on the Parable of the Five Skandhas).
+
+[0479c20] 五陰譬喻經一卷 (或無譬字一名水沫所漂經出雜阿含第十卷異譯見朱士行漢錄及僧 祐錄)
+
+Translation: Wǔ yīn pìyù jīng, one fascicle (or without the character ""pì,"" another name is Shuǐ mò suǒ piāo jīng, a different translation from the tenth fascicle of the Miscellaneous Āgama...)
+
+Therefore, through this connection, 河中大聚沫經 is synonymous with or directly related to 五陰譬喻經.
+
+2. Which fascicle is it listed in?
+The title is listed in Fascicle One (卷第一) of the Kaiyuan釋教錄.
+
+The entry for a 河中大聚沫經 appears under the main section for the Later Han (後漢) dynasty ([0477c09]), specifically within the subsection for sutras with ""lost translators,"" titled [0483c03] 新舊諸失譯經 (Newly and Formerly Lost-in-Translation Sutras). It is further categorized under the list [0485b07] 已下新附此錄 (""From here on are new additions to this catalogue"").",Y,
+,,gemini-2.5-flash,"河中大聚沫經, t2154.txt","Yes, the title 河中大聚沫經 (River Middle Great Foam Sutra) is a synonym for other titles listed in the text.
+
+According to the provided text:
+
+Synonyms: It is listed as being synonymous with 水沫所漂經 (Water Foam Floating Sutra) and 聚沫譬經 (Foam Analogy Sutra). The text states: ""(或云水沫所漂經或云聚沫譬經...""
+Fascicle: It is listed in 開元釋教錄卷第一 (Kaiyuan Shijiao Lu, Fascicle 1). It appears on line [0485b13], and the preceding fascicle header is ""開元釋教錄卷第一"" on line [0477a06].",Y,
+,,gemini-2.0-flash,"河中大聚沫經, t2154.txt","Is the title 河中大聚沫經 a synonym for any other title listed in the given text (Kaiyuan Lu)?
+
+Yes, the text indicates 河中大聚沫經 is also known as 水沫所漂經或者云聚沫譬經. See the below text from 「總括群經錄上之一」
+
+<br> 佛本行經一卷 * 河中大聚沫經一卷 (或云水沫所漂經或云聚沫譬經眾經錄云出雜阿含今以安錄 先集雜含後譯是別譯本非從彼出) * 便賢者坑經一卷 (坑字或作旃) * 所非汝所經一卷 * 兩比丘得割經一卷
+Which fascicle is it listed in?
+
+The title 河中大聚沫經 is listed in:
+
+開元釋教錄卷第一　總錄之一
+In summary, 河中大聚沫經 has synonyms, and its primary listing is in Fascicle 1 of the Kaiyuan Lu.",Y,Contained the expected synonym 水沫所漂經 (T 106) in the correct fascicle.
+"Is the title  { title }  a synonym for any other tiles listed in the given text (Kaiyuan Lu)? Return only the alternative titles in Chinese in the form [Title 1, Title 2, …]. Do not return any other output.",,gemini-2.5-flash,"施色力經, t2154.txt","[""食施獲五福報經"", ""福德經""]",Y,
+,,gemini-2.5-flash,"河中大聚沫經, t2154.txt","[""水沫所漂經"", ""聚沫譬經""]",Y,
+Is the character “耳” used as a final particle at the end of declarative sentences in the given text [text uploaded]?,,gemini-2.5-flash,taisho/t0013.txt,"Based on a thorough review of the provided text, the character ""耳"" is not used as a final particle at the end of declarative sentences.
+
+In all instances where ""耳"" appears, it functions as a noun referring to the ear (part of the sense organs) or as part of a compound noun related to the ear:
+
+[0235c20] ""眼見色亦不喜亦不惡，但觀行意正知。耳鼻口身意法觀..."" (Ear, nose, mouth, body, mind observation)
+[0235c23] ""六內入，眼內入，耳鼻口身意內入。"" (Six internal sense bases: eye sense base, ear, nose, mouth, body, mind sense bases)
+[0235c24] ""六愛，眼更愛，耳鼻口身意更愛。"" (Six defilements: eye contact defilement, ear, nose, mouth, body, mind contact defilement)
+[0240c23] ""三為耳入、四為聲入..."" (Third is ear sense base, fourth is sound sense base...)
+Therefore, in this text, ""耳"" consistently denotes the biological organ or the corresponding sense base, and does not serve as a grammatical final particle.",Y,This is the correct response. There are four occurrences of 耳 in the text and they all refer to ‘ear’.
+How many times does the character “耳” used as a final particle at the end of declarative sentences in the given text [text uploaded]? Return only the integer number and no other output.,,gemini-2.5-flash,taisho/t0013.txt,,,
 "According to the Kaiyuan Lu (uploaded file), who translated the text {name_of_text}
  and when was it translated? Give fascicle number.",Attribution,gemini-2.0-flash-001,"T 2154, 大比丘威儀經, also known as 大比丘三千威儀
 ",Attribution table,Y,The model gave the wrong fascicle but right answer for the Kaiyuan Lu. This quote is from Fascicle 1.
