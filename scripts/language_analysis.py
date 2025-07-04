@@ -10,6 +10,9 @@ import sys
 cszjj_path = "data/chusanzangjiji.csv"
 file_index_path = "data/canonical_summaries.csv"
 analysis_filename = "data/language_analysis.csv"
+prompt_template = """
+How many times does the character {given_char} used as a final particle at the end of declarative sentences in the given text [text uploaded]? Return only the integer number and no other output.
+"""
 
 
 def parse_file_index(file_path):
@@ -68,6 +71,34 @@ def check_patterns(nti, entry):
         with open(filepath, 'r', encoding='utf-8') as file:
             content = file.read()
             content = strip_boiler_plate(content)
+            ye2_count = char_count(content, "耶")
+            ye2_final_count = 0
+            if ye2_count > 0:
+                try:
+                    r1 = cszjj.send_prompt(prompt_template.format(given_char="耶"),
+                                                                      file_path=filepath)
+                    ye2_final_count = int(r1)
+                except:
+                    print(f"Got a non-integer output from the model for 耶: {r1}")
+            er3_count = char_count(content, "耳")
+            er3_final_count = 0
+            if er3_count > 0:
+                try:
+                    r2 = cszjj.send_prompt(prompt_template.format(given_char="耳"),
+                                                                      file_path=filepath)
+                    er3_final_count = int(r2)
+                except:
+                    print(f"Got a non-integer output from the model for 耳: {r2}")
+            ye3_count = char_count(content, "也")
+            ye3_final_count = 0
+            if er3_count > 0:
+                try:
+                    r3 = cszjj.send_prompt(prompt_template.format(given_char="也"),
+                                                                      file_path=filepath)
+                    ye3_final_count = int(r3)
+                except:
+                    print(f"Got a non-integer output from the model for 也: {r3}")
+
             return {
                 "title_zh": title_zh,
                 "taisho_no": entry["taisho_no"],
@@ -77,9 +108,12 @@ def check_patterns(nti, entry):
                 "wowenrushi": "我聞如是" in content,
                 "rushiwen": "如是聞" in content,
                 "not_in_shanzai": check_shanzai(content),
-                "ye2_count": char_count(content, "耶"),
-                "er3_count": char_count(content, "耳"),
-                "ye3_count": char_count(content, "也"),
+                "ye2_count": ye2_count,
+                "er3_count": er3_count,
+                "ye3_count": ye3_count,
+                "ye2_final_count": ye2_final_count,
+                "er3_final_count": er3_final_count,
+                "ye3_final_count": ye3_final_count,
             }
     except FileNotFoundError:
         print(f"Error: The file '{filepath}' was not found.")
@@ -113,7 +147,7 @@ def char_count(content, char_to_find):
     """Find the number of occurence of character in a string content
 
     Return:
-        int: The number of occurence
+        int: The number of occurences
     """
     count = 0
     for char in content:
@@ -139,7 +173,7 @@ def strip_boiler_plate(content):
     return stripped
  
 
-def save_results(filename, data, header):
+def append_result(filename, entry):
     """
     Writes data to a CSV file.
 
@@ -147,41 +181,28 @@ def save_results(filename, data, header):
         filename (str): The name of the CSV file to write to.
         data (list of dictionaries): The data to write.
     """
-    try:
-        with open(filename, 'w', newline='') as csvfile:
-            csv_writer = csv.writer(csvfile)
-            csv_writer.writerow(header)
-            for entry in data:
-                if "title_zh" not in entry:
-                    continue
-                row = [entry["title_zh"],
-                       entry["taisho_no"],
-                       entry["length"],
-                       entry["rushiwowen"],
-                       entry["wenrushi"],
-                       entry["wowenrushi"],
-                       entry["rushiwen"],
-                       entry["not_in_shanzai"],
-                       entry["ye2_count"],
-                       entry["er3_count"],
-                       entry["ye3_count"],
-                       ]
-                csv_writer.writerow(row)
-    except IOError as e:
-        print(f"Error writing header to file {filename}: {e}")
-
-
+    if "title_zh" not in entry:
+        return
+    title_zh = entry["title_zh"]
+    row = [title_zh,
+           entry["taisho_no"],
+           entry["length"],
+           entry["rushiwowen"],
+           entry["wenrushi"],
+           entry["wowenrushi"],
+           entry["rushiwen"],
+           entry["not_in_shanzai"],
+           entry["ye2_count"],
+           entry["er3_count"],
+           entry["ye3_count"],
+           entry["ye2_final_count"],
+           entry["er3_final_count"],
+           entry["ye3_final_count"],
+    ]
+    cszjj.append_to_csv(filename, [row])
+    print(f"Result appended for {title_zh}")
 
 if __name__ == "__main__":
-    entries = parse_file_index(file_index_path)
-    num = len(entries)
-    nti = os.environ.get("NTI", "")
-    if len(nti) == 0:
-        sys.exit("NTI not in environment.") 
-    results = []
-    for entry in entries:
-        result = check_patterns(nti, entry)
-        results.append(result)
     headers = ["CSZJJ",
                "Taisho No.",
                "length",
@@ -193,6 +214,18 @@ if __name__ == "__main__":
                "ye2_count",
                "er3_count",
                "ye3_count",
+               "ye2_final_count",
+               "er3_final_count",
+               "ye3_final_count",
                ]
-    save_results(analysis_filename, results, headers)
+    cszjj.write_headers_to_csv(analysis_filename, headers)
+    entries = parse_file_index(file_index_path)
+    num = len(entries)
+    nti = os.environ.get("NTI", "")
+    if len(nti) == 0:
+        sys.exit("NTI not in environment.") 
+    for entry in entries:
+        result = check_patterns(nti, entry)
+        append_result(analysis_filename, result)
+        
     print(f"Results written to {analysis_filename}")

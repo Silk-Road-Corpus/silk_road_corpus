@@ -5,6 +5,8 @@ Chu San Zang Ji Ji data.
 
 ## Loading the Chu San Zang Ji Ji Data.
 
+### Project setup
+
 Create a GCS bucket:
 
 ```shell
@@ -16,7 +18,6 @@ Load the CSV files into the bucket:
 ```shell
 gcloud storage cp data/chusanzangjiji.csv gs://${CSZJJ_BUCKET_NAME}/chusanzangjiji.csv
 gcloud storage cp data/cszjj_sections.csv gs://${CSZJJ_BUCKET_NAME}/cszjj_sections.csv
-gcloud storage cp data/cszjj_sections.csv gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv
 ```
 
 Create a BiqQuery dataset:
@@ -24,6 +25,8 @@ Create a BiqQuery dataset:
 ```shell
 bq --project_id=${PROJECT_ID} mk $DATASETID
 ```
+
+### Catalog
 
 Load the catalog into BQ:
 
@@ -42,34 +45,28 @@ bq --project_id=${PROJECT_ID} load \
 SQL queries use
 [Pipe syntax](https://cloud.google.com/bigquery/docs/pipe-syntax-guide).
 
-How many anonymous texts?
-
 ```sql
+-- How many anonymous texts?
 FROM cszjj.chusanzangjiji
 |> WHERE fascicle = 3 or fascicle = 4
 |> AGGREGATE COUNT(*)
 ```
 
-Count of catalog entries by CSZJJ section:
-
 ```sql
+-- Count of catalog entries by CSZJJ section
 FROM cszjj.chusanzangjiji
 |> AGGREGATE COUNT(*) GROUP BY fascicle, section
 ```
 
-Count of catalog entries where Sengyou mentions that the text is an extract,
-grouped by CSZJJ section:
-
 ```sql
+-- Count of catalog entries where Sengyou mentions that the text is an extract, grouped by CSZJJ section
 FROM cszjj.chusanzangjiji
 |> WHERE cszjj_production = "extract"
 |> AGGREGATE COUNT(*) GROUP BY fascicle, section;
 ```
 
-Sengyou mentions that the text is an extract and we have the text in a modern
-canon.
-
 ```sql
+-- Sengyou mentions that the text is an extract and we have the text in a modern canon.
 FROM cszjj.chusanzangjiji
 |> WHERE cszjj_production = "extract" AND modern_ref IS NOT NULL
 |> SELECT modern_ref, modern_title
@@ -102,6 +99,76 @@ FROM cszjj.chusanzangjiji
    AND (fascicle = 3 OR fascicle = 4)
 |> SELECT id, title_zh, modern_ref, modern_title
 |> AGGREGATE COUNT(*)
+```
+
+### Language Analysis
+
+
+Load the CSV file into the bucket:
+
+```shell
+gcloud storage cp data/language_analysis.csv gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv
+```
+
+Load the language analysis file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.language_analysis \
+    gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv \
+    data/language_analysis_schema.json
+```
+
+SQL queries:
+
+```sql
+-- Number of texts analyzed
+FROM cszjj.language_analysis
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- Number of anonymous texts analyzed
+FROM cszjj.language_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE C.fascicle = 3 OR C.fascicle = 4
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- Number of anonymous texts analyzed by ru shi wo wen
+FROM cszjj.language_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE C.fascicle = 3 OR C.fascicle = 4
+|> AGGREGATE COUNT(*) AS num_texts GROUP BY LA.rushiwowen, LA.wenrushi
+```
+
+```sql
+-- List of anonymous texts analyzed by ru shi wo wen
+FROM cszjj.language_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
+|> SELECT LA.taisho_no, LA.rushiwowen, LA.wenrushi
+```
+
+```sql
+-- Number of anonymous texts with Wen Ru Shi and no final particles
+FROM cszjj.language_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE C.fascicle = 3 OR C.fascicle = 4
+   AND LA.wenrushi
+   and not_in_shanzai = 0
+   AND ye2_final_count = 0
+   AND er3_final_count = 0
+   AND ye3_final_count = 0
+|> AGGREGATE COUNT(*) AS num_texts
 ```
 
 ## Running the Python Scripts

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "length",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Text length"
+  },
+  {
+    "name": "rushiwowen",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 如是我聞"
+  },
+  {
+    "name": "wenrushi",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 聞如是"
+  },
+  {
+    "name": "wowenrushi",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 我聞如是"
+  },
+  {
+    "name": "rushiwen",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 如是聞"
+  },
+  {
+    "name": "not_in_shanzai",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times the final particle 哉 is used outside of 善哉善哉"
+  },
+  {
+    "name": "ye2_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耶 occurs"
+  },
+  {
+    "name": "er3_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耳 occurs"
+  },
+  {
+    "name": "ye3_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 也 occurs"
+  },
+  {
+    "name": "ye2_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耶 occurs as a final particle"
+  },
+  {
+    "name": "er3_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耳 occurs as a final particle"
+  },
+  {
+    "name": "ye3_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 也 occurs as a final particle"
+  }
+]
