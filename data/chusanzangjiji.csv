@@ -1,6 +1,6 @@
 CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZJJ No. fascicles,CSZJJ attribution,CSZJJ Translation dynastic date,CSZJJ translation date,CZJJ location,Mentions translation from manuscript,Mentions oral transmission,"CSZJJ mentions translated (譯), composed or compiled (撰), or an extract (抄)",CSZJJ other versions,Elaboration on another entry,CSZJJ mentions lost or not seen,In Dao’an Catalog,Sengyou notes,Kaiyuan Lu fascicle,Modern Collection Ref,Modern Collection Title,Taishō No. Fascicles,Taishō Attribution,Taishō Colophon Dynasty,Taishō Converted Date,Taishō classification,KDC,KDC date,KDC date source,KDC date reference,Nanjio No.,FGDB entry,CBC,CBD Date Accessed,Indic language manuscript,Pali parallel,Tibetan parallel,Tibetan Canon ref,Secondary literature classification,Notes
-1,四十二章經,2,1,Sūtra of Forty-Two Sections,1,Kasyapa-Matanga,Reign of Emperor Xiaoming of Han,28–75,Luoyang,,,translated,,,,,"CSZJJ mentions translated (譯), composed, compiled, or extract (抄)",1,T 784,四十二章經,1,Kaśyapa Mataṅga and Gobharana,Later Han,25-220,Miscellaneous ,K 778 ,67,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-416a:14; T. 2154-478a:6,678,四十二章經,,,,,,,Chinese indigenous ,"There are three prefaces to this sūtra included in fascicle 6 of the Chu San Zang Ji Ji. Funayama (2013, 22) states that this actually appeared in the early fifth century or later."
-2,安般守意經,2,1,Sūtra on the Mindfulness of Breathing,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,大安般經,,,Y (55.0010a04),Also known as the Lesser Sutra on the Mindfulness of Breathing.,18,T 602,大安般守意經,2,An Shigao,Later Han,25-220,Miscellaneous ,K 806,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,681,安般守意經,,,,,,,,
+1,四十二章經,2,1,Sūtra of Forty-Two Sections,1,Kasyapa-Matanga,Reign of Emperor Xiaoming of Han,28–75,Luoyang,,,translated,,,,,The Old Catalog calls this Emperor Xiao Ming Sūtra of Forty-Two Sections. Master Dao'an’s Catalog omits this scripture.,1,T 784,四十二章經,1,Kaśyapa Mataṅga and Gobharana,Later Han,25-220,Miscellaneous ,K 778 ,67,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-416a:14; T. 2154-478a:6,678,四十二章經,https://dazangthings.nz/cbc/text/348/,2025-07-05,,,,,Chinese indigenous ,"There are three prefaces to this sūtra included in fascicle 6 of the Chu San Zang Ji Ji. Funayama (2013, 22) states that this actually appeared in the early fifth century or later."
+2,安般守意經,2,1,Sūtra on the Mindfulness of Breathing,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,大安般經,,,Y (55.0010a04),Also known as the Lesser Sutra on the Mindfulness of Breathing.,18,,,,,,,,,,,,,,,,,,,,,
 3,陰持入經,2,1,"Sūtra on the Skandha, the Dhātu, and the Ayatana",1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),,,T 603,陰持入經,2,An Shigao,Later Han,25-220,Miscellaneous ,K 807 ,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12.,780,陰持入經,,,,,,,,There is a preface to this sūtra included in fascicle 6 of the Chu San Zang Ji Ji.
 4,百六十品,2,1,Sūtra in One Hundred and Sixty Parts,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),The Old Catalog called this the Ekottara Āgama One Hundred and Sixty Parts,15,,,,,,,,,,,,,,,,,,,,,
 5,大十二門經,2,1,Sūtra on the Twelve Great Gates,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),,1,,,,,,,,,,,,,,,,,,,,,"Thought to be lost but a manuscript was found at Kongō-ji in Osaka (Nattier 2008, 65). There is a preface to this sūtra included in fascicle 6 of the Chu San Zang Ji Ji."
@@ -21,7 +21,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 20,八正道經,2,1,Sūtra on the Eightfold Noble Path,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),Dao’an says that this and the previous two sūtras are from the Saṃyukta Āgama,20,T 112,佛說八正道經,1,An Shigao,Later Han,25-220,Āgamas ,K 742,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,659,八正道經,,,,S.45.21 Michatta,,,,
 21,雜經四十四篇,2,1,Forty-four sūtras,2,An Shigao,Emperor Huan of Han,146-168,,,,composed,,,,Y (55.0010a04),Dao’an says that these come from the Ekottara Āgama but without clear titles and are now omitted,,,,,,,,,,,,,,,,,,,,,,
 22,五十校計經,2,1,Sūtra on Fifty Countings,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),Also known as Sūtra on Fifty Countings of Clear Measure,,T 397 (13),十方菩薩品,1,,,,,,,,,,,,,,,,,,"Greene (2017, 65-66) makes the connection between this entry by Sengyou and 十方菩薩品, also noted as 明度五十校計經, in T 397, Fascicle 59 (13.0394b09)."
-23,大安般經,2,1,Great Sūtra on the Mindfulness of Breathing,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,安般守意經,,,Y (55.0010a04),,20,T 602,大安般守意經,2,An Shigao,Later Han,25-220,Miscellaneous ,,,,,164,大安般守意經,,,,,,,,
+23,大安般經,2,1,Great Sūtra on the Mindfulness of Breathing,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,安般守意經,,,Y (55.0010a04),,20,T 602,大安般守意經,2,An Shigao,Later Han,25-220,Miscellaneous ,K 806,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,681,大安般守意經,https://dazangthings.nz/cbc/text/2096/,2025-07-05,,,,,,
 24,思惟經,2,1,Sūtra on Contemplation,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),Also known as Essence of Contemplation,20,,,,,,,,,,,,,,,,,,,,,
 25,十二因緣經,2,1,Sūtra on the Twelve Nidanas,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),,14,,,,,,,,,,,,,,,,,,,,,
 26,五陰喻經,2,1,Sūtra on Similes for the Five Aggregates,1,An Shigao,Emperor Huan of Han,146-168,,,,translated,,,,Y (55.0010a04),The Old Catalog calls thig Sūtra on Similes for the Five Aggregates [written slightly differently],13,T 105,五陰譬喻經,1,An Shigao,Later Han,25-220,Āgamas ,K 743,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,653,五陰譬喻經,,,,Saṃyutta Nikāya 22.95 Phena Sutta,,,,"Zürcher (2013, 444) states that the attribution to An Shigao is doubtful."
@@ -282,7 +282,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 281,賢劫千佛名經,2,1,Sūtra on the Names of a Thousand Buddhas,1,Tan Wulan,when Emperor Yuan of Jin [lived 276-323] was twenty years old in the 6th month of the Binshen year [396],396,"Xiezhen Xi Temple, Yangzhou",,,compiled,,,,,,,,,,,,,,,,,,,,,,,,,,,"T 446, T 447, and T 448 have similar titles but their translations are attributed to anonymous authors."
 282,增一阿鋡經,2,1,Ekottara Āgama,33,Dharmanandi and Zhu Fonian,between the summer of twentieth year of the Jianyuan era [365–385] of the [Former] Qin and the spring of the twenty-first year,364-365,,Y,Y,translated,,,,,Either as thirty-three fascicles or twenty-four parts. Śramaṇa Dharmanandi from Tukhara. Dharmanandi arrived at Chang’an In the time of Fujian [ruled 357-385]. He recited from foreign manuscripts and Zhu Fonian translated.,,T 125,增壹阿含經,51,Saṅghadeva,Eastern Jin,317–420,Āgamas,K 650,435-443,Notes on the Illustrations to the Old and Modern Translation,T. 2151-362b:4,544,增壹阿含經,,,ekottarikagama,Aṅguttara Nikāya,,,,The translation of T 125 增壹阿含經 with a similar title is attributed to Gautama Saṅghadeva and a different length. Raddich (2017) argues that it should be attributed to Zhu Fo Nian.
 283,中阿鋡經,2,1,Madhyama Āgama,59,Dharmanandi and Zhu Fonian,the twentieth year of the Jianyuan era [365–385] of the Zhou dynasty,364,,Y,Y,translated,中阿鋡經,,,,The same note on the manuscript and recitation for 賢劫千佛名經 applies to this entry.,,,,,,,,,,,,,,,,,madhyama,Majjhima Nikāya,,,,"There is no Jianyuan era of the Zhou dynasty, assuming the Former Qin. The translation of T 26 中阿含經 with a similar title is attributed to Gautama Saṅghadeva."
-284,出曜經,2,1,Dhammapada,19,Zhu Fonian,the time of Emperor Xiaowu of Jin [reigned 373-396] and at the time of Fujian [ruled 357-385],373-396,Guanzhong,,,translated,,,,,,2,T 212,出曜經,30,Fo Nian,Later Qin,384-417,Jātaka and Avadāna,K 982,374,Catalog of the Inner Canon of the Great Tang Dynasty,T. 2149-252a: 7.,1321,出曜經,,,udanavarga,,,,,
+284,出曜經,2,1,Udānavarga,19,Zhu Fonian,the time of Emperor Xiaowu of Jin [reigned 373-396] and at the time of Fujian [ruled 357-385],373-396,Guanzhong,,,translated,,,,,,2,T 212,出曜經,30,Fo Nian,Later Qin,384-417,Jātaka and Avadāna,K 982,374,Catalog of the Inner Canon of the Great Tang Dynasty,T. 2149-252a: 7.,1321,出曜經,,,udanavarga,,,,,
 285,菩薩瓔珞經,2,1,Sūtra on the Bodhisattva’s Jade Necklace,12,Zhu Fonian,the time of Emperor Xiaowu of Jin [reigned 373-396] and at the time of Fujian [ruled 357-385],373-396,Guanzhong,,,translated,,,,,,5,T 656,菩薩瓔珞經,14,Fo Nian,Later Qin,384-417,Miscellaneous,K 385,376,Catalog of the Inner Canon of the Great Tang Dynasty,T. 2149-252a:8.,445,菩薩瓔珞經,,,,,,,Chinese indigenous ,"Lin and Radich (2021, 151) argue that this text is a composition rather than a translation based on borrowings from several texts translated by Dharmarakṣa and one by Lokakṣema."
 286,十住斷結經,2,1,Sūtra on Cutting Ties in the Ten Dwellings,11,Zhu Fonian,the time of Emperor Xiaowu of Jin [reigned 373-396] and at the time of Fujian [ruled 357-385],373-396,Guanzhong,,,translated,,,,,,,T 309,最勝問菩薩十住除垢斷結經,10,Fo Nian,Later Qin,384-417,Lotus and Huayan,K 382,365-385,Catalog of the Inner Canon of the Great Tang Dynasty,T.2149-286c:3,376,十住斷結經,,,,,,,Chinese indigenous ,"Nattier (2010, 252-255) suggests that the text is an apocryphon that borrows heavily from Larger Prajñāpāramitā 放光般若經 (T 221), translated by Mokṣala."
 287,菩薩處胎經,2,1,Sūtra of the Incarnation of the Bodhisattva,5,Zhu Fonian,the time of Emperor Xiaowu of Jin [reigned 373-396] and at the time of Fujian [ruled 357-385],373-396,Guanzhong,,,translated,菩薩處胎經,,,,Also known as the Garbha Sūtra,,T 384,菩薩處胎經,7,Fo Nian,Later Qin,384-417,Ratnakūṭa and Nirvāṇa,K 406,365-384,Catalog of the Inner Canon of the Great Tang Dynasty,T. 2149-314b:11,433,,,,,,,,,
@@ -904,7 +904,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 903,菩薩十法住經一卷,4,1,Sūtra on the Ten Bodhisattva Grounds,1,,,,,,,,十地經,,,,,,,,,,,,,,,,,,,,,,,,,,
 904,菩薩十道地經,4,1,Sūtra on the Ten Bodhisattva Grounds of the Way,1,,,,,,,,,,,,,14,,,,,,,,,,,,,,,,,,,,,
 905,大方廣菩薩十地經,4,1,Sūtra on the Extensive Explanation of the Ten Bodhisattva Grounds,1,,,,,,,,,,,,largely the same with minor differences the same as the version translated by Dharmarakṣa.,"1, 6, 14, 19",T 308,佛說大方廣菩薩十地經,1,Kiṃkārya,Northern Wei,386-535,Lotus and Huayan,K 96,472,Notes on the Illustrations to the Old and Modern Translation,T. 2151-360a:27,103,,,,,,,,,
-906,菩薩緣身五十事經,4,1,Sūtra on the Characteristic Marks on the Bodhisattva that were the Result of the Fifty Causes of the Practice,1,,,,,,,,,,,,largely the same with minor differences the same as the Sūtra on the Fifty Characteristic Marks [by Dharmarakṣa].,,,,,,,,,,,,,,,,,,,,,,
+906,菩薩緣身五十事經,4,1,Sūtra on the Characteristic Marks on the Bodhisattva that were the Result of the Fifty Causes of the Practice,1,,,,,,,,五十緣身行,,,,Largely the same with minor differences the same as the Sūtra on the Fifty Characteristic Marks [五十緣身行 T 812 by Dharmarakṣa].,,,,,,,,,,,,,,,,,,,,,,
 907,菩薩三法經,4,1,Sūtra on the Three Dharmas of the Bodhisattva,1,,,,,,,extract,,,,,An extract,2,,,,,,,,,,,,,,,,,,,,,
 908,菩薩五法行經,4,1,Sūtra on the Practice of the Five Dharmas of the Bodhisattva,1,,,,,,,extract,,,,,An extract,"2, 16",,,,,,,,,,,,,,,,,,,,,
 909,菩薩六法行經,4,1,Sūtra on the Practice of the Six Dharmas of the Bodhisattva,1,,,,,,,extract,,,,,An extract,,,,,,,,,,,,,,,,,,,,,,
@@ -991,13 +991,13 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 990,大悲比丘本願經,4,1,Dabei Biqiu Ben Yuan Jing,1,,,,,,,extract,,,,,An extract.,"2, 16",,,,,,,,,,,,,,,,,,,,,
 991,沙曷比丘功德,4,1,Shahe Biqiu Gongde,1,,,,,,,,,,,,The Old Catalog calls this Shahe Biqiu Jing.,,T 501,佛說沙曷比丘功德經,1,Fa Ju,Western Jin,265-316,Miscellaneous,K 851,290-307,Notes on the Illustrations to the Old and Modern Translation,T. 2151-355a:11,749,,https://dazangthings.nz/cbc/text/621/,2025-06-29,,,,,,
 992,差摩比丘喻重病經,4,1,Chamo Biqiu Yu Zhong Bing Jing,1,,,,,,,extract,,,,,An extract from Saṃyukta Āgama.,16,,,,,,,,,,,,,,,,,,,,,
-993,坐禪比丘命過生天經,4,1,Zuo Chan Biqiu Ming Guo Sheng Tian Jing,1,,,,,,,extract,,,,,An extract from the Dhammapada.,"2, 16",,,,,,,,,,,,,,,,,,,,,
+993,坐禪比丘命過生天經,4,1,Zuo Chan Biqiu Ming Guo Sheng Tian Jing,1,,,,,,,extract,,,,,An extract from the Udānavarga.,"2, 16",,,,,,,,,,,,,,,,,,,,,
 994,分衛比丘經,4,1,Fenwei Biqiu Jing,1,,,,,,,,,,,,From the Jātaka Stories.,16,T 154 (2),佛說分衛比丘經,1,,,,,,,,,,,,,,,,,,Fascicle 1
 995,比丘各言志經,4,1,Biqiu Ge Yan Zhi Jing,1,,,,,,,,,,,,From the Jātaka Stories.,16,T 154 (16),佛說比丘各言志經,1,,,,,,,,,,,,,,,,,,Fascicle 2
 996,比丘疾病經,4,1,Sūtra on a Sick Bhikṣu,1,,,,,,,,,,,,From the Jātaka Stories.,"2, 16",T 154 (26),,,,,,,,,,,,,,,,,,,,Fascicle 3
 997,比丘求證人經,4,1,Biqiu Qiu Zheng Ren Jing,1,,,,,,,extract,,,,,An extract.,"2, 16",,,,,,,,,,,,,,,,,,,,,
 998,比丘於色厭離經,4,1,Sūtra on a Bhikṣu Giving Up Lusful Desires,1,,,,,,,extract,,,,,An extract from the Āgamas.,"2, 16",,,,,,,,,,,,,,,,,,,,,
-999,比丘問佛何故捨世學道經,4,1,Sūtra on a Bhikṣu Asking the Buddha Why Give Up the Path of Secular Learning?,1,,,,,,,extract,,,,,An extract from the Dhammapada.,16,,,,,,,,,,,,,,,,,,,,,
+999,比丘問佛何故捨世學道經,4,1,Sūtra on a Bhikṣu Asking the Buddha Why Give Up the Path of Secular Learning?,1,,,,,,,extract,,,,,An extract from the Udānavarga.,16,,,,,,,,,,,,,,,,,,,,,
 1000,比丘避女惡名欲自殺經,4,1,A Bhikṣu Wants to Commit Suicide after being Accused of Relations with a Woman,1,,,,,,,extract,,,,,An extract.,"2, 13, 20",T 503,比丘避女惡名欲自殺經,1,Fa Ju,Western Jin,265-316,Miscellaneous,K 886,290-307,Notes on the Illustrations to the Old and Modern Translation,T. 2151-355a:15,725,,https://dazangthings.nz/cbc/text/618/,2025-06-30,,,,,,
 1001,比丘問佛多優婆塞命終經,4,1,Biqiu Wen Fo Duo Youposai Ming Zhong Jing,1,,,,,,,extract,,,,,An extract Madhyama Āgama.,"16, 20",,,,,,,,,,,,,,,,,,,,,
 1002,佛為比丘說三法經,4,1,Sūtra on the Buddha Speaking about the Three Dharmas to the Bhikṣus,1,,,,,,,extract,,,,,An extract.,"2, 16",,,,,,,,,,,,,,,,,,,,,
@@ -1023,7 +1023,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1022,瞿曇彌經,4,1,Gautamī Sūtra,1,,,,,,,extract,,,,,An extract.,,T 26 (116),瞿曇彌經,1,,,,Āgamas,,,,,,,,,,,,,,Fascicle 28
 1023,瞿曇彌記果經,4,1,Qutanmi Ji Guo Jing,1,,,,,,,extract,,,,,An extract.,"5, 13, 20",T 60,瞿曇彌記果經,1,Hui Jian,Liu Song,420-479,Āgamas,K 683,457,Notes on the Illustrations to the Old and Modern Translation,T. 2151-363a:2,591,,https://dazangthings.nz/cbc/text/885/,2025-06-30,,,,,,
 1024,佛母般泥洹經,4,1,Sūtra on the Nirvāṇa of the Buddha’s Mother,1,,,,,,,,佛母般泥洹經,,,,,"5, 13, 15, 17, 20",T 145,佛母般泥洹經,1,Hui Jian,Liu Song,420-479,Āgamas,K 753,457,Notes on the Illustrations to the Old and Modern Translation,T.2151-363a:2,651,佛母般泥洹經,https://dazangthings.nz/cbc/text/2205/,2025-06-30,,,,,,
-1025,比丘尼現變經,4,1,Sūtra on the Bhikṣuṇī who Appeared in a Different Form,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,
+1025,比丘尼現變經,4,1,Sūtra on the Bhikṣuṇī who Appeared in a Different Form,1,,,,,,,extract,,,,,An extract.,,T 154 (43),佛說比丘尼現變經,1,,,,Jātaka and Avadāna,,,,,,,,,,,,,,Fascicle 4
 1026,母子作比丘僧比丘尼意亂經,4,1,Mu Zi Zuo Biqiu Seng Biqiuni Yi Luan Jing,1,,,,,,,,,,,,Also known as Ming Xue Ren Yi Luan Jing; from the Ekottara Āgama.,,,,,,,,,,,,,,,,,,,,,,
 1027,旃闍摩暴志謗佛經,4,1,Zhanshemobaozhi Bang Fo Jing,1,,,,,,,,,,,,From the Jātaka Stories.,"5, 16",T 154 (9),,,,,,,,,,,,,,,,,,,,Fascicle 1
 1028,優波離問佛經,4,1,Sūtra on the Questions of Upāli,1,,,,,,,,,,,,,"1, 13, 20",T 1466,優波離問佛經,1,Guṇaśāla,Liu Song,420-479,Vinaya,K 921,431-?,Kaiyuan Lu,T. 1466-903a:14; T. 2154-619b:4,1109,優波離問佛經,https://dazangthings.nz/cbc/text/1650/,2025-06-30,,,,,,
@@ -1137,7 +1137,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1136,逝童子經,4,1,Shi Tongzi Jing,1,,,,,,,,,,,,largely the same with minor differences the same as Pusa Shi Jing.,"1, 2, 12, 19",T 527,佛說逝童子經,1,Zhi Fadu,Western Jin,265-316,Miscellaneous,K 228,301,Zhou Dynasty Corrected Catalog of Scriptures,T.2153-359b:27,229,,,,,,,,,"Hayashiya (1941, 910-925) discusses the similarities and differences between this text and 菩薩逝經 (T 528)."
 1137,長壽童子病見世尊經,4,1,Changshou Tongzi Bing Jian Shizun Jing,1,,,,,,,extract,,,,,An extract,,,,,,,,,,,,,,,,,,,,,,
 1138,小兒聞法即解經,4,1,Xiao Er Wen Fa Ji Jie Jing,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-1139,長者威施所問菩薩修行經,4,1,Zhangzhe Weishi Suo Wen Pusa Xiuxing Jing,1,,,,,,,,,,,,Also known as the Sūtra on Bodhisattva Practice or Zhangzhe Xiuxing Jing.,"1, 14",,,,,,,,,,,,,,,,,,,,,
+1139,長者威施所問菩薩修行經,4,1,Zhangzhe Weishi Suo Wen Pusa Xiuxing Jing,1,,,,,,,,長者威勢經,,,,Also known as the Sūtra on Bodhisattva Practice or Zhangzhe Xiuxing Jing.,"1, 14",,,,,,,,,,,,,,,,,,,,,
 1140,長者梨師達多兄弟二人詣世尊經,4,1,Zhangzhe Lishi Daduo Xiongdi Er Ren Yi Shizun Jing,1,,,,,,,extract,,,,,An extract from the Madhyama Āgama.,"1, 16",,,,,,,,,,,,,,,,,,,,,
 1141,長者賢首經,4,1,Zhangzhe Xianshou,1,,,,,,,,,,,,,"1, 15",,,,,,,,,,,,,,,,,,,,,
 1142,長者夜輸得非常觀經,4,1,Zhangzhe Yeshude Fei Chang Guan Jing,1,,,,,,,extract,,,,,An extract from the Udānavarga.,"1, 16",,,,,,,,,,,,,,,,,,,,,
@@ -1225,9 +1225,9 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1224,不莊挍女經,4,1,The Blameless Woman Sūtra,1,,,,,,,,,,,,,14,,,,,,,,,,,,,,,,,,,,,
 1225,七女本經,4,1,Sūtra on Seven Daughters,1,,,,,,,,七女經,,,,,"2, 15, 20",,,,,,,,,,,,,,,,,,,,,
 1226,前世諍女經,4,1,Sūtra on Quarrelling over a Woman in a Previous Life,1,,,,,,,,,,,,From the Jātaka Stories.,,T 154 (7),佛說前世諍女經,,,,,Jātaka and Avadāna,,,,,,,,,,,,,,Fascicle 1 of Jātaka Stories 生經 (T 154).
-1227,三摩竭經,4,1,Sumāgadhāvadāna Sūtra,1,,,,,,,,,,,,largely the same with minor differences the same as Fen He Tan Wang Jing.,"2, 3, 13, 15, 20",T 129,佛說三摩竭經,1,Zhu Luyan,Wu,222-280,Āgamas,K 790,230,Notes on the Illustrations to the Old and Modern Translation,T. 2151-352a:23,616,三摩竭經,https://dazangthings.nz/cbc/text/2213/,2025-06-14,,,,,,
-1228,摩鄒女經,4,1,Mozou Nu Jing,1,,,,,,,,摩鄧女經,,,,,"1, 20",,,,,,,,,,,,,,,,,,,,,
-1229,摩鄧女經,4,1,Mātangī Sūtra,1,,,,,,,extract,阿難為蠱道呪經,,,,An extract; same as Mozou Nu Jing.,"1, 3, 15, 20",,,,,,,,,,,,,,,,,,,,,
+1227,三摩竭經,4,1,Sumāgadhāvadāna Sūtra,1,,,,,,,,,,,,Largely the same with minor differences the same as Fen He Tan Wang Jing.,"2, 3, 13, 15, 20",T 129,佛說三摩竭經,1,Zhu Luyan,Wu,222-280,Āgamas,K 790,230,Notes on the Illustrations to the Old and Modern Translation,T. 2151-352a:23,616,三摩竭經,https://dazangthings.nz/cbc/text/2213/,2025-06-14,,,,,,
+1228,摩鄒女經,4,1,Mozou Nu Jing,1,,,,,,,,"Alternative title is given in Fascicle 1 of the Kaiyuan Lu, which refers to Changfang's Catalog (Li Dai San Bao Ji), although it is questionable because of the difference in text length. It may be an extract from xx.",,,,,"1, 20",,,,,,,,,,,,,,,,,,,,,
+1229,摩鄧女經,4,1,Mātangī Sūtra,1,,,,,,,extract,阿難為蠱道呪經,,,,An extract; same as Mozou Nu Jing.,"1, 3, 15, 20",T 1300,摩登伽經,2,Zhu Luyan and Zhi Qian,Wu,222-280,Esoteric,K 766,230,Zhenyuan Lu,T.2157-785a:15,645,,https://dazangthings.nz/cbc/text/1056/,2025-07-06,,,Stag rnaḥi rtogs-pa-brjod-pa,Toh 358,,"Alternative title is given in Fascicle 1 of the Kaiyuan Lu, which refers to Changfang's Catalog (Li Dai San Bao Ji). The difference in text length may be able to be explained if this is an extract of T 1300. It may also be related to 佛說摩鄧女經 (T 551)."
 1230,女人欲熾荒迷經,4,1,Nuren Yu Chi Huang Mi Jing,1,,,,,,,extract,,,,,An extract from the Udānavarga.,,,,,,,,,,,,,,,,,,,,,,
 1231,貧女為國王夫人經,4,1,Sūtra on the Poor Woman who Becomes the King’s Wife,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1232,羅閱城人民請佛經,4,1,Sūtra on the People of Rājagṛha Requesting the Buddha to Talk,1,,,,,,,extract,,,,,An extract,16,,,,,,,,,,,,,,,,,,,,,
@@ -1242,7 +1242,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1241,商人子作佛事經,4,1,Shangren Zi Zuo Fo Shi Jing,1,,,,,,,extract,,,,,An extract from the Dīrgha Āgama.,,,,,,,,,,,,,,,,,,,,,,
 1242,昔有二人相愛敬經,4,1,Sūtra about Two People in the Past who Loved and Revered Each Other,1,,,,,,,extract,,,,,An extract from the Udānavarga.,,,,,,,,,,,,,,,,,,,,,,
 1243,善生子經,4,1,Śṛgālavāda Sūtra,1,,,,,,,,,,,,The Old Catalog calls this Śṛgālavāda; another title is Sūtra on Paying Homage to the Six Directions.,"3, 5, 15, 17, 20",T 17,善生子經,1,Zhi Fadu,Western Jin,265-316,Āgamas,K 718,301,Notes on the Illustrations to the Old and Modern Translation,T. 2151-354c:5,595,,,,,,,,,
-1244,尸迦羅越六向拜經,4,1,Sīgāla Pays Homage to the Six Directions,1,,,,,,,,,,,,The content is the same but the wording is different to Dharmarakṣa’s translation of Da Liu Bai [Da Liu Xiang Bai Jing].,"1, 3, 13, 15, 20",T 16,尸迦羅越六方禮經,1,An Shigao,Later Han,25-220,Āgamas,K 656,148-170,Notes on the Illustrations to the Old and Modern Translation,T.2151-349a:12,555,六方禮經,,,,D.31 Siṅgālovādasutta,,,,
+1244,尸迦羅越六向拜經,4,1,Sīgāla Pays Homage to the Six Directions,1,,,,,,,,,,,,The content is the same but the wording is different to Dharmarakṣa’s translation of Da Liu Bai [Da Liu Xiang Bai Jing].,"1, 3, 13, 15, 20",T 16,尸迦羅越六方禮經,1,An Shigao,Later Han,25-220,Āgamas,K 656,148-170,Notes on the Illustrations to the Old and Modern Translation,T.2151-349a:12,555,六方禮經,,,,D.31 Siṅgālovādasutta,,,,Alternate title is given in Fascicle 3 of the Kaiyuan Lu.
 1245,世間強盜布施經,4,1,Sūtra on Bandits Stealing Donations,1,,,,,,,extract,,,,,An extract from the Ekottara Āgama.,1,,,,,,,,,,,,,,,,,,,,,
 1246,舍衛人喪子發狂經,4,1,Shewei Ren Sang Zi Fakuang Jing,1,,,,,,,extract,,,,,An extract from the Āgamas.,,,,,,,,,,,,,,,,,,,,,,
 1247,貧子得財發狂經,4,1,A Poor Son Gains Wealth but goes Crazy,1,,,,,,,,,,,,,4,,,,,,,,,,,,,,,,,,,,,
@@ -1292,7 +1292,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1291,三種良馬經,4,1,Three Kinds of Good Horse,1,,,,,,,extract,,,,,An extract.,16,,,,,,,,,,,,,,,,,,,,,
 1292,四種良馬經,4,1,Four Kinds of Good Horse,1,,,,,,,extract,,,,,An extract from the Āgamas.,16,,,,,,,,,,,,,,,,,,,,,May be the untitled T 99 (922) in Fascicle 33.
 1293,群牛千頭經,4,1,Sūtra on a Herd of a Thousand Cattle,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,
-1294,牧牛經,4,1,Cowherd Sūtra,1,,,,,,,,,,,,,3,,,,,,,,,,,,,,,,,,,,,
+1294,牧牛經,4,1,Cowherd Sūtra,1,,,,,,,,放牛經,,,,,3,,,,,,,,,,,,,,,,,,,,,Alternative title with 放牛經 given in Fascicle 3 of the Kaiyuan Lu.
 1295,犢子經,4,1,Vatsa Sūtra,1,,,,,,,,,,,,,"1, 2, 3, 18, 19",T 808,佛說犢子經,1,Zhi Qian,Wu,222-280,Miscellaneous,K 229,222-228,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-395c:5,233,,,,,,,,,"Nattier (2008, 121-122) does not include this translations in a list authentically attributed to Zhi Qian."
 1296,驢駝經,4,1,Sūtra on the Donkey and the Camel,1,,,,,,,extract,,,,,An extract.,"3, 16",T 154 (50),佛說驢駝經,1,,,,Jātaka and Avadāna,,,,,,,,,,,,,,Fascicle 5 of Jātaka Stories 生經 (T 154)
 1297,[狂-王+樂]狗齧王經,4,1,Gou Nie Wang Jing,1,,,,,,,,,,,,The Old Catalog calls this Gou Jing.,"1, 15",,,,,,,,,,,,,,,,,,,,,
@@ -1310,7 +1310,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1309,見一眾生舉體糞穢塗身經,4,1,Jian Yi Zhongshen Ju Ti Fenhui Tu Shen Jing,1,,,,,,,extract,,,,,An extract from the Āgamas.,16,,,,,,,,,,,,,,,,,,,,,
 1310,眾生頂有鐵磨盛火熾然經,4,1,Zhongshen Ding You Tie Mo Cheng Huo Chiran Jing,1,,,,,,,extract,,,,,An extract from the Saṃyukta Āgama.,,,,,,,,,,,,,,,,,,,,,,
 1311,佛為訶到曠野鬼說法經,4,1,Fo Wei He Dao Kuangye Gui Shuo Fa Jing,1,,,,,,,extract,,,,,An extract from the Āgamas.,,,,,,,,,,,,,,,,,,,,,,
-1312,鐵城泥犁經,4,1,Sūtra on the Hell with Walls of Iron,1,,,,,,,,,,,,,"3, 13, 17, 20",T 42,鐵城泥犁經,1,Tan Wulan,Eastern Jin,317–420,Āgamas,K 684,381-395,Notes on the Illustrations to the Old and Modern Translation,T. 2151-356a:12,561,佛說鐵城泥犁經,,,,,,,,
+1312,鐵城泥犁經,4,1,Sūtra on the Hell with Walls of Iron,1,,,,,,,,,,,,,"3, 13, 17, 20",T 42,鐵城泥犁經,1,Tan Wulan,Eastern Jin,317–420,Āgamas,K 684,381-395,Notes on the Illustrations to the Old and Modern Translation,T. 2151-356a:12,561,佛說鐵城泥犁經,,,,,,,,"From Fascicle 13 in the Kaiyuan Lu, an alternative title is 閻羅王五天使者經 (T 43)."
 1313,泥犁經,4,1,Niraya Sūtra,1,,,,,,,,,,,,Also known as the Madhyama Āgama Niraya Sūtra.,3,T 86,泥犁經,1,Tan Wulan,Eastern Jin,317–420,Āgamas,K 712,381-395,Notes on the Illustrations to the Old and Modern Translation,T. 2151-356a:12,575,,,,,M.129 Bālapaṇḍitasutta,,,,
 1314,勤苦泥犁經,4,1,Sūtra on Suffering in Niraya,1,,,,,,,,泥犁經,,,,,1,,,,,,,,,,,,,,,,,,,,,
 1315,十八泥犁經,4,1,Sūtra on the Eighteen Hells,1,,,,,,,,,,,,,"1, 3, 13, 20",T 731,佛說十八泥犁經,1,An Shigao,Later Han,25-220,Miscellaneous,K 812,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,688,,,,,,,,,
@@ -1340,7 +1340,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1339,舉鉢經,4,1,Ju Bo Jing,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,
 1340,息恚經,4,1,Yi Hui Jing,1,,,,,,,extract,,,,,An extract from the Madhyama Āgama.,16,,,,,,,,,,,,,,,,,,,,,
 1341,福行經,4,1,Sūtra on Meritorious Actions,1,,,,,,,extract,,,,,An extract from the Āgamas.,16,,,,,,,,,,,,,,,,,,,,,
-1342,忍辱經,4,1,Sūtra on Tolerance,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1342,忍辱經,4,1,Sūtra on Tolerance,1,,,,,,,,忍辱經,,,,,2,,,,,,,,,,,,,,,,,,,,,
 1343,福報經,4,1,Sūtra on Blessings,1,,,,,,,,,,,,,"15, 16, 20",,,,,,,,,,,,,,,,,,,,,This title could be an abbreviation for either 佛說食施獲五福報經 (T 132) or 佛說造立形像福報經 (T 693) both treated as anonymously translated in the Taishō.
 1344,法觀經,4,1,Sūtra on Contemplation of the Dharma,1,,,,,,,,,,,,,"2, 4, 13, 17, 20",T 611,法觀經,1,Dharmarakṣa,Western Jin,265-316,Miscellaneous,K 1008,265-313,Notes on the Illustrations to the Old and Modern Translation,T. 2151-353a:26,1362,法觀經,,,,,,,,
 1345,身觀經,4,1,Sūtra on Contemplation of the Body,1,,,,,,,extract,,,,,An extract.,"2, 3, 16, 17, 20",T 612,身觀經,1,Dharmarakṣa,Western Jin,265-316,Miscellaneous,K 874,265-313,Notes on the Illustrations to the Old and Modern Translation,T. 2151-353a:26,726,,,,,,,,,
@@ -1387,7 +1387,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1386,恒水戒經,4,1,Sutra Spoken on Precepts at the River Ganges,1,,,,,,,,,,,,The Old Catalog calls this Sutra Spoken on the River Ganges.,,T 33,恒水經,1,Fa Ju,Western Jin,265-316,Āgamas,K 675,290-307,Notes on the Illustrations to the Old and Modern Translation,T. 2151-355a:15,599,,,,,A.VIII 20 Uposatha,,,,
 1387,寂志果經,4,1,Sūtra on the Fruits of the Contemplative Life,1,,,,,,,,,,,,,"1, 3, 13, 15, 20",T 22,寂志果經,1,Tan Wulan,Eastern Jin,317–420,Āgamas,K 658,381-395,Notes on the Illustrations to the Old and Modern Translation,T. 2151-356a:11,593,寂志果經,,,,D.2 Sāmaññaphalasutta,,,,
 1388,不壞淨經,4,1,Bu Huai Jing Jing,1,,,,,,,extract,,,,,An extract from the Saṃyukta Āgama.,16,,,,,,,,,,,,,,,,,,,,,May be related to either of the untitled entries T 99 (733) or T 99 (734) in the Saṃyukta Āgama.
-1389,具善根經,4,1,Sūtra on Completely Wholesome Roots,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,
+1389,具善根經,4,1,Sūtra on Completely Wholesome Roots,1,,,,,,,extract,,,,,An extract.,16,,,,,,,,,,,,,,,,,,,,,
 1390,法施勝經,4,1,Sūtra on Unsurpassed Nature of the Gift of the Dharma,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1391,人弘法經,4,1,Ren Hong Fa Jing,1,,,,,,,extract,,,,,An extract from Da Yun Jing [T 387].,16,,,,,,,,,,,,,,,,,,,,,
 1392,壽命促經,4,1,Shou Ming Cu Jing,1,,,,,,,extract,,,,,An extract from the Saṃyukta Āgama.,,,,,,,,,,,,,,,,,,,,,,
@@ -1397,8 +1397,8 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1396,護口意經,4,1,Hu Kou Yi Jing,1,,,,,,,,,,,,,"2, 16",,,,,,,,,,,,,,,,,,,,,
 1397,修行慈經,4,1,Sūtra on the Cultivation of Benevolence,1,,,,,,,extract,,,,,An extract.,16,,,,,,,,,,,,,,,,,,,,,
 1398,法滅盡經,4,1,Sūtra on the Total Destruction of the Dharma,1,,,,,,,,,,,,,"2, 12, 18, 19",T 396,佛說法滅盡經,1,,,,Miscellaneous,K 520,420-479,Zhenyuan Lu,T. 2157-938c:12,470,小法滅盡經,,,,,,,Chinese indigenous ,"Zurcher (2013, 178-180) states that the text is a native Chinese composition."
-1399,未曾有經,4,1,Wei Ceng You Jing,1,,,,,,,,未曾有因經,,,,,,,,,,,,,,,,,,,,,,,,,,
-1400,不淨觀經,4,1,Bu Jing Guan Jing,1,,,,,,,extract,禪經修行方便,,,,An extract from the Dīrgha Āgama.,,,,,,,,,,,,,,,,,,,,,,
+1399,未曾有經,4,1,Wei Ceng You Jing,1,,,,,,,,未曾有因經,,,,,1,,,,,,,,,,,,,,,,,,,,,
+1400,不淨觀經,4,1,Bu Jing Guan Jing,1,,,,,,,extract,禪經修行方便,,,,An extract from the Dīrgha Āgama.,"2, 3",,,,,,,,,,,,,,,,,,,,,Fascicle 3 in the Kaiyuan Lu gives this as an alternative title to 達摩多羅禪經 (T 618).
 1401,心本淨經,4,1,Xin Ben Jing Jing,1,,,,,,,extract,,,,,An extract from the Sūtra on the Transcendent Samādhi of Mañjuśrī [T 627].,16,,,,,,,,,,,,,,,,,,,,,
 1402,無母子經,4,1,Sūtra on a Son with no Mother,1,,,,,,,extract,,,,,An extract.,"2, 16",,,,,,,,,,,,,,,,,,,,,
 1403,無吾我經,4,1,Wu Wu Wo Jing,1,,,,,,,extract,,,,,An extract.,16,,,,,,,,,,,,,,,,,,,,,
@@ -1410,13 +1410,13 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1409,出曜華經,4,1,Chu Yao Hua Jing,1,,,,,,,extract,,,,,An extract from the Udānavarga.,16,,,,,,,,,,,,,,,,,,,,,
 1410,華嚴淨經,4,1,Huayan Jing Jing,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1411,華嚴瓔珞,4,1,Huayan Yingluo,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-1412,觀世樓炭經,4,1,Guan Shi Lou Tan Jing,1,,,,,,,,,,,,With three chapters.,,,,,,,,,,,,,,,,,,,,,,May be a part of 大樓炭經 (T 23) in six fascicles.
+1412,觀世樓炭經,4,1,Guan Shi Lou Tan Jing,1,,,,,,,,,,,,With three chapters.,"1, 3, 18",,,,,,,,,,,,,,,,,,,,,May be a part of 大樓炭經 (T 23) in six fascicles.
 1413,波若得經,4,1,Borede Jing,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1414,惟日雜難經,4,1,Wei Ri Za Nan Jing,1,,,,,,,,,,,,,"1, 2, 4, 17, 20",T 760,惟日雜難經,1,Zhi Qian,Wu,222-280,Miscellaneous,K 992,223-253,Notes on the Illustrations to the Old and Modern Translation,T. 2151-351b:21,1328,,,,,,,,,
 1415,處中行道經,4,1,Chu Zhong Xing Dao Jing,1,,,,,,,extract,,,,,An extract from the Saṃyukta Āgama.,,,,,,,,,,,,,,,,,,,,,,
 1416,勸行有證經,4,1,Quan Xing You Zheng Jing,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1417,修行勸意經,4,1,Xiuxing Quan Yi Jing,1,,,,,,,extract,,,,,An extract from the Madhyama Āgama.,16,,,,,,,,,,,,,,,,,,,,,
-1418,多增道章經,4,1,Duo Zeng Dao Zhang Jing,1,,,,,,,,,,,,The Old Catalog calls this Duo Zeng Dao Jing; one record says that this is another version of the Shi Bao Fa.,"1, 15",,,,,,,,,,,,,,,,,,,,,
+1418,多增道章經,4,1,Duo Zeng Dao Zhang Jing,1,,,,,,,,十報經,,,,The Old Catalog calls this Duo Zeng Dao Jing; one record says that this is another version of the Shi Bao Fa.,"1, 15",,,,,,,,,,,,,,,,,,,,,Fascicle 1 of the Kaiyuan Lu gives this as an alternative title for 長阿含十報法經 (T 13).
 1419,內身觀章經,4,1,Sūtra on Contemplation of the Body,1,,,,,,,,,,,,,1,T 610,佛說內身觀章句經,1,,,,,K 1011,25-220,Zhenyuan Lu,T.2157-956b:24,1361,佛說內身觀章句經,https://dazangthings.nz/cbc/text/2073/,2025-05-28,,,,,,The KDC notes that this entry is included in the Hou Han Lu (後漢錄).
 1420,忠心政行經,4,1,Sūtra on a Sincere Mind and Forthright Practice,1,,,,,,,,,,,,From the Collection of the Six Perfections; also known as Zhong Xin Jing; the Old Catalog has the Da Zhong Xin Jing and the Xiao Zhong Xin Jing.,20,T 743,佛說忠心經,1,Tan Wulan,Eastern Jin,317–420,Miscellaneous,K 833,381-395,Notes on the Illustrations to the Old and Modern Translation,T.2151-356a-11; T.2157-801b-14,715,忠心經,https://dazangthings.nz/cbc/text/374/,2025-05-28,,,,,,
 1421,堅心政意經,4,1,Jian Xin Zheng Yi Jing,1,,,,,,,,堅心經,,,,Also known as Jian Yi Jing.,"1, 3, 13, 15, 20",,,,,,,,,,,,,,,,,,,,,
@@ -1459,7 +1459,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1458,求離牢獄經,4,1,Sūtra on Seeking Release from Prison,1,,,,,,,extract,,,,,An extract.,"1, 16",,,,,,,,,,,,,,,,,,,,,
 1459,阿含正行經,4,1,Āgama on Right Action,1,,,,,,,,,,,,,3,T 151,佛說阿含正行經,1,An Shigao,Later Han,25-220,Āgamas,K 813,148-170,Notes on the Illustrations to the Old and Modern Translation,T. 2151-349a:12,687,佛說阿含正行經,https://dazangthings.nz/cbc/text/2243/,2025-05-31,,,,,,
 1460,增一阿含經,4,1,Ekottara Āgama,1,,,,,,,extract,增一阿鋡經,,,,An extract from the Ekottara Āgama [T 125].,,,,,,,,,,,,,,,,,,,,,,
-1461,摩訶乘寶嚴經,4,1,Sūtra on Mahāyāna Treasures,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1461,摩訶乘寶嚴經,4,1,Sūtra on Mahāyāna Treasures,1,,,,,,,,,,,,,1,T 351,摩訶衍寶嚴經,1,,,,Miscellaneous,K 53,265-420,,T.153-382b:17,58,,https://dazangthings.nz/cbc/text/1289/,2025-07-06,,,Ḥod-sruṅ-gi-leḥu,Toh 87,,
 1462,十住毘婆沙經,4,1,Sūtra on the Exegesis of the Ten Abodes,1,,,,,,,extract,,,,,An extract from the Daśabhūmivibhāsā Śāstra.,4,,,,,,,,,,,,,,,,,,,,,
 1463,不退轉法輪經,4,1,Butuizhuan Falun Jing,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,"The Butuizhuan Falun Jing 不退轉法輪經 (T 267) in the Taishō is four fascicles in length, which is a mismatch in length with this entry in the Chu San Zang Ji Ji, which may be an extract from that. "
 1464,一音辯正法經,4,1,Yi Yin Bian Zheng Fa Jing,1,,,,,,,extract,,,,,An extract.,,,,,,,,,,,,,,,,,,,,,,
@@ -1524,7 +1524,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1523,九傷經,4,1,Nine Wounds Sūtra,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1524,十報三統略經,4,1,Shi Bao San Tong Lue Jing,1,,,,,,,,,,,,Another translation.,,,,,,,,,,,,,,,,,,,,,,
 1525,十二因緣章經,4,1,Chapter on the Twelve Nidanas,1,,,,,,,,聞城譬經,,,,The Old Catalog calls this Sūtra on the Twelve Nidanas.,,,,,,,,,,,,,,,,,,,,,,
-1526,十一思惟念如來經,4,1,Shi Yi Siwei Nian Rulai Jing,1,,,,,,,extract,,,,,An extract from the Āgamas; also known as Shi Yi Xiang Siwei Nian Rulai Jing.,"5, 20",,,,,,,,,,,,,,,,,,,,,
+1526,十一思惟念如來經,4,1,Shi Yi Siwei Nian Rulai Jing,1,,,,,,,extract,,,,,An extract from the Āgamas; also known as Shi Yi Xiang Siwei Nian Rulai Jing.,"5, 20",T 138,十一想思念如來經,1,Guṇabhadra,Liu Song,420-479,Āgamas,K 756,435-443,Notes on the Illustrations to the Old and Modern Translation,T. 2151-362b:4,,,https://dazangthings.nz/cbc/text/2206/,2025-07-07,,,Byams-pa bsgom-paḥi mdo,Toh 36,,Fascicle 20 of the Kaiyuan Lu gives the alternative title.
 1527,十二遊經,4,1,Shi Er You Jing,1,,,,,,,,,,,,The Old Catalog calls this Shi Er You Jing.,"4, 15",T 195,佛說十二遊經,1,Kālodaka,Eastern Jin,317–420,Jātaka and Avadāna,K 1009,392,Notes on the Illustrations to the Old and Modern Translation,T. 2151-356c:22,1374,,https://dazangthings.nz/cbc/text/2123/,2025-05-31,,,,,,
 1528,十二遊經,4,1,Shi Er You Jing,1,,,,,,,,十二遊經,,,,Largely the same with minor differences the same as the version above.,,,,,,,,,,,,,,,,,,,,,,
 1529,十二頭陀經,4,1,Sūtra on the Twelve Ascetic Practices,1,,,,,,,,,,,,,"1, 2, 5, 12, 15, 19",T 783,佛說十二頭陀經,1,Guṇabhadra,Liu Song,420-479,Miscellaneous,K 504,435-443,Notes on the Illustrations to the Old and Modern Translation,T. 2151-362b:17,452,十二頭陀行,https://dazangthings.nz/cbc/text/306/,2025-05-31,,,,,,
@@ -1578,11 +1578,11 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1577,譬喻六人經,4,1,Parable of the Six People Sūtra,1,,,,,,,extract,,,,,An extract from Ma Yi Jing.,"2, 16",,,,,,,,,,,,,,,,,,,,,
 1578,譬喻經,4,1,Sūtra of Parables,1,,,,,,,,,,,,With a total of seventeen sections; also known as the Dharmapada.,18,,,,,,,,,,,,,,,,,,,,,
 1579,譬喻經,4,1,Sūtra of Parables,1,,,,,,,,譬喻經,,,,Another version.,,,,,,,,,,,,,,,,,,,,,,
-1580,法句譬喻經,4,1,Dharmapadāvadāna Sūtra,1,,,,,,,,法句本末經,,,,,,,,,,,,,,,,,,,,,,,,,,
+1580,法句譬喻經,4,1,Dharmapadāvadāna Sūtra,1,,,,,,,,法句本末經,,,,,"1, 2, 13, 15, 20",,,,,,,,,,,,,,,,,,,,,
 1581,雜譬喻經,4,1,Sundry Similes Sūtra,1,,,,,,,,雜譬喻經,,,,"Altogether, there are eleven sections brought by Master Ān and translated by Dharmarakṣa, including three hundred parables across twenty-five scrolls. These are mixed and without titles, making them difficult to distinguish. The newly compiled collection organizes and arranges them into scrolls to aid in reading. Upon examination, many of these texts likely originate from larger scriptures and were transmitted without translated titles. However, it is possible that some of them were indeed produced by Master Dharmarakṣa.",,,,,,,,,,,,,,,,,,,,,,
 1582,梵音偈本,4,1,Sanskrit Verses,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1583,陀羅尼偈,4,1,Dhāraṇīs,1,,,,,,,extract,,,,,An extract.,16,,,,,,,,,,,,,,,,,,,,,
-1584,阿彌陀佛偈,4,1,Amitābha Buddha Verses,1,,,,,,,,,,,,,14,T 1978,讚阿彌陀佛偈,1,Tan Luan,Northern Wei,386-535,Various Schools,,,,,,,,,,,,,,
+1584,阿彌陀佛偈,4,1,Amitābha Buddha Verses,1,,,,,,,,,,,,,"1, 14",T 1978,讚阿彌陀佛偈,1,Tan Luan,Northern Wei,386-535,Various Schools,,,,,,,,,,,,,,
 1585,後阿彌陀佛偈,4,1,Later Amitābha Buddha Verse,1,,,,,,,,,,,,,,T 373,後出阿彌陀佛偈,1,,,,Ratnakūṭa and Nirvāṇa,K 190,25-220,Zhenyuan Lu,T.2157-924c:7,202,,https://dazangthings.nz/cbc/text/1316/,2025-06-01,,,,,,
 1586,七佛各說偈,4,1,The Seven Buddhas Each Recite a Verse,1,,,,,,,,,,,,,14,,,,,,,,,,,,,,,,,,,,,
 1587,讚七佛偈,4,1,Verse in Praise of the Seven Buddhas,1,,,,,,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,
@@ -1606,15 +1606,15 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1605,般若波羅蜜神呪,4,1,Prajñāpāramitā Spell,1,,,,,,,,摩訶般若波羅蜜神呪,,,,Another version.,,,,,,,,,,,,,,,,,,,,,,
 1606,七佛所結麻油述呪,4,1,Qi Fo Suo Jie Mayou Shu Zhou,1,,,,,,,,,,,,,"1, 3, 14",,,,,,,,,,,,,,,,,,,,,
 1607,七佛所結麻油述呪,4,1,Qi Fo Suo Jie Mayou Shu Zhou,1,,,,,,,,七佛所結麻油述呪,,,,Another version.,,,,,,,,,,,,,,,,,,,,,,
-1608,七佛神呪,4,1,Seven Buddhas Sacred Mantra,1,,,,,,,,,,,,,12,,,,,,,,,,,,,,,,,,,,,
+1608,七佛神呪,4,1,Seven Buddhas Sacred Mantra,1,,,,,,,,,,,,,"2, 3, 12, 14",T 1333,虛空藏菩薩問七佛陀羅尼呪經,1,,,,Esoteric,K 346,502-557,Zhenyuan Lu,T. 2157-931c:16,,,https://dazangthings.nz/cbc/text/1093/,2025-07-06,,,Saṅs-rgyas bdun pa,Toh 270,,Alternative title from Fascicle 1 of Summary Catalog of Esoteric Mantras from Numerous Teachers 諸阿闍梨真言密教部類總錄 (T 2176)
 1609,七佛神呪,4,1,Seven Buddhas Sacred Mantra,1,,,,,,,,,,,,Another version with knotted strings.,,,,,,,,,,,,,,,,,,,,,,
 1610,大神母結誓呪,4,1,Da Shen Mu Jie Shi Zhou,1,,,,,,,,,,,,,"3, 14",,,,,,,,,,,,,,,,,,,,,
 1611,大神將軍呪,4,1,Da Shen Jiangjun Zhou,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-1612,八吉祥神呪,4,1,Mantra of the Eight Auspicious Signs,1,,,,,,,,八吉祥經,,,,The Ancient Catalog calls this Ba Jixiang Jing.,"7, 12",,,,,,,,,,,,,,,,,,,,,
+1612,八吉祥神呪,4,1,Mantra of the Eight Auspicious Signs,1,,,,,,,,八吉祥經,,,,The Ancient Catalog calls this Ba Jixiang Jing.,"7, 12, 19, 20",,,,,,,,,,,,,,,,,,,,,
 1613,陀隣鉢經,4,1,Tuolinbo Jing,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1614,陀羅尼句經,4,1,Dhāraṇī Sūtra,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 1615,華積陀羅尼神呪,4,1,Puṣpakūṭa Dhāraṇī,1,,,,,,,,,,,,,"12, 19, 20",T 1356,佛說華積陀羅尼神呪經,1,Zhi Qian,Wu,222-280,Esoteric,K 344,222-228,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-373c:21,337,,https://dazangthings.nz/cbc/text/1030/,2025-06-02,,,,,,
-1616,持句神呪,4,1,Chi Ju Shen Zhou,1,,,,,,,,,,,,,"3, 14",T 1351,佛說持句神呪經,1,Zhi Qian,Wu,222-280,Esoteric,K 347,223-253,Kaiyuan Lu,T. 2154-489b:28,364,,https://dazangthings.nz/cbc/text/1009/,2025-06-02,,,Rig-sṅags-kyi rgyal po sgron-ma mchog-gi gzuṅs,Toh 528,,
+1616,持句神呪,4,1,Chi Ju Shen Zhou,1,,,,,,,,,,,,,"2, 3, 7, 14",T 1351,佛說持句神呪經,1,Zhi Qian,Wu,222-280,Esoteric,K 347,223-253,Kaiyuan Lu,T. 2154-489b:28,364,,https://dazangthings.nz/cbc/text/1009/,2025-06-02,,,Rig-sṅags-kyi rgyal po sgron-ma mchog-gi gzuṅs,Toh 528,,
 1617,六神名神呪,4,1,Six Sacred Names Mantra,1,,,,,,,,,,,,,"3, 14",,,,,,,,,,,,,,,,,,,,,
 1618,幻師阿夷鄒呪,4,1,Huanshi Ayi Zou Zhou,1,,,,,,,,,,,,,"3, 4, 14, 20",,,,,,,,,,,,,,,,,,,,,
 1619,伊洹法願神呪,4,1,Yihuan Fa Yuan Shen Zhou,1,,,,,,,,,,,,,"3, 14",,,,,,,,,,,,,,,,,,,,,
@@ -1656,20 +1656,20 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1655,摩訶乘經,4,1,Mahāyāna Sūtra,14,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Revised characters to present-day usage.,"2, 14",,,,,,,,,,,,,,,,,,,,,
 1656,蜀普耀經,4,1,Sichuan Lalitavistara,8,,,,,,,,,,"Y (T 2154, 55.0032a01)",,The Old Catalog records it this way because it was translated in Sichuan.,,,,,,,,,,,,,,,,,,,,,,
 1657,行道經,4,1,Xing Dao Jing,7,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,15,,,,,,,,,,,,,,,,,,,,,
-1658,正法華三昧經,4,1,Zheng Fa Hua Sanmei Jing,6,,,,,,,,,,"Y (T 2154, 55.0032a01)",,This seems suspiciously like an alternative title for the Zheng Fa Hua Jing [T 263].,,,,,,,,,,,,,,,,,,,,,,
+1658,正法華三昧經,4,1,Zheng Fa Hua Sanmei Jing,6,,,,,,,,正法華經,,"Y (T 2154, 55.0032a01)",,This seems suspiciously like an alternative title for the Zheng Fa Hua Jing [T 263].,,,,,,,,,,,,,,,,,,,,,,
 1659,摩訶乘優波提經,4,1,Mohesheng Youboti Jing,5,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 1660,三昧王經,4,1,Samādhirāja,5,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 14",,,,,,,,,,,,,,,,,,,,,The Mahāvyutpatti has an entry for this title.
 1661,梵王請問經,4,1,Sūtra on Brahma’s Questions,5,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
-1662,不退轉輪經,4,1,Bu Tui Zhuan Lun Jing,4,,,,,,,,廣博嚴淨經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
+1662,不退轉輪經,4,1,Bu Tui Zhuan Lun Jing,4,,,,,,,,廣博嚴淨經,,"Y (T 2154, 55.0032a01)",,,2,T 267,不退轉法輪經,4,,,,Lotus and Huayan,K 137,412-439,Zhenyuan Lu,T. 2157-922b:22,157,,https://dazangthings.nz/cbc/text/407/,2025-07-06,,,Phyir-mi-ldog-paḥi ḥkhor-lo,Toh 240,,
 1663,佛從兜率降中陰經,4,1,Fo Cong Doushuai Jiang Zhong Yin Jing,4,,,,,,,,,,"Y (T 2154, 55.0032a01)",,From the Wang Zong Jing Mu.,"5, 14",,,,,,,,,,,,,,https://dazangthings.nz/cbc/text/4673/,2025-06-07,,,,,,
 1664,四天王經,4,1,Si Tianwang Jing,,,,,,,,,四天王經,,"Y (T 2154, 55.0032a01)",,Apparently in four sheets.,,,,,,,,,,,,,,,,,,,,,,
 1665,魔王請問經,4,1,Sūtra on the Questions of Māra,4,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 1666,那先譬喻經,4,1,Sūtra on the Parables of Nāgasena,4,,,,,,,,那先經,,"Y (T 2154, 55.0032a01)",,Recorded in the Old Catalog.,15,,,,,,,,,,,,,,,,,,,,,
-1667,度無極譬經,4,1,Sūtra on Pāramitā Similes,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 16",,,,,,,,,,,,,,,,,,,,,
+1667,度無極譬經,4,1,Sūtra on Pāramitā Similes,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 16",,,,,,,,,,,,,,,,,,,,,Fascicle 16 of the Kaiyuan Lu says that this is an alternative title for 摩訶般若波羅蜜經 (T 223) but there is a huge mismatch in length.
 1668,長阿含經,4,1,Dīrgha Āgama,3,,,,,,,,長阿鋡經,,"Y (T 2154, 55.0032a01)",,It seems like this is an incomplete version of the Dīrgha Āgama.,,,,,,,,,,,,,,,,,,,,,,
 1669,大梵天王請轉法輪經,4,1,Sūtra on Brahma’s Questions about the Setting in Motion the Wheel of the Dharma,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 14",,,,,,,,,,,,,,,,,,,,,
 1670,釋提桓因所問經,4,1,Sūtra on Śakra Devānām Indra’s Questions,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
-1671,法華光瑞菩薩現壽經,4,1,Fahua Guangrui Pusa Xian Shou Jing,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
+1671,法華光瑞菩薩現壽經,4,1,Fahua Guangrui Pusa Xian Shou Jing,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 14",,,,,,,,,,,,,,,,,,,,,Fascicle 2 of the Kaiyuan Lu says that this is an extract from 正法華 (T 263).
 1672,普賢菩薩答難二千經,4,1,Sūtra on Samantabhadra Bodhisattva Addressing Two Thousand Difficulties,3,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,14,,,,,,,,,,,,,,,,,,,,,
 1673,儒首菩薩經,4,1,Ruishou Pusa Jing,2,,,,,,,,儒首菩薩無上清淨分衛經,,"Y (T 2154, 55.0032a01)",,It seems like this is Ruishou Pusa Fen Wei Jing.,2,,,,,,,,,,,,,,,,,,,,,
 1674,太子試藝本起經,4,1,Taizi Shi Yi Ben Qi Jing,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"2, 15",,,,,,,,,,,,,,,,,,,,,
@@ -1679,7 +1679,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1678,後出首楞嚴經,4,1,Later Translation of the Śūraṅgama Sūtra,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,The Old Catalog records that there were ten verses.,"5, 14",,,,,,,,,,,,,,https://dazangthings.nz/cbc/text/4733/,2025-06-07,,,,,,
 1679,梵天王請佛千首經,4,1,Fantian Wang Qing Fo Qian Shou Jing,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Similar to the Mahābrahma Sūtra in two fascicles.,"5, 14",,,,,,,,,,,,,,,,,,,,,
 1680,深斷連經,4,1,Shen Duan Lian Jing,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
-1681,甘露味阿毘曇,4,1,Abhidharmāmṛta Śāstra,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Also known as Ganlu Wei Jing in two fascicles.,"2, 4, 13, 20",T 1553,阿毘曇甘露味論,2,,,,Śastra and Abhidharma,K 961,240-254,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-435a:16,,甘露味阿毘曇,https://dazangthings.nz/cbc/text/1352/,2025-06-07,,,,,,
+1681,甘露味阿毘曇,4,1,Abhidharmāmṛta Śāstra,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Also known as Ganlu Wei Jing in two fascicles.,"2, 4, 13, 20",T 1553,阿毘曇甘露味論,2,,,,Śastra and Abhidharma,K 961,240-254,Zhou Dynasty Corrected Catalog of Scriptures,T. 2153-435a:16,,甘露味阿毘曇,https://dazangthings.nz/cbc/text/1352/,2025-06-07,,,,,,Fascicle 20 of the Kaiyuan Lu gives the alternative title.
 1682,弘道經,4,1,Hong Dao Jing,2,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
 1683,乳王如來經,4,1,Ru Wang Lulai Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Also known as the Ru Wang.,"5, 14",,,,,,,,,,,,,,,,,,,,,
 1684,瞻波國佛說戒經,4,1,Zhanbo Guo Fo Shuo Jie Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
@@ -1711,7 +1711,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1710,文殊觀經,4,1,Wenshu Guan Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 14",,,,,,,,,,,,,,,,,,,,,
 1711,彌勒受決經,4,1,Sūtra on the Prophecy of Maitreya,1,,,,,,,,彌勒下生經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 1712,彌勒作佛時經,4,1,Sūtra on the Enlightenment of Maitreya,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
-1713,彌勒難經,4,1,Mile Nan Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,"May be related to 彌勒本願經 (T 349) attributed to Dharmarakṣa above (FGDB, s.v. 彌勒菩薩所問本願經)."
+1713,彌勒難經,4,1,Mile Nan Jing,1,,,,,,,,彌勒本願經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,"May be related to 彌勒本願經 (T 349) attributed to Dharmarakṣa above (FGDB, s.v. 彌勒菩薩所問本願經)."
 1714,彌勒須河經,4,1,Mile Xu He Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 1715,導師問佛經,4,1,Sūtra on a Teacher’s Questions,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 1716,颰陀菩薩百二十難經,4,1,Batuo Pusa Bai Er Shi Nan Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
@@ -1759,7 +1759,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1758,童迦葉經,4,1,Sūtra on Kāśyapa as a Child,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,From the Dīrgha Āgama also known as Tong Jiashe Jiu Nan.,15,,,,,,,,,,,,,,,,,,,,,
 1759,愛行比丘經,4,1,Ai Xing Biqiu Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
 1760,愛身比丘經,4,1,Ai Shen Biqiu Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
-1761,加丁比丘經,4,1,Jia Ding Biqiu Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
+1761,加丁比丘經,4,1,Jia Ding Biqiu Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",T 2028,迦丁比丘說當來變經,1,,,,History and Biographies,K 1034,420-479,Zhenyuan Lu,T.2157-957c:16,1371,,,,,,,,,Fascicle 5 of the Kaiyuan Lu gives the alternative title.
 1762,栴比丘經,4,1,Zhan Biqiu Jing,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,5,,,,,,,,,,,,,,,,,,,,,
 1763,善星比丘經,4,1,Bhikṣu Sunakṣatra Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
 1764,六群比丘經,4,1,Six Bhikṣus Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,

@@ -101,8 +101,45 @@ FROM cszjj.chusanzangjiji
 |> AGGREGATE COUNT(*)
 ```
 
-### Language Analysis
+```sql
+-- Total anonymous texts, grouped by number of fascicles
+FROM cszjj.chusanzangjiji
+|> WHERE fascicle = 3 or fascicle = 4
+|> AGGREGATE COUNT(*) num_texts GROUP BY num_fascicles
+|> ORDER BY num_fascicles DESC
+```
 
+```sql
+-- Total anonymous texts, grouped by genre
+FROM cszjj.chusanzangjiji
+|> WHERE (fascicle = 3 OR fascicle = 4)
+   AND taisho_classification IS NOT NULL
+|> AGGREGATE COUNT(*) AS `Number of Texts` GROUP BY taisho_classification AS `Taisho Classification`
+|> ORDER BY `Number of Texts` DESC
+|> WHERE `Number of Texts` > 5```
+
+```sql
+-- How many anonymous entries can be related to a text in a larger collection?
+FROM cszjj.chusanzangjiji
+|> WHERE (fascicle = 3 OR fascicle = 4)
+   AND modern_ref LIKE '%)'
+|> SELECT id, title_zh, modern_ref, modern_title
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- How many anonymous entries can be related to a text in a larger collection?
+FROM cszjj.chusanzangjiji
+|> WHERE (fascicle = 3 OR fascicle = 4)
+   AND modern_ref LIKE '%)'
+|> EXTEND SUBSTR(modern_ref, 1, INSTR(modern_ref, '(') - 1) AS collection_ref
+|> SELECT id, title_zh, modern_ref, collection_ref AS `Taisho No`
+|> AGGREGATE COUNT(*) AS `Number in Collection` GROUP BY `Taisho No`
+|> WHERE `Number in Collection` > 1
+|> ORDER BY `Number in Collection` DESC
+```
+
+### Language Analysis
 
 Load the CSV file into the bucket:
 
