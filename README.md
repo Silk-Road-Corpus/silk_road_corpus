@@ -7,7 +7,7 @@ Chu San Zang Ji Ji data.
 
 To explore the data in this repository, you can use the included Colab notebook:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](eda.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/eda.ipynb)
 
 ## Loading the Chu San Zang Ji Ji Data into BigQuery
 
