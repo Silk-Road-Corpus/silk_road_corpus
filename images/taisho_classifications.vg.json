@@ -3,7 +3,7 @@
   "description": "A histogram of the number of records in the Chu San Zang Ji Ji, filtered by fascicle and count.",
   "width": 600,
   "height": 400,
-  "data": {"url": "data/chusanzangjiji.csv"},
+  "data": {"url": "../data/chusanzangjiji.csv"},
   "transform": [
     {
       "filter": {
@@ -12,7 +12,7 @@
       }
     },
     {
-      "filter": "datum['Taishō classification'] != null && datum['Taishō classification'] != ''"
+      "filter": "datum['Taishō classification'] != null && datum['Taishō classification'] != '' && (datum['CSZJJ Fascicle'] == 3 || datum['CSZJJ Fascicle'] == 4)"
     },
     {
       "aggregate": [{"op": "count", "field": "*", "as": "count"}],
