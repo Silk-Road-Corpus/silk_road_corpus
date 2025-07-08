@@ -51,7 +51,7 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
     Returns:
         str: The generated text from the Gemini model, or an error message if the request fails.
     """
-    api_key = os.environ.get("API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
 
     if not api_key:
         return "Warning: API_KEY environment variable not set."

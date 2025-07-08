@@ -3,7 +3,13 @@
 This repository contains data for the Silk Road Corpus app and
 Chu San Zang Ji Ji data.
 
-## Loading the Chu San Zang Ji Ji Data.
+## Exploratory Data Analysis
+
+To explore the data in this repository, you can use the included Colab notebook:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](eda.ipynb)
+
+## Loading the Chu San Zang Ji Ji Data into BigQuery
 
 ### Project setup
 
@@ -238,7 +244,7 @@ Enable the Gemini API in the Google Cloud Console. Generate an API in the
 Console and set it as an environment variable:
 
 ```shell
-export API_KEY="YOUR_API_KEY_HERE"
+export GEMINI_API_KEY="YOUR_API_KEY_HERE"
 ```
 
 the alternative titles iterates over all the anonymous texts to find
