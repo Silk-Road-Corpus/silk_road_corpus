@@ -65,6 +65,13 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
+-- Lost texts by section
+FROM cszjj.chusanzangjiji
+|> WHERE cszjj_not_seen IS NOT NULL
+|> AGGREGATE COUNT(*) GROUP BY fascicle, section;
+```
+
+```sql
 -- Count of catalog entries where Sengyou mentions that the text is an extract, grouped by CSZJJ section
 FROM cszjj.chusanzangjiji
 |> WHERE cszjj_production = "extract"

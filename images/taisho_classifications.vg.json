@@ -12,7 +12,7 @@
       }
     },
     {
-      "filter": "datum['Taishō classification'] != null && datum['Taishō classification'] != '' && (datum['CSZJJ Fascicle'] == 3 || datum['CSZJJ Fascicle'] == 4)"
+      "filter": "datum['Taishō classification'] != null && datum['Taishō classification'] != ''"
     },
     {
       "aggregate": [{"op": "count", "field": "*", "as": "count"}],
