@@ -1,346 +1,762 @@
-CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count
-大般泥洹經,T 6,27175,False,True,False,False,22,21,12,61,0,9,26
-道地經中要語章,T 608,2245,False,False,False,False,0,1,1,0,0,0,0
-梵志頗波羅延問尊種經,T 71,4143,False,True,False,False,0,3,8,6,0,7,2
-颰披陀菩薩經,T 419,7676,False,True,False,False,1,1,9,2,0,3,1
-魔王入目犍蘭腹經,T 66,4480,False,True,False,False,0,0,0,2,0,0,0
-佛本行經,T 193,86145,False,False,False,False,5,27,19,3,0,2,0
-河中大聚沫經,T 106,1110,False,True,False,False,0,0,0,1,0,0,0
-聞城譬經,T 713,2680,False,True,False,False,0,0,0,1,0,0,0
-自守亦不自守經,T 107,403,False,True,False,False,0,0,1,0,0,0,0
-聽施比丘經,T 504,1781,False,True,False,False,8,0,1,0,0,0,0
-善馬有三相經,T 114,409,False,True,False,False,0,0,0,0,0,0,0
-馬有八弊惡態經,T 115,578,False,True,False,False,0,0,1,0,0,0,0
-彌連經,T 152(39),1186,False,True,False,False,0,0,3,1,0,2,1
-阿鳩留經,T 529,2025,False,True,False,False,0,5,3,5,0,2,4
-栴檀樹經,T 805,1511,False,True,False,False,1,1,1,3,0,0,3
-修行本起經,T 184,19703,False,True,False,False,6,4,9,39,0,2,33
-菩薩道樹經,T 532,7081,False,True,False,False,4,0,3,1,0,0,0
-八念經,T 46,2135,False,True,False,False,0,0,2,0,0,0,0
-禪行三十七品經,T 604,1365,False,True,False,False,0,0,0,0,0,0,0
-諸法本經,T 59,445,False,True,False,False,0,0,0,0,0,0,0
-申日經,T 535,3195,False,True,False,False,0,3,5,1,0,5,6
-月光童子經,T 534,4714,False,True,False,False,10,0,1,2,0,1,1
-梵志孫陀耶致經,T 582,1470,False,True,False,False,0,4,2,2,0,2,2
-枯樹經,T 806,486,False,False,False,False,0,0,0,2,0,0,0
-法律三昧經,T 631,4859,False,True,False,False,5,1,6,7,0,2,7
-三十二相經,T 26 (59),2189,False,True,True,False,0,1,1,0,0,0,0
-演道俗經,T 820,6219,False,True,False,False,1,1,1,2,0,0,1
-黑氏梵志經,T 583,2147,False,True,False,False,0,1,0,0,0,0,0
-大愛道般泥洹經,T 144,3879,False,True,False,False,0,48,0,3,0,0,0
-頗多和多耆經,T 740,773,False,True,False,False,0,1,0,1,0,0,0
-五母子經,T 555,1226,False,False,False,False,1,0,7,1,0,4,1
-無垢賢經,T 562,1866,False,True,False,False,2,1,3,3,0,2,2
-八關齋經,T 89,818,False,True,False,False,0,1,0,0,0,0,0
-逝經,T 528,2199,False,False,False,False,0,0,3,4,0,3,4
-生死變化經,T 796,4886,False,True,False,False,0,0,1,31,0,1,21
-文陀竭王經,T 40,1714,False,True,False,False,0,7,3,4,0,3,4
-耶祇經,T 542,1162,False,True,False,False,0,16,0,0,0,0,0
-五福德經,T 777,648,False,True,False,False,0,0,0,1,0,0,0
-末羅王經,T 517,998,False,True,False,False,0,0,0,1,0,0,0
-長者音悅經,T 531,3002,False,True,False,False,3,1,0,0,0,0,0
-梵皇經,T 152 (91),594,False,True,False,False,0,0,0,0,0,0,0
-僧大經,T 541,4127,False,False,False,False,2,0,7,13,0,7,0
-法常住經,T 819,756,False,True,False,False,0,0,1,0,0,0,0
-大小諫王經,T 514,1982,True,False,False,False,1,0,3,1,0,1,1
-波耶匿王經,T 122,1569,False,True,False,False,0,0,1,0,0,1,0
-旃陀越國王經,T 518,1755,False,True,False,False,0,2,2,7,0,2,7
-迦葉戒經,T 1469,1574,False,True,False,False,0,1,0,0,0,0,0
-摩達王經,T 519,737,False,True,False,False,0,1,1,1,0,1,1
-五恐怖世經,T 1481,752,False,True,False,False,0,0,0,0,0,0,0
-進學經,T 798,493,False,True,False,False,0,0,0,0,0,0,0
-四飯法經,T 521,752,False,True,False,False,0,0,1,0,0,1,0
-十二死經,T 753,529,False,True,False,False,0,0,0,12,0,0,0
-五無反復經,T 751a,1646,False,True,False,False,0,1,0,0,0,0,0
-治身經,T 795,746,False,False,False,False,0,0,0,0,0,0,0
-治意經,T 96,499,False,False,False,False,0,0,0,0,0,0,0
-十善十惡經,T 729,11024,False,False,False,False,1,0,2,13,0,1,18
-兜調經,T 78,2129,False,True,False,False,0,1,2,1,0,2,1
-十夢經,T 147,1375,False,True,False,False,0,0,13,2,0,13,2
-長者辯意經,T 544,5624,False,True,False,False,5,0,0,1,0,0,0
-長者須達經,T 73,1608,False,True,False,False,0,1,0,0,0,0,0
-孝子報恩經,T 687,1128,False,False,False,False,0,0,2,0,0,1,0
-孝子睒經,T 174,3659,False,True,False,False,0,2,3,6,0,3,6
-自愛不自愛經,T 742,2956,False,True,False,False,9,0,0,16,0,0,0
-長壽王經,T 161,3269,False,True,False,False,0,1,6,18,0,6,10
-薩和檀王經,T 152 (13),1259,False,False,False,False,1,1,3,1,0,3,1
-未生怨經,T 507,1971,False,True,False,False,5,0,2,7,0,2,7
-須摩提女經,T 128a,3418,False,True,False,False,0,0,1,1,0,0,1
-賢首夫人經,T 570,1760,False,True,False,False,4,0,0,1,0,0,0
-玉耶女經,T 142,1715,False,True,False,False,1,22,0,1,0,0,0
-新歲經,T 62,3410,False,True,False,False,0,0,0,0,0,0,0
-阿難八夢經,T 494,673,False,False,False,False,0,0,0,1,0,0,0
-九色鹿經,T 181a,1480,False,False,False,False,0,1,2,2,0,1,2
-五苦章句經,T 741,8071,False,False,False,False,0,0,7,13,0,3,0
-佛滅度後棺歛葬送經,T 392,1996,False,True,False,False,5,1,1,5,0,1,0
-婦遇對經,T 571,1027,False,True,False,False,0,0,0,0,0,0,0
-羅芸忍辱經,T 500,1646,False,True,False,False,0,0,1,5,0,1,3
-蜜蜂王經,T 152 (64),1077,False,True,False,False,0,0,1,2,0,1,2
-呵調阿那含經,T 538,1066,False,True,False,False,4,1,2,0,0,2,0
-戒德香經,T 116,923,False,True,False,False,2,0,0,0,0,0,0
-鬼子母經,T 1262,5544,False,False,False,False,0,1,0,0,0,0,0
-內外六波羅蜜經,T 778,1798,False,False,False,False,0,0,4,1,0,0,1
-弗迦沙王經,T 511,4031,False,True,False,False,0,1,12,1,0,6,1
-七車經,T 26 (9),3511,False,True,True,False,4,19,0,11,0,0,0
-阿拔經,T 20,8554,False,True,False,False,1,8,11,15,0,5,13
-堅心經,T 733,963,False,True,False,False,0,0,1,1,0,0,2
-太子和休經,T 344,1938,False,False,False,False,0,4,2,0,0,0,0
-無悕望經,T 813,13023,False,True,False,False,16,5,1,11,0,1,9
-胎中女經,T 563,13143,True,True,False,False,0,1,0,7,0,0,0
-普達王經,T 522,2194,False,True,False,False,0,0,0,0,0,0,0
-長者威勢經,T 330,3934,False,True,False,False,5,4,0,2,0,0,0
-鹹水喻經,T 29,950,False,True,False,False,0,0,0,0,0,0,0
-彌勒當來生經,T 457,1442,False,False,False,False,0,1,0,0,0,0,0
-放鉢經,T 629,4158,False,False,False,False,0,16,0,5,0,0,0
-法海經,T 34,1607,False,True,False,False,0,0,3,2,0,3,2
-以身施餓虎經,T 172,6527,True,False,False,False,5,4,4,10,0,4,9
-淨行經,T 579,10357,True,False,False,False,3,0,0,4,0,0,0
-金剛三昧經,T 273,17001,True,True,False,False,1,2,1,16,0,0,8
-大愛道受誡經,T 1478,9011,False,False,False,False,1,5,9,49,1,7,25
-長者法志妻經,T 572,2005,False,True,False,False,4,0,2,1,0,2,1
-七智經,T 27,1151,False,True,False,False,0,0,5,1,0,0,1
-難龍王經,T 597,14377,True,True,False,False,0,2,0,7,0,0,0
-三慧經,T 768,7597,False,False,False,False,0,4,4,3,0,1,2
-阿難為蠱道呪經,T 551,1778,False,True,False,False,0,1,3,2,0,1,2
-菩薩本行經,T 188,6974,False,False,False,False,0,11,5,5,0,3,16
-太子辟羅經,T 596,1030,False,True,False,False,3,0,0,4,0,0,0
-沙彌羅經,T 750,1017,False,False,False,False,0,1,2,0,0,1,0
-八德經,T 35,1482,False,True,False,False,0,0,1,13,0,1,11
-大方便報恩經,T 156,10902,True,False,False,False,8,8,0,9,0,0,0
-分別功德經,T 1507,6215,False,False,False,False,1,13,8,73,0,3,47
-道神足無極變化經,T 816,8068,False,True,False,False,1,0,8,0,0,0,0
-羅摩伽經,T 294,15715,True,False,False,False,12,0,1,0,0,0,0
-儒首菩薩無上清淨分衛經,T 234,8559,False,True,False,False,12,15,12,26,0,12,17
-菩薩瓔珞本業經,T 1485,12907,True,False,False,False,0,1,1,0,0,0,0
-興起行經,T 197,12252,False,True,False,False,0,3,4,22,0,3,22
-淨度三昧經,X 15,8879,False,True,False,False,2,6,5,3,0,2,0
-未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0
-摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,0,0,0
-那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,4,2
-舊譬喻經,T 206,11039,False,False,False,False,4,1,24,65,0,15,21
-大比丘威儀經,T 1470,10771,False,False,False,False,0,1,0,0,0,0,0
-觀無量壽經,T 365,9986,True,True,False,False,2,3,0,1,0,0,0
-採華違王上佛授記妙華經,T 510,1196,False,False,False,False,2,0,1,0,0,1,0
-佛心總持經,T 154 (19),1398,False,True,False,False,0,2,1,3,0,1,0
-佛以三事笑經,T 152 (65),822,False,False,False,False,1,0,1,1,0,1,0
-作佛形像經,T 692,1509,False,False,False,False,0,0,0,1,0,0,0
-稱揚諸佛功德經,T 434,11465,False,True,False,False,0,0,0,4,0,0,0
-八部佛名經,T 429,1599,False,True,False,False,0,1,0,1,0,0,0
-觀藥王藥上二菩薩經,T 1161,9635,True,False,False,False,1,4,0,4,0,0,0
-請觀世音經,T 1043,5937,True,False,False,False,0,9,4,2,0,0,0
-文殊師利般涅槃經,T 463,2193,True,False,False,False,0,0,0,1,0,0,0
-無垢施菩薩分別應辯經,T 310 (33),14603,True,False,False,False,4,44,7,7,0,3,0
-無言菩薩經,T 397(6),17275,False,False,False,False,19,12,2,8,0,1,5
-異出菩薩本起經,T 188,6974,False,False,False,False,0,11,5,5,0,3,3
-大方廣菩薩十地經,T 308,3864,True,False,False,False,2,13,2,0,0,1,0
-菩薩生地經,T 533,1613,False,True,False,False,1,2,0,3,0,0,0
-諸菩薩求佛本業經,T 282,7418,False,True,False,False,2,0,0,0,0,0,0
-菩薩受齋經,T 1502,1425,False,False,False,False,0,1,0,0,0,0,0
-菩薩以明離鬼妻經,T 152 (85),667,False,False,False,False,0,0,0,1,0,0,0
-六菩薩名經,T 491,615,False,False,False,False,0,0,0,0,0,0,0
-迦葉赴佛泥洹經,T 393,1311,False,False,False,False,0,1,1,0,0,1,0
-迦葉責阿難雙度羅漢喻經,T 2027,4560,False,True,False,False,4,2,5,3,0,4,2
-摩訶迦葉度貧母經,T 497,2455,False,True,False,False,2,0,1,0,0,1,0
-阿難同學經,T 149,1798,False,True,False,False,0,1,0,0,0,0,0
-阿難問事佛吉凶經,T 492a,2747,False,True,False,False,2,3,1,4,0,0,4
-迦旃延無常經,T 154 (17),1144,False,True,False,False,0,0,0,0,0,0,0
-請賓頭盧法,T 1689,867,False,False,False,False,0,0,0,3,0,0,0
-尊者薄拘羅經,T 26 (34),1426,False,True,True,False,0,3,0,0,0,0,0
-尊者瞿低迦獨一思惟經,T 99 (1091),1046,True,False,False,False,0,0,0,0,0,0,0
-優陀夷坐樹下寂靜調伏經,T 99 (253),1998,True,False,False,False,0,3,2,2,0,0,0
-鴦掘髻經,T 119,3304,False,True,False,False,0,4,0,1,0,0,0
-浮彌經,T 26 (173),2886,False,True,True,False,0,2,0,24,0,0,0
-難提釋經,T 113,2084,True,True,False,False,1,0,0,0,0,0,0
-調達教人為惡經,T 152 (69),356,False,False,False,False,0,0,0,2,0,0,0
-瞻婆比丘經,T 64,1705,False,True,False,False,0,0,0,0,0,0,0
-沙曷比丘功德,T 501,1377,False,True,False,False,0,3,1,0,0,1,0
-分衛比丘經,T 154 (2),1417,False,True,False,False,0,0,0,0,0,0,0
-比丘各言志經,T 154 (16),3104,False,True,False,False,28,0,0,0,0,0,0
-比丘疾病經,T 154 (26),1161,False,True,False,False,0,3,0,4,0,0,0
-比丘避女惡名欲自殺經,T 503,525,True,False,False,False,0,0,0,0,0,0,0
-佛為年少比丘說正事經,T 502,1004,True,False,False,False,4,0,1,0,0,0,0
-長者子六過出家經,T 134,1137,False,True,False,False,0,2,0,1,0,0,0
-出家緣經,T 791,1053,True,False,False,False,0,0,0,0,0,0,0
-瞿曇彌經,T 26 (116),4655,False,True,True,False,0,10,0,1,0,0,0
-瞿曇彌記果經,T 60,3741,False,True,False,False,0,0,0,1,0,0,0
-佛母般泥洹經,T 145,2433,False,True,False,False,1,5,1,12,0,1,10
-旃闍摩暴志謗佛經,T 154 (9),699,False,True,False,False,0,0,0,1,0,0,0
-優波離問佛經,T 1466,14654,False,False,False,False,0,1,0,10,0,0,0
-沙彌威儀,T 1472,5300,False,False,False,False,0,0,2,1,0,2,1
-沙彌尼戒,T 1474,2552,False,False,False,False,0,0,3,13,0,0,13
-受十善戒經,T 1486,10797,True,False,False,False,0,2,8,0,0,0,0
-優婆塞五戒經,T 1503,8901,False,False,False,False,0,1,0,1,0,0,0
-弟子學有三輩經,T 767,1531,False,True,False,False,1,0,1,1,0,1,1
-弟子死復生經,T 862,3648,False,True,False,False,0,9,4,0,0,1,0
-頂生王故事經,T 39,3067,False,True,False,False,0,12,0,0,0,0,0
-頻毘婆王詣佛供養經,T 133,2517,True,False,False,False,0,4,1,0,0,1,0
-阿闍世王問五逆經,T 508,2938,False,True,False,False,0,2,0,0,0,0,0
-阿闍世王受決經,T 509,2190,False,True,False,False,0,1,0,8,0,0,0
-優填王經,T 332,2787,False,True,False,False,2,2,2,11,0,2,9
-鏡面王經,T 152 (89),1228,False,True,False,False,0,0,2,0,0,0,0
-察微王經,T 152 (90),1006,False,False,False,False,1,1,4,3,0,3,2
-桀貪王經,T 198 (1),2709,False,True,False,False,2,0,0,3,0,0,0
-薩羅王經,T 520,1944,False,False,False,False,2,0,0,0,0,0,0
-國王五人經,T 152 (24),2995,False,True,False,False,1,0,1,0,0,1,0
-舍頭諫太子二十八宿經,T 1301,16131,False,True,False,False,1,6,31,5,0,3,0
-太子刷護經,T 343,2421,False,False,False,False,0,1,2,0,0,0,0
-誨子經,T 154 (38),1654,False,False,False,False,2,0,4,1,0,4,1
-五百幼童經,T 154 (33),639,False,True,False,False,1,0,0,0,0,0,0
-逝童子經,T 527,1628,False,True,False,False,3,1,1,0,0,1,0
-長者詣佛說子婦不恭經,T 143,2354,False,True,False,False,4,26,0,1,0,0,0
-長者子制經,T 526,2282,False,True,False,False,0,0,3,5,0,3,5
-長者子懊惱三處經,T 525,1292,False,True,False,False,0,1,0,0,0,0,0
-十支居士八城人經,T 92,1529,False,True,False,False,0,0,0,0,0,0,0
-婆羅門子命終愛念不離經,T 91,2218,False,True,False,False,0,6,0,0,0,0,0
-婆羅門避死經,T 131,461,False,True,False,False,0,0,0,0,0,0,0
-佛為黃竹園老婆羅門說學經,T 75,2076,False,True,False,False,0,0,0,0,0,0,0
-審裸形子經,T 154 (27),2143,False,True,False,False,1,0,0,0,0,0,0
-仙人撥劫經,T 154 (52),1033,False,True,False,False,0,0,0,0,0,0,0
-五仙人經,T 154 (11),2235,False,True,False,False,3,2,2,6,0,0,5
-光華梵志經,T 154 (14),895,False,True,False,False,0,0,0,0,0,0,0
-梵志計水淨經,T 510,1052,False,True,False,False,0,0,0,1,0,0,0
-前世諍女經,T 154 (7),869,False,True,False,False,0,0,0,1,0,0,0
-三摩竭經,T 129,4299,False,True,False,False,1,1,2,7,0,2,5
-釋家畢罪經,T 152 (54),2563,False,False,False,False,1,0,1,13,0,0,12
-殺身濟賈人經,T 152 (67),545,False,False,False,False,0,0,1,2,0,1,2
-殺龍濟一國人經,T 152 (70),701,False,False,False,False,0,0,0,4,0,0,0
-懈怠耕者經,T 827,891,False,True,False,False,1,0,0,0,0,0,0
-善生子經,T 17,4160,False,True,False,False,0,0,1,8,0,0,8
-尸迦羅越六向拜經,T 16,2504,False,False,False,False,0,0,0,2,0,0,0
-貧窮老公經,T 797,1877,False,True,False,False,2,1,5,7,0,2,5
-老母經,T 561,1282,False,True,False,False,2,1,2,0,0,0,0
-負為牛者經,T 154 (39),1107,False,True,False,False,1,0,1,0,0,0,0
-阿遬達經,T 141,943,False,True,False,False,0,5,0,0,0,0,0
-樹提伽經,T 540,1566,False,False,False,False,0,2,1,3,0,1,0
-鞞摩肅經,T 90,2467,False,True,False,False,0,1,1,1,0,0,0
-那賴經,T 154 (1),1358,False,True,False,False,0,0,2,0,0,2,0
-大意經,T 177,2803,False,True,False,False,0,1,7,14,0,7,16
-申日兜本經,T 536,1608,False,True,False,False,0,0,1,5,0,1,4
-舅甥經,T 154 (12),1650,False,True,False,False,1,1,0,5,0,0,0
-越難經,T 537,1086,False,True,False,False,0,0,1,3,0,1,3
-鸚鵡經,T 79,4892,False,True,False,False,0,1,0,0,0,0,0
-水牛王經,T 154 (30),861,False,True,False,False,0,0,0,1,0,0,0
-兔王經,T 154 (31),787,False,True,False,False,0,0,0,0,0,0,0
-拘薩羅國烏王經,T 154 (47),1397,False,True,False,False,2,0,0,1,0,0,0
-雀王經,T 152 (51),305,False,False,False,False,0,0,0,2,0,0,0
-孔雀經,T 154 (51),1027,False,True,False,False,0,0,1,4,0,0,4
-野雞經,T 154 (6),1464,False,True,False,False,1,3,0,2,0,0,0
-大魚事經,T 216,1003,False,True,False,False,0,1,0,0,0,0,0
-蠱狐烏經,T 154 (25),827,False,True,False,False,2,0,0,0,0,0,0
-犢子經,T 808,1094,False,True,False,False,0,1,2,3,0,2,3
-驢駝經,T 154 (50),1056,False,True,False,False,0,0,0,3,0,0,0
-猘狗經,T 214,1088,False,False,False,False,0,1,1,1,0,1,1
-鱉獼猴經,T 154 (10),918,False,True,False,False,0,1,2,0,0,2,0
-鬼問目連經,T 734,2191,False,True,False,False,0,0,0,0,0,0,0
-鐵城泥犁經,T 42,2585,False,False,False,False,0,4,2,1,0,1,1
-泥犁經,T 86,7034,False,True,False,False,0,3,5,4,0,5,1
-十八泥犁經,T 731,3215,False,False,False,False,0,0,0,1,0,0,0
-四泥犁經,T 139,894,False,True,False,False,0,0,0,0,0,0,0
-罪業報應教化地獄經,T 724,3845,True,False,False,False,0,0,0,0,0,0,0
-鹽王五天使者經,T 43,1569,False,True,False,False,0,6,6,5,0,5,4
-數經,T 70,2662,False,True,False,False,0,0,2,0,0,0,0
-時經,T 794a,1131,True,False,False,False,0,0,0,0,0,0,0
-意經,T 827,1541,False,True,False,True,12,0,0,11,0,0,0
-罵意經,T 732,9111,False,False,False,False,0,3,17,7,0,7,6
-法觀經,T 611,3167,False,False,False,False,0,0,7,0,0,1,0
-身觀經,T 612,1220,False,True,False,False,0,1,0,0,0,0,0
-伏婬經,T 65,1558,False,True,False,False,0,0,0,0,0,0,0
-離睡經,T 47,1404,False,True,False,False,0,1,1,0,0,0,0
-應法經,T 83,2115,False,True,False,False,0,0,0,0,0,0,0
-樂想經,T 56,554,False,True,False,False,0,0,0,0,0,0,0
-尊上經,T 77,1919,False,True,False,False,0,14,0,0,0,0,0
-柔軟經,T 26 (117),1123,False,True,True,False,0,0,0,0,0,0,0
-處處經,T 730,9561,False,False,False,False,2,1,19,3,0,17,2
-閑居經,T 154 (13),1062,False,True,False,False,1,0,2,0,0,0,0
-何苦經,T 26 (148),2156,False,True,True,False,0,7,0,4,0,0,0
-貧窮經,T 26 (125),1562,False,True,True,False,0,6,0,13,0,0,0
-求欲經,T 49,5905,False,True,False,False,1,3,8,0,0,0,0
-分別經,T 738,3552,False,True,False,False,1,2,7,7,0,5,7
-慢法經,T 739,841,False,False,False,False,0,0,0,1,0,0,0
-邪見經,T 93,720,False,True,False,False,0,1,0,0,0,0,0
-積骨經,T 150A (30),185,False,True,False,False,0,0,0,0,0,0,0
-苦陰經,T 53,3009,False,True,False,False,0,6,2,0,0,0,0
-灌臘經,T 391,612,False,True,False,False,0,0,0,1,0,0,0
-受歲經,T 50,2353,False,True,False,False,0,5,2,0,0,2,0
-腹使經,T 154 (28),2019,False,True,False,False,0,2,1,1,0,1,1
-持齋經,T 26 (202),5190,False,True,True,False,0,3,0,3,0,0,0
-盂蘭經,T 685,1179,False,True,False,False,0,0,0,0,0,0,0
-恒水戒經,T 33,1851,False,True,False,False,0,0,2,6,0,2,6
-寂志果經,T 22,9621,False,True,False,False,1,4,4,6,0,0,0
-戒消災經,T 1477,2496,False,True,False,False,1,2,5,8,0,4,8
-法滅盡經,T 396,1271,False,True,False,False,0,0,0,0,0,0,0
-是我所經,T 154 (5),1029,False,True,False,False,0,0,0,0,0,0,0
-阿耨風經,T 58,3342,False,True,False,False,0,3,0,4,0,0,0
-惟日雜難經,T 760,9470,False,False,False,False,0,4,8,1,0,7,1
-內身觀章經,T 610,1994,False,False,False,False,0,1,1,0,1,0,0
-忠心政行經,T 743,3161,False,True,False,False,0,0,4,1,0,1,0
-罪業報應經,T 747a,2115,False,True,False,False,2,1,2,2,0,2,2
-摩訶剎頭經,T 696,1985,False,False,False,False,0,1,2,2,0,2,2
-金剛清淨經,T 644,3787,True,False,False,False,0,2,0,2,0,0,0
-淨除業障經,T 1494,9706,True,False,False,False,4,12,1,12,0,0,3
-相應相可經,T 111,572,False,False,False,False,0,0,0,0,0,0,0
-商人求財經,T 26 (136),5609,False,True,True,False,0,9,4,2,1,2,2
-前世三轉經,T 178,3533,False,True,False,False,0,5,2,9,0,0,8
-阿含正行經,T 151,1965,False,True,False,False,0,0,4,0,0,1,0
-父母恩難報經,T 684,573,False,True,False,False,0,0,0,0,0,0,0
-犯戒罪報輕重經,T 1467,1026,True,False,False,False,0,0,0,0,0,0,0
-大乘方等要慧經,T 348,439,False,True,False,False,2,0,0,0,0,0,0
-仁王護國般若波羅蜜經,T 245,15634,True,False,False,False,0,3,2,25,0,0,21
-阿難陀目佉尼呵離陀經,T 1013,5222,False,True,False,False,0,1,0,3,0,0,0
-四品學法經,T 771,1147,False,False,False,False,0,0,0,15,0,0,0
-四未曾有法經,T 136,1010,False,True,False,False,0,0,2,6,0,2,6
-四人出現世間經,T 127,1820,False,True,False,False,0,0,0,0,0,0,0
-七寶經,T 26 (58),303,False,True,True,False,0,0,0,0,0,0,0
-十二遊經,T 195,3396,False,False,False,False,0,6,0,0,0,0,0
-十二頭陀經,T 783,3068,True,False,False,False,0,1,1,0,0,1,12
-慈仁問八十種好經,T 2867,2019,False,False,False,False,0,0,4,0,0,0,0
-寶積三昧文殊師利菩薩問法身經,T 356,4741,False,True,False,False,0,0,0,0,0,0,0
-自誓三昧經,T 622,4214,False,True,False,False,4,0,2,1,0,0,1
-佛印三昧經,T 621,1652,False,False,False,False,0,0,5,16,0,5,11
-法華三昧經,T 269,7540,False,False,False,False,4,0,6,1,0,5,1
-月燈三昧經,T 640,5344,False,True,False,False,0,0,1,0,0,0,0
-禪要呵欲經,T 609,2274,False,False,False,False,0,0,0,0,0,0,0
-水喻經,T 26 (4),1913,False,True,True,False,0,0,0,8,0,0,0
-群牛譬經,T 215,818,False,True,False,False,0,0,0,0,0,0,0
-鼈喻經,T 154 (35),454,False,False,False,False,0,0,0,0,0,0,0
-箭喻經,T 94,1932,False,True,False,False,0,20,0,4,0,0,0
-毒喻經,T 154 (37),965,False,False,False,False,0,0,2,0,0,2,0
-阿彌陀佛偈,T 1978,6335,False,False,False,False,0,0,0,0,0,0,0
-後阿彌陀佛偈,T 373,448,False,False,False,False,0,0,0,0,0,0,0
-灌頂七萬二千神王護比丘呪經,T 1331 (1),7156,False,True,False,False,1,9,3,5,0,3,0
-灌頂十二萬神王護比丘尼呪經,T 1331 (2),4076,False,True,False,False,0,3,2,5,0,1,7
-灌頂三歸五戒帶佩護身呪經,T 1331 (3),5266,False,True,False,False,2,6,1,5,0,1,4
-灌頂百結神王護身呪經,T 1331 (4),6124,False,True,False,False,0,4,3,5,0,2,3
-灌頂宮宅神王守鎮左右呪經,T 1331 (5),5380,False,True,False,False,0,6,1,11,0,1,10
-灌頂塚墓因緣四方神呪經,T 1331 (6),4820,False,True,False,False,2,3,1,8,0,1,7
-灌頂伏魔封印大神呪經,T 1331 (7),4284,False,True,False,False,1,2,3,16,0,3,13
-灌頂摩尼羅亶大神呪經,T 1331 (8),5103,False,True,False,False,0,3,0,5,0,0,0
-灌頂召五方龍王攝疫毒神呪經,T 1331 (9),4353,False,True,False,False,0,8,1,4,0,0,4
-華積陀羅尼神呪,T 1356,1375,True,False,False,False,0,4,0,0,0,0,0
-持句神呪,T 1351,1062,False,True,False,False,0,1,0,1,0,0,0
-幻師颰陀神呪,T 1378b,795,False,True,False,False,0,2,0,0,0,0,0
-摩尼羅亶神呪,T 1393,1438,False,True,False,False,0,0,0,0,0,0,0
-檀特羅麻油述神呪,T 1391,646,False,False,False,False,0,1,0,0,0,0,0
-呪時氣,T 1326,293,False,False,False,False,0,1,0,0,0,0,0
-呪小兒,T 1329,174,False,False,False,False,0,0,0,0,0,0,0
-呪齲齒,T 1327,199,False,False,False,False,0,0,0,0,0,0,0
-安宅呪,T 1394,2090,True,False,False,False,0,0,0,0,0,0,0
-甘露味阿毘曇,T 1553,25764,False,False,False,False,0,4,26,3,0,50,3
-如來智印經,T 633,11917,True,False,False,False,0,0,0,3,0,0,0
-七佛父母姓字經,T 4,1805,False,True,False,False,2,6,2,0,0,1,0
-滿願子經,T 108,1162,False,True,False,False,2,0,2,0,0,0,0
-魔試目連經,T  67,3089,False,True,False,False,0,1,0,0,0,0,0
-淨飯王經,T 512,3892,True,True,False,False,2,1,3,1,0,1,0
-摩竭梵志經,T 198 (4),508,False,True,False,False,0,0,0,0,0,0,0
-觱辭梵志經,T 198 (8),701,False,False,False,False,0,0,0,0,0,0,0
-猛觀梵志經,T 198 (11),1150,False,True,False,False,0,0,0,0,0,0,0
-法觀梵志經,T 198 (12),1275,False,True,False,False,0,0,0,0,0,0,0
-兜勒梵志經,T 198 (13),2120,False,True,False,False,0,0,0,0,0,0,0
-鼈王經,T 154(36),590,False,False,False,False,2,0,0,1,0,0,0
-放牛法經,T 123,2190,False,True,False,False,0,0,2,1,0,0,1
-閻羅王經,X 21,3413,True,False,False,False,0,0,0,1,0,0,0
-施色力經,T 132,767,False,True,False,False,0,0,0,0,0,0,0
-甚深大迴向經,T 825,2496,True,False,False,False,2,0,0,0,0,0,0
-木鏘刺脚因緣經,T 197 (6),4524,False,True,False,False,0,1,2,5,0,2,3
-四輩經,T 769,1632,False,True,False,False,0,0,0,4,0,0,0
-護諸比丘呪,T 154 (20),543,False,True,False,False,0,2,0,0,0,0,0
+CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error
+四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,
+大般泥洹經,T 6,27175,False,True,False,False,22,21,12,61,0,8,60,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times at the end of yes or no questions in the given text:
+
+1.  **[0183c13]** 「時臥耶？」 (Were you sleeping?) - This is a direct yes/no question asked by someone to the monk.
+2.  **[0183c26]** 「時臥耶？」 (Were you sleeping?) - This is the Buddha recounting the same question asked by someone to him. Although it's a nested quote, the character '耶' still functions as a final particle for a yes/no question within the text.
+3.  **[0185b09]** 「獨是天知佛當滅度耶？」 (Do only the heavens know that the Buddha is about to enter nirvana?) - This is a direct yes/no question asked by Ananda to the Buddha.
+
+There are no instances where '耶' appears as a final particle at the end of a declarative sentence in this text.
+
+Therefore, the total count is 3.
+"
+道地經中要語章,T 608,2245,False,False,False,False,0,1,1,0,1,0,0,
+梵志頗波羅延問尊種經,T 71,4143,False,True,False,False,0,3,8,6,3,7,5,
+颰披陀菩薩經,T 419,7676,False,True,False,False,1,1,9,2,1,6,2,
+魔王入目犍蘭腹經,T 66,4480,False,True,False,False,0,0,0,2,0,0,0,
+佛本行經,T 193,86145,False,False,False,False,5,27,19,3,9,2,0,"Got a non-integer output from the model for 也: HTTP error occurred: 500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyB6jLVGbppf02Ezz9vdQoPRLs-f47UOKNg - Response: {
+  ""error"": {
+    ""code"": 500,
+    ""message"": ""An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting"",
+    ""status"": ""INTERNAL""
+  }
+}
+
+"
+河中大聚沫經,T 106,1110,False,True,False,False,0,0,0,1,0,0,1,
+聞城譬經,T 713,2680,False,True,False,False,0,0,0,1,0,0,1,
+自守亦不自守經,T 107,403,False,True,False,False,0,0,1,0,0,0,0,
+聽施比丘經,T 504,1781,False,True,False,False,8,0,1,0,0,0,0,
+善馬有三相經,T 114,409,False,True,False,False,0,0,0,0,0,0,0,
+馬有八弊惡態經,T 115,578,False,True,False,False,0,0,1,0,0,0,0,
+彌連經,T 152(39),1186,False,True,False,False,0,0,3,1,0,2,1,
+阿鳩留經,T 529,2025,False,True,False,False,0,5,3,5,5,2,4,
+栴檀樹經,T 805,1511,False,True,False,False,1,1,1,3,0,1,2,
+修行本起經,T 184,19703,False,True,False,False,6,4,9,39,2,4,32,
+菩薩道樹經,T 532,7081,False,True,False,False,4,0,3,1,0,0,0,
+八念經,T 46,2135,False,True,False,False,0,0,2,0,0,0,0,
+禪行三十七品經,T 604,1365,False,True,False,False,0,0,0,0,0,0,0,
+諸法本經,T 59,445,False,True,False,False,0,0,0,0,0,0,0,
+申日經,T 535,3195,False,True,False,False,0,3,5,1,1,5,1,
+月光童子經,T 534,4714,False,True,False,False,10,0,1,2,0,1,1,
+梵志孫陀耶致經,T 582,1470,False,True,False,False,0,4,2,2,1,2,2,
+枯樹經,T 806,486,False,False,False,False,0,0,0,2,0,0,2,
+法律三昧經,T 631,4859,False,True,False,False,5,1,6,7,1,4,7,
+三十二相經,T 26 (59),2189,False,True,True,False,0,1,1,0,1,0,0,
+演道俗經,T 820,6219,False,True,False,False,1,1,1,2,1,0,1,
+黑氏梵志經,T 583,2147,False,True,False,False,0,1,0,0,1,0,0,
+大愛道般泥洹經,T 144,3879,False,True,False,False,0,48,0,3,0,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the text. Let's analyze each instance:
+
+1.  **[0867b14] 摩訶卑耶和題俱曇彌，持精進種般泥洹耶**
+    *   Context: Buddha is asking Ananda: ""Do you think Mahāprajāpatī Gautamī will attain nirvana by means of the vigor (精進種)?"" This is a yes/no question. **Counts.**
+
+2.  **[0867b16] 汝恐摩訶卑耶和題俱曇彌，持是法去耶？**
+    *   Context: Buddha continues to ask Ananda: ""Are you afraid that Mahāprajāpatī Gautamī will take these dharmas with her?"" This is a yes/no question. **Counts.**
+
+3.  **[0868a29] 賢者來入國一何早耶？**
+    *   Context: Yadha Karava asks Ananda: ""Why (or how early) did the venerable one come to the country so early?"" This is an information-seeking question (asking for the reason/time), not a yes/no question. Does not count.
+
+4.  **[0869a01] 誰當復教誡我人者耶？**
+    *   Context: Six Samaneras ask: ""Who will discipline us again?"" This is an information-seeking question (asking ""who""), not a yes/no question. Does not count.
+
+5.  **[0869a02] 當持衣鉢隨誰後耶？**
+    *   Context: Six Samaneras ask: ""Whose instruction should we follow, holding our robes and bowls?"" This is an information-seeking question (asking ""whose""), not a yes/no question. Does not count.
+
+There are no instances where '耶' appears as a final particle at the end of declarative sentences.
+
+Therefore, the character '耶' appears 2 times at the end of yes or no questions.
+
+2
+"
+頗多和多耆經,T 740,773,False,True,False,False,0,1,0,1,0,0,1,
+五母子經,T 555,1226,False,False,False,False,1,0,7,1,0,5,1,
+無垢賢經,T 562,1866,False,True,False,False,2,1,3,3,0,1,2,
+八關齋經,T 89,818,False,True,False,False,0,1,0,0,0,0,0,
+逝經,T 528,2199,False,False,False,False,0,0,3,4,0,3,4,
+生死變化經,T 796,4886,False,True,False,False,0,0,1,31,0,1,30,
+文陀竭王經,T 40,1714,False,True,False,False,0,7,3,4,2,3,4,
+耶祇經,T 542,1162,False,True,False,False,0,16,0,0,0,0,0,
+五福德經,T 777,648,False,True,False,False,0,0,0,1,0,0,1,
+末羅王經,T 517,998,False,True,False,False,0,0,0,1,0,0,1,
+長者音悅經,T 531,3002,False,True,False,False,3,1,0,0,0,0,0,
+梵皇經,T 152 (91),594,False,True,False,False,0,0,0,0,0,0,0,
+僧大經,T 541,4127,False,False,False,False,2,0,7,13,0,7,7,
+法常住經,T 819,756,False,True,False,False,0,0,1,0,0,0,0,
+大小諫王經,T 514,1982,True,False,False,False,1,0,3,1,0,1,1,
+波耶匿王經,T 122,1569,False,True,False,False,0,0,1,0,0,1,0,
+旃陀越國王經,T 518,1755,False,True,False,False,0,2,2,7,0,2,6,
+迦葉戒經,T 1469,1574,False,True,False,False,0,1,0,0,1,0,0,
+摩達王經,T 519,737,False,True,False,False,0,1,1,1,0,1,1,
+五恐怖世經,T 1481,752,False,True,False,False,0,0,0,0,0,0,0,
+進學經,T 798,493,False,True,False,False,0,0,0,0,0,0,0,
+四飯法經,T 521,752,False,True,False,False,0,0,1,0,0,1,0,
+十二死經,T 753,529,False,True,False,False,0,0,0,12,0,0,12,
+五無反復經,T 751a,1646,False,True,False,False,0,1,0,0,0,0,0,
+治身經,T 795,746,False,False,False,False,0,0,0,0,0,0,0,
+治意經,T 96,499,False,False,False,False,0,0,0,0,0,0,0,
+十善十惡經,T 729,11024,False,False,False,False,1,0,2,13,0,1,16,
+兜調經,T 78,2129,False,True,False,False,0,1,2,1,0,1,1,
+十夢經,T 147,1375,False,True,False,False,0,0,13,2,0,13,2,
+長者辯意經,T 544,5624,False,True,False,False,5,0,0,1,0,0,1,
+長者須達經,T 73,1608,False,True,False,False,0,1,0,0,1,0,0,
+孝子報恩經,T 687,1128,False,False,False,False,0,0,2,0,0,1,0,
+孝子睒經,T 174,3659,False,True,False,False,0,2,3,6,0,3,6,
+自愛不自愛經,T 742,2956,False,True,False,False,9,0,0,16,0,0,13,
+長壽王經,T 161,3269,False,True,False,False,0,1,6,18,0,6,10,
+薩和檀王經,T 152 (13),1259,False,False,False,False,1,1,3,1,1,3,1,
+未生怨經,T 507,1971,False,True,False,False,5,0,2,7,0,2,7,
+須摩提女經,T 128a,3418,False,True,False,False,0,0,1,1,0,1,1,
+賢首夫人經,T 570,1760,False,True,False,False,4,0,0,1,0,0,1,
+玉耶女經,T 142,1715,False,True,False,False,1,22,0,1,0,0,1,
+新歲經,T 62,3410,False,True,False,False,0,0,0,0,0,0,0,
+阿難八夢經,T 494,673,False,False,False,False,0,0,0,1,0,0,1,
+九色鹿經,T 181a,1480,False,False,False,False,0,1,2,2,0,1,2,
+五苦章句經,T 741,8071,False,False,False,False,0,0,7,13,0,3,13,
+佛滅度後棺歛葬送經,T 392,1996,False,True,False,False,5,1,1,5,0,1,5,
+婦遇對經,T 571,1027,False,True,False,False,0,0,0,0,0,0,0,
+羅芸忍辱經,T 500,1646,False,True,False,False,0,0,1,5,0,1,5,
+蜜蜂王經,T 152 (64),1077,False,True,False,False,0,0,1,2,0,1,2,
+呵調阿那含經,T 538,1066,False,True,False,False,4,1,2,0,0,2,0,
+戒德香經,T 116,923,False,True,False,False,2,0,0,0,0,0,0,
+鬼子母經,T 1262,5544,False,False,False,False,0,1,0,0,0,0,0,
+內外六波羅蜜經,T 778,1798,False,False,False,False,0,0,4,1,0,0,15,
+弗迦沙王經,T 511,4031,False,True,False,False,0,1,12,1,1,5,1,
+七車經,T 26 (9),3511,False,True,True,False,4,19,0,11,0,0,11,"Got a non-integer output from the model for 耶: The goal is to count occurrences of the character '耶' that meet one of two conditions:
+1.  It appears at the end of a yes/no question.
+2.  It appears as a final particle at the end of a declarative sentence.
+
+Let's go through the text and identify each instance of '耶' and evaluate it against these conditions. We will consider a ""sentence"" as a complete thought unit, even if modern punctuation is not present in the original text, and ""at the end of"" means '耶' is the final character of that unit.
+
+1.  **[0430b10] 時，尊者舍梨子問餘比丘：「諸賢！何者是賢者滿慈子耶？」**
+    *   This is a question, but not a yes/no question (""何者"" means ""who""). It asks for specific information, not a ""yes"" or ""no"" answer.
+    *   *Does not count.*
+
+2.  **[0430b26] 則問尊者滿慈子曰：「賢者！從沙門瞿曇修梵行耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Do you cultivate pure conduct with 沙門瞿曇?"" (The answer given is ""如是"" - Yes).
+    *   *Counts (1).*
+
+3.  **[0430b27] 答曰：「如是。」「云何？賢者！以戒淨故，從沙門瞿曇修梵行耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Is it because of pure precepts that you cultivate pure conduct with 沙門瞿曇?"" (The answer given is ""不也"" - No).
+    *   *Counts (2).*
+
+4.  **[0430b29] 「以心淨故、以見淨故、以疑蓋淨故、以道非道知見淨故、以道跡知見淨故、以道跡斷智淨故，從沙門瞿曇修梵行耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Is it because of pure mind... that you cultivate pure conduct with 沙門瞿曇?"" (The answer given is ""不也"" - No).
+    *   *Counts (3).*
+
+5.  **[0430c03] 又復問曰：「我向問賢者從沙門瞿曇修梵行耶？則言如是。**
+    *   Here, '耶' is at the end of ""我向問賢者從沙門瞿曇修梵行耶"". This phrase, in itself, is a yes/no question (""Did I previously ask if you cultivate pure conduct with 沙門瞿曇?""). The entire quoted statement is the speaker reflecting on a past question and its answer. While it's part of a larger declarative context (""又復問曰...則言如是""), the segment ending in '耶' functions as a yes/no question.
+    *   *Counts (4).*
+
+6.  **[0430c04] 今問賢者以戒淨故從沙門瞿曇修梵行耶？便言不也。**
+    *   This is a direct question asking for a yes/no answer: ""Now I ask if it's because of pure precepts that you cultivate pure conduct with 沙門瞿曇?"" (The answer given is ""不也"" - No).
+    *   *Counts (5).*
+
+7.  **[0430c06] 以心淨故、以見淨故、以疑蓋淨故、以道非道知見淨故、以道跡知見淨故、以道跡斷智淨故，從沙門瞿曇修梵行耶？便言不也。**
+    *   This is a direct question asking for a yes/no answer: ""Is it because of pure mind... that you cultivate pure conduct with 沙門瞿曇?"" (The answer given is ""不也"" - No).
+    *   *Counts (6).*
+
+8.  **[0430c10] 又復問曰：「云何？賢者！以戒淨故，沙門瞿曇施設無餘涅槃耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Is it because of pure precepts that 沙門瞿曇 establishes complete Nirvāna?"" (The answer given is ""不也"" - No).
+    *   *Counts (7).*
+
+9.  **[0430c12] 「以心淨故、以見淨故、以疑蓋淨故、以道非道知見淨故、以道跡知見淨故、以道跡斷智淨故，沙門瞿曇施設無餘涅槃耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Is it because of pure mind... that 沙門瞿曇 establishes complete Nirvāna?"" (The answer given is ""不也"" - No).
+    *   *Counts (8).*
+
+10. **[0430c15] 又復問曰：「我向問仁，云何賢者以戒淨故，沙門瞿曇施設無餘涅槃耶？賢者言不。**
+    *   Similar to instance 5, '耶' is at the end of ""云何賢者以戒淨故，沙門瞿曇施設無餘涅槃耶"". This phrase is a yes/no question (""Did I previously ask if it's because of pure precepts that 沙門瞿曇 establishes complete Nirvāna?""). It is part of a larger declarative context describing a past exchange.
+    *   *Counts (9).*
+
+11. **[0430c18] 以心淨故、以見淨故、以疑蓋淨故、以道非道知見淨故、以道跡知見淨故、以道跡斷智淨故，沙門瞿曇施設無餘涅槃耶？賢者言不。**
+    *   Similar to instance 5 and 10, '耶' is at the end of ""以心淨故...沙門瞿曇施設無餘涅槃耶"". This phrase is a yes/no question, part of a larger declarative context.
+    *   *Counts (10).*
+
+12. **[0431a16] 「云何，天王！以一日行從舍衛國至婆雞帝耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Did you travel from Sāvatthī to Bhadrakā in one day?"" (The answer given is ""如是"" - Yes).
+    *   *Counts (11).*
+
+13. **[0431a17] 「云何天王，乘第一車一日從舍衛國至婆雞帝耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Did you travel... by the first chariot...?"" (The answer given is ""不也"" - No).
+    *   *Counts (12).*
+
+14. **[0431a18] 「乘第二車乘第三車至第七車，從舍衛國至婆雞帝耶？」**
+    *   This is a direct question asking for a yes/no answer: ""Did you travel... by the second, third, until the seventh chariot...?"" (The answer given is ""不也"" - No).
+    *   *Counts (13).*
+
+15. **[0431b10] 於是，尊者舍梨子問尊者滿慈子：「賢者名何等？諸梵行人云何稱賢者耶？」**
+    *   This is a question, but not a yes/no question (""云何稱"" means ""how do they call""). It asks for specific information.
+    *   *Does not count.*
+
+No instances were found where '耶' acts as a final particle at the end of a declarative sentence. All counted instances are at the end of yes/no questions.
+
+Total count: 13
+
+13
+"
+阿拔經,T 20,8554,False,True,False,False,1,8,11,15,5,6,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 11 times in the provided text.
+"
+堅心經,T 733,963,False,True,False,False,0,0,1,1,0,0,1,
+太子和休經,T 344,1938,False,False,False,False,0,4,2,0,0,0,0,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times in the provided text:
+
+1.  `[0155b06] 佛所語皆使人聞者皆歡喜耶？`
+2.  `[0155b25] 何因緣得尊者豪貴耶？`
+3.  `[0155c02] 何因緣得知世間生死所趣善惡耶？`
+
+All three occurrences are at the end of questions that begin with `何因緣` (what cause/reason, why).
+
+Let's evaluate these occurrences against the given criteria:
+
+1.  **""at end of yes or no questions""**: A yes or no question is one that can be answered simply with ""yes"" or ""no"". Questions asking ""why"" (何因緣) require an explanation, not a simple yes or no. Therefore, these are not yes or no questions.
+
+2.  **""or as a final particle at the end of declarative sentences""**: A declarative sentence makes a statement or expresses a fact. All instances of '耶' in this text are in interrogative sentences (questions), not declarative sentences.
+
+Since none of the occurrences of '耶' meet either of the specified conditions, the count is 0.
+
+0
+"
+分陀利經,T 265,2129,False,True,False,False,2,1,0,1,0,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences. Let's examine the text for occurrences of ""也"" and its function:
+
+1.  **[0197b13] 佛言：「是時，王者，我身是也；**
+    *   Here, ""也"" appears at the end of the clause ""我身是"". This clause is a declarative statement meaning ""it was my body"" or ""it was me"". The ""也"" functions as a final particle, confirming the statement. Although it's followed by a semicolon, in Classical Chinese, ""也"" frequently marks the end of a declarative clause or complete thought unit, even if that unit is part of a larger sentence structure separated by a semicolon or comma. Thus, this instance fits the criteria.
+
+I have carefully scanned the entire text, and this is the only instance of the character ""也"" being used.
+
+Therefore, the character ""也"" is used 1 time as a final particle at the end of declarative sentences.
+
+1
+"
+無悕望經,T 813,13023,False,True,False,False,16,5,1,11,0,1,0,"Got a non-integer output from the model for 也: The character ""也"" used as a final particle at the end of declarative sentences appears 5 times in the given text.
+
+Here are the instances:
+1.  [0776b05] 亦復不歸多願妄想菩薩之手**也**。」
+2.  [0778b26] 舍利弗白佛：「無**也**。
+3.  [0778c01] 誠如所云在世眾祐**也**。
+4.  [0778c17] 具虛無慧**也**。」
+5.  [0779a13] 不想出家為沙門**也**。」
+"
+胎中女經,T 563,13143,True,True,False,False,0,1,0,7,1,0,1,
+普達王經,T 522,2194,False,True,False,False,0,0,0,0,0,0,0,
+長者威勢經,T 330,3934,False,True,False,False,5,4,0,2,2,0,2,
+鹹水喻經,T 29,950,False,True,False,False,0,0,0,0,0,0,0,
+彌勒當來生經,T 457,1442,False,False,False,False,0,1,0,0,1,0,0,
+放鉢經,T 629,4158,False,False,False,False,0,16,0,5,0,0,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the text in two contexts that might be relevant to the question, in addition to being part of proper names (like 賴毘羅耶 and 惹那羅耶):
+
+1.  **[0449c19] 須臾頃便火出，是火泥犁火耶？**
+    *   Context: ""諸菩薩問佛：「...是火泥犁火耶？」"" (The bodhisattvas asked the Buddha: ""...is this fire the Naraka fire?"")
+    *   This is a clear yes/no question, ending with '耶' as an interrogative particle. This instance counts.
+
+2.  **[0451a20] 文殊何以故，在佛前不成佛耶？**
+    *   Context: ""忉利天上二百菩薩自念：「...文殊何以故，在佛前不成佛耶？」"" (Two hundred bodhisattvas in the Trayastriṃśa heaven thought to themselves: ""...Why is it that Mañjuśrī, being before the Buddha, does not attain Buddhahood?"")
+    *   This is a question asking ""why"" (何以故), and '耶' functions as a general interrogative particle. However, it is not a ""yes or no question"" (which typically expects a 'yes' or 'no' answer) nor is it a ""final particle at the end of declarative sentences"". Based on the strict criteria provided in the prompt, this instance does not count.
+
+No other instances of '耶' functioning as a final particle at the end of declarative sentences were found. The vast majority of '耶' occurrences are part of names.
+
+Therefore, only one instance meets the specified criteria.
+
+1
+"
+法海經,T 34,1607,False,True,False,False,0,0,3,2,0,4,2,
+以身施餓虎經,T 172,6527,True,False,False,False,5,4,4,10,0,4,9,
+淨行經,T 579,10357,True,False,False,False,3,0,0,4,0,0,2,
+金剛三昧經,T 273,17001,True,True,False,False,1,2,1,16,0,0,5,
+大愛道受誡經,T 1478,9011,False,False,False,False,1,5,9,49,0,6,21,"Got a non-integer output from the model for 耶: The character '耶' appears twice in the provided text. Let's analyze each instance based on the given conditions: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+
+1.  **[0946a13] ...疲勞悲涕乃爾耶？」**
+    *   The full sentence is: ""裘曇彌！何因著弊衣踱跣，面目流離身上蒙塵，疲勞悲涕乃爾耶？"" (Gautami! For what reason are you wearing worn clothes and walking barefoot, with a stained face, dusty body, tired and weeping like this?)
+    *   The presence of ""何因"" (for what reason / why) makes this an information-seeking question, not a yes or no question.
+    *   It is clearly a question, not a declarative sentence.
+    *   Therefore, this instance does not meet either condition.
+
+2.  **[0949a24] ...汝所知似不如我知諦耶！**
+    *   The full sentence is: ""汝所知似不如我知諦耶！"" (Is what you know seemingly not as good as what I know as truth?)
+    *   This is a rhetorical question, but grammatically it is structured as a statement (""汝所知似不如我知諦"") followed by an interrogative particle ('耶') which turns it into a question that can be answered with a ""yes"" or ""no"" (e.g., ""Yes, it is not as good"" or ""No, it is as good""). Thus, it functions as a yes or no question.
+    *   It is a question, not a declarative sentence.
+    *   Therefore, this instance meets the condition of appearing at the end of a yes or no question.
+
+Based on this strict interpretation of the conditions, only one instance of '耶' fits the criteria.
+
+The final answer is $\boxed{1}$
+"
+長者法志妻經,T 572,2005,False,True,False,False,4,0,2,1,0,2,1,
+七智經,T 27,1151,False,True,False,False,0,0,5,1,0,0,1,
+難龍王經,T 597,14377,True,True,False,False,0,2,0,7,1,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 6 times.
+
+Here are the specific occurrences:
+
+1.  [0566a03] 爾時，世尊告諸比丘：「此非人**也**！乃是龍王，汝可往喚。」
+2.  [0569a01] 「汝見第二[土*瓦]者，非是[土*瓦]**也**，是地獄人。
+3.  [0569a06] 「汝見第三[土*瓦]者，非是[土*瓦]**也**，是地獄人。
+4.  [0569a11] 爾時，世尊復告僧護比丘：「汝見第一瓶者，非是瓶**也**，是地獄人。
+5.  [0569a15] 「汝見第二瓶者，非是瓶**也**，是地獄人。
+6.  [0569b14] 「汝見肉軒，非是軒**也**，是地獄人。
+
+In all these cases, ""也"" acts as a final particle, affirming the preceding statement (""it is not X""). Although some are followed by a comma in modern punctuation, in classical Chinese, such a construction typically denotes the end of a declarative clause or unit of thought. The instance ""不愁悶也？"" (0566c06) is excluded as it is a question.
+
+6
+"
+三慧經,T 768,7597,False,False,False,False,0,4,4,3,2,1,3,
+阿難為蠱道呪經,T 551,1778,False,True,False,False,0,1,3,2,1,1,3,
+菩薩本行經,T 188,6974,False,False,False,False,0,11,5,5,5,3,5,
+太子辟羅經,T 596,1030,False,True,False,False,3,0,0,4,0,0,4,
+沙彌羅經,T 750,1017,False,False,False,False,0,1,2,0,1,2,0,
+八德經,T 35,1482,False,True,False,False,0,0,1,13,0,1,0,"Got a non-integer output from the model for 也: 1.  [0819a13] ...非爾俗夫所應坐處**也**。」 (This is a declarative sentence within a quote.)
+2.  [0819a22] ...斯一德**也**。
+3.  [0819a22] 海潮不過期先際，斯二德**也**。
+4.  [0819a24] ...斯三德**也**。
+5.  [0819b02] ...斯四德**也**。
+6.  [0819b05] ...斯五德**也**。
+7.  [0819b07] ...斯六德**也**。
+8.  [0819b08] ...斯七德**也**。
+9.  [0819b09] 海水通鹹，邊中如一，斯八德**也**。
+10. [0819b14] ...猶海之潮不過期先際，斯二德**也**。(The ""也"" at 0819b13 ""不失其時也，"" is followed by a comma, indicating it's a clause, not the end of the sentence.)
+11. [0819b17] ...猶海弘裕不容臭屍，斯三德**也**。
+
+The ""也"" at [0819c11] ""恐彼神雷威怒加之也，"" is also followed by a comma, meaning it's a clause within a larger sentence, not the end of a declarative sentence itself.
+
+Counting only those instances where ""也"" marks the definitive end of a declarative sentence (or a complete quote acting as such).
+
+11
+"
+大方便報恩經,T 156,10902,True,False,False,False,8,8,0,9,5,0,3,
+分別功德經,T 1507,6215,False,False,False,False,1,13,8,73,5,5,54,
+道神足無極變化經,T 816,8068,False,True,False,False,1,0,8,0,0,0,0,
+羅摩伽經,T 294,15715,True,False,False,False,12,0,1,0,0,0,0,
+儒首菩薩無上清淨分衛經,T 234,8559,False,True,False,False,12,15,12,26,6,5,27,
+菩薩瓔珞本業經,T 1485,12907,True,False,False,False,0,1,1,0,0,0,0,
+興起行經,T 197,12252,False,True,False,False,0,3,4,22,2,4,19,
+淨度三昧經,X 15,8879,False,True,False,False,2,6,5,3,2,2,1,
+未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0,
+摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,1,0,0,
+那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,6,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 2 times in the given text.
+"
+舊譬喻經,T 206,11039,False,False,False,False,4,1,24,65,1,11,50,
+大比丘威儀經,T 1470,10771,False,False,False,False,0,1,0,0,0,0,0,
+觀無量壽經,T 365,9986,True,True,False,False,2,3,0,1,2,0,1,
+採華違王上佛授記妙華經,T 510,1196,False,False,False,False,2,0,1,0,0,1,0,
+佛心總持經,T 154 (19),1398,False,True,False,False,0,2,1,3,0,1,3,
+佛以三事笑經,T 152 (65),822,False,False,False,False,1,0,1,1,0,1,1,
+作佛形像經,T 692,1509,False,False,False,False,0,0,0,1,0,0,1,
+稱揚諸佛功德經,T 434,11465,False,True,False,False,0,0,0,4,0,0,1,
+八部佛名經,T 429,1599,False,True,False,False,0,1,0,1,0,0,1,
+觀藥王藥上二菩薩經,T 1161,9635,True,False,False,False,1,4,0,4,0,0,3,
+請觀世音經,T 1043,5937,True,False,False,False,0,9,4,2,0,0,2,
+文殊師利般涅槃經,T 463,2193,True,False,False,False,0,0,0,1,0,0,1,
+無垢施菩薩分別應辯經,T 310 (33),14603,True,False,False,False,4,44,7,7,29,3,0,
+無言菩薩經,T 397(6),17275,False,False,False,False,19,12,2,8,8,1,7,
+異出菩薩本起經,T 188,6974,False,False,False,False,0,11,5,5,0,3,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the given text in the following instances that match the criteria:
+
+1.  **[0618c20] 太子曰：「吾亦當復老耶？」**
+    *   This is a direct yes/no question: ""Will I also grow old?"" (Can be answered with yes or no).
+    *   Count: 1
+
+2.  **[0619a07] 太子曰：「吾亦當死耶？」**
+    *   This is a direct yes/no question: ""Will I also die?"" (Can be answered with yes or no).
+    *   Count: 2
+
+3.  **[0619a19] 亦好耶？」**
+    *   This is a direct yes/no question: ""Is it also good?"" (Can be answered with yes or no).
+    *   Count: 3
+
+4.  **[0619a24] 不亦好耶？」**
+    *   This is a direct yes/no question: ""Is it not also good?"" (Can be answered with yes or no).
+    *   Count: 4
+
+5.  **[0619c15] 我夫我夫！在天上地下人間耶？**
+    *   This is an alternative question that functions as a yes/no query: ""Is he in heaven, on earth, or among humans?"" (Implies ""Is he in one of these places?"" which can be answered with yes/no).
+    *   Count: 5
+
+6.  **[0619c18] 吾子學道度世，不亦善耶！」**
+    *   This is a rhetorical question, which functions as a declarative sentence with '耶' as a final particle expressing affirmation: ""Is it not also good!"" (Meaning: ""It is indeed good!"").
+    *   Count: 6
+
+The instance `[0618b02] 吾子將有何不善耶？` is an open-ended question (""What misfortune..."") using an interrogative pronoun `何`, and therefore not a yes/no question. It is also not a declarative sentence. Thus, it is not included in the count based on the specific criteria.
+
+The final count is 6.
+
+6
+"
+大方廣菩薩十地經,T 308,3864,True,False,False,False,2,13,2,0,0,1,0,
+菩薩生地經,T 533,1613,False,True,False,False,1,2,0,3,2,0,3,
+諸菩薩求佛本業經,T 282,7418,False,True,False,False,2,0,0,0,0,0,0,
+菩薩受齋經,T 1502,1425,False,False,False,False,0,1,0,0,0,0,0,
+菩薩以明離鬼妻經,T 152 (85),667,False,False,False,False,0,0,0,1,0,0,1,
+六菩薩名經,T 491,615,False,False,False,False,0,0,0,0,0,0,0,
+迦葉赴佛泥洹經,T 393,1311,False,False,False,False,0,1,1,0,0,1,0,
+迦葉責阿難雙度羅漢喻經,T 2027,4560,False,True,False,False,4,2,5,3,1,2,3,
+摩訶迦葉度貧母經,T 497,2455,False,True,False,False,2,0,1,0,0,2,0,
+阿難同學經,T 149,1798,False,True,False,False,0,1,0,0,1,0,0,
+阿難問事佛吉凶經,T 492a,2747,False,True,False,False,2,3,1,4,2,0,4,
+迦旃延無常經,T 154 (17),1144,False,True,False,False,0,0,0,0,0,0,0,
+請賓頭盧法,T 1689,867,False,False,False,False,0,0,0,3,0,0,3,
+尊者薄拘羅經,T 26 (34),1426,False,True,True,False,0,3,0,0,3,0,0,
+尊者瞿低迦獨一思惟經,T 99 (1091),1046,True,False,False,False,0,0,0,0,0,0,0,
+優陀夷坐樹下寂靜調伏經,T 99 (253),1998,True,False,False,False,0,3,2,2,3,0,2,
+鴦掘髻經,T 119,3304,False,True,False,False,0,4,0,1,3,0,0,
+浮彌經,T 26 (173),2886,False,True,True,False,0,2,0,24,1,0,24,
+難提釋經,T 113,2084,True,True,False,False,1,0,0,0,0,0,0,
+調達教人為惡經,T 152 (69),356,False,False,False,False,0,0,0,2,0,0,2,
+瞻婆比丘經,T 64,1705,False,True,False,False,0,0,0,0,0,0,0,
+沙曷比丘功德,T 501,1377,False,True,False,False,0,3,1,0,0,1,0,
+分衛比丘經,T 154 (2),1417,False,True,False,False,0,0,0,0,0,0,0,
+比丘各言志經,T 154 (16),3104,False,True,False,False,28,0,0,0,0,0,0,
+比丘疾病經,T 154 (26),1161,False,True,False,False,0,3,0,4,3,0,3,
+比丘避女惡名欲自殺經,T 503,525,True,False,False,False,0,0,0,0,0,0,0,
+佛為年少比丘說正事經,T 502,1004,True,False,False,False,4,0,1,0,0,0,0,
+長者子六過出家經,T 134,1137,False,True,False,False,0,2,0,1,1,0,1,
+出家緣經,T 791,1053,True,False,False,False,0,0,0,0,0,0,0,
+瞿曇彌經,T 26 (116),4655,False,True,True,False,0,10,0,1,9,0,1,
+瞿曇彌記果經,T 60,3741,False,True,False,False,0,0,0,1,0,0,1,
+佛母般泥洹經,T 145,2433,False,True,False,False,1,5,1,12,1,1,9,
+比丘尼現變經,T 154 (43),566,False,False,False,False,1,0,0,0,0,0,0,
+旃闍摩暴志謗佛經,T 154 (9),699,False,True,False,False,0,0,0,1,0,0,1,
+優波離問佛經,T 1466,14654,False,False,False,False,0,1,0,10,0,0,4,
+沙彌威儀,T 1472,5300,False,False,False,False,0,0,2,1,0,3,1,
+沙彌尼戒,T 1474,2552,False,False,False,False,0,0,3,13,0,0,11,
+受十善戒經,T 1486,10797,True,False,False,False,0,2,8,0,2,0,0,
+優婆塞五戒經,T 1503,8901,False,False,False,False,0,1,0,1,0,0,0,
+弟子學有三輩經,T 767,1531,False,True,False,False,1,0,1,1,0,1,1,
+弟子死復生經,T 862,3648,False,True,False,False,0,9,4,0,8,1,0,
+頂生王故事經,T 39,3067,False,True,False,False,0,12,0,0,0,0,0,
+頻毘婆王詣佛供養經,T 133,2517,True,False,False,False,0,4,1,0,2,1,0,
+阿闍世王問五逆經,T 508,2938,False,True,False,False,0,2,0,0,2,0,0,
+阿闍世王受決經,T 509,2190,False,True,False,False,0,1,0,8,0,0,7,
+優填王經,T 332,2787,False,True,False,False,2,2,2,11,2,2,11,
+鏡面王經,T 152 (89),1228,False,True,False,False,0,0,2,0,0,0,0,
+察微王經,T 152 (90),1006,False,False,False,False,1,1,4,3,1,3,3,
+桀貪王經,T 198 (1),2709,False,True,False,False,2,0,0,3,0,0,1,
+薩羅王經,T 520,1944,False,False,False,False,2,0,0,0,0,0,0,
+國王五人經,T 152 (24),2995,False,True,False,False,1,0,1,0,0,1,0,
+舍頭諫太子二十八宿經,T 1301,16131,False,True,False,False,1,6,31,5,5,13,74,
+太子刷護經,T 343,2421,False,False,False,False,0,1,2,0,1,0,0,
+誨子經,T 154 (38),1654,False,False,False,False,2,0,4,1,0,4,1,
+五百幼童經,T 154 (33),639,False,True,False,False,1,0,0,0,0,0,0,
+逝童子經,T 527,1628,False,True,False,False,3,1,1,0,1,1,0,
+長者詣佛說子婦不恭經,T 143,2354,False,True,False,False,4,26,0,1,0,0,1,
+長者子制經,T 526,2282,False,True,False,False,0,0,3,5,0,2,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 5 times.
+
+Here are the instances:
+1.  [0801a24] ""...便欲求作佛者不能得**也**""
+2.  [0801b01] ""...千萬劫億萬劫，汝尚未能得佛**也**。""
+3.  [0801b03] ""...我不用一飯食、衣被故求作佛**也**。""
+4.  [0801b06] ""...汝欲求作佛，難得**也**。""
+5.  [0801b19] ""...汝莫持汝天上意，自貢高**也**""
+
+5
+"
+長者子懊惱三處經,T 525,1292,False,True,False,False,0,1,0,0,1,0,0,
+十支居士八城人經,T 92,1529,False,True,False,False,0,0,0,0,0,0,0,
+婆羅門子命終愛念不離經,T 91,2218,False,True,False,False,0,6,0,0,6,0,0,
+婆羅門避死經,T 131,461,False,True,False,False,0,0,0,0,0,0,0,
+佛為黃竹園老婆羅門說學經,T 75,2076,False,True,False,False,0,0,0,0,0,0,0,
+審裸形子經,T 154 (27),2143,False,True,False,False,1,0,0,0,0,0,0,
+仙人撥劫經,T 154 (52),1033,False,True,False,False,0,0,0,0,0,0,0,
+五仙人經,T 154 (11),2235,False,True,False,False,3,2,2,6,1,0,6,
+光華梵志經,T 154 (14),895,False,True,False,False,0,0,0,0,0,0,0,
+梵志計水淨經,T 510,1052,False,True,False,False,0,0,0,1,0,0,1,
+前世諍女經,T 154 (7),869,False,True,False,False,0,0,0,1,0,0,1,
+三摩竭經,T 129,4299,False,True,False,False,1,1,2,7,1,2,4,
+摩鄧女經,T 1300,18426,True,False,False,False,1,17,6,7,7,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 5 times in the given text.
+"
+釋家畢罪經,T 152 (54),2563,False,False,False,False,1,0,1,13,0,0,13,
+殺身濟賈人經,T 152 (67),545,False,False,False,False,0,0,1,2,0,1,2,
+殺龍濟一國人經,T 152 (70),701,False,False,False,False,0,0,0,4,0,0,4,
+懈怠耕者經,T 827,891,False,True,False,False,1,0,0,0,0,0,0,
+善生子經,T 17,4160,False,True,False,False,0,0,1,8,0,0,9,
+尸迦羅越六向拜經,T 16,2504,False,False,False,False,0,0,0,2,0,0,4,
+貧窮老公經,T 797,1877,False,True,False,False,2,1,5,7,1,2,6,
+老母經,T 561,1282,False,True,False,False,2,1,2,0,0,0,0,
+負為牛者經,T 154 (39),1107,False,True,False,False,1,0,1,0,0,0,0,
+阿遬達經,T 141,943,False,True,False,False,0,5,0,0,0,0,0,
+樹提伽經,T 540,1566,False,False,False,False,0,2,1,3,2,1,3,
+鞞摩肅經,T 90,2467,False,True,False,False,0,1,1,1,1,0,0,
+那賴經,T 154 (1),1358,False,True,False,False,0,0,2,0,0,3,0,
+大意經,T 177,2803,False,True,False,False,0,1,7,14,0,5,14,
+申日兜本經,T 536,1608,False,True,False,False,0,0,1,5,0,1,3,
+舅甥經,T 154 (12),1650,False,True,False,False,1,1,0,5,0,0,5,
+越難經,T 537,1086,False,True,False,False,0,0,1,3,0,1,3,
+鸚鵡經,T 79,4892,False,True,False,False,0,1,0,0,1,0,0,
+水牛王經,T 154 (30),861,False,True,False,False,0,0,0,1,0,0,1,
+兔王經,T 154 (31),787,False,True,False,False,0,0,0,0,0,0,0,
+拘薩羅國烏王經,T 154 (47),1397,False,True,False,False,2,0,0,1,0,0,1,
+雀王經,T 152 (51),305,False,False,False,False,0,0,0,2,0,0,2,
+孔雀經,T 154 (51),1027,False,True,False,False,0,0,1,4,0,0,4,
+野雞經,T 154 (6),1464,False,True,False,False,1,3,0,2,2,0,2,
+大魚事經,T 216,1003,False,True,False,False,0,1,0,0,1,0,0,
+蠱狐烏經,T 154 (25),827,False,True,False,False,2,0,0,0,0,0,0,
+犢子經,T 808,1094,False,True,False,False,0,1,2,3,0,2,3,"Got a non-integer output from the model for 耶: The character '耶' appears only once in the provided text:
+
+*   `[0754a20] 牛言：「此手捫摸我乳，一何快耶！`
+
+Let's analyze this instance against the given criteria:
+
+1.  **At end of yes or no questions**: A yes or no question (also known as a polar question) is one that can be answered with a simple ""yes"" or ""no"". The phrase ""一何快耶！"" translates to ""How pleasant it is!"" or ""Oh, how pleasant!"". It uses the interrogative pronoun ""何"" (how/what) and functions as an exclamation expressing strong feeling, not a question that can be answered with ""yes"" or ""no"". Therefore, it does not fit this criterion.
+
+2.  **As a final particle at the end of declarative sentences**: A declarative sentence states a fact or an opinion. While ""耶"" is a final particle in this instance, the sentence ""一何快耶！"" is exclamatory or rhetorical in nature, conveying strong emotion, rather than simply declaring a fact or opinion. It is not a standard declarative sentence. Therefore, it does not fit this criterion.
+
+Since the single occurrence of '耶' does not meet either of the specified conditions, the character '耶' appears 0 times under the given criteria.
+
+0
+"
+驢駝經,T 154 (50),1056,False,True,False,False,0,0,0,3,0,0,3,
+猘狗經,T 214,1088,False,False,False,False,0,1,1,1,1,1,1,
+鱉獼猴經,T 154 (10),918,False,True,False,False,0,1,2,0,1,2,0,
+鬼問目連經,T 734,2191,False,True,False,False,0,0,0,0,0,0,0,
+鐵城泥犁經,T 42,2585,False,False,False,False,0,4,2,1,0,1,1,"Got a non-integer output from the model for 耶: The character '耶' appears 4 times in the provided text. Let's analyze each instance based on the given criteria:
+
+1.  **`汝何以不自改為善耶？`** (Line `[0827a30]`)
+    *   This is a question: ""Why did you not reform yourself to do good?""
+    *   It uses the interrogative phrase '何以' (why), which makes it an open-ended ""why"" question, not a ""yes or no"" question.
+    *   It is an interrogative sentence, not a declarative sentence.
+
+2.  **`汝何以不自改為善耶？`** (Line `[0827b05]`)
+    *   Same as instance 1. It is a ""why"" question, not a ""yes or no"" question or a declarative sentence.
+
+3.  **`汝見是，何以不自改為善耶？`** (Line `[0827b14]`)
+    *   Same as instance 1. It is a ""why"" question, not a ""yes or no"" question or a declarative sentence.
+
+4.  **`汝為人時，何以不正汝行正汝口正汝心耶？`** (Line `[0827b23]`)
+    *   Same as instance 1. It is a ""why"" question, not a ""yes or no"" question or a declarative sentence.
+
+In all four cases, '耶' functions as an interrogative particle in a ""why"" question. A ""yes or no question"" is one that can be answered with a simple ""yes"" or ""no"" (e.g., ""Are you hungry?""). A ""why"" question requires an explanation. Therefore, none of these instances are ""yes or no questions"".
+
+Furthermore, none of these instances are ""declarative sentences"" as they all clearly pose a question.
+
+Based on the strict interpretation of the criteria provided, '耶' does not appear at the end of any ""yes or no questions"" nor as a final particle at the end of any ""declarative sentences"" in the given text.
+
+0
+"
+泥犁經,T 86,7034,False,True,False,False,0,3,5,4,0,4,4,
+十八泥犁經,T 731,3215,False,False,False,False,0,0,0,1,0,0,2,
+四泥犁經,T 139,894,False,True,False,False,0,0,0,0,0,0,0,
+罪業報應教化地獄經,T 724,3845,True,False,False,False,0,0,0,0,0,0,0,
+鹽王五天使者經,T 43,1569,False,True,False,False,0,6,6,5,6,5,4,
+數經,T 70,2662,False,True,False,False,0,0,2,0,0,0,0,
+時經,T 794a,1131,True,False,False,False,0,0,0,0,0,0,0,
+意經,T 827,1541,False,True,False,True,12,0,0,11,0,0,0,
+罵意經,T 732,9111,False,False,False,False,0,3,17,7,2,0,6,"Got a non-integer output from the model for 耳: The character 耳 is used 7 times as a final particle at the end of declarative sentences in the provided text.
+
+Here are the instances:
+
+1.  [0530b04] 但恐得畜生，從入地獄、餓鬼中**耳**！
+2.  [0530b09] 人意有知，恐不啻**耳**！
+3.  [0531b18] 畜生亦欲色、聲、香、味、細滑，亦自相與語，但不能如人語**耳**。
+4.  [0531c11] 人持戒乃孝順，報父母恩**耳**。
+5.  [0531c19] 釜中燒一身**耳**。
+6.  [0532a06] 晝日凡三萬六千五百息小完等**耳**。
+7.  [0534a09] 世間所有如夢**耳**，夢飯食見好，覺便不見。
+
+7
+"
+法觀經,T 611,3167,False,False,False,False,0,0,7,0,0,1,0,
+身觀經,T 612,1220,False,True,False,False,0,1,0,0,1,0,0,
+伏婬經,T 65,1558,False,True,False,False,0,0,0,0,0,0,0,
+離睡經,T 47,1404,False,True,False,False,0,1,1,0,1,0,0,
+應法經,T 83,2115,False,True,False,False,0,0,0,0,0,0,0,
+樂想經,T 56,554,False,True,False,False,0,0,0,0,0,0,0,
+尊上經,T 77,1919,False,True,False,False,0,14,0,0,0,0,0,
+柔軟經,T 26 (117),1123,False,True,True,False,0,0,0,0,0,0,0,
+處處經,T 730,9561,False,False,False,False,2,1,19,3,1,17,1,
+閑居經,T 154 (13),1062,False,True,False,False,1,0,2,0,0,0,0,
+何苦經,T 26 (148),2156,False,True,True,False,0,7,0,4,8,0,4,
+貧窮經,T 26 (125),1562,False,True,True,False,0,6,0,13,6,0,13,
+求欲經,T 49,5905,False,True,False,False,1,3,8,0,1,0,0,
+分別經,T 738,3552,False,True,False,False,1,2,7,7,0,4,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 4 times in the provided text:
+
+1.  `[0541b10] 不可譬喻也。`
+2.  `[0541b23] 當復更入邪見無窮已也。`
+3.  `[0542a07] 大罪不小也，宜以審諦。」` (Here, `大罪不小也` functions as a complete declarative sentence, even though it's followed by a comma and another clause.)
+4.  `[0542b13] 故不為也。`
+
+4
+"
+慢法經,T 739,841,False,False,False,False,0,0,0,1,0,0,0,
+邪見經,T 93,720,False,True,False,False,0,1,0,0,1,0,0,
+積骨經,T 150A (30),185,False,True,False,False,0,0,0,0,0,0,0,
+苦陰經,T 53,3009,False,True,False,False,0,6,2,0,7,0,0,
+灌臘經,T 391,612,False,True,False,False,0,0,0,1,0,0,1,
+受歲經,T 50,2353,False,True,False,False,0,5,2,0,0,2,0,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the provided text. Let's examine each instance to determine if it fits the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+
+1.  **[0843b22] 又何二藏互有無耶？**
+    *   This sentence uses '何' (hè/hé), meaning ""why"" or ""how"". Therefore, it is a ""wh-question"" (e.g., ""Why do the two canons mutually have or not have [these texts]?""), not a yes or no question. It is also not a declarative sentence.
+    *   This instance does not count.
+
+2.  **[0843b26] 然今此容凾宋藏受新歲經，與彼竟凾新歲經，以為單譯耶，**
+    *   The phrase ""以為單譯耶"" translates to ""is it considered a single translation?"". This is a clear yes or no question, as it asks for confirmation or negation.
+    *   This instance counts.
+
+3.  **[0843b26] 則何有廣略之殊、譯人之異，又此何編於重譯中耶？**
+    *   This sentence also uses '何', making it a ""wh-question"" (e.g., ""and why is this compiled among the re-translations?""). It is not a yes or no question, nor a declarative sentence.
+    *   This instance does not count.
+
+4.  **[0843b27] 以為重譯耶，**
+    *   The phrase ""以為重譯耶"" translates to ""is it considered a re-translation?"". This is a clear yes or no question.
+    *   This instance counts.
+
+5.  **[0843b27] 則彼何列于單譯中耶？**
+    *   This sentence uses '何', making it a ""wh-question"" (e.g., ""then why is that listed in the single translations?""). It is not a yes or no question, nor a declarative sentence.
+    *   This instance does not count.
+
+Based on the analysis, the character '耶' appears 2 times at the end of a yes or no question. No instances of '耶' appear as a final particle at the end of declarative sentences.
+
+2
+"
+腹使經,T 154 (28),2019,False,True,False,False,0,2,1,1,2,1,1,
+持齋經,T 26 (202),5190,False,True,True,False,0,3,0,3,0,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears three times in the text. Let's examine each instance based on the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+
+1.  `[0770a20] 世尊問曰：「居士婦！今沐浴耶？」`
+    *   This is a question asking ""Are you bathing now?"". It is a direct yes or no question.
+    *   The character '耶' appears at the very end of the question phrase, before the closing quotation mark and question mark.
+    *   This instance **counts**.
+
+2.  `[0770a22] 世尊問曰：「居士婦！今持何等齋耶？齋有三種。`
+    *   This is a question asking ""What kind of fast are you observing?"". This is an information question (asking for specific information using ""何等"", meaning ""what kind of""), not a yes or no question.
+    *   Therefore, this instance **does not count**.
+
+3.  `[0770b06] 「居士婦！云何名為尼揵齋耶？`
+    *   This is a question asking ""What is called the Nirgrantha fast?"". This is an information question (using ""云何"", meaning ""how/what""), not a yes or no question.
+    *   Therefore, this instance **does not count**.
+
+Based on the analysis, only one instance of '耶' meets the specified criteria.
+
+1
+"
+盂蘭經,T 685,1179,False,True,False,False,0,0,0,0,0,0,0,
+恒水戒經,T 33,1851,False,True,False,False,0,0,2,6,0,2,6,
+寂志果經,T 22,9621,False,True,False,False,1,4,4,6,2,1,6,
+戒消災經,T 1477,2496,False,True,False,False,1,2,5,8,1,5,6,
+法滅盡經,T 396,1271,False,True,False,False,0,0,0,0,0,0,0,
+是我所經,T 154 (5),1029,False,True,False,False,0,0,0,0,0,0,0,
+阿耨風經,T 58,3342,False,True,False,False,0,3,0,4,3,0,4,
+惟日雜難經,T 760,9470,False,False,False,False,0,4,8,1,2,8,1,
+內身觀章經,T 610,1994,False,False,False,False,0,1,1,0,1,0,0,
+忠心政行經,T 743,3161,False,True,False,False,0,0,4,1,0,1,0,
+罪業報應經,T 747a,2115,False,True,False,False,2,1,2,2,1,0,2,
+摩訶剎頭經,T 696,1985,False,False,False,False,0,1,2,2,0,2,2,"Got a non-integer output from the model for 耶: The character '耶' appears only once in the given text:
+*   ""[0798b09] 福那得生耶？""
+
+Now, let's analyze if this instance meets the specified criteria:
+1.  **""at end of yes or no questions""**: The sentence ""福那得生耶？"" translates to ""How can blessings be born?"". This is a ""how"" question, not a question that can be answered with a simple ""yes"" or ""no"". Therefore, it does not fit this criterion.
+2.  **""as a final particle at the end of declarative sentences""**: The sentence ""福那得生耶？"" is an interrogative sentence (a question), not a declarative sentence. In Classical Chinese, '耶' is primarily an interrogative particle and is rarely, if ever, used as a final particle for declarative sentences. Therefore, it does not fit this criterion.
+
+Since the single occurrence of '耶' does not meet either of the specified conditions, the count is 0.
+
+0
+"
+金剛清淨經,T 644,3787,True,False,False,False,0,2,0,2,0,0,2,
+淨除業障經,T 1494,9706,True,False,False,False,4,12,1,12,9,0,8,
+相應相可經,T 111,572,False,False,False,False,0,0,0,0,0,0,0,
+商人求財經,T 26 (136),5609,False,True,True,False,0,9,4,2,0,2,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text only once.
+
+The instance is:
+`諸賢！我時脫不如是問也。` (line 0643c08)
+
+The other instance previously considered, `賢者！我等是閻浮洲諸商人也，` (line 0642c09), is followed by a comma (，), indicating that the sentence continues, and ""也"" is not functioning as a final particle terminating the sentence.
+
+1
+"
+前世三轉經,T 178,3533,False,True,False,False,0,5,2,9,2,5,8,
+阿含正行經,T 151,1965,False,True,False,False,0,0,4,0,0,1,0,
+摩訶乘寶嚴經,T 351,12205,False,True,False,False,0,20,0,17,19,0,20,
+父母恩難報經,T 684,573,False,True,False,False,0,0,0,0,0,0,0,
+犯戒罪報輕重經,T 1467,1026,True,False,False,False,0,0,0,0,0,0,0,
+大乘方等要慧經,T 348,439,False,True,False,False,2,0,0,0,0,0,0,
+仁王護國般若波羅蜜經,T 245,15634,True,False,False,False,0,3,2,25,2,0,24,
+阿難陀目佉尼呵離陀經,T 1013,5222,False,True,False,False,0,1,0,3,0,0,3,
+四品學法經,T 771,1147,False,False,False,False,0,0,0,15,0,0,15,
+四未曾有法經,T 136,1010,False,True,False,False,0,0,2,6,0,2,6,
+四人出現世間經,T 127,1820,False,True,False,False,0,0,0,0,0,0,0,
+七寶經,T 26 (58),303,False,True,True,False,0,0,0,0,0,0,0,
+十一思惟念如來經,T 138,577,False,True,False,False,0,0,0,11,0,0,11,
+十二遊經,T 195,3396,False,False,False,False,0,6,0,0,1,0,0,
+十二頭陀經,T 783,3068,True,False,False,False,0,1,1,0,1,1,0,
+慈仁問八十種好經,T 2867,2019,False,False,False,False,0,0,4,0,0,0,0,
+寶積三昧文殊師利菩薩問法身經,T 356,4741,False,True,False,False,0,0,0,0,0,0,0,
+自誓三昧經,T 622,4214,False,True,False,False,4,0,2,1,0,0,8,
+佛印三昧經,T 621,1652,False,False,False,False,0,0,5,16,0,5,16,
+法華三昧經,T 269,7540,False,False,False,False,4,0,6,1,0,5,1,
+月燈三昧經,T 640,5344,False,True,False,False,0,0,1,0,0,1,0,
+禪要呵欲經,T 609,2274,False,False,False,False,0,0,0,0,0,0,0,
+水喻經,T 26 (4),1913,False,True,True,False,0,0,0,8,0,0,8,
+群牛譬經,T 215,818,False,True,False,False,0,0,0,0,0,0,0,
+鼈喻經,T 154 (35),454,False,False,False,False,0,0,0,0,0,0,0,
+箭喻經,T 94,1932,False,True,False,False,0,20,0,4,20,0,4,
+毒喻經,T 154 (37),965,False,False,False,False,0,0,2,0,0,2,0,
+阿彌陀佛偈,T 1978,6335,False,False,False,False,0,0,0,0,0,0,0,
+後阿彌陀佛偈,T 373,448,False,False,False,False,0,0,0,0,0,0,0,
+灌頂七萬二千神王護比丘呪經,T 1331 (1),7156,False,True,False,False,1,9,3,5,1,3,5,
+灌頂十二萬神王護比丘尼呪經,T 1331 (2),4076,False,True,False,False,0,3,2,5,0,1,4,
+灌頂三歸五戒帶佩護身呪經,T 1331 (3),5266,False,True,False,False,2,6,1,5,0,1,4,
+灌頂百結神王護身呪經,T 1331 (4),6124,False,True,False,False,0,4,3,5,0,2,29,"Got a non-integer output from the model for 耶: The character '耶' appears only once in the provided text, as part of the transliterated name ""比抄倚耶"" in the line:
+[0506a16] 神名比抄倚耶　字分別解
+
+In this instance, '耶' is part of a proper noun/name and is not acting as a final particle at the end of a yes or no question or a declarative sentence. It is followed by a space and then the Chinese interpretation of the name.
+
+Therefore, the count of '耶' appearing at the end of yes or no questions or as a final particle at the end of declarative sentences is 0.
+
+0
+"
+灌頂宮宅神王守鎮左右呪經,T 1331 (5),5380,False,True,False,False,0,6,1,11,1,1,10,
+灌頂塚墓因緣四方神呪經,T 1331 (6),4820,False,True,False,False,2,3,1,8,0,1,4,
+灌頂伏魔封印大神呪經,T 1331 (7),4284,False,True,False,False,1,2,3,16,0,2,13,
+灌頂摩尼羅亶大神呪經,T 1331 (8),5103,False,True,False,False,0,3,0,5,0,0,5,
+灌頂召五方龍王攝疫毒神呪經,T 1331 (9),4353,False,True,False,False,0,8,1,4,0,0,4,
+七佛神呪,T 1333,6124,True,False,False,False,0,51,7,1,0,1,1,"Got a non-integer output from the model for 耶: HTTP error occurred: 500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyB6jLVGbppf02Ezz9vdQoPRLs-f47UOKNg - Response: {
+  ""error"": {
+    ""code"": 500,
+    ""message"": ""An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting"",
+    ""status"": ""INTERNAL""
+  }
+}
+
+"
+華積陀羅尼神呪,T 1356,1375,True,False,False,False,0,4,0,0,0,0,0,
+持句神呪,T 1351,1062,False,True,False,False,0,1,0,1,1,0,1,
+幻師颰陀神呪,T 1378b,795,False,True,False,False,0,2,0,0,0,0,0,
+摩尼羅亶神呪,T 1393,1438,False,True,False,False,0,0,0,0,0,0,0,
+檀特羅麻油述神呪,T 1391,646,False,False,False,False,0,1,0,0,0,0,0,
+呪時氣,T 1326,293,False,False,False,False,0,1,0,0,0,0,0,
+呪小兒,T 1329,174,False,False,False,False,0,0,0,0,0,0,0,
+呪齲齒,T 1327,199,False,False,False,False,0,0,0,0,0,0,0,
+安宅呪,T 1394,2090,True,False,False,False,0,0,0,0,0,0,0,
+不退轉輪經,T 267,47593,True,True,False,False,12,21,4,3,23,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used in various grammatical constructions within the provided text, often to indicate ""also"" or ""too"" (e.g., ""亦…也"") or for emphasis within a clause.
+
+However, after carefully examining the text for instances where ""也"" functions as a **final particle at the very end of a declarative sentence** (i.e., being the last character of a sentence, typically followed by a full stop or equivalent punctuation), **no such occurrences were found**.
+
+Many sentences end with nouns, verbs, or other particles like ""故"", ""者"", ""等"" (e.g., ""是名信行。"", ""是名法行。"", ""是名八輩。""). None of these sentences conclude with ""也"".
+
+Therefore, the count is 0.
+"
+甘露味阿毘曇,T 1553,25764,False,False,False,False,0,4,26,3,0,0,3,
+如來智印經,T 633,11917,True,False,False,False,0,0,0,3,0,0,3,
+七佛父母姓字經,T 4,1805,False,True,False,False,2,6,2,0,0,1,0,
+滿願子經,T 108,1162,False,True,False,False,2,0,2,0,0,0,0,
+加丁比丘經,T 2028,4574,False,False,False,False,1,3,0,0,2,0,0,
+大沙門羯磨,T 1438,13011,False,False,False,False,0,1,1,1,0,1,0,
+魔試目連經,T  67,3089,False,True,False,False,0,1,0,0,2,0,0,
+淨飯王經,T 512,3892,True,True,False,False,2,1,3,1,0,1,1,
+摩竭梵志經,T 198 (4),508,False,True,False,False,0,0,0,0,0,0,0,
+觱辭梵志經,T 198 (8),701,False,False,False,False,0,0,0,0,0,0,0,
+猛觀梵志經,T 198 (11),1150,False,True,False,False,0,0,0,0,0,0,0,
+法觀梵志經,T 198 (12),1275,False,True,False,False,0,0,0,0,0,0,0,
+兜勒梵志經,T 198 (13),2120,False,True,False,False,0,0,0,0,0,0,0,
+鼈王經,T 154(36),590,False,False,False,False,2,0,0,1,0,0,1,
+放牛法經,T 123,2190,False,True,False,False,0,0,2,1,0,0,11,
+餓鬼經,T 746,4508,False,False,False,False,0,0,1,0,0,0,0,
+閻羅王經,X 21,3413,True,False,False,False,0,0,0,1,0,0,1,
+古來經,T 44,2644,False,True,False,False,0,4,4,3,3,3,3,
+緣本經,T 37,1047,False,True,False,False,0,0,0,3,0,0,3,
+施色力經,T 132,767,False,True,False,False,0,0,0,0,0,0,0,
+甚深大迴向經,T 825,2496,True,False,False,False,2,0,0,0,0,0,0,
+木鏘刺脚因緣經,T 197 (6),4524,False,True,False,False,0,1,2,5,0,2,3,
+四輩經,T 769,1632,False,True,False,False,0,0,0,4,0,0,4,
+護諸比丘呪,T 154 (20),543,False,True,False,False,0,2,0,0,0,0,0,"Got a non-integer output from the model for 耶: The character '耶' appears in the provided text in the following lines:
+[0085a04] 阿耆破耆 阿羅因阿羅**耶 耶**勿遮坻錍移阿錍
+
+These occurrences are part of a transliterated mantra or dharani. In such contexts, the characters are used for their phonetic value to represent sounds from another language (e.g., Sanskrit or Pali) and do not function as grammatical particles at the end of Chinese sentences or questions.
+
+The request specifically asks for '耶' appearing ""at end of yes or no questions or as a final particle at the end of declarative sentences"". The instances of '耶' in this text do not fulfill these grammatical roles in Chinese.
+
+Therefore, the count is 0.
+
+0
+"

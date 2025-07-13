@@ -4,5 +4,7 @@ package-lock.json
 package.json
 silk_road_corpus.code-workspace
 bib_file_parts/
+paper/
+scripts/__pycache__/
 tmp/
 venv/

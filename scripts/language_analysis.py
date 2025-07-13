@@ -1,6 +1,7 @@
 """This script searches texts for Buddhist terminology and language useage.
 """
 
+import argparse
 import csv
 import cszjj
 import os
@@ -11,11 +12,16 @@ cszjj_path = "data/chusanzangjiji.csv"
 file_index_path = "data/canonical_summaries.csv"
 analysis_filename = "data/language_analysis.csv"
 prompt_template = """
-How many times does the character {given_char} used as a final particle at the end of declarative sentences in the given text [text uploaded]? Return only the integer number and no other output.
+How many times does the character {given_char} used as a final particle at the end of declarative sentences in the given text [text uploaded]?
+Return only the integer number and no other output.
+"""
+ye2_prompt = """
+How many times does the character '耶' appear at end of yes or no questions or as a final particle at the end of declarative sentences in
+the given text [text uploaded]? Return only the integer number and no other output.
 """
 
 
-def parse_file_index(file_path):
+def parse_file_index(file_path, restart_at=None):
     """
     Parses the Taisho file index from the summaries file.
 
@@ -27,12 +33,17 @@ def parse_file_index(file_path):
         text number and file name.
     """
     data = []
+    restarted = False
     try:
         with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
             csvreader = csv.reader(csvfile)
             next(csvfile) # Skip header row
             i = 0
             for row in csvreader:
+                if restart_at and (restart_at == row[1]):
+                    restarted = True
+                if restart_at and (restart_at != row[1]) and not restarted:
+                    continue
                 if len(row) > 1:
                     entry = {
                         "title_zh": row[1],
@@ -47,6 +58,38 @@ def parse_file_index(file_path):
         print(f"An error occurred while parsing the CSV file: {e}")
         raise
     return data
+
+
+def find_entry(file_path, title_zh):
+    """
+    Finds the Taisho file index and file path from the summaries file.
+
+    Args:
+        file_path (str): The path to the CSV file.
+
+    Returns:
+        dict: A dictionary entry represents a title, Taisho number, and file name.
+    """
+    try:
+        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
+            csvreader = csv.reader(csvfile)
+            next(csvfile) # Skip header row
+            i = 0
+            for row in csvreader:
+                if len(row) > 1:
+                    if row[1] == title_zh:
+                        return {
+                            "title_zh": row[1],
+                            "taisho_no": row[2],
+                            "filepath": row[3],
+                        }
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+        raise
+    except Exception as e:
+        print(f"An error occurred while parsing the CSV file: {e}")
+        raise
+    return {}
 
 
 def check_patterns(nti, entry):
@@ -73,13 +116,13 @@ def check_patterns(nti, entry):
             content = strip_boiler_plate(content)
             ye2_count = char_count(content, "耶")
             ye2_final_count = 0
+            error = ""
             if ye2_count > 0:
                 try:
-                    r1 = cszjj.send_prompt(prompt_template.format(given_char="耶"),
-                                                                      file_path=filepath)
+                    r1 = cszjj.send_prompt(ye2_prompt, file_path=filepath)
                     ye2_final_count = int(r1)
                 except:
-                    print(f"Got a non-integer output from the model for 耶: {r1}")
+                    error = f"Got a non-integer output from the model for 耶: {r1}\n"
             er3_count = char_count(content, "耳")
             er3_final_count = 0
             if er3_count > 0:
@@ -88,17 +131,16 @@ def check_patterns(nti, entry):
                                                                       file_path=filepath)
                     er3_final_count = int(r2)
                 except:
-                    print(f"Got a non-integer output from the model for 耳: {r2}")
+                    error += f"Got a non-integer output from the model for 耳: {r2}\n"
             ye3_count = char_count(content, "也")
             ye3_final_count = 0
-            if er3_count > 0:
+            if ye3_count > 0:
                 try:
                     r3 = cszjj.send_prompt(prompt_template.format(given_char="也"),
                                                                       file_path=filepath)
                     ye3_final_count = int(r3)
                 except:
-                    print(f"Got a non-integer output from the model for 也: {r3}")
-
+                    error = f"Got a non-integer output from the model for 也: {r3}\n"
             return {
                 "title_zh": title_zh,
                 "taisho_no": entry["taisho_no"],
@@ -114,6 +156,7 @@ def check_patterns(nti, entry):
                 "ye2_final_count": ye2_final_count,
                 "er3_final_count": er3_final_count,
                 "ye3_final_count": ye3_final_count,
+                "error": error,
             }
     except FileNotFoundError:
         print(f"Error: The file '{filepath}' was not found.")
@@ -198,11 +241,41 @@ def append_result(filename, entry):
            entry["ye2_final_count"],
            entry["er3_final_count"],
            entry["ye3_final_count"],
+           entry["error"],
     ]
     cszjj.append_to_csv(filename, [row])
     print(f"Result appended for {title_zh}")
 
 if __name__ == "__main__":
+    nti = os.environ.get("NTI", "")
+    if len(nti) == 0:
+        sys.exit("NTI not in environment.") 
+
+    # Process command line arguments
+    parser = argparse.ArgumentParser(
+        description="Searches texts for Buddhist terminology and language useage"
+    )
+    parser.add_argument(
+        '-t', '--title',
+        type=str,
+        required=False,
+        help='Process only a single text with the given CSZJJ title'
+    )
+    parser.add_argument(
+        '-r', '--restart',
+        type=str,
+        required=False,
+        help='Restart processing all records at the given CSZJJ title'
+    )
+    args = parser.parse_args()
+    if args.title:
+        print(f"Processing {args.title}")
+        find_entry(file_index_path, args.title)
+        entry = find_entry(file_index_path, args.title)
+        result = check_patterns(nti, entry)
+        append_result(analysis_filename, result)
+        sys.exit()
+
     headers = ["CSZJJ",
                "Taisho No.",
                "length",
@@ -217,13 +290,15 @@ if __name__ == "__main__":
                "ye2_final_count",
                "er3_final_count",
                "ye3_final_count",
+               "error",
                ]
-    cszjj.write_headers_to_csv(analysis_filename, headers)
-    entries = parse_file_index(file_index_path)
+    if not args.restart:
+        print("Starting at the beginning\n")
+        cszjj.write_headers_to_csv(analysis_filename, headers)
+    else:
+        print(f"Restarting at {args.restart}\n")
+    entries = parse_file_index(file_index_path, args.restart)
     num = len(entries)
-    nti = os.environ.get("NTI", "")
-    if len(nti) == 0:
-        sys.exit("NTI not in environment.") 
     for entry in entries:
         result = check_patterns(nti, entry)
         append_result(analysis_filename, result)

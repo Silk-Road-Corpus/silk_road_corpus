@@ -141,7 +141,7 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
--- How many anonymous entries can be related to a text in a larger collection?
+-- How many anonymous entries can be related to a text in a larger collection (for visualization)?
 FROM cszjj.chusanzangjiji
 |> WHERE (fascicle = 3 OR fascicle = 4)
    AND modern_ref LIKE '%)'
@@ -150,6 +150,14 @@ FROM cszjj.chusanzangjiji
 |> AGGREGATE COUNT(*) AS `Number in Collection` GROUP BY `Taisho No`
 |> WHERE `Number in Collection` > 1
 |> ORDER BY `Number in Collection` DESC
+```
+
+```sql
+-- How many anoymous entries are Chinese native compositions?
+FROM cszjj.chusanzangjiji
+|> WHERE secondary_lit_classification IS NOT NULL
+   AND (fascicle = 3 OR fascicle = 4)
+|> SELECT id, title_zh, modern_ref, modern_title, secondary_lit_classification
 ```
 
 ### Language Analysis
