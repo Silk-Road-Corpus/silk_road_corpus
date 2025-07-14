@@ -1,6 +1,6 @@
-CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error
+CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error,correction
 四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,
-大般泥洹經,T 6,27175,False,True,False,False,22,21,12,61,0,8,60,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times at the end of yes or no questions in the given text:
+大般泥洹經,T 6,27175,False,True,False,False,22,21,12,61,3,8,60,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times at the end of yes or no questions in the given text:
 
 1.  **[0183c13]** 「時臥耶？」 (Were you sleeping?) - This is a direct yes/no question asked by someone to the monk.
 2.  **[0183c26]** 「時臥耶？」 (Were you sleeping?) - This is the Buddha recounting the same question asked by someone to him. Although it's a nested quote, the character '耶' still functions as a final particle for a yes/no question within the text.
@@ -9,20 +9,11 @@ CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,y
 There are no instances where '耶' appears as a final particle at the end of a declarative sentence in this text.
 
 Therefore, the total count is 3.
-"
+",Should be 3
 道地經中要語章,T 608,2245,False,False,False,False,0,1,1,0,1,0,0,
 梵志頗波羅延問尊種經,T 71,4143,False,True,False,False,0,3,8,6,3,7,5,
 颰披陀菩薩經,T 419,7676,False,True,False,False,1,1,9,2,1,6,2,
 魔王入目犍蘭腹經,T 66,4480,False,True,False,False,0,0,0,2,0,0,0,
-佛本行經,T 193,86145,False,False,False,False,5,27,19,3,9,2,0,"Got a non-integer output from the model for 也: HTTP error occurred: 500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyB6jLVGbppf02Ezz9vdQoPRLs-f47UOKNg - Response: {
-  ""error"": {
-    ""code"": 500,
-    ""message"": ""An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting"",
-    ""status"": ""INTERNAL""
-  }
-}
-
-"
 河中大聚沫經,T 106,1110,False,True,False,False,0,0,0,1,0,0,1,
 聞城譬經,T 713,2680,False,True,False,False,0,0,0,1,0,0,1,
 自守亦不自守經,T 107,403,False,True,False,False,0,0,1,0,0,0,0,
@@ -45,7 +36,7 @@ Therefore, the total count is 3.
 三十二相經,T 26 (59),2189,False,True,True,False,0,1,1,0,1,0,0,
 演道俗經,T 820,6219,False,True,False,False,1,1,1,2,1,0,1,
 黑氏梵志經,T 583,2147,False,True,False,False,0,1,0,0,1,0,0,
-大愛道般泥洹經,T 144,3879,False,True,False,False,0,48,0,3,0,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the text. Let's analyze each instance:
+大愛道般泥洹經,T 144,3879,False,True,False,False,0,48,0,3,2,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the text. Let's analyze each instance:
 
 1.  **[0867b14] 摩訶卑耶和題俱曇彌，持精進種般泥洹耶**
     *   Context: Buddha is asking Ananda: ""Do you think Mahāprajāpatī Gautamī will attain nirvana by means of the vigor (精進種)?"" This is a yes/no question. **Counts.**
@@ -67,7 +58,7 @@ There are no instances where '耶' appears as a final particle at the end of dec
 Therefore, the character '耶' appears 2 times at the end of yes or no questions.
 
 2
-"
+", Should be 2
 頗多和多耆經,T 740,773,False,True,False,False,0,1,0,1,0,0,1,
 五母子經,T 555,1226,False,False,False,False,1,0,7,1,0,5,1,
 無垢賢經,T 562,1866,False,True,False,False,2,1,3,3,0,1,2,
@@ -121,7 +112,7 @@ Therefore, the character '耶' appears 2 times at the end of yes or no questions
 鬼子母經,T 1262,5544,False,False,False,False,0,1,0,0,0,0,0,
 內外六波羅蜜經,T 778,1798,False,False,False,False,0,0,4,1,0,0,15,
 弗迦沙王經,T 511,4031,False,True,False,False,0,1,12,1,1,5,1,
-七車經,T 26 (9),3511,False,True,True,False,4,19,0,11,0,0,11,"Got a non-integer output from the model for 耶: The goal is to count occurrences of the character '耶' that meet one of two conditions:
+七車經,T 26 (9),3511,False,True,True,False,4,19,0,11,13,0,11,"Got a non-integer output from the model for 耶: The goal is to count occurrences of the character '耶' that meet one of two conditions:
 1.  It appears at the end of a yes/no question.
 2.  It appears as a final particle at the end of a declarative sentence.
 
@@ -192,9 +183,9 @@ No instances were found where '耶' acts as a final particle at the end of a dec
 Total count: 13
 
 13
-"
-阿拔經,T 20,8554,False,True,False,False,1,8,11,15,5,6,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 11 times in the provided text.
-"
+", Should be 13
+阿拔經,T 20,8554,False,True,False,False,1,8,11,15,5,6,11,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 11 times in the provided text.
+", Should be 11
 堅心經,T 733,963,False,True,False,False,0,0,1,1,0,0,1,
 太子和休經,T 344,1938,False,False,False,False,0,4,2,0,0,0,0,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times in the provided text:
 
@@ -213,8 +204,8 @@ Let's evaluate these occurrences against the given criteria:
 Since none of the occurrences of '耶' meet either of the specified conditions, the count is 0.
 
 0
-"
-分陀利經,T 265,2129,False,True,False,False,2,1,0,1,0,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences. Let's examine the text for occurrences of ""也"" and its function:
+", Should be 0
+分陀利經,T 265,2129,False,True,False,False,2,1,0,1,0,0,1,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences. Let's examine the text for occurrences of ""也"" and its function:
 
 1.  **[0197b13] 佛言：「是時，王者，我身是也；**
     *   Here, ""也"" appears at the end of the clause ""我身是"". This clause is a declarative statement meaning ""it was my body"" or ""it was me"". The ""也"" functions as a final particle, confirming the statement. Although it's followed by a semicolon, in Classical Chinese, ""也"" frequently marks the end of a declarative clause or complete thought unit, even if that unit is part of a larger sentence structure separated by a semicolon or comma. Thus, this instance fits the criteria.
@@ -224,8 +215,8 @@ I have carefully scanned the entire text, and this is the only instance of the c
 Therefore, the character ""也"" is used 1 time as a final particle at the end of declarative sentences.
 
 1
-"
-無悕望經,T 813,13023,False,True,False,False,16,5,1,11,0,1,0,"Got a non-integer output from the model for 也: The character ""也"" used as a final particle at the end of declarative sentences appears 5 times in the given text.
+", Should be 1
+無悕望經,T 813,13023,False,True,False,False,16,5,1,11,0,1,5,"Got a non-integer output from the model for 也: The character ""也"" used as a final particle at the end of declarative sentences appears 5 times in the given text.
 
 Here are the instances:
 1.  [0776b05] 亦復不歸多願妄想菩薩之手**也**。」
@@ -233,13 +224,13 @@ Here are the instances:
 3.  [0778c01] 誠如所云在世眾祐**也**。
 4.  [0778c17] 具虛無慧**也**。」
 5.  [0779a13] 不想出家為沙門**也**。」
-"
+", Should be 5
 胎中女經,T 563,13143,True,True,False,False,0,1,0,7,1,0,1,
 普達王經,T 522,2194,False,True,False,False,0,0,0,0,0,0,0,
 長者威勢經,T 330,3934,False,True,False,False,5,4,0,2,2,0,2,
 鹹水喻經,T 29,950,False,True,False,False,0,0,0,0,0,0,0,
 彌勒當來生經,T 457,1442,False,False,False,False,0,1,0,0,1,0,0,
-放鉢經,T 629,4158,False,False,False,False,0,16,0,5,0,0,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the text in two contexts that might be relevant to the question, in addition to being part of proper names (like 賴毘羅耶 and 惹那羅耶):
+放鉢經,T 629,4158,False,False,False,False,0,16,0,5,1,0,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the text in two contexts that might be relevant to the question, in addition to being part of proper names (like 賴毘羅耶 and 惹那羅耶):
 
 1.  **[0449c19] 須臾頃便火出，是火泥犁火耶？**
     *   Context: ""諸菩薩問佛：「...是火泥犁火耶？」"" (The bodhisattvas asked the Buddha: ""...is this fire the Naraka fire?"")
@@ -254,12 +245,12 @@ No other instances of '耶' functioning as a final particle at the end of declar
 Therefore, only one instance meets the specified criteria.
 
 1
-"
+", Should be 1
 法海經,T 34,1607,False,True,False,False,0,0,3,2,0,4,2,
 以身施餓虎經,T 172,6527,True,False,False,False,5,4,4,10,0,4,9,
 淨行經,T 579,10357,True,False,False,False,3,0,0,4,0,0,2,
 金剛三昧經,T 273,17001,True,True,False,False,1,2,1,16,0,0,5,
-大愛道受誡經,T 1478,9011,False,False,False,False,1,5,9,49,0,6,21,"Got a non-integer output from the model for 耶: The character '耶' appears twice in the provided text. Let's analyze each instance based on the given conditions: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+大愛道受誡經,T 1478,9011,False,False,False,False,1,5,9,49,1,6,21,"Got a non-integer output from the model for 耶: The character '耶' appears twice in the provided text. Let's analyze each instance based on the given conditions: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
 
 1.  **[0946a13] ...疲勞悲涕乃爾耶？」**
     *   The full sentence is: ""裘曇彌！何因著弊衣踱跣，面目流離身上蒙塵，疲勞悲涕乃爾耶？"" (Gautami! For what reason are you wearing worn clothes and walking barefoot, with a stained face, dusty body, tired and weeping like this?)
@@ -276,10 +267,10 @@ Therefore, only one instance meets the specified criteria.
 Based on this strict interpretation of the conditions, only one instance of '耶' fits the criteria.
 
 The final answer is $\boxed{1}$
-"
+", Should be 1
 長者法志妻經,T 572,2005,False,True,False,False,4,0,2,1,0,2,1,
 七智經,T 27,1151,False,True,False,False,0,0,5,1,0,0,1,
-難龍王經,T 597,14377,True,True,False,False,0,2,0,7,1,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 6 times.
+難龍王經,T 597,14377,True,True,False,False,0,2,0,7,1,0,6,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 6 times.
 
 Here are the specific occurrences:
 
@@ -293,13 +284,13 @@ Here are the specific occurrences:
 In all these cases, ""也"" acts as a final particle, affirming the preceding statement (""it is not X""). Although some are followed by a comma in modern punctuation, in classical Chinese, such a construction typically denotes the end of a declarative clause or unit of thought. The instance ""不愁悶也？"" (0566c06) is excluded as it is a question.
 
 6
-"
+", Should be 6
 三慧經,T 768,7597,False,False,False,False,0,4,4,3,2,1,3,
 阿難為蠱道呪經,T 551,1778,False,True,False,False,0,1,3,2,1,1,3,
 菩薩本行經,T 188,6974,False,False,False,False,0,11,5,5,5,3,5,
 太子辟羅經,T 596,1030,False,True,False,False,3,0,0,4,0,0,4,
 沙彌羅經,T 750,1017,False,False,False,False,0,1,2,0,1,2,0,
-八德經,T 35,1482,False,True,False,False,0,0,1,13,0,1,0,"Got a non-integer output from the model for 也: 1.  [0819a13] ...非爾俗夫所應坐處**也**。」 (This is a declarative sentence within a quote.)
+八德經,T 35,1482,False,True,False,False,0,0,1,13,0,1,11,"Got a non-integer output from the model for 也: 1.  [0819a13] ...非爾俗夫所應坐處**也**。」 (This is a declarative sentence within a quote.)
 2.  [0819a22] ...斯一德**也**。
 3.  [0819a22] 海潮不過期先際，斯二德**也**。
 4.  [0819a24] ...斯三德**也**。
@@ -316,7 +307,7 @@ The ""也"" at [0819c11] ""恐彼神雷威怒加之也，"" is also followed by 
 Counting only those instances where ""也"" marks the definitive end of a declarative sentence (or a complete quote acting as such).
 
 11
-"
+", Should be 11
 大方便報恩經,T 156,10902,True,False,False,False,8,8,0,9,5,0,3,
 分別功德經,T 1507,6215,False,False,False,False,1,13,8,73,5,5,54,
 道神足無極變化經,T 816,8068,False,True,False,False,1,0,8,0,0,0,0,
@@ -327,8 +318,8 @@ Counting only those instances where ""也"" marks the definitive end of a declar
 淨度三昧經,X 15,8879,False,True,False,False,2,6,5,3,2,2,1,
 未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0,
 摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,1,0,0,
-那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,6,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 2 times in the given text.
-"
+那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,6,2,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 2 times in the given text.
+", Should be 2
 舊譬喻經,T 206,11039,False,False,False,False,4,1,24,65,1,11,50,
 大比丘威儀經,T 1470,10771,False,False,False,False,0,1,0,0,0,0,0,
 觀無量壽經,T 365,9986,True,True,False,False,2,3,0,1,2,0,1,
@@ -343,7 +334,7 @@ Counting only those instances where ""也"" marks the definitive end of a declar
 文殊師利般涅槃經,T 463,2193,True,False,False,False,0,0,0,1,0,0,1,
 無垢施菩薩分別應辯經,T 310 (33),14603,True,False,False,False,4,44,7,7,29,3,0,
 無言菩薩經,T 397(6),17275,False,False,False,False,19,12,2,8,8,1,7,
-異出菩薩本起經,T 188,6974,False,False,False,False,0,11,5,5,0,3,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the given text in the following instances that match the criteria:
+異出菩薩本起經,T 188,6974,False,False,False,False,0,11,5,5,6,3,5,"Got a non-integer output from the model for 耶: The character '耶' appears in the given text in the following instances that match the criteria:
 
 1.  **[0618c20] 太子曰：「吾亦當復老耶？」**
     *   This is a direct yes/no question: ""Will I also grow old?"" (Can be answered with yes or no).
@@ -374,7 +365,7 @@ The instance `[0618b02] 吾子將有何不善耶？` is an open-ended question (
 The final count is 6.
 
 6
-"
+", Should be 6
 大方廣菩薩十地經,T 308,3864,True,False,False,False,2,13,2,0,0,1,0,
 菩薩生地經,T 533,1613,False,True,False,False,1,2,0,3,2,0,3,
 諸菩薩求佛本業經,T 282,7418,False,True,False,False,2,0,0,0,0,0,0,
@@ -442,7 +433,7 @@ Here are the instances:
 5.  [0801b19] ""...汝莫持汝天上意，自貢高**也**""
 
 5
-"
+", Should be 5
 長者子懊惱三處經,T 525,1292,False,True,False,False,0,1,0,0,1,0,0,
 十支居士八城人經,T 92,1529,False,True,False,False,0,0,0,0,0,0,0,
 婆羅門子命終愛念不離經,T 91,2218,False,True,False,False,0,6,0,0,6,0,0,
@@ -455,8 +446,8 @@ Here are the instances:
 梵志計水淨經,T 510,1052,False,True,False,False,0,0,0,1,0,0,1,
 前世諍女經,T 154 (7),869,False,True,False,False,0,0,0,1,0,0,1,
 三摩竭經,T 129,4299,False,True,False,False,1,1,2,7,1,2,4,
-摩鄧女經,T 1300,18426,True,False,False,False,1,17,6,7,7,0,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 5 times in the given text.
-"
+摩鄧女經,T 1300,18426,True,False,False,False,1,17,6,7,7,0,5,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 5 times in the given text.
+", Should be 5
 釋家畢罪經,T 152 (54),2563,False,False,False,False,1,0,1,13,0,0,13,
 殺身濟賈人經,T 152 (67),545,False,False,False,False,0,0,1,2,0,1,2,
 殺龍濟一國人經,T 152 (70),701,False,False,False,False,0,0,0,4,0,0,4,
@@ -496,7 +487,7 @@ Let's analyze this instance against the given criteria:
 Since the single occurrence of '耶' does not meet either of the specified conditions, the character '耶' appears 0 times under the given criteria.
 
 0
-"
+", Should be 0
 驢駝經,T 154 (50),1056,False,True,False,False,0,0,0,3,0,0,3,
 猘狗經,T 214,1088,False,False,False,False,0,1,1,1,1,1,1,
 鱉獼猴經,T 154 (10),918,False,True,False,False,0,1,2,0,1,2,0,
@@ -524,7 +515,7 @@ Furthermore, none of these instances are ""declarative sentences"" as they all c
 Based on the strict interpretation of the criteria provided, '耶' does not appear at the end of any ""yes or no questions"" nor as a final particle at the end of any ""declarative sentences"" in the given text.
 
 0
-"
+", Shoul be 0
 泥犁經,T 86,7034,False,True,False,False,0,3,5,4,0,4,4,
 十八泥犁經,T 731,3215,False,False,False,False,0,0,0,1,0,0,2,
 四泥犁經,T 139,894,False,True,False,False,0,0,0,0,0,0,0,
@@ -533,7 +524,7 @@ Based on the strict interpretation of the criteria provided, '耶' does not appe
 數經,T 70,2662,False,True,False,False,0,0,2,0,0,0,0,
 時經,T 794a,1131,True,False,False,False,0,0,0,0,0,0,0,
 意經,T 827,1541,False,True,False,True,12,0,0,11,0,0,0,
-罵意經,T 732,9111,False,False,False,False,0,3,17,7,2,0,6,"Got a non-integer output from the model for 耳: The character 耳 is used 7 times as a final particle at the end of declarative sentences in the provided text.
+罵意經,T 732,9111,False,False,False,False,0,3,17,7,2,7,6,"Got a non-integer output from the model for 耳: The character 耳 is used 7 times as a final particle at the end of declarative sentences in the provided text.
 
 Here are the instances:
 
@@ -546,7 +537,7 @@ Here are the instances:
 7.  [0534a09] 世間所有如夢**耳**，夢飯食見好，覺便不見。
 
 7
-"
+", Should be 7
 法觀經,T 611,3167,False,False,False,False,0,0,7,0,0,1,0,
 身觀經,T 612,1220,False,True,False,False,0,1,0,0,1,0,0,
 伏婬經,T 65,1558,False,True,False,False,0,0,0,0,0,0,0,
@@ -560,7 +551,7 @@ Here are the instances:
 何苦經,T 26 (148),2156,False,True,True,False,0,7,0,4,8,0,4,
 貧窮經,T 26 (125),1562,False,True,True,False,0,6,0,13,6,0,13,
 求欲經,T 49,5905,False,True,False,False,1,3,8,0,1,0,0,
-分別經,T 738,3552,False,True,False,False,1,2,7,7,0,4,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 4 times in the provided text:
+分別經,T 738,3552,False,True,False,False,1,2,7,7,0,4,4,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 4 times in the provided text:
 
 1.  `[0541b10] 不可譬喻也。`
 2.  `[0541b23] 當復更入邪見無窮已也。`
@@ -568,13 +559,13 @@ Here are the instances:
 4.  `[0542b13] 故不為也。`
 
 4
-"
+", Should be 4
 慢法經,T 739,841,False,False,False,False,0,0,0,1,0,0,0,
 邪見經,T 93,720,False,True,False,False,0,1,0,0,1,0,0,
 積骨經,T 150A (30),185,False,True,False,False,0,0,0,0,0,0,0,
 苦陰經,T 53,3009,False,True,False,False,0,6,2,0,7,0,0,
 灌臘經,T 391,612,False,True,False,False,0,0,0,1,0,0,1,
-受歲經,T 50,2353,False,True,False,False,0,5,2,0,0,2,0,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the provided text. Let's examine each instance to determine if it fits the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+受歲經,T 50,2353,False,True,False,False,0,5,2,0,2,2,0,"Got a non-integer output from the model for 耶: The character '耶' appears 5 times in the provided text. Let's examine each instance to determine if it fits the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
 
 1.  **[0843b22] 又何二藏互有無耶？**
     *   This sentence uses '何' (hè/hé), meaning ""why"" or ""how"". Therefore, it is a ""wh-question"" (e.g., ""Why do the two canons mutually have or not have [these texts]?""), not a yes or no question. It is also not a declarative sentence.
@@ -599,9 +590,9 @@ Here are the instances:
 Based on the analysis, the character '耶' appears 2 times at the end of a yes or no question. No instances of '耶' appear as a final particle at the end of declarative sentences.
 
 2
-"
+", Should be 2
 腹使經,T 154 (28),2019,False,True,False,False,0,2,1,1,2,1,1,
-持齋經,T 26 (202),5190,False,True,True,False,0,3,0,3,0,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears three times in the text. Let's examine each instance based on the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+持齋經,T 26 (202),5190,False,True,True,False,0,3,0,3,1,0,3,"Got a non-integer output from the model for 耶: The character '耶' appears three times in the text. Let's examine each instance based on the given criteria: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
 
 1.  `[0770a20] 世尊問曰：「居士婦！今沐浴耶？」`
     *   This is a question asking ""Are you bathing now?"". It is a direct yes or no question.
@@ -619,7 +610,7 @@ Based on the analysis, the character '耶' appears 2 times at the end of a yes o
 Based on the analysis, only one instance of '耶' meets the specified criteria.
 
 1
-"
+", Should be 1
 盂蘭經,T 685,1179,False,True,False,False,0,0,0,0,0,0,0,
 恒水戒經,T 33,1851,False,True,False,False,0,0,2,6,0,2,6,
 寂志果經,T 22,9621,False,True,False,False,1,4,4,6,2,1,6,
@@ -641,11 +632,11 @@ Now, let's analyze if this instance meets the specified criteria:
 Since the single occurrence of '耶' does not meet either of the specified conditions, the count is 0.
 
 0
-"
+", Should be 0
 金剛清淨經,T 644,3787,True,False,False,False,0,2,0,2,0,0,2,
 淨除業障經,T 1494,9706,True,False,False,False,4,12,1,12,9,0,8,
 相應相可經,T 111,572,False,False,False,False,0,0,0,0,0,0,0,
-商人求財經,T 26 (136),5609,False,True,True,False,0,9,4,2,0,2,0,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text only once.
+商人求財經,T 26 (136),5609,False,True,True,False,0,9,4,2,0,2,1,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text only once.
 
 The instance is:
 `諸賢！我時脫不如是問也。` (line 0643c08)
@@ -653,7 +644,7 @@ The instance is:
 The other instance previously considered, `賢者！我等是閻浮洲諸商人也，` (line 0642c09), is followed by a comma (，), indicating that the sentence continues, and ""也"" is not functioning as a final particle terminating the sentence.
 
 1
-"
+", Should be 1
 前世三轉經,T 178,3533,False,True,False,False,0,5,2,9,2,5,8,
 阿含正行經,T 151,1965,False,True,False,False,0,0,4,0,0,1,0,
 摩訶乘寶嚴經,T 351,12205,False,True,False,False,0,20,0,17,19,0,20,
@@ -694,21 +685,13 @@ In this instance, '耶' is part of a proper noun/name and is not acting as a fin
 Therefore, the count of '耶' appearing at the end of yes or no questions or as a final particle at the end of declarative sentences is 0.
 
 0
-"
+", Should be 0
 灌頂宮宅神王守鎮左右呪經,T 1331 (5),5380,False,True,False,False,0,6,1,11,1,1,10,
 灌頂塚墓因緣四方神呪經,T 1331 (6),4820,False,True,False,False,2,3,1,8,0,1,4,
 灌頂伏魔封印大神呪經,T 1331 (7),4284,False,True,False,False,1,2,3,16,0,2,13,
 灌頂摩尼羅亶大神呪經,T 1331 (8),5103,False,True,False,False,0,3,0,5,0,0,5,
 灌頂召五方龍王攝疫毒神呪經,T 1331 (9),4353,False,True,False,False,0,8,1,4,0,0,4,
-七佛神呪,T 1333,6124,True,False,False,False,0,51,7,1,0,1,1,"Got a non-integer output from the model for 耶: HTTP error occurred: 500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyB6jLVGbppf02Ezz9vdQoPRLs-f47UOKNg - Response: {
-  ""error"": {
-    ""code"": 500,
-    ""message"": ""An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting"",
-    ""status"": ""INTERNAL""
-  }
-}
-
-"
+七佛神呪,T 1333,6124,True,False,False,False,0,51,7,1,0,1,1,
 華積陀羅尼神呪,T 1356,1375,True,False,False,False,0,4,0,0,0,0,0,
 持句神呪,T 1351,1062,False,True,False,False,0,1,0,1,1,0,1,
 幻師颰陀神呪,T 1378b,795,False,True,False,False,0,2,0,0,0,0,0,
@@ -725,7 +708,7 @@ However, after carefully examining the text for instances where ""也"" function
 Many sentences end with nouns, verbs, or other particles like ""故"", ""者"", ""等"" (e.g., ""是名信行。"", ""是名法行。"", ""是名八輩。""). None of these sentences conclude with ""也"".
 
 Therefore, the count is 0.
-"
+", Should be 0
 甘露味阿毘曇,T 1553,25764,False,False,False,False,0,4,26,3,0,0,3,
 如來智印經,T 633,11917,True,False,False,False,0,0,0,3,0,0,3,
 七佛父母姓字經,T 4,1805,False,True,False,False,2,6,2,0,0,1,0,
@@ -759,4 +742,4 @@ The request specifically asks for '耶' appearing ""at end of yes or no question
 Therefore, the count is 0.
 
 0
-"
+", Should be 0

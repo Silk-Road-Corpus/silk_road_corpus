@@ -202,7 +202,7 @@ FROM cszjj.language_analysis AS LA
 FROM cszjj.language_analysis AS LA
 |> JOIN cszjj.chusanzangjiji AS C
    ON LA.czsjj_title_zh = C.title_zh
-|> WHERE C.fascicle = 3 OR C.fascicle = 4
+|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
 |> AGGREGATE COUNT(*) AS num_texts GROUP BY LA.rushiwowen, LA.wenrushi
 ```
 
@@ -216,11 +216,23 @@ FROM cszjj.language_analysis AS LA
 ```
 
 ```sql
+-- Counts of anonymous texts with We Ru Shi by section
+FROM cszjj.language_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
+   AND LA.wenrushi
+|> SELECT C.title_zh, LA.taisho_no, C.modern_title, C.fascicle, C.section
+|> AGGREGATE COUNT(*) num_texts GROUP BY fascicle, section
+|> ORDER BY fascicle, section
+```
+
+```sql
 -- Number of anonymous texts with Wen Ru Shi and no final particles
 FROM cszjj.language_analysis AS LA
 |> JOIN cszjj.chusanzangjiji AS C
    ON LA.czsjj_title_zh = C.title_zh
-|> WHERE C.fascicle = 3 OR C.fascicle = 4
+|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
    AND LA.wenrushi
    and not_in_shanzai = 0
    AND ye2_final_count = 0
@@ -284,7 +296,9 @@ NTI = $PWD/uddhist-dictionary/corpus/taisho
 python3 scripts/language_analysis.py
 ```
 
-The results will be written to data/lanaguage_analysis.csv.
+The results will be written to data/lanaguage_analysis.csv. This can also take a long
+time to run. If you need to restart it use the `--restart` flag. If you need to run
+it for a single entry use the `--title` flag.
 
 ## Updating the Flutter app
 

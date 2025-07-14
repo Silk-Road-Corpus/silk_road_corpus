@@ -82,5 +82,17 @@
     "type": "INTEGER",
     "mode": "REQUIRED",
     "description": "Number of times that the character 也 occurs as a final particle"
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Error encountered by the script"
+  },
+  {
+    "name": "correction",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Manual correction for any error encountered by the script"
   }
 ]
