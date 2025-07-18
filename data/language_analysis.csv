@@ -1,5 +1,5 @@
 CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error,correction
-四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,0
+四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,0,
 大般泥洹經,T 6,27175,False,True,False,False,22,21,12,61,3,8,60,"Got a non-integer output from the model for 耶: The character '耶' appears 3 times at the end of yes or no questions in the given text:
 
 1.  **[0183c13]** 「時臥耶？」 (Were you sleeping?) - This is a direct yes/no question asked by someone to the monk.
