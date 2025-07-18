@@ -317,7 +317,7 @@ Counting only those instances where ""也"" marks the definitive end of a declar
 興起行經,T 197,12252,False,True,False,False,0,3,4,22,2,4,19,,
 淨度三昧經,X 15,8879,False,True,False,False,2,6,5,3,2,2,1,,
 未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0,,
-摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,1,0,0,
+摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,1,0,0,,
 那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,6,2,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 2 times in the given text.
 ", Should be 2
 舊譬喻經,T 206,11039,False,False,False,False,4,1,24,65,1,11,50,,
