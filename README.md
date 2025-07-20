@@ -292,7 +292,8 @@ project and then set the NTI environment variable:
 ```shell
 cd ..
 git clone https://github.com/alexamies/buddhist-dictionary.git
-NTI = $PWD/uddhist-dictionary/corpus/taisho
+export NTI=$PWD/buddhist-dictionary/corpus/taisho
+cd silk_road_corpus
 python3 scripts/language_analysis.py
 ```
 

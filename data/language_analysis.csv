@@ -248,26 +248,36 @@ Therefore, only one instance meets the specified criteria.
 ", Should be 1
 法海經,T 34,1607,False,True,False,False,0,0,3,2,0,4,2,,
 以身施餓虎經,T 172,6527,True,False,False,False,5,4,4,10,0,4,9,,
-淨行經,T 579,10357,True,False,False,False,3,0,0,4,0,0,2,,
+淨行經,T 579,20273,True,False,False,False,4,2,4,4,0,0,3,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 3 times.
+
+Here are the instances:
+
+1.  **[0951c27] 勿須去也！**
+    ""汝今年幼生長深宮，稟性柔軟，初未曾出，雪山玄遠，路險艱難，汝今云何當能到彼？吾國多有耆舊梵志，神智無二，善能宣說甚深妙法，我當為汝請入宮內，講論道法，恣汝所問，勿須去**也**！""
+    (This is a declarative statement advising that there is no need to go.)
+
+2.  **[0952a05] 爾時王女者，汝身是也；**
+    ""爾時王女者，汝身是**也**；雪山梵志者即我身是。""
+    (This is a declarative statement identifying the king's daughter.)
+
+3.  **[0954c20] 得成二道，無有餘也。**
+    ""大人之相有三十二，菩薩所修有二十行，與大人相合，得成二道，無有餘**也**。""
+    (This is a declarative statement indicating nothing else remains.)
+
+Therefore, the character ""也"" used as a final particle at the end of declarative sentences appears 3 times.
+"
+", Should be 3
 金剛三昧經,T 273,17001,True,True,False,False,1,2,1,16,0,0,5,,
-大愛道受誡經,T 1478,9011,False,False,False,False,1,5,9,49,1,6,21,"Got a non-integer output from the model for 耶: The character '耶' appears twice in the provided text. Let's analyze each instance based on the given conditions: ""at end of yes or no questions or as a final particle at the end of declarative sentences"".
+大愛道受誡經,T 1478,18551,False,False,False,False,3,8,23,99,2,10,0,"Got a non-integer output from the model for 也: HTTP error occurred: 500 Server Error: Internal Server Error for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyB6jLVGbppf02Ezz9vdQoPRLs-f47UOKNg - Response: {
+  ""error"": {
+    ""code"": 500,
+    ""message"": ""An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting"",
+    ""status"": ""INTERNAL""
+  }
+}
 
-1.  **[0946a13] ...疲勞悲涕乃爾耶？」**
-    *   The full sentence is: ""裘曇彌！何因著弊衣踱跣，面目流離身上蒙塵，疲勞悲涕乃爾耶？"" (Gautami! For what reason are you wearing worn clothes and walking barefoot, with a stained face, dusty body, tired and weeping like this?)
-    *   The presence of ""何因"" (for what reason / why) makes this an information-seeking question, not a yes or no question.
-    *   It is clearly a question, not a declarative sentence.
-    *   Therefore, this instance does not meet either condition.
-
-2.  **[0949a24] ...汝所知似不如我知諦耶！**
-    *   The full sentence is: ""汝所知似不如我知諦耶！"" (Is what you know seemingly not as good as what I know as truth?)
-    *   This is a rhetorical question, but grammatically it is structured as a statement (""汝所知似不如我知諦"") followed by an interrogative particle ('耶') which turns it into a question that can be answered with a ""yes"" or ""no"" (e.g., ""Yes, it is not as good"" or ""No, it is as good""). Thus, it functions as a yes or no question.
-    *   It is a question, not a declarative sentence.
-    *   Therefore, this instance meets the condition of appearing at the end of a yes or no question.
-
-Based on this strict interpretation of the conditions, only one instance of '耶' fits the criteria.
-
-The final answer is $\boxed{1}$
-", Should be 1
+"
+", Failed repeated for 也
 長者法志妻經,T 572,2005,False,True,False,False,4,0,2,1,0,2,1,,
 七智經,T 27,1151,False,True,False,False,0,0,5,1,0,0,1,,
 難龍王經,T 597,14377,True,True,False,False,0,2,0,7,1,0,6,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences in the given text 6 times.
@@ -308,19 +318,82 @@ Counting only those instances where ""也"" marks the definitive end of a declar
 
 11
 ", Should be 11
-大方便報恩經,T 156,10902,True,False,False,False,8,8,0,9,5,0,3,,
-分別功德經,T 1507,6215,False,False,False,False,1,13,8,73,5,5,54,,
-道神足無極變化經,T 816,8068,False,True,False,False,1,0,8,0,0,0,0,,
-羅摩伽經,T 294,15715,True,False,False,False,12,0,1,0,0,0,0,,
-儒首菩薩無上清淨分衛經,T 234,8559,False,True,False,False,12,15,12,26,6,5,27,,
-菩薩瓔珞本業經,T 1485,12907,True,False,False,False,0,1,1,0,0,0,0,,
-興起行經,T 197,12252,False,True,False,False,0,3,4,22,2,4,19,,
+大方便報恩經,T 156,75487,True,True,False,False,61,77,27,104,7,0,44,"Got a non-integer output from the model for 耶: The character '耶' appears at the end of questions or as a final particle in the given text in the following instances:
+
+1.  **[0124c12] 頗有孝養父母不耶？** - This is a direct yes/no question.
+2.  **[0124c13] 諸天神耶？** - This is a yes/no question.
+3.  **[0124c13] 人耶？** - This is a yes/no question.
+4.  **[0124c13] 非人耶？** - This is a yes/no question.
+5.  **[0124c14] 汝為自以智力問於如來耶？** - This is a yes/no question.
+6.  **[0133a21] 況於大藏錢財飲食耶？** - This is a rhetorical question that implies a yes/no answer (""is it not even more so?"").
+7.  **[0134a02] 鬼魅所著耶？** - This is a direct yes/no question.
+
+There are no instances of '耶' functioning as a final particle at the end of purely declarative sentences without an interrogative or rhetorical implication. Instances like ""為幾時耶？"" and ""復於何時當得解脫？"" were excluded because they ask for specific information (how long, when), not a yes/no answer.
+
+Therefore, the total count is 7.
+
+7
+Got a non-integer output from the model for 耳: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 74121, 'totalTokenCount': 139656, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 74121}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': 'j0x9aIoUmaiq2w_8rJTIBQ'}
+"
+", Should be 7, unable to complete the remainder of the analysis
+分別功德經,T 1507,43094,False,True,False,False,7,107,81,276,24,14,0,"Got a non-integer output from the model for 也: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 41071, 'totalTokenCount': 106606, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 41071}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': '_099aIuBAZqaqtsPprjIiA0'}
+"
+", Cannot complete the analysis
+道神足無極變化經,T 816,31911,False,True,False,True,2,47,8,12,5,0,11,"Got a non-integer output from the model for 也: The character ""也"" used as a final particle at the end of declarative sentences (or strong declarative clauses acting as complete statements) in the given text appears 11 times.
+
+Here are the specific instances:
+
+1.  **[0808b01]** 報言：「踊躍不可持，亦不可獲，是上踊躍。如不可獲，踊躍之 最**也**。」
+2.  **[0811c03]** 「彼土如來 則我身是！我於彼間以法而教導。如是目連！如是比名為道神足無極變化**也**，一切弟子、辟支佛皆悉過其上。
+3.  **[0812a11]** 佛言：「則我身是！我於彼間說法以教導人，如是名為道神 足無極之變化**也**。一切弟子及辟支佛去佛甚遠。
+4.  **[0812b13]** 佛言：「彼佛則我身是，我於彼間以法而教導。如是比名為道神足 無極之變化**也**。非是羅漢、辟支佛所能及知。
+5.  **[0813a04]** 佛言：「如是目連！彼世無恐懼施如來 則我身是！我於彼世界以法而教導。如是目連！如來名為道神足無極之變化**也**，一切弟子、緣一覺所不能持。
+6.  **[0813b21]** 目連！彼世界如來則我身是！我於彼世界以法而教導。如是目連！名為如來道神足無極之變化**也**，一切諸弟子、緣一覺所不及知。
+7.  **[0814a03]** 佛言：「則我身是！名 為如來道神足無極之變化**也**。是故目連！一切弟子、緣一覺所不能及知**也**。
+8.  **[0814a03]** (continuation of 7) 一切弟子、緣一覺所不能及知**也**。
+9.  **[0814b14]** 佛言：「如是目連！彼世界如來則我身是！我於彼土以法而教導，是名道神足無極之變化**也**，一切弟子、緣一覺所不能及知。
+10. **[0815a05]** 佛言：「目連！彼佛則我身是！我於彼國以法教導人，名為如來權道神足無極之變化**也**，弟子、緣一覺所不能及知。
+11. **[0816a23]** 其聞是者，不敢微意 言非是如來無極示現之變化**也**。
+
+11
+"
+", Should be 11
+羅摩伽經,T 294,41177,True,False,False,False,18,3,3,2,0,0,2,,
+儒首菩薩無上清淨分衛經,T 234,16587,False,True,False,False,27,33,20,61,23,7,25,,
+菩薩瓔珞本業經,T 1485,24683,True,False,False,False,0,1,2,0,0,0,0,,
+興起行經,T 197,19795,False,True,False,False,5,16,21,35,4,14,284,"Got a non-integer output from the model for 耶: The character '耶' appears at the end of the following sentences:
+
+1.  `看是道士，行於非法，應當爾耶？` (0165a12)
+    *   ""應當爾耶？"" (Should it be so?) - This functions as a rhetorical question implying a ""yes"" or ""no"" answer. Counts as a yes/no question.
+
+2.  `此女不殺人、亦不偷盜，直妄語，便墮阿鼻耶？` (0171b02)
+    *   ""直妄語，便墮阿鼻耶？"" (Just by lying, does she fall into Avici hell?) - This is a direct yes/no question. Counts as a yes/no question.
+
+3.  `王復問佛：「意不可見，云何獨繫意釘耶？」` (0171b11)
+    *   ""云何獨繫意釘耶？"" (How is it bound by the will's nail alone?) - This is an information question (asking ""how""), not a yes/no question, nor is it a declarative sentence. Excluded.
+
+4.  `本何以知身、口大，意為小；今方云意大，身口、小耶？` (0171c07)
+    *   ""今方云意大，身口、小耶？"" (Now do you claim that intention is great, and body and speech are small?) - This is a direct yes/no question. Counts as a yes/no question.
+
+5.  `佛復問王：「云何知意釘為大，身、口二事，繫於意釘耶？」` (0171c13)
+    *   ""云何知意釘為大，身、口二事，繫於意釘耶？"" (How do you know that the will's nail is great, and body and speech are bound to it?) - This is an information question (asking ""how""), not a yes/no question, nor is it a declarative sentence. Excluded.
+
+6.  `為可暫共見佛，便還耶。` (0172c29)
+    *   ""為可暫共見佛，便還耶。"" (Can we go see the Buddha briefly, and then return?) - This is a direct yes/no question. Counts as a yes/no question.
+
+All identified instances of '耶' at the end of a sentence function as part of a yes/no question. None of them function as a final particle at the end of a declarative sentence.
+
+Therefore, the total count is 4.
+
+4
+", Should be 4
 淨度三昧經,X 15,8879,False,True,False,False,2,6,5,3,2,2,1,,
 未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0,,
-摩訶摩耶經,T 383,8668,True,False,False,False,1,29,0,1,1,0,0,,
-那先經,T 1670A,8948,False,False,False,False,6,36,12,2,0,6,2,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 2 times in the given text.
-", Should be 2
-舊譬喻經,T 206,11039,False,False,False,False,4,1,24,65,1,11,50,,
+摩訶摩耶經,T 383,17432,True,False,False,False,8,56,1,3,4,0,2,,
+那先經,T 1670A,17484,False,False,False,False,16,66,36,8,51,26,0,"Got a non-integer output from the model for 也: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 17070, 'totalTokenCount': 82605, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 17070}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': '71p9aIaRHK-qqtsPh6rG0Q0'}
+"
+", Unable to complete the analysis
+舊譬喻經,T 206,21056,False,False,False,False,11,12,48,102,3,26,99,,
 大比丘威儀經,T 1470,10771,False,False,False,False,0,1,0,0,0,0,0,,
 觀無量壽經,T 365,9986,True,True,False,False,2,3,0,1,2,0,1,,
 採華違王上佛授記妙華經,T 510,1196,False,False,False,False,2,0,1,0,0,1,0,,

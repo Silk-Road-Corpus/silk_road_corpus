@@ -99,11 +99,14 @@
     {
       "name": "locations",
       "values": [
-        {"label": "Jiankang", "latitude": 32.05837, "longitude": 118.79647},
+        {"label": "Jianye", "latitude": 32.05837, "longitude": 118.79647},
         {"label": "Changshan", "latitude": 38.14618, "longitude": 114.57109},
         {"label": "Chang’an", "latitude": 34.26581, "longitude": 108.95409},
         {"label": "Liangzhou", "latitude": 37.92817, "longitude": 102.64198},
-        {"label": "Guanzhong", "latitude": 34.26581, "longitude": 108.95409}
+        {"label": "Guanzhong", "latitude": 33.86616, "longitude": 109.94934},
+        {"label": "Dunhuang", "latitude": 40.101624, "longitude": 94.81779},
+        {"label": "Ye", "latitude": 36.61118, "longitude": 114.48817},
+        {"label": "Xiangyang", "latitude": 32.04116, "longitude": 112.09223}
       ],
       "transform": [
       {
