@@ -332,10 +332,8 @@ Therefore, the total count is 7.
 
 7
 Got a non-integer output from the model for 耳: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 74121, 'totalTokenCount': 139656, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 74121}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': 'j0x9aIoUmaiq2w_8rJTIBQ'}
-"
-", Should be 7, unable to complete the remainder of the analysis
+", Should be 7 - unable to complete the remainder of the analysis
 分別功德經,T 1507,43094,False,True,False,False,7,107,81,276,24,14,0,"Got a non-integer output from the model for 也: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 41071, 'totalTokenCount': 106606, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 41071}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': '_099aIuBAZqaqtsPprjIiA0'}
-"
 ", Cannot complete the analysis
 道神足無極變化經,T 816,31911,False,True,False,True,2,47,8,12,5,0,11,"Got a non-integer output from the model for 也: The character ""也"" used as a final particle at the end of declarative sentences (or strong declarative clauses acting as complete statements) in the given text appears 11 times.
 
@@ -354,7 +352,6 @@ Here are the specific instances:
 11. **[0816a23]** 其聞是者，不敢微意 言非是如來無極示現之變化**也**。
 
 11
-"
 ", Should be 11
 羅摩伽經,T 294,41177,True,False,False,False,18,3,3,2,0,0,2,,
 儒首菩薩無上清淨分衛經,T 234,16587,False,True,False,False,27,33,20,61,23,7,25,,
@@ -389,7 +386,6 @@ Therefore, the total count is 4.
 未曾有因經,T 688,1991,True,False,False,False,2,3,0,0,0,0,0,,
 摩訶摩耶經,T 383,17432,True,False,False,False,8,56,1,3,4,0,2,,
 那先經,T 1670A,17484,False,False,False,False,16,66,36,8,51,26,0,"Got a non-integer output from the model for 也: Error: Unexpected response structure or no content generated. Response: {'candidates': [{'content': {'role': 'model'}, 'finishReason': 'MAX_TOKENS', 'index': 0}], 'usageMetadata': {'promptTokenCount': 17070, 'totalTokenCount': 82605, 'promptTokensDetails': [{'modality': 'TEXT', 'tokenCount': 17070}], 'thoughtsTokenCount': 65535}, 'modelVersion': 'gemini-2.5-flash', 'responseId': '71p9aIaRHK-qqtsPh6rG0Q0'}
-"
 ", Unable to complete the analysis
 舊譬喻經,T 206,21056,False,False,False,False,11,12,48,102,3,26,99,,
 大比丘威儀經,T 1470,10771,False,False,False,False,0,1,0,0,0,0,0,,
