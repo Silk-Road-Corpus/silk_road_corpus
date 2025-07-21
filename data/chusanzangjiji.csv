@@ -1903,7 +1903,7 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 1902,菩薩為魚王經,4,1,Bodhisattva King of Fish Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,From the Collection of the Six Perfections.,16,,,,,,,,,,,,,,,,,,,,,
 1903,象王經,4,1,Elephant King Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,From the Jātaka Stories.,16,,,,,,,,,,,,,,,,,,,,,
 1904,虎王經,4,1,Tiger King Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
-1905,鼈王經,4,1,Turtle King Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Also known as Sūtra on the Bodhisattva’s Past Life as a Turtle King.,16,T 154(36),佛說菩薩曾為鼈王經,1,,,,Jātaka and Avadāna,,,,,,,https://dazangthings.nz/cbc/text/4787/,2025-06-15,,,,,,Fascicle 4
+1905,鼈王經,4,1,Turtle King Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,Also known as Sūtra on the Bodhisattva’s Past Life as a Turtle King.,16,T 154 (36),佛說菩薩曾為鼈王經,1,,,,Jātaka and Avadāna,,,,,,,https://dazangthings.nz/cbc/text/4787/,2025-06-15,,,,,,Fascicle 4
 1906,蠍王經,4,1,Scorpion King Sūtra,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,5,,,,,,,,,,,,,,,,,,,,,
 1907,毒龍蛇施經,4,1,Sūtra on the Generosity of a Poisonous Snake,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
 1908,養牛經,4,1,Sūtra on Raising an Ox,1,,,,,,,,,,"Y (T 2154, 55.0032a01)",,,"5, 15",,,,,,,,,,,,,,,,,,,,,
@@ -2108,3 +2108,74 @@ CSZJJ No.,CSZJJ Chinese Title,CSZJJ Fascicle,CSZJJ Section No.,English title,CSZ
 2107,異出十善十惡經,4,1,Alternative Translation of the Sūtra on the Ten Wholesome and Ten Unwholesome Actions,1,,,,,,,,十善十惡經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 2108,異出九傷經,4,1,Alternative Translation of Nine Wounds Sūtra,1,,,,,,,,九傷經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
 2109,異出了本經,4,1,Alternative Translation of Sūtra on Understanding the Origin of Birth and Death,1,,,,,,,,了本生死經,,"Y (T 2154, 55.0032a01)",,,,,,,,,,,,,,,,,,,,,,,,
+2110,抄華嚴經十四卷,5,1,Abridged Version of the Avataṃsaka Sūtra,14,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2111,抄方等大集經,5,1,Abridged Version of the Mahāsaṃnipāta Sūtra,12,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2112,抄菩薩地經,5,1,Abridged Version of the Bodhisattvabhūmi Sūtra,12,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2113,抄法句譬經,5,1,Abridged Version of the Dharmapada,8,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2114,抄阿差末經,5,1,Abridged Version of the Akṣayamati Nirdeśa Sūtra,4,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2115,抄淨度三昧經,5,1,Abridged Version of the Jing Du Sanmei Jing,4,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2116,抄摩訶摩耶經,5,1,Abridged Version of the Mahāmāyā Sūtra,3,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2117,抄胎經,5,1,Abridged Version of the Garbhāvakrāntinirdeśa,3,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2118,抄央掘魔羅經,5,1,Abridged Version of the Aṅgulimālīya Sūtra,2,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2119,抄報恩經,5,1,Abridged Version of the Bao En Jing,2,Prince Wenxuan,,,,,,extract,,,,,A transcription of the first fascicle.,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2120,抄頭陀,5,1,Abridged Version of the Sūtra on Ascetic Practices,2,Prince Wenxuan,,,,,,extract,,,,,A transcription of the rules contained in it.,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2121,抄義足經,5,1,Abridged Version of the Sūtra on the Fullness of Meaning,2,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2122,抄法華藥王品,5,1,Abridged Version of the Medicine King Chapter of the Lotus Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2123,抄維摩詰所說佛國品,5,1,Abridged Version of the Buddha Lands Chapter of the Vimalakīrti Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2124,抄維摩詰方便品,5,1,Abridged Version of the Expedient Means Chapter of the Vimalakīrti Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2125,抄維摩詰問疾品,5,1,Abridged Version of the Asking about Sickness Chapter of the Vimalakīrti Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2126,抄安般守意經,5,1,Abridged Version of the Sūtra on the Mindfulness of Breathing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2127,抄菩薩本業經,5,1,Abridged Version of the Sūtra on Stories of the Former Karma of the Bodhisattva,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2128,抄菩薩本業願行品,5,1,"Abridged Version of the Sūtra on Stories of the Former Karma, Vows, and Practice of the Bodhisattva",1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2129,抄四諦經要數,5,1,Abridged Version of the Sūtra on Four Noble Truths Essential Elements,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2130,抄法律三昧經,5,1,Abridged Version of the Scripture on the Rules of Meditation,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2131,抄照明三昧不思議事經,5,1,Abridged Version of the Radiating Samādhi of Inconceivable Things,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2132,抄諸佛要集經,5,1,Abridged Version of the Buddhasaṅgīti Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2133,抄大乘方等要慧經,5,1,Abridged Version of the Summary of Mahāyāna Wisdom Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2134,抄普賢觀懺悔法,5,1,Abridged Version of the Samantabhadra and Avalokiteśvara Repentance Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2135,抄樂瓔珞莊嚴方便經,5,1,Abridged Version of the Le Yingluo Zhuangyan Fangbian Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2136,抄未曾有因緣經,5,1,Abridged Version of the Wei Ceng You Yinyuan Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2137,抄阿毘曇五法行經,5,1,Abridged Version of the Scripture on the Five Dharmas and Elements of the Abhidharma,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2138,抄諸法無行經,5,1,Abridged Version of the Zhu Fa Wu Xing Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2139,抄無為道經,5,1,Abridged Version of the Wu Wei Dao Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2140,抄分別經,5,1,Abridged Version of the Fenbie Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2141,抄德光太子經,5,1,Abridged Version of the Prince Punyarasmi Sūtra,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2142,抄魔化比丘經,5,1,Abridged Version of the Mo Hua Biqiu Jing,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2143,抄優婆塞受戒品,5,1,Abridged Version of the Upāsaka Precepts Chapter,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2144,抄優婆塞受戒法,5,1,Abridged Version of the Upāsaka Precepts Ceremony,1,Prince Wenxuan,,,,,,extract,,,,,,,,,,,,,,,,,,,,,,,,,,,See the note about Prince Wenxuan attached to the entry for 抄貧女為國王夫人經.
+2145,抄貧女為國王夫人經,5,1,Abridged Version of the Sūtra on the Poor Woman who Becomes Queen,1,Prince Wenxuan,,,,,,extract,,,,,From the Avataṃsaka Sūtra to the Sūtra on the Poor Woman who Becomes Queen there are thirty-six items. The parts transcribed by Qi Prince Wenxuan of Jingling are noted above the titles.,,,,,,,,,,,,,,,,,,,,,,
+2146,般若經問論集,5,1,Compilation of Questions and Discussion on the Prajñāpāramitā Sūtras,20,Huiyuan,,,,,,extract,,,,,"This is an abridgement of the Treatise on the Great Perfection of Wisdom, also known as Yao Lun or abbreviated to Lun or Shi Lun.",,,,,,,,,,,,,,,,,,,,,,
+2147,抄成實論,5,1,Abridged Version of the Cheng Shi Lun,9,Sengrou and Huici,seventh year of the Yongming Era,493,"Puhong Temple, Jianye",,,extract,,,,,"In the twelfth month of the seventh year of the Yongming Era of Emperor Wu of Southern Qi, Prince Wenxuan of Jingling invited Sengrou of Dinglin Shang Temple, Huici of Xiaozhuangyan Temple to Puhong Temple to transcribe this.",,,,,,,,,,,,,,,,,,,,,,
+2148,淨度三昧抄,5,1,Abridged Version of the Jing Du Sanmei,1,,,,,,,extract,,,Y,,,,,,,,,,,,,,,,,,,,,,,,
+2149,律經雜抄,5,1,Miscellaneous Abridgments from the Vinaya and Sutras,1,,,,,,,extract,,,Y,,,,,,,,,,,,,,,,,,,,,,,,
+2150,本起抄經,5,1,Abridgments from the Jātakas,1,,,,,,,extract,,,Y,,,,,,,,,,,,,,,,,,,,,,,,
+2151,睒抄經,5,1,Shan Chao Jing,1,,,,,,,extract,,,Y,,Recorded in the Old Catalog.,,,,,,,,,,,,,,,,,,,,,,
+2152,五百梵律經抄,5,1,Abridged Version of the Sūtra on Five Hundred Brahmins,1,,,,,,,extract,,,Y,,Recorded in the Old Catalog.,,,,,,,,,,,,,,,,,,,,,,
+2153,大海深嶮抄經,5,1,Abridged Version of the Sūtra on Dangers of the Deep Ocean,1,,,,,,,extract,,,Y,,An extract from the first six fascicles of the sūtra; an old extract that is now lost.,,,,,,,,,,,,,,,,,,,,,,
+2154,抄為法捨身經,5,1,Abridged Version of Wei Fa She Shen Jing,1,Prince Wenxuan,,,,,,extract,,,Y,,Copied by Prince Wenxuan; now lost.,,,,,,,,,,,,,,,,,,,,,,
+2155,法苑經,5,1,Fa Yuan Jing,189,,,,,,,extract,,,Y,,"Early extracts compiled into a collection, grouped by category, numbered, the total number is given at the end; now lost.",,,,,,,,,,,,,,,,,,,,,,
+2156,寶如來經,5,2,Bao Rulai Jing,1,,,,,,,,,,,,Composed by a foreigner from Nanhai; also known as Bao Rulai Sanmei Jing.,,T 637,佛說寶如來三昧經,2,Gītamitra,Eastern Jin,317–420,Miscellaneous,K 171,317-420,Zhou Dynasty Corrected Catalog of Scriptures,T. 2154-508b:26; T. 2154-509a:2,,佛說寶如來三昧經,https://dazangthings.nz/cbc/text/2108/,2025-07-20,,,,,,Jiyan (1997) argues that this text has been misattributed to Gītamitra in the Taishō.
+2157,定行三昧經,5,2,Ding Xing Sanmei Jing,1,,,,,,,,,,,,Also known as Fo Yi ding Xing Molianqian Suo Wen Jing.,,,,,,,,,,,,,,,,,,,,,,
+2158,真諦比丘慧明經,5,2,Zhendi Biqiu Hui Ming Jing,1,,,,,,,,,,,,Also known as Huiming Biqiu Jing or Qingjing Zhendi Jing.,18,,,,,,,,,,,,,,,,,,,,,
+2159,尼吒國王經,5,2,Nizha Guowang Jing,1,,,,,,,,,,,,Also known as Nizha Huangluo Guowang Jing or Huangluo Guowang Jing.,,,,,,,,,,,,,,,,,,,,,,
+2160,胸有萬字經,5,2,Xiong You Wan Zi Jing,1,,,,,,,,,,,,Also known as Xiong Jian Wang Zi Jing.,18,,,,,,,,,,,,,,,,,,,,,
+2161,薩和菩薩經,5,2,Sahe Pusa Jing,1,,,,,,,,,,,,The Old Catalog calls this Guowang Sahe Pusa Jing.,2,,,,,,,,,,,,,,,,,,,,,
+2162,善信女經,5,2,Shan Xin Nu Jing,1,,,,,,,,,,,,Also known as Shan Xin Jing.,18,,,,,,,,,,,,,,,,,,,,,
+2163,護身十二妙經,5,2,Hu Shen Shi Er Miao Jing,1,,,,,,,,,,,,Also known as Du Shi Hu Shi Jing.,,,,,,,,,,,,,,,,,,,,,,
+2164,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2165,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2166,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2167,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2168,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2169,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2170,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2171,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2172,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2173,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2174,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2175,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2176,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2177,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2178,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2179,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2180,,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
