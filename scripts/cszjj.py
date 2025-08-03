@@ -8,6 +8,38 @@ import os
 import requests
 
 
+def find_entry(file_path, title_zh):
+    """
+    Finds the Taisho file index and file path from the summaries file.
+
+    Args:
+        file_path (str): The path to the CSV file.
+
+    Returns:
+        dict: A dictionary entry represents a title, Taisho number, and file name.
+    """
+    try:
+        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
+            csvreader = csv.reader(csvfile)
+            next(csvfile) # Skip header row
+            i = 0
+            for row in csvreader:
+                if len(row) > 1:
+                    if row[1] == title_zh:
+                        return {
+                            "title_zh": row[1],
+                            "taisho_no": row[2],
+                            "filepath": row[3],
+                        }
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+        raise
+    except Exception as e:
+        print(f"An error occurred while parsing the CSV file: {e}")
+        raise
+    return {}
+
+
 def parse_cszjj_file(file_path):
     """
     Parses the CSZJJ CSV file and returns its content as a list of dictionaries.
@@ -37,6 +69,45 @@ def parse_cszjj_file(file_path):
         print(f"Error: The file '{file_path}' was not found.")
     except Exception as e:
         print(f"An error occurred while parsing the CSV file: {e}")
+    return data
+
+
+def parse_file_index(file_path, restart_at=None):
+    """
+    Parses the Taisho file index from the summaries file.
+
+    Args:
+        file_path (str): The path to the CSV file.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary entry represents a Taisho
+        text number and file name.
+    """
+    data = []
+    restarted = False
+    try:
+        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
+            csvreader = csv.reader(csvfile)
+            next(csvfile) # Skip header row
+            i = 0
+            for row in csvreader:
+                if restart_at and (restart_at == row[1]):
+                    restarted = True
+                if restart_at and (restart_at != row[1]) and not restarted:
+                    continue
+                if len(row) > 1:
+                    entry = {
+                        "title_zh": row[1],
+                        "taisho_no": row[2],
+                        "filepath": row[3],
+                    }
+                    data.append(entry)
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+        raise
+    except Exception as e:
+        print(f"An error occurred while parsing the CSV file: {e}")
+        raise
     return data
 
 

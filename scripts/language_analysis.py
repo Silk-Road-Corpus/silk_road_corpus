@@ -21,77 +21,6 @@ the given text [text uploaded]? Return only the integer number and no other outp
 """
 
 
-def parse_file_index(file_path, restart_at=None):
-    """
-    Parses the Taisho file index from the summaries file.
-
-    Args:
-        file_path (str): The path to the CSV file.
-
-    Returns:
-        list: A list of dictionaries, where each dictionary entry represents a Taisho
-        text number and file name.
-    """
-    data = []
-    restarted = False
-    try:
-        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
-            csvreader = csv.reader(csvfile)
-            next(csvfile) # Skip header row
-            i = 0
-            for row in csvreader:
-                if restart_at and (restart_at == row[1]):
-                    restarted = True
-                if restart_at and (restart_at != row[1]) and not restarted:
-                    continue
-                if len(row) > 1:
-                    entry = {
-                        "title_zh": row[1],
-                        "taisho_no": row[2],
-                        "filepath": row[3],
-                    }
-                    data.append(entry)
-    except FileNotFoundError:
-        print(f"Error: The file '{file_path}' was not found.")
-        raise
-    except Exception as e:
-        print(f"An error occurred while parsing the CSV file: {e}")
-        raise
-    return data
-
-
-def find_entry(file_path, title_zh):
-    """
-    Finds the Taisho file index and file path from the summaries file.
-
-    Args:
-        file_path (str): The path to the CSV file.
-
-    Returns:
-        dict: A dictionary entry represents a title, Taisho number, and file name.
-    """
-    try:
-        with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
-            csvreader = csv.reader(csvfile)
-            next(csvfile) # Skip header row
-            i = 0
-            for row in csvreader:
-                if len(row) > 1:
-                    if row[1] == title_zh:
-                        return {
-                            "title_zh": row[1],
-                            "taisho_no": row[2],
-                            "filepath": row[3],
-                        }
-    except FileNotFoundError:
-        print(f"Error: The file '{file_path}' was not found.")
-        raise
-    except Exception as e:
-        print(f"An error occurred while parsing the CSV file: {e}")
-        raise
-    return {}
-
-
 def check_patterns(nti, entry):
     """Check patterns and return results.
 
@@ -270,8 +199,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.title:
         print(f"Processing {args.title}")
-        find_entry(file_index_path, args.title)
-        entry = find_entry(file_index_path, args.title)
+        entry = cszjj.find_entry(file_index_path, args.title)
         result = check_patterns(nti, entry)
         append_result(analysis_filename, result)
         sys.exit()
@@ -297,7 +225,7 @@ if __name__ == "__main__":
         cszjj.write_headers_to_csv(analysis_filename, headers)
     else:
         print(f"Restarting at {args.restart}\n")
-    entries = parse_file_index(file_index_path, args.restart)
+    entries = cszjj.parse_file_index(file_index_path, args.restart)
     num = len(entries)
     for entry in entries:
         result = check_patterns(nti, entry)
