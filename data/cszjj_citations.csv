@@ -1,13 +1,14 @@
 CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 1,四十二章經,funayama2013sutras,22-23
+1,四十二章經,hengching2017fortytwo,27-44
 1,四十二章經,nattier2008,35-37
 1,四十二章經,zurcher2007conquest,22
 1,四十二章經,zurcher2013earliest,427
 2,安般守意經,funayama2013sutras,24
 2,安般守意經,hureau2009translations,743
-2,安般守意經,nattier2008,64
-2,安般守意經,zurcher2013earliest,421
-2,安般守意經,funayama2013sutras,24
+2,安般守意經,nattier2008,"60-61, 64"
+2,安般守意經,teng2008anapana,
+,安般守意經,zacchetti2004Kongoji,
 3,陰持入經,hureau2009translations,743
 3,陰持入經,nattier2008,61
 3,陰持入經,zurcher2013earliest,442
@@ -670,7 +671,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 612,長者音悅經,nattier2008,121-122
 616,僧大經,hayashiya1941kyoroku,731-732
 617,法常住經,hayashiya1941kyoroku,540-541
-617,法常住經,zurcher1995obscure,468-470
+617,法常住經,zurcher1995obscure,
 618,大小諫王經,nattier2023missing,104
 619,波耶匿王經,hayashiya1941kyoroku,734-736
 619,波耶匿王經,radich2019anonymous,
@@ -679,29 +680,33 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 623,摩達王經,hayashiya1941kyoroku,749-751
 624,五恐怖世經,hayashiya1941kyoroku,751-752
 625,進學經,hayashiya1941kyoroku,752-756
+626,四飯法經,zurcher1995obscure,
 627,梵摩難王經,hayashiya1941kyoroku,541-542
 629,十二死經,hayashiya1941kyoroku,484-485
 630,五無反復經,hayashiya1941kyoroku,756-759
 632,治身經,hayashiya1941kyoroku,542-543
 633,治意經,hayashiya1941kyoroku,543-544
+633,治意經,zurcher1995obscure,
 634,十善十惡經,fang2023ten,9
 634,十善十惡經,hayashiya1941kyoroku,930-938
 634,十善十惡經,li2012terminology,
 634,十善十惡經,nattier2023missing,97
 634,十善十惡經,radich2019anonymous,838
 641,十夢經,hayashiya1941kyoroku,673-683
+641,十夢經,zurcher1995obscure,
 642,長者辯意經,greene2016vegetarianism,42-43
 642,長者辯意經,hayashiya1941kyoroku,643-647
 642,長者辯意經,link1958taoan,6
 643,長者須達經,hayashiya1941kyoroku,647-651
 643,長者須達經,hung2010quantitative,
 643,長者須達經,thanissaro2025velama,
+643,長者須達經,zurcher1995obscure,
 644,孝子報恩經,cole1998mothers,68-78
 644,孝子報恩經,zurcher1995obscure,
 645,孝子睒經,hayashiya1941kyoroku,455-476
 646,自愛不自愛經,hayashiya1941kyoroku,683-685
 647,長壽王經,hayashiya1941kyoroku,506-511
-647,長壽王經,zurcher1995obscure,463
+647,長壽王經,zurcher1995obscure,
 649,未生怨經,hayashiya1941kyoroku,863-865
 649,未生怨經,nattier2023missing,105-107
 649,未生怨經,silk1997guan,224-229
@@ -715,6 +720,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 657,九色鹿經,hayashiya1941kyoroku,873-875
 657,九色鹿經,karashima2011liyong,
 658,五苦章句經,hayashiya1941kyoroku,696-700
+659,佛滅度後棺歛葬送經,zurcher1995obscure,
 661,羅芸忍辱經,radich2019anonymous,
 661,羅芸忍辱經,nattier2014thus,
 664,呵調阿那含經,hayashiya1941kyoroku,700-701
@@ -731,12 +737,14 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 679,太子和休經,hayashiya1941kyoroku,511-520
 679,太子和休經,zurcher1995obscure,
 680,分陀利經,boucher1996translation,264
+680,分陀利經,zurcher1995obscure,464
 684,胎中女經,balkwill2016transforming,134
 684,胎中女經,hayashiya1941kyoroku,775-777
-686,普達王經,zurcher1995obscure,"466, 471"
+686,普達王經,zurcher1995obscure,
 699,長者威勢經,hayashiya1941kyoroku,493-496
-700,鹹水喻經,zurcher1995obscure,461-462
-707,放鉢經,zurcher1995obscure,466-467
+700,鹹水喻經,zurcher1995obscure,
+701,薩和達王經,zurcher1995obscure,
+707,放鉢經,zurcher1995obscure,
 712,法海經,hayashiya1941kyoroku,944-947
 715,以身施餓虎經,hayashiya1941kyoroku,781-786
 715,以身施餓虎經,matsumura2010jataka,
@@ -1004,3 +1012,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 1909,放牛法經,radich2019anonymous,
 1915,閻羅王經,teiser2003ten,
 2012,四輩經,radich2019anonymous,
+2156,寶如來經,jiyan1997bao,
+2190,觀月光菩薩記,hureau2009translations,
+2190,觀月光菩薩記,zurcher2013earliest,
+2192,彌勒下教,hureau2009translations,
