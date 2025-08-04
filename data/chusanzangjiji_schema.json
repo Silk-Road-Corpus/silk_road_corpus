@@ -234,6 +234,12 @@
     "description": "Secondary literature classification"
   },
   {
+    "name": "attribution_analysis",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Attribution for analysis"
+  },
+  {
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",
