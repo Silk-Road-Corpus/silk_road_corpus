@@ -31,6 +31,8 @@ def find_entry(file_path, title_zh):
                             "taisho_no": row[2],
                             "filepath": row[3],
                         }
+                    i += i
+            print(f"{i} rows scanned but the entry {title_zh} was not found.")
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
         raise
@@ -222,3 +224,20 @@ def append_to_csv(filename, data):
             csv_writer.writerows(data)
     except IOError as e:
         print(f"Error appending to file {filename}: {e}")
+
+
+def strip_boiler_plate(content):
+    """Strings out boilerplate in text to get an accurate character count
+    """
+    lines = content.splitlines()
+    stripped = ""
+    for i, line in enumerate(lines):
+        if (not line.startswith("【經文資訊】") and 
+                not line.startswith("【版本記錄】") and
+                not line.startswith("【編輯說明") and
+                not line.startswith("【原始資料】") and
+                not line.startswith("【其他事項】") and
+                not line.startswith("本網站係採用") and
+                not line.startswith("Copyright")):
+            stripped += line
+    return stripped

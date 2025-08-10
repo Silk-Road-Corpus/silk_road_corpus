@@ -301,6 +301,14 @@ The results will be written to data/lanaguage_analysis.csv. This can also take a
 time to run. If you need to restart it use the `--restart` flag. If you need to run
 it for a single entry use the `--title` flag.
 
+To run the terminology analysis:
+
+```shell
+python3 scripts/terminology.py
+```
+
+For a single entry use the `--title` flag.
+
 ## Updating the Flutter app
 
 To update the Silk Road Corpus app after changing the bibliography:

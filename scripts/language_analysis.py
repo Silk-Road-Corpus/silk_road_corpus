@@ -2,7 +2,6 @@
 """
 
 import argparse
-import csv
 import cszjj
 import os
 import sys
@@ -42,7 +41,7 @@ def check_patterns(nti, entry):
     try:
         with open(filepath, 'r', encoding='utf-8') as file:
             content = file.read()
-            content = strip_boiler_plate(content)
+            content = cszjj.strip_boiler_plate(content)
             ye2_count = char_count(content, "耶")
             ye2_final_count = 0
             error = ""
@@ -128,23 +127,6 @@ def char_count(content, char_to_find):
     return count
 
 
-def strip_boiler_plate(content):
-    """Strings out boilerplate in text to get an accurate character count
-    """
-    lines = content.splitlines()
-    stripped = ""
-    for i, line in enumerate(lines):
-        if (not line.startswith("【經文資訊】") and 
-                not line.startswith("【版本記錄】") and
-                not line.startswith("【編輯說明") and
-                not line.startswith("【原始資料】") and
-                not line.startswith("【其他事項】") and
-                not line.startswith("本網站係採用") and
-                not line.startswith("Copyright")):
-            stripped += line
-    return stripped
- 
-
 def append_result(filename, entry):
     """
     Writes data to a CSV file.
@@ -171,6 +153,7 @@ def append_result(filename, entry):
            entry["er3_final_count"],
            entry["ye3_final_count"],
            entry["error"],
+           "",
     ]
     cszjj.append_to_csv(filename, [row])
     print(f"Result appended for {title_zh}")
@@ -219,6 +202,7 @@ if __name__ == "__main__":
                "er3_final_count",
                "ye3_final_count",
                "error",
+               "notes",
                ]
     if not args.restart:
         print("Starting at the beginning\n")
