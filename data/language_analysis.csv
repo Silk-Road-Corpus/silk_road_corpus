@@ -1,15 +1,15 @@
 CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error,correction
-四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,0,,
-陰持入經,T 603,14812,False,False,False,False,0,0,10,0,0,0,0,,
+四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,0,
+陰持入經,T 603,14812,False,False,False,False,0,0,10,0,0,0,0,
 大道地經,T 607,11523,False,False,False,False,0,3,8,1,1,0,0,"Got a non-integer output from the model for 也: The character ""也"" (U+4E5F) is not found as a final particle at the end of any declarative sentences in the provided text. The text frequently uses ""亦"" (yì) meaning ""also"" or ""too"", and ""耶"" (yé) as a question particle, but not ""也"" (yě) for declarative sentence endings.
 
 0
 ", Should be 0
-人本欲生經,T 14,8986,False,True,False,False,2,0,2,0,0,1,0,,
-阿毘曇五法經,T 1557,6048,False,False,False,False,0,0,8,0,0,0,0,,
-十報經,T 13,15109,False,True,False,False,0,4,4,0,4,0,0,,
-普法義經,T 98,4456,False,True,False,False,0,1,2,1,1,0,1,,
-漏分布經,T 57,3815,False,True,False,False,0,0,1,0,0,0,0,,
+人本欲生經,T 14,8986,False,True,False,False,2,0,2,0,0,1,0,
+阿毘曇五法經,T 1557,6048,False,False,False,False,0,0,8,0,0,0,0,
+十報經,T 13,15109,False,True,False,False,0,4,4,0,4,0,0,
+普法義經,T 98,4456,False,True,False,False,0,1,2,1,1,0,1,
+漏分布經,T 57,3815,False,True,False,False,0,0,1,0,0,0,0,
 四諦經,T 32,4886,False,True,False,False,0,0,1,1,0,0,1,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of a declarative sentence only once in the given text.
 
 This instance occurs in the commentary section at the very end of the document:
