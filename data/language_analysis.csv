@@ -1,6 +1,6 @@
 CSZJJ,Taisho No.,length,rushiwowen,wenrushi,wowenrushi,rushiwen,not_in_shanzai,ye2_count,er3_count,ye3_count,ye2_final_count,er3_final_count,ye3_final_count,error,correction
 四十二章經,T 784,1394,False,False,False,False,0,0,1,0,0,1,0,,
-陰持入經,T 603,14812,False,False,False,False,0,0,10,0,0,0,0,
+陰持入經,T 603,14812,False,False,False,False,0,0,10,0,0,0,0,,
 大道地經,T 607,11523,False,False,False,False,0,3,8,1,1,0,0,"Got a non-integer output from the model for 也: The character ""也"" (U+4E5F) is not found as a final particle at the end of any declarative sentences in the provided text. The text frequently uses ""亦"" (yì) meaning ""also"" or ""too"", and ""耶"" (yé) as a question particle, but not ""也"" (yě) for declarative sentence endings.
 
 0
