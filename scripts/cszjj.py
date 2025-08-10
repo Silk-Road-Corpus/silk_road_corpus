@@ -25,13 +25,13 @@ def find_entry(file_path, title_zh):
             i = 0
             for row in csvreader:
                 if len(row) > 1:
+                    i = i + 1
                     if row[1] == title_zh:
                         return {
                             "title_zh": row[1],
                             "taisho_no": row[2],
                             "filepath": row[3],
                         }
-                    i += i
             print(f"{i} rows scanned but the entry {title_zh} was not found.")
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
