@@ -182,9 +182,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.title:
         print(f"Processing {args.title}")
-        entry = cszjj.find_entry(file_index_path, args.title)
-        result = check_patterns(nti, entry)
-        append_result(analysis_filename, result)
+        entries = cszjj.find_entry(file_index_path, args.title)
+        for entry in entries:
+          result = check_patterns(nti, entry)
+          append_result(analysis_filename, result)
         sys.exit()
 
     headers = ["CSZJJ",

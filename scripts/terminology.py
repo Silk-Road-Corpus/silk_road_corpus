@@ -111,9 +111,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.title:
         print(f"Processing {args.title}")
-        entry = cszjj.find_entry(file_index_path, args.title)
-        result = extract_terminology(nti, entry)
-        append_result(terminology_filename, result)
+        entries = cszjj.find_entry(file_index_path, args.title)
+        for entry in entries:
+            result = extract_terminology(nti, entry)
+            append_result(terminology_filename, result)
         sys.exit()
 
     headers = ["CSZJJ",

@@ -16,30 +16,34 @@ def find_entry(file_path, title_zh):
         file_path (str): The path to the CSV file.
 
     Returns:
-        dict: A dictionary entry represents a title, Taisho number, and file name.
+        list: A list of dictionary entries each with a title, Taisho number,
+              and file name.
     """
     try:
         with open(file_path, mode='r', newline='', encoding='utf-8') as csvfile:
             csvreader = csv.reader(csvfile)
             next(csvfile) # Skip header row
             i = 0
+            matches = []
             for row in csvreader:
                 if len(row) > 1:
                     i = i + 1
                     if row[1] == title_zh:
-                        return {
+                        matches.append({
                             "title_zh": row[1],
                             "taisho_no": row[2],
                             "filepath": row[3],
-                        }
-            print(f"{i} rows scanned but the entry {title_zh} was not found.")
+                        })
+            if not matches:
+                print(f"{i} rows scanned but the entry {title_zh} was not found.")
+            return matches
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
         raise
     except Exception as e:
         print(f"An error occurred while parsing the CSV file: {e}")
         raise
-    return {}
+    return []
 
 
 def parse_cszjj_file(file_path):
