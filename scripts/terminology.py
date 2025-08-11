@@ -31,7 +31,6 @@ def extract_terminology(nti, entry):
             "taisho_no": entry["taisho_no"],
             "terminology": [],
             "error": "filepath not given",
-            "notes": "",
         }
     fname = entry["filepath"]
     filepath = fname
@@ -50,7 +49,6 @@ def extract_terminology(nti, entry):
                 "taisho_no": entry["taisho_no"],
                 "terminology": result,
                 "error": error,
-                "notes": "",
             }
     except FileNotFoundError:
         print(f"Error: The file '{filepath}' was not found.")
@@ -59,7 +57,6 @@ def extract_terminology(nti, entry):
             "taisho_no": entry["taisho_no"],
             "terminology": [],
             "error": f"The file '{filepath}' was not found.",
-            "notes": "",
         }
     except Exception as e:
         print(f"An error occurred while reading the file: {e}")
@@ -68,7 +65,6 @@ def extract_terminology(nti, entry):
             "taisho_no": entry["taisho_no"],
             "terminology": [],
             "error": f"An error occurred while reading the file: {e}",
-            "notes": "",
         }
     return {}
 
@@ -88,6 +84,7 @@ def append_result(filename, entry):
            entry["taisho_no"],
            entry["terminology"],
            entry["error"],
+           "",
     ]
     cszjj.append_to_csv(filename, [row])
     print(f"Result appended for {title_zh}")
