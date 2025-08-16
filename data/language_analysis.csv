@@ -163,6 +163,83 @@ There are no instances where '耶' appears as a final particle at the end of a d
 
 Therefore, the total count is 3.
 ",Should be 3
+瑞應本起經,T 185 (1),9344,False,False,False,False,4,2,5,23,0,5,15,,
+瑞應本起經,T 185 (2),8875,False,False,False,False,2,8,14,51,3,11,47,,
+慧印經,T 632,13638,False,True,False,False,1,4,3,27,0,2,24,,
+本業經,T 281,7676,False,True,False,False,5,1,0,2,0,0,2,,
+梵摩渝經,T 76,4976,False,True,False,False,7,2,4,21,2,0,18,,
+私阿末經,T 532,7081,False,True,False,False,4,0,3,1,0,0,1,,
+微密持經,T 1011,3147,False,True,False,False,2,1,0,4,0,0,4,,
+阿彌陀經,T 362 (1),17516,False,False,False,False,2,11,20,73,5,14,23,"Got a non-integer output from the model for 耶: The character '耶' appears at the end of sentences in the given text in the following instances:
+
+1.  **[0300a28] 佛言：「賢者阿難！有諸天神教汝、若諸佛教汝，今問我者耶？汝自從善意出問佛耶？」**
+    *   ""今問我者耶？"" - This is a yes or no question. (Count: 1)
+    *   ""汝自從善意出問佛耶？"" - This is a yes or no question. (Count: 2)
+
+2.  **[0307c21] 如天下大海水減去一渧，寧能令海水為減，知少不耶？」**
+    *   ""知少不耶？"" - This is a yes or no question. (Count: 3)
+
+3.  **[0309a27] 佛告阿難：「若有疑意於佛所耶？八方、上下，無窮無極，無邊無量，諸天下大海水，一人斗量之，尚可枯盡得其底泥；佛智不如是。」**
+    *   ""若有疑意於佛所耶？"" - This is a yes or no question. (Count: 4)
+
+4.  **[0309c13] 何況佛威神尊重，欲有所作為耶？」**
+    *   ""欲有所作為耶？"" - This is a rhetorical question, which functions as a yes or no question (implying ""Is it not so?""). (Count: 5)
+
+All identified instances of '耶' at the end of a sentence in this text are interrogative (questions), primarily functioning as yes or no questions or rhetorical questions with implied yes/no answers. There are no instances where '耶' acts purely as a final particle in a declarative sentence without an interrogative nature.
+
+Therefore, the total count is 5.
+",Should be 5
+阿彌陀經,T 362 (2),14113,False,False,False,False,2,4,11,6,0,6,6,,
+月明童子經,T 169,1691,False,True,False,False,2,0,0,0,0,0,0,,
+義足經,T 198 (1),12543,False,True,False,False,4,5,8,8,6,3,8,"Got a non-integer output from the model for 耶: The character '耶' appears 6 times in the given text, fulfilling the specified conditions:
+
+1.  **王言：「是應真耶？」** (0176a08) - End of a yes/no question.
+2.  **「寧有四禪耶？」** (0176a08) - End of a yes/no question.
+3.  **「寧三禪、二禪耶？」** (0176a09) - End of a yes/no question.
+4.  **「寧至一禪耶？」** (0176a10) - End of a yes/no question.
+5.  **不存捨正耶？** (0179b19) - End of a yes/no question within a verse.
+6.  **斷世捨是彼身耶。** (0181c19) - As a final particle at the end of a declarative sentence.
+
+Therefore, the character '耶' appears 6 times.
+
+6
+",Should be 6
+義足經,T 198 (2),12974,False,True,False,False,5,0,3,0,0,2,0,,
+阿難四事經,T 493,1983,False,True,False,False,2,1,1,9,1,1,8,,
+差摩竭經,T 533,1613,False,True,False,False,1,2,0,3,2,0,3,,
+七女經,T 556,3795,False,True,False,False,2,2,3,1,2,1,1,,
+八師經,T 581,2340,False,True,False,False,1,1,2,1,0,0,1,,
+釋摩男經,T 54,2227,False,True,False,False,0,4,5,0,4,3,0,,
+孛抄經,T 790,12247,False,True,False,False,2,7,15,46,5,10,40,"Got a non-integer output from the model for 耳: 1.  `祇曰：「我戲言耳。」` (0729a12) - ""Ghi said: 'I was just joking.'"" - ""耳"" acts as a final particle, indicating ""merely"" or ""that's all"".
+2.  `曰：「不貴也。自念當出何藏金耳。」` (0729a17) - ""He said: 'It's not expensive. I'm just thinking about which treasury to get the gold from.'"" - ""耳"" indicates ""merely"" or ""that's all"", concluding the thought.
+3.  `惟得道之人知諂偽耳。` (0729b14) - ""Only those who had attained the Dao knew it was deceitful."" - ""耳"" functions as a final particle, marking a concluding observation.
+4.  `沙門必清淨，故佛說此語耳。」` (0729b18) - ""The monastics must be pure, that's why the Buddha said these words."" - ""耳"" acts as a final particle, indicating an explanation or conclusion.
+5.  `夫人垂泣曰：『王會不用我言耳。』` (0730b26) - ""The lady said tearfully: 'The King will simply not heed my words.'"" - ""耳"" expresses a mild assertion or resignation.
+6.  `今反為此乞人所謀，故我愁耳。` (0731a01) - ""Now I am being plotted against by this beggar, that's why I am worried."" - ""耳"" indicates the reason for the distress.
+7.  `是必有謀，故欲去耳。』` (0731a12) - ""This must be a plot, that's why I want to leave."" - ""耳"" indicates the reason for leaving.
+8.  `孛曰：『卿等自迷惑，不別真偽耳。` (0735a26) - ""Bo said: 'You all are confused and cannot distinguish truth from falsehood, that's all.'"" - ""耳"" indicates ""that's all"" or ""merely"".
+9.  `故使我身烏見噉耳。` (0735a05) - ""...therefore, it caused my body to be eaten by the crows."" - ""耳"" indicates ""that's why"" or ""that's how it is"".
+10. `此非諫我，為自中耳。` (0735b02) - ""This is not advising me; it is just for your own benefit."" - ""耳"" indicates ""just"" or ""merely"".
+
+In all 10 instances, ""耳"" is used as a final particle at the end of a declarative sentence or clause.
+
+10
+",Should be 10
+明度經,T 225 (1),9639,False,True,False,False,12,12,8,174,5,8,110,,
+明度經,T 225 (2),10373,False,False,False,False,8,4,5,22,2,5,16,"Got a non-integer output from the model for 耳: The character 耳 is used 5 times as a final particle at the end of declarative sentences in the given text.
+",Should be 5
+明度經,T 225 (3),10488,False,False,False,False,6,2,6,43,2,1,40,,
+明度經,T 225 (4),12305,False,False,False,False,5,5,17,30,4,16,16,"Got a non-integer output from the model for 也: The character ""也"" is used as a final particle at the end of declarative sentences 16 times in the given text.
+",Should be 16
+明度經,T 225 (5),10976,False,False,False,False,4,7,8,21,4,18,18,,
+明度經,T 225 (6),8893,False,False,False,False,16,3,6,6,2,4,5,,
+老女人經,T 559,1309,False,True,False,False,2,0,2,1,0,0,1,,
+齋經,T 87,2073,False,True,False,False,0,6,2,0,0,1,0,,
+四願經,T 735,2711,False,True,False,False,0,0,4,3,0,0,1,,
+悔過經,T 1492,2535,False,False,False,False,0,0,0,0,0,0,0,,
+了本生死經,T 708,2737,False,False,False,False,0,0,1,2,0,0,2,,
+龍施女經,T 557,1350,False,True,False,False,0,1,2,0,0,2,0,,
+賴吒和羅經,T 68,6085,False,True,False,False,0,5,13,27,4,10,22,,
 道地經中要語章,T 608,2245,False,False,False,False,0,1,1,0,1,0,0,,
 梵志頗波羅延問尊種經,T 71,4143,False,True,False,False,0,3,8,6,3,7,5,,
 颰披陀菩薩經,T 419,7676,False,True,False,False,1,1,9,2,1,6,2,,
