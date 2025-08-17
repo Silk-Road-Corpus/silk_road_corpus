@@ -198,6 +198,16 @@ FROM cszjj.language_analysis AS LA
 ```
 
 ```sql
+-- Median length in characters of anonymous texts
+FROM cszjj.chusanzangjiji AS C
+|> INNER JOIN cszjj.language_analysis AS LA
+  ON C.title_zh = LA.czsjj_title_zh
+|> WHERE C.fascicle = 3 OR C.fascicle = 4
+|> SELECT PERCENTILE_CONT(LA.length, 0.5) OVER () AS media_length
+|> LIMIT 1
+```
+
+```sql
 -- Number of anonymous texts analyzed by ru shi wo wen
 FROM cszjj.language_analysis AS LA
 |> JOIN cszjj.chusanzangjiji AS C
