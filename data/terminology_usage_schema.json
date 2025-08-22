@@ -1,0 +1,38 @@
+[
+  {
+    "name": "czjj_no",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "CSZJJ No."
+  },
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "attribution",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Attribution of translator to the text containing the term"
+  },
+  {
+    "name": "term",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Chinese term"
+  },
+  {
+    "name": "term_introduced_by",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The translator who first used the term"
+  }
+]

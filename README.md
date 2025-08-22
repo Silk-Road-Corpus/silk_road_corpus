@@ -250,6 +250,42 @@ FROM cszjj.language_analysis AS LA
    AND ye3_final_count = 0
 |> AGGREGATE COUNT(*) AS num_texts
 ```
+### Terminology Usage
+
+Load the CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/terminology_usage.csv gs://${CSZJJ_BUCKET_NAME}/terminology_usage.csv
+```
+
+Load the terminology usage file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.terminology_usage \
+    gs://${CSZJJ_BUCKET_NAME}/terminology_usage.csv \
+    data/terminology_usage_schema.json
+```
+
+SQL queries:
+
+```sql
+-- Number of terms used grouped by who used them and who introduced them
+FROM cszjj.terminology_usage
+|> WHERE attribution IS NOT NULL
+|> AGGREGATE COUNT(term) num_terms GROUP BY attribution, term_introduced_by
+```
+
+```sql
+-- Number of terms for Taisho text grouped by who used them and who introduced them
+FROM cszjj.terminology_usage
+|> WHERE attribution IS NOT NULL
+|> AGGREGATE COUNT(term) num_terms GROUP BY czjj_no, taisho_no, attribution, term_introduced_by
+|> ORDER BY czjj_no
+```
 
 ## Running the Python Scripts
 
