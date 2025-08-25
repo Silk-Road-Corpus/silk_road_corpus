@@ -276,7 +276,7 @@ SQL queries:
 -- Number of terms used grouped by who used them and who introduced them
 FROM cszjj.terminology_usage
 |> WHERE attribution IS NOT NULL
-|> AGGREGATE COUNT(term) num_terms GROUP BY attribution, term_introduced_by
+|> AGGREGATE COUNT(DISTINCT term) num_terms GROUP BY attribution, term_introduced_by
 ```
 
 ```sql
@@ -354,6 +354,13 @@ python3 scripts/terminology.py
 ```
 
 For a single entry use the `--title` flag.
+
+To run the script that extracts the terminology and associates each term used with the
+translator that introduced the term:
+
+```shell
+python3 scripts/terminology_usage.py
+```
 
 ## Updating the Flutter app
 

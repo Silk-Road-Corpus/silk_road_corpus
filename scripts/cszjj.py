@@ -258,7 +258,7 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
             return f"Error: Unexpected response structure or no content generated. Response: {result}"
 
     except requests.exceptions.HTTPError as http_err:
-        return f"HTTP error occurred: {http_err} - Response: {response.text}"
+        return f"HTTP error occurred: {http_err} - Response: {response.text}, code: {response.status_code}"
     except requests.exceptions.ConnectionError as conn_err:
         return f"Connection error occurred: {conn_err}"
     except requests.exceptions.Timeout as timeout_err:
