@@ -250,6 +250,13 @@ FROM cszjj.language_analysis AS LA
    AND ye3_final_count = 0
 |> AGGREGATE COUNT(*) AS num_texts
 ```
+
+```sql
+-- Terminology usage lookup
+FROM cszjj.terminology_usage
+|> WHERE term = '佛'
+```
+
 ### Terminology Usage
 
 Load the CSV file into the GCS bucket:
