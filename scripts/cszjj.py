@@ -5,15 +5,18 @@ import base64
 import csv
 import json
 import os
+import re
 import requests
 
 
-def find_entry(file_path, title_zh):
+def find_entry(file_path, title_zh, fascicle):
     """
     Finds the Taisho file index and file path from the summaries file.
 
     Args:
         file_path (str): The path to the CSV file.
+        title_zh (str): The title of the text to find
+        fascicle (int): (optional) The fascicle of the text
 
     Returns:
         list: A list of dictionary entries each with a title, Taisho number,
@@ -29,10 +32,17 @@ def find_entry(file_path, title_zh):
                 if len(row) > 1:
                     i = i + 1
                     if row[1] == title_zh:
+                        filepath = row[3]
+                        if fascicle and fascicle == extract_fascicle(filepath):
+                            return [{
+                              "title_zh": row[1],
+                              "taisho_no": row[2],
+                              "filepath": filepath,
+                            }]
                         matches.append({
                             "title_zh": row[1],
                             "taisho_no": row[2],
-                            "filepath": row[3],
+                            "filepath": filepath,
                         })
             if not matches:
                 print(f"{i} rows scanned but the entry {title_zh} was not found.")
@@ -45,6 +55,18 @@ def find_entry(file_path, title_zh):
         raise
     return []
 
+def extract_fascicle(filepath):
+    """Find the fascicle number from the file path
+    """
+    pattern = r'_(\d+)\.txt$'    
+    match = re.search(pattern, filepath)
+    if match:
+        # The first capturing group (index 1) contains the number string.
+        number_str = match.group(1)
+        # Convert the captured string to an integer and return it.
+        return int(number_str)
+    # If no match is found, return None.
+    return None
 
 def index_cszjj_file(file_path):
     """

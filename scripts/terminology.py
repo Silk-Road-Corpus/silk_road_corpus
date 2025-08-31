@@ -105,10 +105,16 @@ if __name__ == "__main__":
         required=False,
         help='Process only a single text with the given CSZJJ title'
     )
+    parser.add_argument(
+        '-f', '--fascicle',
+        type=int,
+        required=False,
+        help='Process only a single fascicle of a text'
+    )
     args = parser.parse_args()
     if args.title:
-        print(f"Processing {args.title}")
-        entries = cszjj.find_entry(file_index_path, args.title)
+        print(f"Processing args, title: {args.title}, fascicle: {args.fascicle}")
+        entries = cszjj.find_entry(file_index_path, args.title, args.fascicle)
         for entry in entries:
             result = extract_terminology(nti, entry)
             append_result(terminology_filename, result)
