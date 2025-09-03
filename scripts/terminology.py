@@ -111,24 +111,34 @@ if __name__ == "__main__":
         required=False,
         help='Process only a single fascicle of a text'
     )
+    parser.add_argument(
+        '-s', '--restart_at',
+        type=str,
+        required=False,
+        help='Begin processing starting at the given title'
+    )
     args = parser.parse_args()
     if args.title:
-        print(f"Processing args, title: {args.title}, fascicle: {args.fascicle}")
-        entries = cszjj.find_entry(file_index_path, args.title, args.fascicle)
+        print(f"Processing args, title: {args.title}, fascicle: {args.fascicle}, "
+              f"start_title: {args.restart_at}")
+        entries = cszjj.find_entry(file_index_path, args.title, args.fascicle, None)
         for entry in entries:
             result = extract_terminology(nti, entry)
             append_result(terminology_filename, result)
         sys.exit()
 
-    headers = ["CSZJJ",
-               "Taisho No.",
-               "terminology",
-               "error",
-               "notes",
-               ]
-    print("Starting at the beginning\n")
-    cszjj.write_headers_to_csv(terminology_filename, headers)
-    entries = cszjj.parse_file_index(file_index_path, args.restart)
+    if not args.restart_at:
+        headers = ["CSZJJ",
+                   "Taisho No.",
+                   "terminology",
+                   "error",
+                   "notes",
+                   ]
+        print(f"Starting at the beginning\n")
+        cszjj.write_headers_to_csv(terminology_filename, headers)
+    else:
+        print(f"Starting at {args.restart_at}\n")
+    entries = cszjj.parse_file_index(file_index_path, args.restart_at)
     num = len(entries)
     for entry in entries:
         result = extract_terminology(nti, entry)

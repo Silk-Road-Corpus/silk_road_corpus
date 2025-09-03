@@ -9,14 +9,15 @@ import re
 import requests
 
 
-def find_entry(file_path, title_zh, fascicle):
+def find_entry(file_path, title_zh, fascicle, start_title):
     """
     Finds the Taisho file index and file path from the summaries file.
 
     Args:
         file_path (str): The path to the CSV file.
         title_zh (str): The title of the text to find
-        fascicle (int): (optional) The fascicle of the text
+        fascicle (int): (optional) The fascicle of the text, title_zh must be set
+        start_title (str): (optional) Start at the given title, ignore early entries
 
     Returns:
         list: A list of dictionary entries each with a title, Taisho number,
@@ -27,12 +28,13 @@ def find_entry(file_path, title_zh, fascicle):
             csvreader = csv.reader(csvfile)
             next(csvfile) # Skip header row
             i = 0
+            start_title_found = False
             matches = []
             for row in csvreader:
-                if len(row) > 1:
+                if len(row) > 2:
                     i = i + 1
-                    if row[1] == title_zh:
-                        filepath = row[3]
+                    filepath = row[3]
+                    if title_zh != None and row[1] == title_zh:
                         if fascicle and fascicle == extract_fascicle(filepath):
                             return [{
                               "title_zh": row[1],
@@ -44,6 +46,13 @@ def find_entry(file_path, title_zh, fascicle):
                             "taisho_no": row[2],
                             "filepath": filepath,
                         })
+                    if start_title_found or (start_title != None and start_title == row[1]):
+                      start_title_found = True
+                      matches.append({
+                          "title_zh": row[1],
+                          "taisho_no": row[2],
+                          "filepath": filepath,
+                      })
             if not matches:
                 print(f"{i} rows scanned but the entry {title_zh} was not found.")
             return matches
