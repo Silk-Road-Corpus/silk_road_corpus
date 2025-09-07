@@ -62,16 +62,32 @@ def introduced_by(rows, catalog):
         id = cat_entry["id"]
         # print(f"Adding title {title_zh} CSZJJ No. {id}")
         if "attribution_analysis" not in cat_entry:
-            # print(f"Title {title_zh} does not have _attribution")
-            continue
+            print(f"Title {title_zh} does not have _attribution")
+            attribution_analysis = "anonymous"
         attribution_analysis = cat_entry["attribution_analysis"]
         if not attribution_analysis:
-            # print(f"Title {title_zh} has empty attribution")
-            continue
+            print(f"Title {title_zh} has empty attribution")
+            attribution_analysis = "anonymous"
         terms = row["terms"]
         for term in terms:
             if term not in terms_introduced:
-                terms_introduced[term] = attribution_analysis
+                terms_introduced[term] = {
+                    "attribution_analysis": attribution_analysis,
+                    "document_frequency": 1,
+                }
+            else:
+                t = terms_introduced[term]
+                document_frequency = t["document_frequency"]
+                if t["attribution_analysis"] == "anonymous":
+                    terms_introduced[term] = {
+                        "attribution_analysis": attribution_analysis,
+                        "document_frequency": document_frequency + 1,
+                    }
+                else:
+                    terms_introduced[term] = {
+                        "attribution_analysis": t["attribution_analysis"],
+                        "document_frequency": document_frequency + 1,
+                    }
     return terms_introduced
 
 def write_terms_to_csv(filename, data, terms_introduced, catalog):
@@ -86,7 +102,7 @@ def write_terms_to_csv(filename, data, terms_introduced, catalog):
     try:
         with open(filename, 'w', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
-            header = ["czjj_no", "title_zh", "taisho_no", "attribution", "term", "term_introduced_by"]
+            header = ["czjj_no", "title_zh", "taisho_no", "attribution", "term", "term_introduced_by", "document_frequency"]
             csv_writer.writerow(header)
             for row in data:
                 title_zh = row["title_zh"]
@@ -99,10 +115,15 @@ def write_terms_to_csv(filename, data, terms_introduced, catalog):
                 id = cat_entry["id"]
                 attribution = cat_entry["attribution_analysis"]
                 for term in terms:
+                    # Skip terms containing punctuation
+                    if "、" in term:
+                        continue
                     term_introduced = ""
                     if term in terms_introduced:
-                        term_introduced = terms_introduced[term]
-                    r = [id, title_zh, taisho_no, attribution, term, term_introduced]
+                        t = terms_introduced[term]
+                        term_introduced = t["attribution_analysis"]
+                        document_frequency = t["document_frequency"]
+                    r = [id, title_zh, taisho_no, attribution, term, term_introduced, document_frequency]
                     csv_writer.writerow(r)
     except IOError as e:
         print(f"Error writing header to file {filename}: {e}")

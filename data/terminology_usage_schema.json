@@ -34,5 +34,11 @@
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "The translator who first used the term"
+  },
+  {
+    "name": "document_frequency",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "The number of documents that the term occurs in"
   }
 ]

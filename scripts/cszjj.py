@@ -96,11 +96,21 @@ def index_cszjj_file(file_path):
             for row in csvreader:
                 if len(row) > 2:
                     title_zh = row[1]
+                    # print(f"index_cszjj_file, processing: {row[0]}, {title_zh}")
+                    if title_zh in catalog:
+                        ent = catalog[title_zh]
+                        # Some texts occur multiple times in the catalog, eg 中阿鋡經
+                        print(f"index_cszjj_file, found in catalog: {ent}")
+                        if ("modern_ref" in ent):
+                            modern_ref = ent["modern_ref"]
+                            if len(modern_ref) > 0:
+                                print(f"index_cszjj_file, {modern_ref}, modern_ref is not empty, skipping")
+                                continue
                     entry = {
                         "id": row[0],
                         "title_zh": title_zh,
                         "fascicle": int(row[2]),
-                        "taisho_title_zh": row[19],
+                        "modern_ref": row[19],
                         "attribution_analysis": row[39],
                     }
                     catalog[title_zh] = entry

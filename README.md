@@ -282,16 +282,46 @@ SQL queries:
 ```sql
 -- Number of terms used grouped by who used them and who introduced them
 FROM cszjj.terminology_usage
-|> WHERE attribution IS NOT NULL
-|> AGGREGATE COUNT(DISTINCT term) num_terms GROUP BY attribution, term_introduced_by
+|> WHERE document_frequency > 1
+|> AGGREGATE COUNT(DISTINCT term) num_terms GROUP BY attribution, term_introduced_by```
 ```
 
 ```sql
--- Number of terms for Taisho text grouped by who used them and who introduced them
+-- Count of distinct terms that occur in at least two documents
 FROM cszjj.terminology_usage
-|> WHERE attribution IS NOT NULL
-|> AGGREGATE COUNT(term) num_terms GROUP BY czjj_no, taisho_no, attribution, term_introduced_by
-|> ORDER BY czjj_no
+|> WHERE document_frequency > 1
+|> SELECT DISTINCT term
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- Distinct terms and who introduced them
+FROM cszjj.terminology_usage
+|> WHERE document_frequency > 1
+|> SELECT DISTINCT term, term_introduced_by, document_frequency
+|> ORDER BY term_introduced_by
+```
+
+```sql
+-- Count of distinct terms, grouped by translator
+FROM cszjj.terminology_usage
+|> WHERE document_frequency > 1
+|> SELECT DISTINCT term, term_introduced_by
+|> AGGREGATE COUNT(*) GROUP BY term_introduced_by
+|> ORDER BY term_introduced_by
+```
+
+```sql
+-- Terminology usage lookup
+FROM cszjj.terminology_usage
+|> WHERE term = '教病'
+```
+
+```sql
+-- Most widely used terms
+FROM cszjj.terminology_usage
+|> SELECT DISTINCT term, term_introduced_by, document_frequency
+|> ORDER BY document_frequency DESC
 ```
 
 ## Running the Python Scripts
