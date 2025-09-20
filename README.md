@@ -324,6 +324,44 @@ FROM cszjj.terminology_usage
 |> ORDER BY document_frequency DESC
 ```
 
+### Terminology Validation
+
+Load the CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/terminology_validation.csv gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv
+```
+
+Load the terminology usage file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.terminology_validation \
+    gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv \
+    data/terminology_validation_schema.json
+```
+
+SQL queries:
+
+```sql
+-- Terminology validation
+FROM cszjj.terminology_validation
+|> WHERE validated IS NOT NULL
+|> SELECT valid
+|> AGGREGATE COUNT(*) GROUP BY valid
+```
+
+```sql
+-- Terminology - use of transliteration
+FROM cszjj.terminology_validation
+|> WHERE valid = TRUE
+|> SELECT term_introduced_by, semantic_or_transiteration
+|> AGGREGATE COUNT(*) GROUP BY term_introduced_by, semantic_or_transiteration
+|> ORDER BY term_introduced_by```
+
 ## Running the Python Scripts
 
 Setup a virtual env:
