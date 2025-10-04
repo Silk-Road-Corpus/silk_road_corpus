@@ -355,6 +355,26 @@ FROM cszjj.terminology_validation
 ```
 
 ```sql
+-- Terminology validation by document frequency
+FROM cszjj.terminology_validation
+|> WHERE validated IS NOT NULL
+|> SELECT valid, document_frequency
+|> AGGREGATE COUNT(*) AS count GROUP BY valid, document_frequency
+|> ORDER BY document_frequency DESC
+```
+
+```sql
+-- Terminology false positive rate
+SELECT * FROM
+(SELECT document_frequency, valid FROM cszjj.terminology_validation WHERE validated IS NOT NULL)
+PIVOT (
+  COUNT(valid) AS count_valid
+  FOR valid in (TRUE, FALSE)
+)
+|> EXTEND ROUND(count_valid_false / count_valid_true, 2) AS false_positive_rate
+```
+
+```sql
 -- Terminology - use of transliteration
 FROM cszjj.terminology_validation
 |> WHERE valid = TRUE
@@ -447,3 +467,19 @@ To update the Silk Road Corpus app after changing the bibliography:
 4. Copy the new files to bib_file_parts
 5. Upload the new PDF files to the GCS bucket.
 6. Update the Agent Builder index.
+
+## Drawings
+
+### Graphviz
+Network diagrams use [Graphviz](https://graphviz.org/). Images can be generated
+from DOT files with the [DOT CLI](https://graphviz.org/doc/info/command.html).
+For example,
+
+```shell
+dot -Tpng drawings/terminology_processing.dot > images/terminology_processing.png
+```
+
+### Vega Diagrams
+
+Histograms and related charts use [Vega](https://vega.github.io/vega/).
+JSON Vega files can be used to generate images using the Vega VSC plugin.

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "width": 400,
+  "height": 200,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "table",
+      "url": "terminology_evolution.csv",
+      "format": {
+        "type": "csv",
+        "parse": "auto"
+      },
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["attribution"],
+          "sort": {"field": "term_introduced_by"},
+          "field": "num_terms"
+        }
+      ]
+    }
+  ],
+
+  "signals": [
+    {
+      "name": "tooltip",
+      "value": {},
+      "on": [
+        {"events": "rect:mouseover", "update": "datum"},
+        {"events": "rect:mouseout",  "update": "{}"}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {"data": "table", "field": "attribution"},
+      "range": "width",
+      "padding": 0.05,
+      "round": true
+    },
+    {
+      "name": "yscale",
+      "domain": {"data": "table", "field": "y1"},
+      "nice": true,
+      "range": "height"
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": "category",
+      "domain": {"data": "table", "field": "term_introduced_by"}
+    }
+  ],
+
+  "axes": [
+    {
+        "orient": "bottom",
+        "scale": "xscale",
+        "title": "Translator",
+        "labelAngle": -45,
+        "labelAlign": "right"
+    },
+    {
+        "orient": "left",
+        "scale": "yscale",
+        "title": "Number of Terms"
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data":"table"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "attribution"},
+          "width": {"scale": "xscale", "band": 1},
+          "y": {"scale": "yscale", "field": "y0"},
+          "y2": {"scale": "yscale", "field": "y1"},
+          "fill": {"scale": "color", "field": "term_introduced_by"}
+        },
+        "update": {
+          "fillOpacity": {"value": 1}
+        },
+        "hover": {
+          "fillOpacity": {"value": 0.5}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "align": {"value": "center"},
+          "baseline": {"value": "bottom"},
+          "fill": {"value": "#333"}
+        },
+        "update": {
+          "x": {"scale": "xscale", "signal": "tooltip.attribution", "band": 0.5},
+          "y": {"scale": "yscale", "signal": "tooltip.num_terms", "offset": -2},
+          "text": {"signal": "tooltip.num_terms"},
+          "fillOpacity": [
+            {"test": "isNaN(tooltip.num_terms)", "value": 0},
+            {"value": 1}
+          ]
+        }
+      }
+    }
+  ],
+
+"legends": [
+  {
+    "fill": "color",
+    "title": "Introduced by",
+    "titlePadding": 5,
+    "padding": 5,
+    "encode": {
+      "title": {
+        "update": {
+          "fontSize": {"value": 14}
+        }
+      },
+      "labels": {
+        "interactive": true,
+        "update": {
+          "fontSize": {"value": 12},
+          "fill": {"value": "black"}
+        },
+        "hover": {
+          "fill": {"value": "firebrick"}
+        }
+      },
+      "symbols": {
+        "update": {
+          "stroke": {"value": "transparent"}
+        }
+      },
+      "legend": {
+        "update": {
+          "stroke": {"value": "#ccc"},
+          "strokeWidth": {"value": 1.5}
+        }
+      }
+    }
+  }]  
+}

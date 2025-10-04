@@ -1,0 +1,24 @@
+digraph D {
+
+  Script1 [shape=parallelogram, fillcolor=lightblue, style=filled, label="Python script"]
+  Text [shape=box, fillcolor=lightgrey, style=filled, label="Canonical text"]
+  Gemini [shape=diamond, fillcolor=lightblue, style=filled, label="AI model"]
+  GeminiOutput [shape=box, fillcolor=lightgrey, style=filled, label="Model output"]
+  CSZJJ [shape=box, fillcolor=lightgrey, style=filled, label="CSZJJ catalog"]
+  Script2 [shape=parallelogram, fillcolor=lightblue, style=filled, label="Python script"]
+  File [shape=box, fillcolor=lightgrey, style=filled, label="CSV file"]
+  Database [shape=cylinder, fillcolor=lightblue, style=filled]
+  Output [shape=box, fillcolor=lightgrey, style=filled, label="Query output"]
+  Validation [shape=box, fillcolor=lightgrey, style=filled, label="Validation results"]
+
+  Script1 -> Gemini [label=" Send prompt"]
+  Script1 -> Text [label=" Upload"]
+  Gemini -> GeminiOutput [label=" Extract terminology"]
+  GeminiOutput -> Script2
+  Script2 -> File [label=" Associate terms with usage by translators"]
+  Script2 -> CSZJJ
+  File -> Database [label=" Import"]
+  Database -> Output [label=" Query"]
+  Database -> Validation [label=" Manual validation"]
+
+}

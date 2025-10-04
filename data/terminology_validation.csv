@@ -47,7 +47,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 意定,An Shigao,13,,,,,
 戒定,An Shigao,8,,,,,
 信根,An Shigao,100,,,,,
-精進根,An Shigao,55,,,,,
+精進根,An Shigao,55,TRUE,2025-09-19,"Soothill and Hodus, 22",Semantic,zeal
 念根,An Shigao,55,,,,,
 定根,An Shigao,62,,,,,
 慧根,An Shigao,75,,,,,
@@ -147,7 +147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 八人,An Shigao,23,,,,,
 業,An Shigao,236,,,,,
 渴愛,An Shigao,44,,,,,
-四禪,An Shigao,294,,,,,
+四禪,An Shigao,294,TRUE,2025-09-19,"FGDB, s.v. 四禪",Mixed,four dhyānas
 五蓋,An Shigao,162,,,,,
 愛欲蓋,An Shigao,2,,,,,
 瞋恚蓋,An Shigao,15,,,,,
@@ -247,7 +247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 福行,An Shigao,11,,,,,
 邪鬼,An Shigao,6,,,,,
 六根,An Shigao,57,,,,,
-幻,An Shigao,133,,,,,
+幻,An Shigao,133,TRUE,2025-09-19,"FGDB, s.v. 幻",Semantic,māyā
 生死,An Shigao,632,,,,,
 流水,An Shigao,2,,,,,
 生滅,An Shigao,86,,,,,
@@ -347,7 +347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 法身,An Shigao,268,,,,,
 意根,An Shigao,47,,,,,
 道弟子,An Shigao,3,,,,,
-忍辱,An Shigao,388,,,,,
+忍辱,An Shigao,388,TRUE,2025-09-19,"FGDB, s.v. 忍辱",Semantic,kṣānti
 魔,An Shigao,372,,,,,
 梵,An Shigao,113,,,,,
 五解脫,An Shigao,3,,,,,
@@ -447,7 +447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 願,An Shigao,41,,,,,
 淨眼,An Shigao,7,,,,,
 教法,An Shigao,4,,,,,
-惡法,An Shigao,75,,,,,
+惡法,An Shigao,75,TRUE,2025-09-19,"T 98, 1.0922c19",Semantic,Evil ways
 明想,An Shigao,4,,,,,
 滅思想,An Shigao,3,,,,,
 邪法,An Shigao,22,,,,,
@@ -547,7 +547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 諛諂,An Shigao,26,,,,,
 欲世,An Shigao,3,,,,,
 冥,An Shigao,9,,,,,
-護戒,An Shigao,15,,,,,
+護戒,An Shigao,15,TRUE,2025-09-19,T 150A,Semantic,Uphold the precepts
 不惑,An Shigao,4,,,,,
 壞身,An Shigao,3,,,,,
 愚者,An Shigao,9,,,,,
@@ -647,7 +647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 前世因緣,An Shigao,2,,,,,
 三世,An Shigao,215,,,,,
 七事,An Shigao,2,,,,,
-三事,An Shigao,7,,,,,
+三事,An Shigao,7,TRUE,2025-09-19,"FGDB, s.v. 三事",Semantic,the three things
 婬,An Shigao,73,,,,,
 惡口,An Shigao,105,,,,,
 妄言,An Shigao,69,,,,,
@@ -747,7 +747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 瞿和離,Baoyun,2,,,,,
 阿鼻痛,Baoyun,3,,,,,
 釋宮,Baoyun,3,,,,,
-無著弟子,Baoyun,2,,,,,
+無著弟子,Baoyun,2,FALSE,2025-09-19,"T 193, fascicle 6",Semantic,Asanga's disciple
 拘夷那竭城,Baoyun,2,,,,,
 道定力,Baoyun,2,,,,,
 乳哺力,Baoyun,2,,,,,
@@ -847,7 +847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 隱覆,Buddhabhadra,2,,,,,
 精進首,Buddhabhadra,2,,,,,
 自覺法,Buddhabhadra,2,,,,,
-解脫一切縛,Buddhabhadra,2,,,,,
+解脫一切縛,Buddhabhadra,2,TRUE,2025-09-19,"T 278, 9.0423b17, fascicle 5",Semantic,Liberation from all bonds
 度脫諸群生,Buddhabhadra,2,,,,,
 嚴淨諸佛剎,Buddhabhadra,2,,,,,
 虛妄想,Buddhabhadra,4,,,,,
@@ -947,7 +947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 真實行,Buddhabhadra,2,,,,,
 神力自在,Buddhabhadra,6,,,,,
 福伽羅想,Buddhabhadra,2,,,,,
-無染著,Buddhabhadra,3,,,,,
+無染著,Buddhabhadra,3,FALSE,2025-09-19,"T 278, fascicle 11",,Partial phrase: 心無染著 a mind without defiling attachments
 天女眾,Buddhabhadra,2,,,,,
 非行,Buddhabhadra,2,,,,,
 平等正觀,Buddhabhadra,3,,,,,
@@ -1047,7 +1047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 嚴淨一切佛剎,Buddhabhadra,2,,,,,
 閻羅王處,Buddhabhadra,2,,,,,
 功德福田,Buddhabhadra,2,,,,,
-如來慧日,Buddhabhadra,2,,,,,
+如來慧日,Buddhabhadra,2,FALSE,2025-09-19,"T 278, fascicle 20",Semantic,Generic phrase: the Tathagata's wisdom is like the sun.
 清淨法輪,Buddhabhadra,4,,,,,
 義身,Buddhabhadra,2,,,,,
 毛道,Buddhabhadra,3,,,,,
@@ -1147,7 +1147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 法界佛,Buddhabhadra,2,,,,,
 心佛,Buddhabhadra,2,,,,,
 三昧佛,Buddhabhadra,2,,,,,
-性佛,Buddhabhadra,2,,,,,
+性佛,Buddhabhadra,2,TRUE,2025-09-19,"T 278, fascicle 37",Semantic,Buddha nature
 如意佛,Buddhabhadra,2,,,,,
 苦毒,Buddhabhadra,3,,,,,
 須彌山王心,Buddhabhadra,2,,,,,
@@ -1247,7 +1247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 法饒益,Buddhabhadra,2,,,,,
 佛剎微塵,Buddhabhadra,2,,,,,
 普光喜幢法門,Buddhabhadra,2,,,,,
-三昧海,Buddhabhadra,5,,,,,
+三昧海,Buddhabhadra,5,TRUE,2025-09-19,"T 278, 9.0724c07, fascicle 52",,Samadi sea
 不思議身,Buddhabhadra,2,,,,,
 障礙山,Buddhabhadra,2,,,,,
 剎塵劫,Buddhabhadra,2,,,,,
@@ -1347,7 +1347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 孝養父母,Buddhabhadra,2,,,,,
 右旋宛轉,Buddhabhadra,2,,,,,
 出定入定,Buddhabhadra,3,,,,,
-掃塔塗地,Buddhabhadra,2,,,,,
+掃塔塗地,Buddhabhadra,2,FALSE,2025-09-20,"T 643, fascicle 9",Semantic,Generic phrase: swept the stupa and cleaned the ground
 觀像,Buddhabhadra,2,,,,,
 金剛窟,Buddhabhadra,2,,,,,
 寶樓閣,Buddhabhadra,2,,,,,
@@ -1447,7 +1447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 比丘義,Buddhayaśas,3,,,,,
 犯不犯,Buddhayaśas,2,,,,,
 破僧法,Buddhayaśas,4,,,,,
-非律,Buddhayaśas,14,,,,,
+非律,Buddhayaśas,14,TRUE,2025-09-20,"FGDB, s.v. 非律儀非不律儀; T 1428, 22.0596c12, fascicle 5",Semantic,Included in the Vinaya
 毘尼羯磨,Buddhayaśas,3,,,,,
 知識,Buddhayaśas,4,,,,,
 癡狂,Buddhayaśas,6,,,,,
@@ -1547,7 +1547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 禮拜問訊,Buddhayaśas,3,,,,,
 不殺生乃至不飲酒,Buddhayaśas,2,,,,,
 得果證,Buddhayaśas,4,,,,,
-搩手,Buddhayaśas,3,,,,,
+搩手,Buddhayaśas,3,TRUE,2025-09-20,"FGDB, s.v. 搩手",Semantic,handspan
 學家,Buddhayaśas,5,,,,,
 式叉迦羅尼,Buddhayaśas,3,,,,,
 平等想,Buddhayaśas,2,,,,,
@@ -1647,7 +1647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 故妄語罪,Buddhayaśas,5,,,,,
 布薩日,Buddhayaśas,6,,,,,
 黑月,Buddhayaśas,3,,,,,
-白月,Buddhayaśas,3,,,,,
+白月,Buddhayaśas,3,TRUE,2025-09-20,"FGDB, s.v. 白月",Semantic,First half of the month
 小界,Buddhayaśas,2,,,,,
 不失衣界,Buddhayaśas,3,,,,,
 九十事,Buddhayaśas,3,,,,,
@@ -1747,7 +1747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 慈地,Buddhayaśas,2,,,,,
 謗,Buddhayaśas,6,,,,,
 非毘尼,Buddhayaśas,3,,,,,
-攝取於僧,Buddhayaśas,2,,,,,
+攝取於僧,Buddhayaśas,2,TRUE,2025-09-20,"FGDB, s. v. 佛教教制",Semantic,Embracing the monastic community
 淨行比丘,Buddhayaśas,2,,,,,
 無上正道,Buddhayaśas,3,,,,,
 法羯磨,Buddhayaśas,3,,,,,
@@ -1847,7 +1847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 大教經,Buddhayaśas and Zhu Fonian,2,,,,,
 世間眼,Buddhayaśas and Zhu Fonian,6,,,,,
 白毫光,Buddhayaśas and Zhu Fonian,2,,,,,
-毗婆尸,Buddhayaśas and Zhu Fonian,2,,,,,
+毗婆尸,Buddhayaśas and Zhu Fonian,2,TRUE,2025-09-20,"FGDB, s.v. 毘婆尸佛",Transliteration,Vipaśyin
 福利,Buddhayaśas and Zhu Fonian,8,,,,,
 無漏身,Buddhayaśas and Zhu Fonian,3,,,,,
 優鉢羅花,Buddhayaśas and Zhu Fonian,8,,,,,
@@ -1947,7 +1947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 世正見,Buddhayaśas and Zhu Fonian,2,,,,,
 實知,Buddhayaśas and Zhu Fonian,2,,,,,
 十直道,Buddhayaśas and Zhu Fonian,2,,,,,
-色無色有,Buddhayaśas and Zhu Fonian,3,,,,,
+色無色有,Buddhayaśas and Zhu Fonian,3,TRUE,2025-09-20,"FGDB, s.v. 三有",Semantic,Existence in the material and formless realms
 神通證,Buddhayaśas and Zhu Fonian,2,,,,,
 梵處,Buddhayaśas and Zhu Fonian,4,,,,,
 憂婆塞,Buddhayaśas and Zhu Fonian,4,,,,,
@@ -2047,7 +2047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 不成就性,Daotai and Buddhavarman,2,,,,,
 染污性,Daotai and Buddhavarman,2,,,,,
 使纏,Daotai and Buddhavarman,2,,,,,
-瞋恚纏,Daotai and Buddhavarman,2,,,,,
+瞋恚纏,Daotai and Buddhavarman,2,TRUE,2025-09-21,"T 1546, 28.0019c29, fascicle 3",Semantic,Bonds of anger
 功用果,Daotai and Buddhavarman,7,,,,,
 具縛凡夫,Daotai and Buddhavarman,4,,,,,
 般吒,Daotai and Buddhavarman,4,,,,,
@@ -2147,7 +2147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 福分,Daotai and Buddhavarman,2,,,,,
 苦觸,Daotai and Buddhavarman,3,,,,,
 數滅,Daotai and Buddhavarman,15,,,,,
-精勤苦行,Daotai and Buddhavarman,3,,,,,
+精勤苦行,Daotai and Buddhavarman,3,FALSE,2025-09-21,"T 1546, fascicle 14",Semantic,Dilligent ascetic practice
 施福,Daotai and Buddhavarman,2,,,,,
 信解脫道,Daotai and Buddhavarman,3,,,,,
 見到道,Daotai and Buddhavarman,2,,,,,
@@ -2247,7 +2247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 他心智通,Daotai and Buddhavarman,4,,,,,
 壞想,Daotai and Buddhavarman,2,,,,,
 眼觸生愛,Daotai and Buddhavarman,2,,,,,
-三見,Daotai and Buddhavarman,3,,,,,
+三見,Daotai and Buddhavarman,3,TRUE,2025-09-21,"T 1546, 28.0200c13, fascicle 27",Semantic,Three views
 非見,Daotai and Buddhavarman,4,,,,,
 闇果,Daotai and Buddhavarman,3,,,,,
 五識地,Daotai and Buddhavarman,3,,,,,
@@ -2347,7 +2347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 成壞,Daotai and Buddhavarman,5,,,,,
 如來舍利,Daotai and Buddhavarman,2,,,,,
 幢幡蓋,Daotai and Buddhavarman,3,,,,,
-請佛,Daotai and Buddhavarman,2,,,,,
+請佛,Daotai and Buddhavarman,2,TRUE,2025-09-21,"Soothill and Hodus, 443",Semantic,invite the Buddha
 有餘斷,Daotai and Buddhavarman,2,,,,,
 歸佛歸法歸比丘僧,Daotai and Buddhavarman,2,,,,,
 捨觀,Daotai and Buddhavarman,3,,,,,
@@ -2447,7 +2447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 不畢竟,Dharmakṣema,2,,,,,
 密藏,Dharmakṣema,5,,,,,
 訶責羯磨,Dharmakṣema,3,,,,,
-舉罪羯磨,Dharmakṣema,7,,,,,
+舉罪羯磨,Dharmakṣema,7,TRUE,2025-09-21,"T 374, 12.0380c15, fascicle 3",Semantic,The karma of slander
 護持正法,Dharmakṣema,15,,,,,
 出世之法,Dharmakṣema,3,,,,,
 菩提之果,Dharmakṣema,2,,,,,
@@ -2547,7 +2547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 想地獄,Dharmakṣema,2,,,,,
 如來祕密之藏,Dharmakṣema,2,,,,,
 欲界六天,Dharmakṣema,2,,,,,
-我與無我,Dharmakṣema,2,,,,,
+我與無我,Dharmakṣema,2,FALSE,2025-09-21,"T 374, fascicle 11",Semantic,Generic phrase: self and non-self
 一果,Dharmakṣema,3,,,,,
 出離生死,Dharmakṣema,3,,,,,
 波頭摩花,Dharmakṣema,3,,,,,
@@ -2647,7 +2647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 我所相,Dharmakṣema,2,,,,,
 首楞嚴定,Dharmakṣema,3,,,,,
 法輪王,Dharmakṣema,4,,,,,
-四毒,Dharmakṣema,2,,,,,
+四毒,Dharmakṣema,2,TRUE,2025-09-21,"FGDB, s.v. 四毒蛇",Semantic,Four poisons
 盲龜值浮木孔,Dharmakṣema,2,,,,,
 煩惱河,Dharmakṣema,3,,,,,
 非想非非想處結,Dharmakṣema,2,,,,,
@@ -2747,7 +2747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 知諸根力,Dharmakṣema,2,,,,,
 無罣礙智,Dharmakṣema,2,,,,,
 八不淨物,Dharmakṣema,4,,,,,
-諸善方便,Dharmakṣema,2,,,,,
+諸善方便,Dharmakṣema,2,FALSE,2025-09-21,"T 374, fascicle 32",Semantic,Generic phrase: generic kinds of karma
 聲聞功德,Dharmakṣema,2,,,,,
 緣覺功德,Dharmakṣema,2,,,,,
 大醫師,Dharmakṣema,2,,,,,
@@ -2847,7 +2847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 淨毘梨耶波羅蜜,Dharmakṣema,2,,,,,
 淨住,Dharmakṣema,2,,,,,
 夢想,Dharmakṣema,2,,,,,
-無盡意品,Dharmakṣema,2,,,,,
+無盡意品,Dharmakṣema,2,TRUE,2025-09-21,"T 397, fascicle 1",Semantic,Aksayamati Bodhisattva Chapter
 無勝三昧,Dharmakṣema,3,,,,,
 人天身,Dharmakṣema,2,,,,,
 三寶性,Dharmakṣema,3,,,,,
@@ -2947,7 +2947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 大集經典,Dharmakṣema,4,,,,,
 一切覺,Dharmakṣema,4,,,,,
 非生非滅,Dharmakṣema,3,,,,,
-集因,Dharmakṣema,2,,,,,
+集因,Dharmakṣema,2,TRUE,2025-09-21,"T 397, fascicle 7",Semantic,Aggregate of causes
 四攝之法,Dharmakṣema,2,,,,,
 六境界,Dharmakṣema,2,,,,,
 外典,Dharmakṣema,3,,,,,
@@ -3047,7 +3047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 心業,Dharmakṣema,4,,,,,
 真實道,Dharmakṣema,4,,,,,
 實法性,Dharmakṣema,2,,,,,
-我壽命士夫,Dharmakṣema,2,,,,,
+我壽命士夫,Dharmakṣema,2,FALSE,2025-09-21,"T 397, fascicle 12",Semantic,Generic phrase: my life is for the people
 知苦離集證滅修道,Dharmakṣema,2,,,,,
 畢竟道,Dharmakṣema,2,,,,,
 無福無罪,Dharmakṣema,2,,,,,
@@ -3147,7 +3147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 不忘菩提心三昧,Dharmakṣema,3,,,,,
 師子相三昧,Dharmakṣema,3,,,,,
 不染世法,Dharmakṣema,2,,,,,
-幢相三昧,Dharmakṣema,2,,,,,
+幢相三昧,Dharmakṣema,2,TRUE,2025-09-21,"BCSD, 423; T 397, 13.0113a18, fascicle 16",,ketumat samadi
 那羅延三昧,Dharmakṣema,2,,,,,
 金剛場三昧,Dharmakṣema,2,,,,,
 善分別三昧,Dharmakṣema,3,,,,,
@@ -3247,7 +3247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 外道異論,Dharmakṣema,2,,,,,
 作者受者,Dharmakṣema,2,,,,,
 生住滅相,Dharmakṣema,2,,,,,
-戒定智慧解脫解脫知見,Dharmakṣema,2,,,,,
+戒定智慧解脫解脫知見,Dharmakṣema,2,FALSE,2025-09-21,"T 397, fascicle 27",Semantic,"Generic phrase: Precepts, Samadhi, Wisdom, Liberation, and the Understanding of Liberation"
 心行清淨,Dharmakṣema,2,,,,,
 行慧,Dharmakṣema,2,,,,,
 身三惡,Dharmakṣema,3,,,,,
@@ -3347,7 +3347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 和合相,Dharmakṣema,3,,,,,
 四諦順忍陀羅尼,Dharmakṣema,2,,,,,
 逋沙見,Dharmakṣema,2,,,,,
-富伽羅見,Dharmakṣema,2,,,,,
+富伽羅見,Dharmakṣema,2,TRUE,2025-09-21,"T 397, 13.0239c13, fascicle 35",Transliteration,View of a person (pudgala)
 日眼蓮華陀羅尼,Dharmakṣema,3,,,,,
 袈裟幢,Dharmakṣema,2,,,,,
 空忍,Dharmakṣema,2,,,,,
@@ -3447,7 +3447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 四梵住,Dharmakṣema,5,,,,,
 怨家想,Dharmakṣema,2,,,,,
 大明炬,Dharmakṣema,2,,,,,
-賢劫諸菩薩,Dharmakṣema,2,,,,,
+賢劫諸菩薩,Dharmakṣema,2,FALSE,2025-09-21,"T 397, fascicle 46",Mixed,Generic phrase: the bodhisattvas of the present kalpa
 大願海,Dharmakṣema,4,,,,,
 正法海,Dharmakṣema,2,,,,,
 諸佛海,Dharmakṣema,4,,,,,
@@ -3547,7 +3547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 地觀,Dharmakṣema,2,,,,,
 佛陀耶,Dharmakṣema,2,,,,,
 清淨智,Dharmakṣema,4,,,,,
-弘誓大願,Dharmakṣema,3,,,,,
+弘誓大願,Dharmakṣema,3,TRUE,2025-09-21,"T 397, 13.0388b24, fascicle 58",Semantic,Great vows
 智慧藏,Dharmakṣema,5,,,,,
 悲愍心,Dharmakṣema,3,,,,,
 三菩提,Dharmakṣema,17,,,,,
@@ -3647,7 +3647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 金光明經,Dharmakṣema,3,,,,,
 無上法味,Dharmakṣema,3,,,,,
 堅牢地神,Dharmakṣema,2,,,,,
-金剛密迹,Dharmakṣema,3,,,,,
+金剛密迹,Dharmakṣema,3,TRUE,2025-09-21,"Soothill and Hodus, 281",Semantic,Vajrapāṇi
 灌頂章句,Dharmakṣema,5,,,,,
 信相菩薩,Dharmakṣema,3,,,,,
 金光明菩薩,Dharmakṣema,2,,,,,
@@ -3747,7 +3747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無諍願智,Dharmakṣema,2,,,,,
 神足變現,Dharmakṣema,2,,,,,
 摩得勒伽,Dharmakṣema,6,,,,,
-五明處,Dharmakṣema,3,,,,,
+五明處,Dharmakṣema,3,TRUE,2025-09-21,"Soothill and Hodus, 263",Semantic,Five sciences
 相智,Dharmakṣema,3,,,,,
 地持,Dharmakṣema,2,,,,,
 攝事,Dharmakṣema,4,,,,,
@@ -3847,7 +3847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 如來說法,Dharmakṣema,3,,,,,
 非器,Dharmakṣema,3,,,,,
 下中上,Dharmakṣema,2,,,,,
-家法,Dharmakṣema,2,,,,,
+家法,Dharmakṣema,2,FALSE,2025-09-27,"Moedict, s.v. 家法",Semantic,Secular term: household discipline
 恐怖心,Dharmakṣema,3,,,,,
 二世,Dharmakṣema,3,,,,,
 生死苦海,Dharmakṣema,3,,,,,
@@ -3947,7 +3947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 跋陀和菩薩,Dharmamitra,2,,,,,
 憍曰兜菩薩,Dharmamitra,2,,,,,
 須深彌菩薩,Dharmamitra,2,,,,,
-恒河沙諸佛,Dharmamitra,3,,,,,
+恒河沙諸佛,Dharmamitra,3,FALSE,2025-09-27,T 409,Semantic,Generic phrase: as many Buddhas as there are grains of sand in the Ganges
 禪祕要法經,Dharmamitra,2,,,,,
 往昔因緣,Dharmamitra,2,,,,,
 三藏經,Dharmamitra,3,,,,,
@@ -4047,7 +4047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 優婆離,Dharmanandi and Zhu Fonian,2,,,,,
 善來,Dharmanandi and Zhu Fonian,3,,,,,
 摩訶男,Dharmanandi and Zhu Fonian,3,,,,,
-二十億耳,Dharmanandi and Zhu Fonian,4,,,,,
+二十億耳,Dharmanandi and Zhu Fonian,4,TRUE,2025-09-27,"Soothill and Hodus, p. 22",Semantic,Śroṇakoṭīviṃśa
 拘絺羅,Dharmanandi and Zhu Fonian,3,,,,,
 堅牢,Dharmanandi and Zhu Fonian,3,,,,,
 施羅,Dharmanandi and Zhu Fonian,2,,,,,
@@ -4147,7 +4147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無上正真等正覺,Dharmanandi and Zhu Fonian,4,,,,,
 六年苦行,Dharmanandi and Zhu Fonian,5,,,,,
 愛盡無餘,Dharmanandi and Zhu Fonian,2,,,,,
-無染污,Dharmanandi and Zhu Fonian,5,,,,,
+無染污,Dharmanandi and Zhu Fonian,5,TRUE,2025-09-27,"FGDB, s.v. 不染污",Semantic,"undefiled, akliṣṭa"
 滅盡泥洹,Dharmanandi and Zhu Fonian,10,,,,,
 心得解脫,Dharmanandi and Zhu Fonian,17,,,,,
 沙門樂,Dharmanandi and Zhu Fonian,2,,,,,
@@ -4247,7 +4247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 外道梵志,Dharmanandi and Zhu Fonian,3,,,,,
 想論,Dharmanandi and Zhu Fonian,2,,,,,
 五陰形,Dharmanandi and Zhu Fonian,4,,,,,
-坐禪思惟,Dharmanandi and Zhu Fonian,3,,,,,
+坐禪思惟,Dharmanandi and Zhu Fonian,3,FALSE,2025-09-27,"T 125, fascicle 12",Semantic,"Generic phrase: sit in meditation, contemplating"
 教勅,Dharmanandi and Zhu Fonian,4,,,,,
 恭敬禮拜,Dharmanandi and Zhu Fonian,8,,,,,
 法治化,Dharmanandi and Zhu Fonian,5,,,,,
@@ -4347,7 +4347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 所欲不得苦,Dharmanandi and Zhu Fonian,6,,,,,
 非法行,Dharmanandi and Zhu Fonian,2,,,,,
 持戒律,Dharmanandi and Zhu Fonian,2,,,,,
-白衣行,Dharmanandi and Zhu Fonian,2,,,,,
+白衣行,Dharmanandi and Zhu Fonian,2,TRUE,2025-09-27,"T 125, fascicle 17",Semantic,White robe procession
 鍼筩,Dharmanandi and Zhu Fonian,2,,,,,
 祇夜,Dharmanandi and Zhu Fonian,29,,,,,
 已說,Dharmanandi and Zhu Fonian,2,,,,,
@@ -4447,7 +4447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 默然受請,Dharmanandi and Zhu Fonian,6,,,,,
 漏為大患,Dharmanandi and Zhu Fonian,3,,,,,
 祇桓精舍,Dharmanandi and Zhu Fonian,13,,,,,
-浮圖,Dharmanandi and Zhu Fonian,4,,,,,
+浮圖,Dharmanandi and Zhu Fonian,4,TRUE,2025-09-27,"FGDB, s.v. 浮圖",Transliteration,Buddha or Buddha stupa
 毘沙門王,Dharmanandi and Zhu Fonian,6,,,,,
 愛斷,Dharmanandi and Zhu Fonian,3,,,,,
 八難之處,Dharmanandi and Zhu Fonian,5,,,,,
@@ -4547,7 +4547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 琉璃城,Dharmanandi and Zhu Fonian,2,,,,,
 毘留博叉天王,Dharmanandi and Zhu Fonian,2,,,,,
 伊沙山,Dharmanandi and Zhu Fonian,2,,,,,
-盜心,Dharmanandi and Zhu Fonian,14,,,,,
+盜心,Dharmanandi and Zhu Fonian,14,TRUE,2025-09-27,"T 125, 2.0737b11, fascicle 34",Semantic,thieving mind
 五盛陰身,Dharmanandi and Zhu Fonian,7,,,,,
 迦蘭陀竹園所,Dharmanandi and Zhu Fonian,2,,,,,
 流轉世間,Dharmanandi and Zhu Fonian,3,,,,,
@@ -4647,7 +4647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 降伏魔官屬,Dharmanandi and Zhu Fonian,5,,,,,
 成無上道,Dharmanandi and Zhu Fonian,8,,,,,
 見法得法,Dharmanandi and Zhu Fonian,15,,,,,
-度諸狐疑,Dharmanandi and Zhu Fonian,2,,,,,
+度諸狐疑,Dharmanandi and Zhu Fonian,2,FALSE,2025-09-27,"T 125, fascicle 41",Semantic,Generic phrase; overcoming of all doubts
 得無所畏,Dharmanandi and Zhu Fonian,4,,,,,
 釋迦文弟子,Dharmanandi and Zhu Fonian,2,,,,,
 心善解脫,Dharmanandi and Zhu Fonian,24,,,,,
@@ -4747,7 +4747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 罪法,Dharmarakṣa,7,,,,,
 地種,Dharmarakṣa,26,,,,,
 水種,Dharmarakṣa,17,,,,,
-火種,Dharmarakṣa,15,,,,,
+火種,Dharmarakṣa,15,TRUE,2025-09-27,"T 1557, 28.0998c12",Semantic,Fire seeds
 風種,Dharmarakṣa,15,,,,,
 耳根,Dharmarakṣa,24,,,,,
 舌根,Dharmarakṣa,19,,,,,
@@ -4847,7 +4847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 颰陀和菩薩,Dharmarakṣa,2,,,,,
 羅隣那竭菩薩,Dharmarakṣa,2,,,,,
 妙意菩薩,Dharmarakṣa,2,,,,,
-不虛見菩薩,Dharmarakṣa,2,,,,,
+不虛見菩薩,Dharmarakṣa,2,TRUE,2025-09-27,"T 222, 8.0147a07, fascicle 1",Semantic,Name of a bodhisattva
 不置遠菩薩,Dharmarakṣa,2,,,,,
 光世音菩薩,Dharmarakṣa,4,,,,,
 常舉手菩薩,Dharmarakṣa,2,,,,,
@@ -4947,7 +4947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 意法識,Dharmarakṣa,6,,,,,
 眼更,Dharmarakṣa,3,,,,,
 耳更,Dharmarakṣa,3,,,,,
-無色欲,Dharmarakṣa,4,,,,,
+無色欲,Dharmarakṣa,4,FALSE,2025-09-28,"T 222, fascicle 3",Semantic,Generic phrase: desire for formless realms
 四果,Dharmarakṣa,22,,,,,
 七識,Dharmarakṣa,7,,,,,
 罪福之業,Dharmarakṣa,4,,,,,
@@ -5047,7 +5047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無量辯三昧,Dharmarakṣa,5,,,,,
 無常觀,Dharmarakṣa,11,,,,,
 正語,Dharmarakṣa,100,,,,,
-六塵,Dharmarakṣa,43,,,,,
+六塵,Dharmarakṣa,43,TRUE,2025-09-28,"FGDB, s.v. 六塵",Semantic,six dusts
 六識,Dharmarakṣa,37,,,,,
 平等定,Dharmarakṣa,2,,,,,
 師子之吼,Dharmarakṣa,4,,,,,
@@ -5147,7 +5147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 右旋,Dharmarakṣa,4,,,,,
 頂髻相,Dharmarakṣa,3,,,,,
 三界眾生,Dharmarakṣa,4,,,,,
-第八地,Dharmarakṣa,6,,,,,
+第八地,Dharmarakṣa,6,TRUE,2025-09-28,"FGDB, s.v. 十地",Semantic,Eigth ground
 七住,Dharmarakṣa,5,,,,,
 四十齒,Dharmarakṣa,5,,,,,
 梵聲,Dharmarakṣa,12,,,,,
@@ -5247,7 +5247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 恩施,Dharmarakṣa,2,,,,,
 水天,Dharmarakṣa,3,,,,,
 大導師,Dharmarakṣa,12,,,,,
-梵忍跡天,Dharmarakṣa,3,,,,,
+梵忍跡天,Dharmarakṣa,3,FALSE,2025-09-28,"T 263, fascicle 1",,Partial term: It should be 梵忍跡天子
 香音神,Dharmarakṣa,6,,,,,
 金翅鳥,Dharmarakṣa,44,,,,,
 方等,Dharmarakṣa,36,,,,,
@@ -5347,7 +5347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 流布,Dharmarakṣa,10,,,,,
 法雨,Dharmarakṣa,72,,,,,
 慧雲,Dharmarakṣa,2,,,,,
-師子行,Dharmarakṣa,2,,,,,
+師子行,Dharmarakṣa,2,TRUE,2025-09-28,Karashima 1998,Semantic,Deeds of a lion
 天帝釋梵,Dharmarakṣa,2,,,,,
 醫藥,Dharmarakṣa,9,,,,,
 甘雨,Dharmarakṣa,2,,,,,
@@ -5447,7 +5447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 尊佛道,Dharmarakṣa,2,,,,,
 迦維羅衛,Dharmarakṣa,17,,,,,
 賢聖慧,Dharmarakṣa,2,,,,,
-錠光如來,Dharmarakṣa,2,,,,,
+錠光如來,Dharmarakṣa,2,TRUE,2025-09-28,"FGDB, s.v. 定光如來",Semantic,Dīpaṃkara
 見網,Dharmarakṣa,4,,,,,
 邪者,Dharmarakṣa,3,,,,,
 佛功德,Dharmarakṣa,26,,,,,
@@ -5547,7 +5547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 隨葉佛,Dharmarakṣa,7,,,,,
 拘那含牟尼佛,Dharmarakṣa,23,,,,,
 聖性,Dharmarakṣa,7,,,,,
-意斷,Dharmarakṣa,13,,,,,
+意斷,Dharmarakṣa,13,TRUE,2025-09-28,"FGDB, s.v. 四意斷",Semantic,prevent arising of unwholesome intentions
 等心眾生,Dharmarakṣa,4,,,,,
 四王,Dharmarakṣa,16,,,,,
 十二海,Dharmarakṣa,4,,,,,
@@ -5647,7 +5647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 異見,Dharmarakṣa,12,,,,,
 精進之行,Dharmarakṣa,3,,,,,
 數出入息,Dharmarakṣa,5,,,,,
-無學,Dharmarakṣa,92,,,,,
+無學,Dharmarakṣa,92,TRUE,2025-09-28,"FGDb, s.v. 無學",Semantic,An adept
 僧迦梨,Dharmarakṣa,2,,,,,
 金鉢,Dharmarakṣa,4,,,,,
 福願,Dharmarakṣa,2,,,,,
@@ -5747,7 +5747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 非身之義,Dharmarakṣa,3,,,,,
 非我非彼,Dharmarakṣa,2,,,,,
 思想如芭蕉,Dharmarakṣa,2,,,,,
-宿殃,Dharmarakṣa,4,,,,,
+宿殃,Dharmarakṣa,4,TRUE,2025-09-28,"T 186, 3.0533a20, fascicle 8",Semantic,past karma
 所受,Dharmarakṣa,2,,,,,
 所有,Dharmarakṣa,4,,,,,
 受五戒,Dharmarakṣa,4,,,,,
@@ -5847,7 +5847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 師子王,Dharmarakṣa,30,,,,,
 犍沓和,Dharmarakṣa,11,,,,,
 降伏,Dharmarakṣa,18,,,,,
-本誓,Dharmarakṣa,12,,,,,
+本誓,Dharmarakṣa,12,TRUE,2025-09-28,"FGDB, s.v. 本願",Semantic,A synonym for 本願
 大導,Dharmarakṣa,5,,,,,
 世八事,Dharmarakṣa,4,,,,,
 道御,Dharmarakṣa,3,,,,,
@@ -5947,7 +5947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 定心,Dharmarakṣa,31,,,,,
 修習,Dharmarakṣa,40,,,,,
 世人,Dharmarakṣa,2,,,,,
-生處,Dharmarakṣa,10,,,,,
+生處,Dharmarakṣa,10,TRUE,2025-09-28,"FGDB, s.v. 八福生處",Semantic,Place of rebirth
 穢惡,Dharmarakṣa,7,,,,,
 人中師子,Dharmarakṣa,7,,,,,
 無智,Dharmarakṣa,27,,,,,
@@ -6047,7 +6047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 悕望,Dharmarakṣa,2,,,,,
 音響,Dharmarakṣa,5,,,,,
 智慧眼,Dharmarakṣa,25,,,,,
-法目,Dharmarakṣa,4,,,,,
+法目,Dharmarakṣa,4,TRUE,2025-09-28,"T 398, 13.0446a29, fascicle 8",Semantic,Eye of Dharma
 義趣,Dharmarakṣa,5,,,,,
 無盡意,Dharmarakṣa,4,,,,,
 眾相好,Dharmarakṣa,2,,,,,
@@ -6147,7 +6147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無上大慧,Dharmarakṣa,2,,,,,
 罪福報應,Dharmarakṣa,5,,,,,
 禪脫門,Dharmarakṣa,2,,,,,
-大鐵圍,Dharmarakṣa,2,,,,,
+大鐵圍,Dharmarakṣa,2,TRUE,2025-09-30,"Soothill and Hodus, 96",Semantic,Mahacakravala
 災變,Dharmarakṣa,2,,,,,
 行力,Dharmarakṣa,3,,,,,
 一切智力,Dharmarakṣa,2,,,,,
@@ -6247,7 +6247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 色行天,Dharmarakṣa,5,,,,,
 哀,Dharmarakṣa,9,,,,,
 思念,Dharmarakṣa,3,,,,,
-不思議,Dharmarakṣa,31,,,,,
+不思議,Dharmarakṣa,31,TRUE,2025-09-30,"Glossary of Humanistic Buddhism, s.v. 不思議",Semantic,inconceivable
 弘誓鎧,Dharmarakṣa,9,,,,,
 密行,Dharmarakṣa,2,,,,,
 耆域醫王,Dharmarakṣa,2,,,,,
@@ -6347,7 +6347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 居家出家,Dharmarakṣa,2,,,,,
 七寶蓋,Dharmarakṣa,4,,,,,
 功德之藏,Dharmarakṣa,2,,,,,
-三德,Dharmarakṣa,2,,,,,
+三德,Dharmarakṣa,2,TRUE,2025-09-30,"FGDB, s.v. 三德",Semantic,three virtues
 平等法,Dharmarakṣa,19,,,,,
 邪說,Dharmarakṣa,5,,,,,
 平等解脫,Dharmarakṣa,3,,,,,
@@ -6447,7 +6447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 五品,Dharmarakṣa,3,,,,,
 塵埃,Dharmarakṣa,7,,,,,
 佛德,Dharmarakṣa,13,,,,,
-周旋,Dharmarakṣa,2,,,,,
+周旋,Dharmarakṣa,2,FALSE,2025-09-30,"Moedict, s.v. 周旋",Semantic,Secular term
 車輪,Dharmarakṣa,3,,,,,
 明者,Dharmarakṣa,3,,,,,
 發大意,Dharmarakṣa,3,,,,,
@@ -6547,7 +6547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 根性,Dharmarakṣa,7,,,,,
 魔兵眾,Dharmarakṣa,6,,,,,
 菩薩行道,Dharmarakṣa,2,,,,,
-菩薩住,Dharmarakṣa,3,,,,,
+菩薩住,Dharmarakṣa,3,TRUE,2025-09-30,"FGDB, s.v. 十三住",Semantic,Bodhisattva ground
 釋梵四天王,Dharmarakṣa,6,,,,,
 世尊教,Dharmarakṣa,2,,,,,
 聖子,Dharmarakṣa,4,,,,,
@@ -6647,7 +6647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 給孤獨,Dharmarakṣa,5,,,,,
 說經法,Dharmarakṣa,4,,,,,
 輸輪,Dharmarakṣa,2,,,,,
-八部,Dharmarakṣa,18,,,,,
+八部,Dharmarakṣa,18,TRUE,2025-09-30,"FGDB, s.v. 八部眾",Semantic,eight kinds of demigods
 生生,Dharmarakṣa,4,,,,,
 道法王,Dharmarakṣa,2,,,,,
 拘迦利比丘,Dharmarakṣa,2,,,,,
@@ -6747,7 +6747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 愚癡行,Dharmarakṣa,3,,,,,
 稽首禮,Dharmarakṣa,14,,,,,
 法界淨,Dharmarakṣa,2,,,,,
-四句義,Dharmarakṣa,2,,,,,
+四句義,Dharmarakṣa,2,FALSE,2025-09-30,"T 598, fascicle 2",Semantic,Generic phrase
 惡比丘,Dharmarakṣa,16,,,,,
 總持辯才,Dharmarakṣa,2,,,,,
 大道心,Dharmarakṣa,4,,,,,
@@ -6847,7 +6847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 菩薩時,Dharmarakṣa,2,,,,,
 著衣,Dharmarakṣa,7,,,,,
 佛鉢,Dharmarakṣa,4,,,,,
-捨家為道,Dharmarakṣa,4,,,,,
+捨家為道,Dharmarakṣa,4,FALSE,2025-09-30,"T 627, fascicle 1",Semantic,Generic phrase: left home to follow the Way
 解空,Dharmarakṣa,9,,,,,
 精進不懈,Dharmarakṣa,2,,,,,
 父母,Dharmarakṣa,3,,,,,
@@ -6947,7 +6947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 諸天龍神,Dharmarakṣa,17,,,,,
 叉手自歸,Dharmarakṣa,2,,,,,
 罪福因緣,Dharmarakṣa,5,,,,,
-七寶華,Dharmarakṣa,2,,,,,
+七寶華,Dharmarakṣa,2,TRUE,2025-09-30,"FGDB, s.v. 七寶華",Semantic,Seven jeweled lotus
 南無,Dharmarakṣa,30,,,,,
 無瑕,Dharmarakṣa,2,,,,,
 教化度脫,Dharmarakṣa,2,,,,,
@@ -7047,7 +7047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無畏力,Dharmarakṣa,4,,,,,
 戒果,Dharmarakṣa,2,,,,,
 八直正道,Dharmarakṣa,3,,,,,
-五通道,Dharmarakṣa,3,,,,,
+五通道,Dharmarakṣa,3,TRUE,2025-10-01,"FGDB, s.v. 五通",Semantic,The way of the five supernatural powers
 識宿命,Dharmarakṣa,4,,,,,
 道清淨,Dharmarakṣa,2,,,,,
 身口意清淨,Dharmarakṣa,2,,,,,
@@ -7147,7 +7147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無壞信,Dharmarakṣa,4,,,,,
 斷苦,Dharmarakṣa,7,,,,,
 斷習,Dharmarakṣa,3,,,,,
-識義,Dharmarakṣa,2,,,,,
+識義,Dharmarakṣa,2,TRUE,2025-10-01,"FGDB, s.v. 九識義",Semantic,Consciousness
 諸想,Dharmarakṣa,3,,,,,
 生死畏,Dharmarakṣa,4,,,,,
 空諦,Dharmarakṣa,3,,,,,
@@ -7247,7 +7247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無量神足,Dharmarakṣa,2,,,,,
 蓮華上,Dharmarakṣa,2,,,,,
 化生蓮華中,Dharmarakṣa,2,,,,,
-正直,Dharmarakṣa,3,,,,,
+正直,Dharmarakṣa,3,TRUE,2025-10-01,"FGDB, s.v. 正直",Semantic,Upright
 大梵,Dharmarakṣa,16,,,,,
 踊躍,Dharmarakṣa,4,,,,,
 佛土清淨,Dharmarakṣa,2,,,,,
@@ -7347,7 +7347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 緣慧行,Dharmarakṣa,2,,,,,
 天眼行,Dharmarakṣa,2,,,,,
 知他心行,Dharmarakṣa,2,,,,,
-宿世行,Dharmarakṣa,3,,,,,
+宿世行,Dharmarakṣa,3,TRUE,2025-10-01,"FGDB, s.v. 宿世",Semantic,Conduct in former lives
 虛空行,Dharmarakṣa,2,,,,,
 幻行,Dharmarakṣa,2,,,,,
 夢行,Dharmarakṣa,2,,,,,
@@ -7447,7 +7447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 塵勞法,Dharmarakṣa,2,,,,,
 有心無心,Dharmarakṣa,2,,,,,
 有罪無罪,Dharmarakṣa,3,,,,,
-有報無報,Dharmarakṣa,3,,,,,
+有報無報,Dharmarakṣa,3,FALSE,2025-10-01,T 274 ,Semantic,Having rewards or not having rewards
 有行無行,Dharmarakṣa,4,,,,,
 正真之行,Dharmarakṣa,2,,,,,
 生死之難,Dharmarakṣa,3,,,,,
@@ -7547,7 +7547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 祕密之藏,Dharmarakṣa,3,,,,,
 大心,Dharmarakṣa,16,,,,,
 大鐵圍山,Dharmarakṣa,9,,,,,
-覺力,Dharmarakṣa,2,,,,,
+覺力,Dharmarakṣa,2,TRUE,2025-10-01,"T 291, 10.0597c26, fascicle 1",Semantic,Power of awakening
 弘業,Dharmarakṣa,2,,,,,
 卷,Dharmarakṣa,4,,,,,
 三十七品道,Dharmarakṣa,2,,,,,
@@ -7647,7 +7647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 羅閱祇國,Dharmarakṣa,6,,,,,
 癡欲,Dharmarakṣa,2,,,,,
 無瑕穢,Dharmarakṣa,4,,,,,
-覺想,Dharmarakṣa,3,,,,,
+覺想,Dharmarakṣa,3,FALSE,2025-10-01,"T 378, fascicle 1",Semantic,Thought of awakening
 波羅奈城,Dharmarakṣa,3,,,,,
 空無我法,Dharmarakṣa,5,,,,,
 揣食,Dharmarakṣa,18,,,,,
@@ -7747,7 +7747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 法蠡,Dharmarakṣa,6,,,,,
 菩薩莂,Dharmarakṣa,2,,,,,
 薩芸若智,Dharmarakṣa,2,,,,,
-佛耳,Dharmarakṣa,3,,,,,
+佛耳,Dharmarakṣa,3,TRUE,2025-10-01,"T 459, 14.0447b25",Semantic,Buddha's ears
 道根,Dharmarakṣa,6,,,,,
 三災,Dharmarakṣa,9,,,,,
 六門,Dharmarakṣa,7,,,,,
@@ -7847,7 +7847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 教,Dharmarakṣa,9,,,,,
 哀愍,Dharmarakṣa,17,,,,,
 金剛地際,Dharmarakṣa,2,,,,,
-現世,Dharmarakṣa,3,,,,,
+現世,Dharmarakṣa,3,TRUE,2025-10-01,"FGDB, s.v. 三生",Semantic,Present life
 寶幢三昧,Dharmarakṣa,4,,,,,
 百福,Dharmarakṣa,3,,,,,
 光明尊,Dharmarakṣa,2,,,,,
@@ -7947,7 +7947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 無明有愛,Dharmarakṣa,3,,,,,
 十不善業,Dharmarakṣa,7,,,,,
 菩薩大乘,Dharmarakṣa,3,,,,,
-誡,Dharmarakṣa,2,,,,,
+誡,Dharmarakṣa,2,TRUE,2025-10-01,"BCSD, 1078",Semantic,admonition; Sanskrit: anuśāsanī
 等觀,Dharmarakṣa,3,,,,,
 眾智,Dharmarakṣa,7,,,,,
 淨國土,Dharmarakṣa,3,,,,,
@@ -8047,7 +8047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 端正,Dharmarakṣa,4,,,,,
 智德,Dharmarakṣa,3,,,,,
 慈心戒,Dharmarakṣa,2,,,,,
-布施戒,Dharmarakṣa,2,,,,,
+布施戒,Dharmarakṣa,2,TRUE,2025-10-01,"T 403, 13.0590b04, fascicle 2",Semantic,Precept of generosity
 忍辱戒,Dharmarakṣa,3,,,,,
 精進戒,Dharmarakṣa,3,,,,,
 智慧戒,Dharmarakṣa,3,,,,,
@@ -8147,7 +8147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 智慧光明,Dharmarakṣa,11,,,,,
 曇摩菩薩,Dharmarakṣa,2,,,,,
 羅漢辟支佛,Dharmarakṣa,2,,,,,
-梵天聲,Dharmarakṣa,2,,,,,
+梵天聲,Dharmarakṣa,2,FALSE,2025-10-01,"T 636, fascicle 1",Semantic,Generic phrase: the sound of Brahma
 眼見色,Dharmarakṣa,8,,,,,
 耳聞聲,Dharmarakṣa,6,,,,,
 鼻識香,Dharmarakṣa,2,,,,,
@@ -8247,7 +8247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 銀輪,Dharmāgatayaśas,2,,,,,
 盡諸結漏,Dharmāgatayaśas,2,,,,,
 無復縛著,Dharmāgatayaśas,2,,,,,
-迷惑心,Dharmāgatayaśas,3,,,,,
+迷惑心,Dharmāgatayaśas,3,TRUE,2025-10-01,"T 276, 9.0386a06",Semantic,Deluded mind
 不出不沒,Dharmāgatayaśas,2,,,,,
 分身散體,Dharmāgatayaśas,3,,,,,
 異道人,Fa Ju,5,,,,,
@@ -8347,7 +8347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 四雙八輩,Fa Ju and Fa Li,26,,,,,
 佛說經,Fa Ju and Fa Li,2,,,,,
 優樓頻螺迦葉,Faxian,2,,,,,
-離車,Faxian,4,,,,,
+離車,Faxian,4,TRUE,2025-10-01,"FGDB, s.v. 離車毘",Transliteration,Licchavi
 五受陰苦,Faxian,3,,,,,
 鳩尸那城,Faxian,2,,,,,
 兜婆,Faxian,2,,,,,
@@ -8447,7 +8447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 五綴,Faxian,2,,,,,
 行鉢人,Faxian,2,,,,,
 僧上座,Faxian,3,,,,,
-僧淨厨,Faxian,2,,,,,
+僧淨厨,Faxian,2,TRUE,2025-10-01,"T 1425, 22.0315c11, fascicle 10",Semantic,Monk's pure kitchen
 盜戒,Faxian,4,,,,,
 俗人,Faxian,5,,,,,
 僧利,Faxian,2,,,,,
@@ -8547,7 +8547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 離同食,Faxian,2,,,,,
 紐,Faxian,2,,,,,
 非時入聚落,Faxian,2,,,,,
-屏處坐,Faxian,2,,,,,
+屏處坐,Faxian,2,TRUE,2025-10-01,"Mahāvyutpatti, s.v. rahasi niṣadyā",Semantic,"Sitting in solitude, Sanskrit: rahasi niṣadyā"
 異住,Faxian,2,,,,,
 廁屋,Faxian,2,,,,,
 五年大會,Faxian,4,,,,,
@@ -8647,7 +8647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 色滅道跡,"Guṇabhadra, Baoyun, Puti, and Fayong",3,,,,,
 不異我,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 純一,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
-法根,"Guṇabhadra, Baoyun, Puti, and Fayong",9,,,,,
+法根,"Guṇabhadra, Baoyun, Puti, and Fayong",9,TRUE,2025-10-01,"T 99, 2.0008a28, fascicle 2",Semantic,Dharma root
 求那跋陀羅,"Guṇabhadra, Baoyun, Puti, and Fayong",5,,,,,
 他方,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 悉達多,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
@@ -8747,7 +8747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 不害覺,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 哀愍悲念,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 色是我,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
-無二無異,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
+無二無異,"Guṇabhadra, Baoyun, Puti, and Fayong",2,FALSE,2025-10-01,"T 99, fascicle 10",Semantic,"Generic phrase: not two, not different"
 如來應等正覺,"Guṇabhadra, Baoyun, Puti, and Fayong",4,,,,,
 觸身,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 想身,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
@@ -8847,7 +8847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 惱苦,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 法集,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 不守根門,"Guṇabhadra, Baoyun, Puti, and Fayong",3,,,,,
-捨諸重擔,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
+捨諸重擔,"Guṇabhadra, Baoyun, Puti, and Fayong",2,FALSE,2025-10-01,"T 99, fascicle 24",Semantic,Generic phrase: put down their heavy loads
 究竟甘露,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 善義善味,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 純一滿淨,"Guṇabhadra, Baoyun, Puti, and Fayong",4,,,,,
@@ -8947,7 +8947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 四大眾,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 授佛記,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 爾焰,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
-正法智,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
+正法智,"Guṇabhadra, Baoyun, Puti, and Fayong",2,TRUE,2025-10-01,"T 353, 12.0218a05",Semantic,Dharma wisdom
 人天善根,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 不請之友,"Guṇabhadra, Baoyun, Puti, and Fayong",2,,,,,
 法欲滅時,"Guṇabhadra, Baoyun, Puti, and Fayong",3,,,,,
@@ -9047,7 +9047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 偏照,Guṇavarman,2,,,,,
 師僧,Guṇavarman,5,,,,,
 邪愚,Guṇavarman,2,,,,,
-塵惑,Guṇavarman,2,,,,,
+塵惑,Guṇavarman,2,TRUE,2025-10-02,T 1503,Semantic,Defilement
 三樂,Guṇavarman,2,,,,,
 蘭若智,Guṇavarman,2,,,,,
 諸塵,Guṇavarman,2,,,,,
@@ -9147,7 +9147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 忉利天帝,Kang Mengxiang,4,,,,,
 長者,Kang Mengxiang,95,,,,,
 迦蘭陀,Kang Mengxiang,3,,,,,
-尼揵,Kang Mengxiang,16,,,,,
+尼揵,Kang Mengxiang,16,TRUE,2025-10-02,Karashima 2001,Transliteration,Nirgrantha
 僧房,Kang Mengxiang,27,,,,,
 坐具,Kang Mengxiang,19,,,,,
 竹園精舍,Kang Mengxiang,3,,,,,
@@ -9247,7 +9247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 五體投地,Kang Senghui,53,,,,,
 弘誓,Kang Senghui,44,,,,,
 明度,Kang Senghui,6,,,,,
-除饉眾,Kang Senghui,2,,,,,
+除饉眾,Kang Senghui,2,TRUE,2025-10-02,"FGDB, s.v. 比丘",Semantic,Monastic community
 明度無極,Kang Senghui,4,,,,,
 本空,Kang Senghui,12,,,,,
 普慈,Kang Senghui,11,,,,,
@@ -9347,7 +9347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 眾聖,Kang Senghui,11,,,,,
 供養於佛,Kang Senghui,5,,,,,
 常悲,Kang Senghui,2,,,,,
-賢聖之眾,Kang Senghui,3,,,,,
+賢聖之眾,Kang Senghui,3,FALSE,2025-10-02,"T 152, fascicle 7",Semantic,Generic phrase: all the sages
 上士,Kang Senghui,5,,,,,
 受經,Kang Senghui,6,,,,,
 誦者,Kang Senghui,2,,,,,
@@ -9447,7 +9447,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 入無餘涅槃,Kumārajīva,6,,,,,
 無漏福德,Kumārajīva,2,,,,,
 解脫知見品,Kumārajīva,8,,,,,
-辟支佛記,Kumārajīva,2,,,,,
+辟支佛記,Kumārajīva,2,TRUE,2025-10-02,"T 227, 8.0548b19, fascicle 3",Mixed,Prediction to become a Pratyekabuddha
 邪迴向,Kumārajīva,2,,,,,
 菩薩母,Kumārajīva,2,,,,,
 三轉十二相法輪,Kumārajīva,2,,,,,
@@ -9547,7 +9547,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 乾闥婆王,Kumārajīva,17,,,,,
 阿修羅王,Kumārajīva,22,,,,,
 迦樓羅王,Kumārajīva,14,,,,,
-大乘經,Kumārajīva,11,,,,,
+大乘經,Kumārajīva,11,TRUE,2025-10-02,"FGDB, s.v. 大乘經典",Semantic,Mahayana sutras
 摩訶曼陀羅華,Kumārajīva,21,,,,,
 曼殊沙華,Kumārajīva,9,,,,,
 六趣眾生,Kumārajīva,3,,,,,
@@ -9647,7 +9647,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 質直行,Kumārajīva,2,,,,,
 煩惱魔,Kumārajīva,16,,,,,
 秘密之藏,Kumārajīva,2,,,,,
-不退智,Kumārajīva,4,,,,,
+不退智,Kumārajīva,4,TRUE,2025-10-02,Karashima 2001,Semantic,never regressing wisdom
 菩提樹下,Kumārajīva,23,,,,,
 少病少惱,Kumārajīva,3,,,,,
 薄德之人,Kumārajīva,2,,,,,
@@ -9747,7 +9747,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 毒龍,Kumārajīva,10,,,,,
 真觀,Kumārajīva,2,,,,,
 慈觀,Kumārajīva,3,,,,,
-煩惱焰,Kumārajīva,3,,,,,
+煩惱焰,Kumārajīva,3,FALSE,2025-10-02,"T 262, fascicle 7",Semantic,Generic phrase: flames of vexation
 吉遮,Kumārajīva,2,,,,,
 鳩槃茶,Kumārajīva,30,,,,,
 衰患,Kumārajīva,2,,,,,
@@ -9847,7 +9847,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 香象菩薩摩訶薩,Kumārajīva,2,,,,,
 無相音,Kumārajīva,2,,,,,
 妙眼菩薩摩訶薩,Kumārajīva,2,,,,,
-妙喜,Kumārajīva,3,,,,,
+妙喜,Kumārajīva,3,TRUE,2025-10-02,"FGDB, s.v. 妙喜庵",Semantic,"A term that has been adopted in names of temples and monastics. For example, the Temple of Wonderous Joy 妙喜庵"
 離生,Kumārajīva,6,,,,,
 寶相菩薩摩訶薩,Kumārajīva,2,,,,,
 網明,Kumārajīva,2,,,,,
@@ -9947,7 +9947,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 法無礙,Kumārajīva,11,,,,,
 樂說無礙,Kumārajīva,11,,,,,
 諸佛十力,Kumārajīva,3,,,,,
-聖主,Kumārajīva,4,,,,,
+聖主,Kumārajīva,4,TRUE,2025-10-02,"FGDB, s.v. 聖主",Semantic,An epithet for the Buddha
 跋難陀,Kumārajīva,13,,,,,
 為道,Kumārajīva,9,,,,,
 惡伴黨,Kumārajīva,4,,,,,
@@ -10047,7 +10047,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 不復退轉,Kumārajīva,3,,,,,
 菴摩勒果,Kumārajīva,2,,,,,
 生滅不住,Kumārajīva,3,,,,,
-羅睺羅,Kumārajīva,52,,,,,
+羅睺羅,Kumārajīva,52,TRUE,2025-10-02,"FGDB, s.v. 羅睺羅",Transliteration,Rāhula
 金剛之體,Kumārajīva,2,,,,,
 智慧辯才,Kumārajīva,4,,,,,
 過去生,Kumārajīva,2,,,,,
@@ -10147,7 +10147,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 死畏,Kumārajīva,7,,,,,
 墮惡道畏,Kumārajīva,2,,,,,
 大眾威德畏,Kumārajīva,3,,,,,
-菩提分法,Kumārajīva,8,,,,,
+菩提分法,Kumārajīva,8,TRUE,2025-10-02,"FGDB, s.v. 一切菩提分法",Semantic,Conditions leading to enlightenment
 成熟眾生,Kumārajīva,7,,,,,
 假偽,Kumārajīva,2,,,,,
 憍慢幢,Kumārajīva,2,,,,,
@@ -10247,7 +10247,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 分別義藏三昧,Kumārajīva,2,,,,,
 知神通門三昧,Kumārajīva,2,,,,,
 不證實際,Kumārajīva,4,,,,,
-波羅蜜船,Kumārajīva,2,,,,,
+波羅蜜船,Kumārajīva,2,FALSE,2025-10-02,"T 286, fascicle 3",Mixed,Generic phrase: ship of pāramitā
 煩惱污泥,Kumārajīva,2,,,,,
 如來力,Kumārajīva,9,,,,,
 深行菩薩,Kumārajīva,3,,,,,
@@ -10347,7 +10347,7 @@ term,term_introduced_by,document_frequency,Valid,Validated,Validation Source,Sem
 一劫攝阿僧祇劫,Kumārajīva,2,,,,,
 微塵智,Kumārajīva,2,,,,,
 國土智,Kumārajīva,2,,,,,
-不可思議智,Kumārajīva,3,,,,,
+不可思議智,Kumārajīva,3,FALSE,2025-10-02,"T 286, fascicle 4",Semantic,Generic phrase: inconceivable wisdom
 菩薩不可思議解脫,Kumārajīva,2,,,,,
 淨行解脫,Kumārajīva,2,,,,,
 普門明解脫,Kumārajīva,2,,,,,
