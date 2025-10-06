@@ -36,10 +36,40 @@
     "description": "Validation Source"
   },
   {
-    "name": "semantic_or_transiteration",
+    "name": "translation_type",
     "type": "STRING",
     "mode": "NULLABLE",
-    "description": "One of 'Semantic', 'Transiteration', or 'Mixed'"
+    "description": "One of 'Semantic', 'Transiteration', 'Mixed', 'New meaning', 'Buddhist idiom', 'Buddhist saying', 'Generic phrase', or 'Partial term'"
+  },
+  {
+    "name": "english_equivalent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "English equivalent"
+  },
+  {
+    "name": "sanskrit_equivalent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sanskrit equivalent"
+  },
+  {
+    "name": "old_chinese",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Old Chinese"
+  },
+  {
+    "name": "late_han",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Late Han"
+  },
+  {
+    "name": "middle_chinese",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Middle Chinese (Baxter-Sargart)"
   },
   {
     "name": "notes",
