@@ -347,6 +347,13 @@ bq --project_id=${PROJECT_ID} load \
 SQL queries:
 
 ```sql
+-- Terminology validation sample size
+FROM cszjj.terminology_validation
+|> SELECT valid
+|> AGGREGATE COUNT(*) GROUP BY valid
+```
+
+```sql
 -- Terminology validation
 FROM cszjj.terminology_validation
 |> WHERE validated IS NOT NULL
