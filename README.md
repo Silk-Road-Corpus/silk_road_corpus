@@ -486,6 +486,12 @@ For example,
 dot -Tpng drawings/terminology_processing.dot > images/terminology_processing.png
 ```
 
+and 
+
+```shell
+dot -Tpng drawings/big_picture.dot > images/big_picture.png
+```
+
 ### Vega Diagrams
 
 Histograms and related charts use [Vega](https://vega.github.io/vega/).
