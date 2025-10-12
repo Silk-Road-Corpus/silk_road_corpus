@@ -277,7 +277,10 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
 
     # Define the payload for the POST request
     payload = {
-        "contents": chat_history
+        "contents": chat_history,
+        "config": {
+            "responseMimeType": "application/json",
+        }
     }
 
     headers = {
@@ -308,6 +311,78 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
         return f"An error occurred: {req_err}"
     except json.JSONDecodeError as json_err:
         return f"JSON decoding error: {json_err} - Response text: {response.text}"
+
+
+def send_prompt_with_schema(prompt: str, response_schme: dict = None) -> str:
+    """
+    Sends a text prompt with schema for a JSON response.
+
+    Args:
+        prompt (str): The text prompt to send to the model.
+        response_schme (str, optional): The path to the file to send. Defaults to None.
+
+    Returns:
+        str: The generated JSON object from the Gemini model, or an error message if the request fails.
+    """
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+
+    if not api_key:
+        print("Warning: API_KEY environment variable not set.")
+        raise "Warning: API_KEY environment variable not set."
+
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+
+    parts = [{"text": prompt}]
+
+    # Construct the chat history for the payload
+    chat_history = [
+        {"role": "user", "parts": parts}
+    ]
+
+    # Define the payload for the POST request
+    payload = {
+        "contents": chat_history,
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseSchema": response_schme,
+        }
+    }
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    try:
+        response = requests.post(api_url, headers=headers, data=json.dumps(payload))
+        # print(f"send_prompt_with_schema: {response}")
+        response.raise_for_status()
+        result = response.json()
+
+        if result.get("candidates") and len(result["candidates"]) > 0 and \
+           result["candidates"][0].get("content") and \
+           result["candidates"][0]["content"].get("parts") and \
+           len(result["candidates"][0]["content"]["parts"]) > 0:
+            generated_text = result["candidates"][0]["content"]["parts"][0]["text"]
+            parsed_result = json.loads(generated_text)
+            return parsed_result
+        else:
+            return f"Error: Unexpected response structure or no content generated. Response: {result}"
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err} - Response: {response.text}, code: {response.status_code}")
+        raise http_err
+    except requests.exceptions.ConnectionError as conn_err:
+        print(f"Connection error occurred: {conn_err}")
+        raise conn_err
+    except requests.exceptions.Timeout as timeout_err:
+        print(f"Timeout error occurred: {timeout_err}")
+        raise timeout_err
+    except requests.exceptions.RequestException as req_err:
+        print(f"An error occurred: {req_err}")
+        raise req_err
+    except json.JSONDecodeError as json_err:
+        print(f"JSON decoding error: {json_err} - Response text: {response.text}")
+        raise json_err
 
 
 def write_headers_to_csv(filename, header):

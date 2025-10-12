@@ -389,6 +389,14 @@ FROM cszjj.terminology_validation
 |> AGGREGATE COUNT(*) GROUP BY term_introduced_by, semantic_or_transiteration
 |> ORDER BY term_introduced_by```
 
+### Terminology Validation
+
+Run terminology analysis
+
+```shell
+python3 scripts/terminology_analysis.py
+```
+
 ## Running the Python Scripts
 
 Setup a virtual env:
