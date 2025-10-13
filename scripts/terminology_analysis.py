@@ -165,7 +165,7 @@ def analyze_terminology(entry):
             "error": "",
         }
     except Exception as e:
-        error += f"Got a error from the model: {e}"
+        error = f"Got a error from the model: {e}"
         return {
             "term": term,
             "term_introduced_by": introduced_by,
