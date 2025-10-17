@@ -253,24 +253,34 @@ if __name__ == "__main__":
         description="Analyze Buddhist terminology collected from Taisho texts"
     )
     parser.add_argument(
-        '-s', '--restart_at',
+        '-r', '--restart_at',
         type=str,
         required=False,
         help='Begin processing starting at the given term'
     )
+    parser.add_argument(
+        '-t', '--term',
+        type=str,
+        required=False,
+        help='Process only the given term'
+    )
     args = parser.parse_args()
     start_found = False
-    if not args.restart_at:
+    if not args.restart_at and not args.term:
         # Start at the beginning
         write_header_to_csv(term_dict_output)
     entries = parse_term_dict_file(term_dict_input)
     print(f"Found {len(entries)} entries")
     for entry in entries:
         term = entry["term"]
-        if (len(args.restart_at) > 0) and (not start_found) and (args.restart_at != term):
+        if args.restart_at and (not start_found) and (args.restart_at != term):
             continue
-        if (len(args.restart_at) > 0) and (args.restart_at == term):
+        if args.restart_at and (args.restart_at == term):
             start_found = True
+        if args.term and (args.term != term):
+          continue
         result = analyze_terminology(entry)
         write_result_to_csv(term_dict_output, result)
+        if args.term and (args.term == term):
+          break
     print("Done")
