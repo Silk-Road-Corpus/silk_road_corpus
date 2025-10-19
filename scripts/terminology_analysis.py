@@ -6,7 +6,7 @@ import csv
 import cszjj
 
 
-term_dict_input = "data/terminology_dictionary.csv"
+term_dict_input = "data/terminology_list.csv"
 term_dict_output = "data/terminology_analysis.csv"
 prompt_template = """
 For the term '{term}', give whether the term is valid Buddhist terminology,
