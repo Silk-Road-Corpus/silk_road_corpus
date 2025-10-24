@@ -1,0 +1,20 @@
+digraph D {
+
+  Script [shape=parallelogram, fillcolor=lightgreen, style=filled, label="Script"]
+  Gemini [fillcolor=lightblue, style=filled, label="AI model"]
+  Validation [shape=box, fillcolor=lightgrey, style=filled, label="Validation"]
+  File [shape=box, fillcolor=lightgreen, style=filled, label="File"]
+  Database [shape=box, fillcolor=lightgreen, style=filled, label="Database"]
+  File2 [shape=box, fillcolor=lightgreen, style=filled, label="File"]
+  Script2 [shape=parallelogram, fillcolor=lightgreen, style=filled, label="Script"]
+  Gemini2 [fillcolor=lightblue, style=filled, label="AI model"]
+
+  Script -> Gemini [label="Send prompt"]
+  Gemini -> Script [label="Structured data"]
+  Script -> File [label="Save results"]
+  File -> Validation [label="Human validation"]
+  File -> Database [label="Load data"]
+  Database -> File2 [label=" Transform data"]
+  File2 -> Script2 [label=" Read data"]
+  Script2 -> Gemini2 [label=" Next stage"]
+}
