@@ -389,13 +389,41 @@ FROM cszjj.terminology_validation
 |> AGGREGATE COUNT(*) GROUP BY term_introduced_by, semantic_or_transiteration
 |> ORDER BY term_introduced_by```
 
-### Terminology Validation
-
 Run terminology analysis
 
 ```shell
 python3 scripts/terminology_analysis.py
 ```
+
+### Terminology Analysis
+
+
+Load the CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/terminology_analysis.csv gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv
+```
+
+Load the terminology usage file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.terminology_analysis \
+    gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv \
+    data/terminology_analysis_schema.json
+```
+
+SQL queries:
+
+```sql
+-- Valid and invalid terminology
+FROM cszjj.terminology_analysis
+|> AGGREGATE COUNT(*) GROUP BY valid_terminology
+```
+
 
 ## Running the Python Scripts
 

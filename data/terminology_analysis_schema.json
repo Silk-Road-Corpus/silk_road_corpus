@@ -1,0 +1,86 @@
+[
+  {
+    "name": "term",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Chinese term"
+  },
+  {
+    "name": "term_introduced_by",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The translator who first used the term"
+  },
+  {
+    "name": "valid_terminology",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Whether the term is valid Buddhist terminology"
+  },
+  {
+    "name": "hanyu_pinyin",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Hanyu Pinyin"
+  },
+  {
+    "name": "translation_type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "One of 'Semantic', 'Transiteration', 'Mixed', 'New meaning', 'Buddhist idiom', 'Buddhist saying', 'Generic phrase', or 'Partial term'"
+  },
+  {
+    "name": "english_equivalent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "English equivalent"
+  },
+  {
+    "name": "sanskrit_equivalent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sanskrit equivalent"
+  },
+  {
+    "name": "old_chinese",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Old Chinese"
+  },
+  {
+    "name": "late_han",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Late Han"
+  },
+  {
+    "name": "middle_chinese",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Middle Chinese (Baxter-Sargart)"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Notes"
+  },
+  {
+    "name": "document_frequency",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "The number of documents that the term occurs in"
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Notes"
+  },
+  {
+    "name": "validation",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Validation notes"
+  }
+]
