@@ -280,10 +280,11 @@ bq --project_id=${PROJECT_ID} load \
 SQL queries:
 
 ```sql
--- Number of terms used grouped by who used them and who introduced them
-FROM cszjj.terminology_usage
-|> WHERE document_frequency > 1
-|> AGGREGATE COUNT(DISTINCT term) num_terms GROUP BY attribution, term_introduced_by```
+-- Teminology evolution: number of terms used grouped by who used them and who introduced them
+FROM cszjj.terminology_usage AS TU
+|> INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
+|> WHERE TU.document_frequency > 1 AND TA.valid_terminology AND TU.attribution IS NOT NULL
+|> AGGREGATE COUNT(DISTINCT TU.term) AS num_terms GROUP BY TU.attribution, TU.term_introduced_by
 ```
 
 ```sql
@@ -304,11 +305,11 @@ FROM cszjj.terminology_usage
 
 ```sql
 -- Count of distinct terms, grouped by translator
-FROM cszjj.terminology_usage
-|> WHERE document_frequency > 1
-|> SELECT DISTINCT term, term_introduced_by
+FROM cszjj.terminology_usage AS TU
+|> INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
+|> WHERE TU.document_frequency > 1 AND TA.valid_terminology AND TU.attribution IS NOT NULL
+|> SELECT DISTINCT TU.term, TU.term_introduced_by
 |> AGGREGATE COUNT(*) GROUP BY term_introduced_by
-|> ORDER BY term_introduced_by
 ```
 
 ```sql
@@ -397,7 +398,6 @@ python3 scripts/terminology_analysis.py
 
 ### Terminology Analysis
 
-
 Load the CSV file into the GCS bucket:
 
 ```shell
@@ -424,6 +424,28 @@ FROM cszjj.terminology_analysis
 |> AGGREGATE COUNT(*) GROUP BY valid_terminology
 ```
 
+```sql
+-- Correlation on terminology validation
+FROM cszjj.terminology_analysis AS TA
+|> INNER JOIN cszjj.terminology_validation AS TV ON TA.term = TV.term
+|> AGGREGATE COUNT(*) GROUP BY TA.valid_terminology, TV.valid
+```
+
+```sql
+-- Count of Distinct Terms by Translation Type
+FROM cszjj.terminology_analysis
+|> WHERE valid_terminology 
+|> AGGREGATE COUNT(*) AS `Count of Distinct Terms` GROUP BY translation_type
+|> ORDER BY `Count of Distinct Terms` DESC
+```
+
+```sql
+-- Terminology Analysis - Semantic translations
+FROM cszjj.terminology_analysis
+|> WHERE valid_terminology and translation_type = 'Semantic'
+|> SELECT term, english_equivalent, term_introduced_by, document_frequency
+|> ORDER BY document_frequency DESC
+```
 
 ## Running the Python Scripts
 
@@ -485,20 +507,31 @@ The results will be written to data/lanaguage_analysis.csv. This can also take a
 time to run. If you need to restart it use the `--restart` flag. If you need to run
 it for a single entry use the `--title` flag.
 
-To run the terminology analysis:
+To run the terminology extraction from the corpus:
 
 ```shell
 python3 scripts/terminology.py
 ```
 
-For a single entry use the `--title` flag.
+For a single entry use the `--title` flag. The results are saved in the file
+data/terminology.csv
 
-To run the script that extracts the terminology and associates each term used with the
-translator that introduced the term:
+To run the script that compiles the terminology usage from the previous step and associates
+each term used with the translator that introduced the term:
 
 ```shell
 python3 scripts/terminology_usage.py
 ```
+
+The output will be saved to data/terminology_usage.csv.
+
+To run the script that analyzes the validity and type terminology:
+
+```shell
+python3 scripts/terminology_usage.py
+```
+
+The output will be saved to data/terminology_analysis.csv.
 
 ## Updating the Flutter app
 

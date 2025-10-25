@@ -7,7 +7,7 @@
   "data": [
     {
       "name": "table",
-      "url": "terminology_evolution.csv",
+      "url": "../data/terminology_evolution.csv",
       "format": {
         "type": "csv",
         "parse": "auto"
@@ -68,7 +68,7 @@
     {
         "orient": "left",
         "scale": "yscale",
-        "title": "Number of Terms"
+        "title": "Number of Terms Used"
     }
   ],
 

@@ -278,9 +278,6 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
     # Define the payload for the POST request
     payload = {
         "contents": chat_history,
-        "config": {
-            "responseMimeType": "application/json",
-        }
     }
 
     headers = {
