@@ -52,6 +52,19 @@ SQL queries use
 [Pipe syntax](https://cloud.google.com/bigquery/docs/pipe-syntax-guide).
 
 ```sql
+-- How many titles are there in the CXZJJ?
+FROM cszjj.chusanzangjiji
+|> AGGREGATE COUNT(*) AS `Number of Titles in the CSZJJ`
+```
+
+```sql
+-- How many titles in the CXZJJ can be related to currently existing texts?
+FROM cszjj.chusanzangjiji
+|> WHERE modern_ref IS NOT NULL
+|> AGGREGATE COUNT(*) AS `Number of Related Existing Texts`
+```
+
+```sql
 -- How many anonymous texts?
 FROM cszjj.chusanzangjiji
 |> WHERE fascicle = 3 or fascicle = 4
@@ -325,6 +338,14 @@ FROM cszjj.terminology_usage
 |> ORDER BY document_frequency DESC
 ```
 
+```sql
+-- Most widely used terms introduced by a particular translator
+FROM cszjj.terminology_usage
+|> WHERE term_introduced_by = 'Lokakṣema'
+|> SELECT DISTINCT term, document_frequency
+|> ORDER BY document_frequency DESC
+```
+
 ### Terminology Validation
 
 Load the CSV file into the GCS bucket:
@@ -441,10 +462,27 @@ FROM cszjj.terminology_analysis
 
 ```sql
 -- Terminology Analysis - Semantic translations
-FROM cszjj.terminology_analysis
-|> WHERE valid_terminology and translation_type = 'Semantic'
-|> SELECT term, english_equivalent, term_introduced_by, document_frequency
+FROM cszjj.terminology_usage AS TU
+INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
+|> WHERE TA.valid_terminology and TA.translation_type = 'Semantic'
+|> SELECT DISTINCT TA.term, TA.english_equivalent, TA.term_introduced_by, TU.document_frequency
 |> ORDER BY document_frequency DESC
+```
+
+```sql
+-- Count of Distinct Terms by Translation Type, pivot by translator
+SELECT * FROM
+  (SELECT
+    term,
+    translation_type,
+    term_introduced_by,
+  FROM cszjj.terminology_analysis
+  WHERE valid_terminology)
+PIVOT (
+  COUNT(DISTINCT term) AS count_terms
+  FOR term_introduced_by IN ('An Shigao', 'Lokakṣema', 'Dharmarakṣa', 'Kumārajīva')
+)
+ORDER BY `count_terms_Kumārajīva` DESC
 ```
 
 ## Running the Python Scripts
@@ -514,7 +552,7 @@ python3 scripts/terminology.py
 ```
 
 For a single entry use the `--title` flag. The results are saved in the file
-data/terminology.csv
+data/terminology.csv.
 
 To run the script that compiles the terminology usage from the previous step and associates
 each term used with the translator that introduced the term:

@@ -66,16 +66,16 @@
     "description": "Notes"
   },
   {
-    "name": "document_frequency",
+    "name": "do_not_use",
     "type": "INTEGER",
     "mode": "NULLABLE",
-    "description": "The number of documents that the term occurs in"
+    "description": "The document frequencies have been recomputed since creating this table."
   },
   {
     "name": "error",
     "type": "STRING",
     "mode": "NULLABLE",
-    "description": "Notes"
+    "description": "Errors in calling the Gemini API"
   },
   {
     "name": "validation",
