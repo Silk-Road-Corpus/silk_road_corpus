@@ -1,27 +1,13 @@
 digraph D {
 
   Relate [shape=box, fillcolor=lightgrey, style=filled, label="Relate CSZJJ to Taishō"]
-  Literature [shape=box, fillcolor=lightgrey, style=filled, label="Secondary literature"]
-  Gemini [fillcolor=lightblue, style=filled, label="AI model"]
-  Script [shape=parallelogram, fillcolor=lightgreen, style=filled, label="Script"]
-  Validation [shape=box, fillcolor=lightgrey, style=filled, label="Validate results"]
-  Gemini2 [fillcolor=lightblue, style=filled, label="AI Model"]
-  Validation2 [shape=box, fillcolor=lightgrey, style=filled, label="Validate results"]
-  Script2 [shape=parallelogram, fillcolor=lightgreen, style=filled, label="Script"]
-  Gemini3 [fillcolor=lightblue, style=filled, label="AI Model"]
-  Validation3 [shape=box, fillcolor=lightgrey, style=filled, label="Validate results"]
+  Extract [shape=box, fillcolor=lightgrey, style=filled, label="Extract terminology"]
+  Analyze [shape=box, fillcolor=lightgrey, style=filled, label="Analyze terminology"]
   Database [shape=box, fillcolor=lightgreen, style=filled, label="Database"]
 
-  Relate -> Gemini [label="find alt titles (Kaiyuan Lu)"]
-  Relate -> Literature [label="Attribution"]
-  Gemini -> Validation [label="Check title match"]
-  Gemini -> Script [label="iterate"]
-  Script -> Gemini
-  Script -> Gemini2 [label=" Extract terminology (Taishō text)"]
-  Gemini2 -> Validation2 [label="Check terminology"]
-  Gemini2 -> Script2 [label="iterate"]
-  Script2 -> Gemini2
-  Script2 -> Gemini3 [label=" Analyze translation style"]
-  Gemini3 -> Validation3 [label="Check translation style"]
-  Gemini3 -> Database
+  Relate -> Extract
+  Extract -> Analyze
+  Relate -> Database
+  Extract -> Database
+  Analyze -> Database
 }

@@ -65,6 +65,18 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
+-- Count of entries and fascicles that can be related to a text in the modern canon break down by translater
+SELECT
+  attribution_analysis,
+  COUNT(*) AS count_titles,
+  SUM(taisho_num_fascicles) AS taisho_fascicles
+FROM cszjj.chusanzangjiji
+WHERE modern_ref IS NOT NULL
+GROUP BY attribution_analysis
+|> WHERE count_titles >= 5
+```
+
+```sql
 -- How many anonymous texts?
 FROM cszjj.chusanzangjiji
 |> WHERE fascicle = 3 or fascicle = 4
