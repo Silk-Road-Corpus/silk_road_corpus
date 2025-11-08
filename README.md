@@ -65,7 +65,7 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
--- Count of entries and fascicles that can be related to a text in the modern canon break down by translater
+-- Count of entries and fascicles that can be related to a text in the modern canon, break down by attribution_analysis
 SELECT
   attribution_analysis,
   COUNT(*) AS count_titles,
@@ -73,6 +73,30 @@ SELECT
 FROM cszjj.chusanzangjiji
 WHERE modern_ref IS NOT NULL
 GROUP BY attribution_analysis
+|> WHERE count_titles >= 5
+```
+
+```sql
+-- Count of entries and fascicles that can be related to a text in the modern canon break, down by cszjj_attribution
+SELECT
+  cszjj_attribution,
+  COUNT(*) AS count_titles,
+  COUNT(*) AS count_lost,
+  SUM(taisho_num_fascicles) AS taisho_fascicles
+FROM cszjj.chusanzangjiji
+WHERE modern_ref IS NOT NULL
+GROUP BY cszjj_attribution
+|> WHERE count_titles >= 5
+```
+
+```sql
+-- Count of entries and fascicles, down by cszjj_attribution
+SELECT
+  cszjj_attribution,
+  COUNT(*) AS count_titles,
+  SUM(num_fascicles) AS total_fascicles
+FROM cszjj.chusanzangjiji
+GROUP BY cszjj_attribution
 |> WHERE count_titles >= 5
 ```
 
@@ -495,6 +519,15 @@ PIVOT (
   FOR term_introduced_by IN ('An Shigao', 'Lokakṣema', 'Dharmarakṣa', 'Kumārajīva')
 )
 ORDER BY `count_terms_Kumārajīva` DESC
+```
+
+```sql
+-- Most widely used terms introduced by a particular translator of a particular translation type
+FROM cszjj.terminology_usage AS TU
+JOIN cszjj.terminology_analysis as TA ON TU.term = TA.term
+|> WHERE TU.term_introduced_by = 'Zhi Qian' AND TA.translation_type = 'Buddhist idiom'
+|> SELECT DISTINCT TU.term, TU.document_frequency
+|> ORDER BY document_frequency DESC
 ```
 
 ## Running the Python Scripts

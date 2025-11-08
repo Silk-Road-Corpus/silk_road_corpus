@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "description": "A timeline visualization of early translators of Buddhist scriptures.",
+  "width": 500,
+  "height": 200,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "people",
+      "values": [
+        {
+          "label": "An Shigao",
+          "start": -57559837390000,
+          "end": -56865613390000
+        },
+        {
+          "label": "Lokakṣema",
+          "start": -56518458190000,
+          "end": -56202838990000
+        },
+        {
+          "label": "Zhi Qian",
+          "start": -55161546190000,
+          "end": -54183238990000
+        },
+        {
+          "label": "Dharmarakṣa",
+          "start": -53773011790000,
+          "end": -52289869390000
+        },
+        {
+          "label": "Zhu Fonian",
+          "start": -50396413390000,
+          "end": -49670653390000
+        },
+        {
+          "label": "Kumārajīva",
+          "start": -50112416590000,
+          "end": -49512800590000
+        },
+        {
+          "label": "Dharmakṣema",
+          "start": -49512800590000,
+          "end": -48502957390000
+        },
+        {
+          "label": "Buddhabhadra",
+          "start": -49670653390000,
+          "end": -48850112590000
+        },
+        {
+          "label": "Faxian",
+          "start": -49007878990000,
+          "end": -48976342990000
+        },
+        {
+          "label": "Guṇabhadra, Baoyun, Puti, and Fayong",
+          "start": -48787040590000,
+          "end": -47524736590000
+        },
+        {
+          "label": "",
+          "start": -44810826190000,
+          "end": -44810826190000
+        }
+      ]
+    },
+    {
+      "name": "events",
+      "format": {"type":"json", "parse":{"when":"date"}},
+      "values": [
+        { "name":"Later Han end", "when":"January 1, 220" },
+        { "name":"Dao’an born", "when":"January 1, 312" },
+        { "name":"Dao’an passed", "when":"January 1, 385" },
+        { "name":"Chu San Zang Ji Ji completed", "when":"January 1, 515" }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "yscale",
+      "type": "band",
+      "range": [0, {"signal": "height"}],
+      "domain": {"data": "people", "field": "label"}
+    },
+    {
+      "name": "xscale",
+      "type": "time",
+      "range": "width",
+      "round": true,
+      "domain": {"data": "people", "fields": ["start", "end"]}
+    }
+  ],
+
+  "axes": [
+    {
+        "orient": "bottom", 
+        "scale": "xscale", 
+        "format": "%Y",
+        "title": "Years active translating"
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "text",
+      "from": {"data": "events"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "when"},
+          "y": {"value": -10},
+          "angle": {"value": -25},
+          "fill": {"value": "#000"},
+          "text": {"field": "name"},
+          "fontSize": {"value": 10}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "events"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "when"},
+          "y": {"value": -8},
+          "width": {"value": 1},
+          "height": {"field": {"group": "height"}, "offset": 8},
+          "fill": {"value": "#888"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "people"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "start"},
+          "y": {"scale": "yscale", "field": "label", "offset": -3},
+          "fill": {"value": "#000"},
+          "text": {"field": "label"},
+          "fontSize": {"value": 10}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "people"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "start"},
+          "x2": {"scale": "xscale", "field": "end"},
+          "y": {"scale": "yscale", "field": "label"},
+          "height": {"value": 3},
+          "fill": {"value": "#e44"}
+        }
+      }
+    }
+ ]
+}
