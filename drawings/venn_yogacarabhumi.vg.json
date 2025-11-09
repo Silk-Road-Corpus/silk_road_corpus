@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "width": 500,
+  "height": 350,
+  "data": [
+    {
+      "name": "sets",
+      "values": [
+        {
+          "id": "T 607",
+          "x": 186.61099454796138,
+          "y": 200,
+          "radius": 145.94519519326423,
+          "color": "blue"
+        },
+        {
+          "id": "T 606 (1)",
+          "x": 393.38900545203865,
+          "y": 200,
+          "radius": 114.0175425099138,
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "name": "sizes",
+      "values": [
+        {
+          "label": "195",
+          "x": 128.2329164706557,
+          "y": 200
+        },
+        {
+          "label": "18",
+          "x": 290.0,
+          "y": 200
+        },
+        {
+          "label": "112",
+          "x": 438.99602245600414,
+          "y": 200
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {
+        "data": "sets"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "size": {
+            "signal": "datum.radius * datum.radius * PI"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.4
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "sets"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "signal": "datum.y - datum.radius - 10"
+          },
+          "text": {
+            "field": "id"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "bottom"
+          },
+          "fontWeight": {
+            "value": "bold"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "sizes"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 18
+          },
+          "fontWeight": {
+            "value": "bold"
+          }
+        }
+      }
+    }
+  ]
+}

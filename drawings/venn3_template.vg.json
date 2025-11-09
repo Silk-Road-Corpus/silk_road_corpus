@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A three-circle Venn diagram template showing the count of elements in each region.",
+  "width": 400,
+  "height": 320,
+  "autosize": "none",
+  "data": [
+    {
+      "name": "sets",
+      "values": [
+        {"set": "Set 1 (size 3)", "x": 160, "y": 140, "radius": 61, "color": "rgb(255, 127, 14)"},
+        {"set": "Set 2 (size 4)", "x": 250, "y": 140, "radius": 70, "color": "rgb(44, 160, 44)"},
+        {"set": "Set 3 (size 5)", "x": 205, "y": 210, "radius": 78, "color": "rgb(31, 119, 180)"}
+      ]
+    },
+    {
+      "name": "labels",
+      "values": [
+        {"label": "2", "x": 130, "y": 120},
+        {"label": "2", "x": 295, "y": 120},
+        {"label": "3", "x": 205, "y": 270},
+        {"label": "1", "x": 205, "y": 165},
+        {"label": "1", "x": 240, "y": 185}
+      ]
+    },
+    {
+      "name": "set_labels",
+      "values": [
+        {"label": "Set 1", "x": 100, "y": 70},
+        {"label": "Set 2", "x": 320, "y": 70},
+        {"label": "Set 3", "x": 140, "y": 290}
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {"data": "sets"},
+      "encode": {
+        "enter": {
+          "shape": {"value": "circle"},
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "size": {"signal": "pow(2 * datum.radius, 2)"},
+          "fill": {"field": "color"},
+          "fillOpacity": {"value": 0.5},
+          "stroke": {"field": "color"},
+          "strokeWidth": {"value": 2}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "labels"},
+      "encode": {
+        "enter": {
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "text": {"field": "label"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 16},
+          "fontWeight": {"value": "bold"},
+          "fill": {"value": "black"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "set_labels"},
+      "encode": {
+        "enter": {
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "text": {"field": "label"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 16},
+          "fontWeight": {"value": "bold"},
+          "fill": {"value": "#555"}
+        }
+      }
+    }
+  ]
+}
