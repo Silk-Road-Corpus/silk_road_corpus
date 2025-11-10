@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "A three-circle Venn diagram template showing the count of elements in each region.",
-  "width": 400,
-  "height": 320,
+  "width": 500,
+  "height": 400,
   "autosize": "none",
   "data": [
     {

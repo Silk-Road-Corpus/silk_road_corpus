@@ -1,3 +1,6 @@
+"""This script generates a Venn diagram for two sets.
+"""
+
 import json
 import math
 

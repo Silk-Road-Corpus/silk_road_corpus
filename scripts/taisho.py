@@ -1,5 +1,6 @@
-"""This script Taisho numbers and titles from the NTI Reader collections.csv file.
+"""This script reads Taisho numbers and titles from the NTI Reader collections.csv file.
 """
+
 import csv
 import re
 import io

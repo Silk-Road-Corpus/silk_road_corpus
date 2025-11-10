@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A three-circle Venn diagram template showing the count of elements in each region.",
+  "width": 500,
+  "height": 420,
+  "autosize": "none",
+  "data": [
+    {
+      "name": "sets",
+      "values": [
+        {
+          "set": "T 224 (671)",
+          "x": 183.0129282750891,
+          "y": 118.80098474137799,
+          "radius": 103.61467077590895,
+          "color": "rgb(255, 127, 14)"
+        },
+        {
+          "set": "T 225 (442)",
+          "x": 310.5611768241207,
+          "y": 118.80098474137799,
+          "radius": 84.09518416651456,
+          "color": "rgb(44, 160, 44)"
+        },
+        {
+          "set": "T 227 (1098)",
+          "x": 256.4258949007901,
+          "y": 272.398030517244,
+          "radius": 132.54433220624713,
+          "color": "rgb(31, 119, 180)"
+        }
+      ]
+    },
+    {
+      "name": "labels",
+      "values": [
+        {
+          "label": "466",
+          "x": 131.20559288713463,
+          "y": 118.80098474137799
+        },
+        {
+          "label": "282",
+          "x": 352.60876890737796,
+          "y": 118.80098474137799
+        },
+        {
+          "label": "905",
+          "x": 256.4258949007901,
+          "y": 338.6701966203676
+        },
+        {
+          "label": "59",
+          "x": 244.85928407936785,
+          "y": 88.08157558620478
+        },
+        {
+          "label": "92",
+          "x": 201.5510585407034,
+          "y": 210.9592122068976
+        },
+        {
+          "label": "47",
+          "x": 303.58965737992867,
+          "y": 210.9592122068976
+        },
+        {
+          "label": "54",
+          "x": 250.0,
+          "y": 170.0
+        }
+      ]
+    },
+    {
+      "name": "set_labels",
+      "values": [
+        {
+          "label": "T 224",
+          "x": 100,
+          "y": 70
+        },
+        {
+          "label": "T 225",
+          "x": 320,
+          "y": 70
+        },
+        {
+          "label": "T 227",
+          "x": 140,
+          "y": 290
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {
+        "data": "sets"
+      },
+      "encode": {
+        "enter": {
+          "shape": {
+            "value": "circle"
+          },
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "size": {
+            "signal": "pow(2 * datum.radius, 2)"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.5
+          },
+          "stroke": {
+            "field": "color"
+          },
+          "strokeWidth": {
+            "value": 2
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "labels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 16
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "black"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "set_labels"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 16
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#555"
+          }
+        }
+      }
+    }
+  ]
+}
