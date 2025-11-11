@@ -45,6 +45,7 @@
           "text": {"field": "id"},
           "align": {"value": "center"},
           "baseline": {"value": "bottom"},
+          "fontSize": {"value": 18},
           "fontWeight": {"value": "bold"}
         }
       }

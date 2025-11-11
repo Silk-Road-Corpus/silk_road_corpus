@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "description": "A two-circle Venn diagram template showing the count of elements in each region.",
+  "width": 600,
+  "height": 400,
+  "data": [
+    {
+      "name": "sets",
+      "values": [
+        {
+          "id": "Dharmarakṣa (T 263)",
+          "x": 157.92286239620643,
+          "y": 200,
+          "radius": 180.20821290940097,
+          "color": "blue"
+        },
+        {
+          "id": "Kumārajīva (T 262)",
+          "x": 422.0771376037936,
+          "y": 200,
+          "radius": 190.0,
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "name": "sizes",
+      "values": [
+        {
+          "label": "1058",
+          "x": 85.83957723244603,
+          "y": 200
+        },
+        {
+          "label": "241",
+          "x": 290.0,
+          "y": 200
+        },
+        {
+          "label": "1203",
+          "x": 498.0771376037936,
+          "y": 200
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {
+        "data": "sets"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "size": {
+            "signal": "datum.radius * datum.radius * PI"
+          },
+          "shape": {
+            "value": "circle"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "value": 0.4
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "sets"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "signal": "datum.y - datum.radius - 10"
+          },
+          "text": {
+            "field": "id"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "bottom"
+          },
+          "fontSize": {
+            "value": 18
+          },
+          "fontWeight": {
+            "value": "bold"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "sizes"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "field": "label"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "fontSize": {
+            "value": 18
+          },
+          "fontWeight": {
+            "value": "bold"
+          }
+        }
+      }
+    }
+  ]
+}
