@@ -616,6 +616,23 @@ python3 scripts/terminology_usage.py
 
 The output will be saved to data/terminology_analysis.csv.
 
+To compute word embedding examples, in the virtual env install the Vertex client API:
+
+```shell
+pip install --upgrade google-genai
+```
+
+Authenticate with 
+
+```shell
+gcloud auth application-default login
+```
+Run the code:
+
+```shell
+python3 scripts/embedding.py
+```
+
 ## Updating the Flutter app
 
 To update the Silk Road Corpus app after changing the bibliography:
