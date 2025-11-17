@@ -497,6 +497,26 @@ FROM cszjj.terminology_analysis
 ```
 
 ```sql
+-- Translation Analysis - types with percental
+SELECT
+  translation_type,
+  `Count of Distinct Terms`,
+  ROUND((`Count of Distinct Terms` * 100.0 / SUM(`Count of Distinct Terms`) OVER ()), 1) AS `Percentage of Total`
+FROM
+  (
+    SELECT
+      translation_type,
+      COUNT(*) AS `Count of Distinct Terms`
+    FROM
+      cszjj.terminology_analysis
+    WHERE
+      valid_terminology = TRUE
+    GROUP BY translation_type
+  )
+ORDER BY `Count of Distinct Terms` DESC;
+```
+
+```sql
 -- Terminology Analysis - Semantic translations
 FROM cszjj.terminology_usage AS TU
 INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
