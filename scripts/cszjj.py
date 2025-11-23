@@ -8,6 +8,7 @@ import os
 import re
 import requests
 
+model = "gemini-2.5-flash"
 
 def find_entry(file_path, title_zh, fascicle, start_title):
     """
@@ -241,12 +242,12 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
     Returns:
         str: The generated text from the Gemini model, or an error message if the request fails.
     """
-    api_key = os.environ.get("GEMINI_API_KEY", "")
+    #api_key = os.environ.get("GEMINI_API_KEY", "")
 
-    if not api_key:
-        return "Warning: API_KEY environment variable not set."
+    #if not api_key:
+    #    return "Warning: API_KEY environment variable not set."
 
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
     parts = [{"text": prompt}]
 
