@@ -7,6 +7,7 @@ import json
 import os
 import re
 import requests
+import sys
 
 model = "gemini-2.5-flash"
 
@@ -233,7 +234,7 @@ def parse_file_index(file_path, restart_at=None):
 
 def send_prompt(prompt: str, file_path: str = None) -> str:
     """
-    Sends a text prompt and a text file to the Gemini 2.5 Flash model.
+    Sends a text prompt and a text file to the AI model.
 
     Args:
         prompt (str): The text prompt to send to the model.
@@ -242,12 +243,12 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
     Returns:
         str: The generated text from the Gemini model, or an error message if the request fails.
     """
-    #api_key = os.environ.get("GEMINI_API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
 
-    #if not api_key:
-    #    return "Warning: API_KEY environment variable not set."
+    if not api_key:
+        return "Warning: API_KEY environment variable not set."
 
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
 
     parts = [{"text": prompt}]
 
@@ -311,6 +312,95 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
         return f"JSON decoding error: {json_err} - Response text: {response.text}"
 
 
+def send_prompt_file_and_schema(prompt: str, file_path: str = None, response_schema: dict = None) -> dict:
+    """
+    Sends a text prompt and a text file and schema for a JSON response to the AI model.
+
+    Args:
+        prompt (str): The text prompt to send to the model.
+        file_path (str, optional): The path to the file to send. Defaults to None.
+        response_schema (str, optional): The path to the file to send. Defaults to None.
+
+    Returns:
+        dict: The generated dict from the Gemini model, or an error message if the request fails.
+    """
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+
+    if not api_key:
+        raise Exception("API_KEY environment variable not set.")
+
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+
+    parts = [{"text": prompt}]
+
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"File not found at {file_path}")
+
+    try:
+        mime_type = "text/plain"
+
+        with open(file_path, "rb") as f:
+            file_data = f.read()
+            base64_file = base64.b64encode(file_data).decode("utf-8")
+
+            # Add the file data to the parts list
+            parts.append({
+                "inlineData": {
+                    "mimeType": mime_type,
+                    "data": base64_file
+                }
+        })
+    except Exception as e:
+        raise Exception(f"Error processing file {file_path}: {e}")
+
+    # Construct the chat history for the payload
+    chat_history = [
+        {"role": "user", "parts": parts}
+    ]
+
+    # Define the payload for the POST request
+    payload = {
+        "contents": chat_history,
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseSchema": response_schema,
+        }
+    }
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    try:
+        response = requests.post(api_url, headers=headers, data=json.dumps(payload))
+        # print(f"send_prompt_file_and_schema, response: {response.text}")
+        response.raise_for_status()
+        result = response.json()
+
+        if result.get("candidates") and len(result["candidates"]) > 0 and \
+           result["candidates"][0].get("content") and \
+           result["candidates"][0]["content"].get("parts") and \
+           len(result["candidates"][0]["content"]["parts"]) > 0:
+            generated_text = result["candidates"][0]["content"]["parts"][0]["text"]
+            try:
+                return json.loads(generated_text)
+            except json.JSONDecodeError as e:
+                raise Exception(f"Failed to decode JSON: {e}. Response text: {generated_text}")
+        else:
+            raise Exception(f"Unexpected response structure or no content generated. Response: {result}")
+
+    except requests.exceptions.HTTPError as http_err:
+        raise Exception(f"HTTP error occurred: {http_err} - Response: {response.text}, code: {response.status_code}")
+    except requests.exceptions.ConnectionError as conn_err:
+        raise Exception(f"Connection error occurred: {conn_err}")
+    except requests.exceptions.Timeout as timeout_err:
+        raise Exception(f"Timeout error occurred: {timeout_err}")
+    except requests.exceptions.RequestException as req_err:
+        raise Exception(f"An error occurred: {req_err}")
+    except json.JSONDecodeError as json_err:
+        raise Exception(f"JSON decoding error: {json_err} - Response text: {response.text}")
+
+
 def send_prompt_with_schema(prompt: str, response_schme: dict = None) -> str:
     """
     Sends a text prompt with schema for a JSON response.
@@ -328,7 +418,7 @@ def send_prompt_with_schema(prompt: str, response_schme: dict = None) -> str:
         print("Warning: API_KEY environment variable not set.")
         raise "Warning: API_KEY environment variable not set."
 
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
 
     parts = [{"text": prompt}]
 

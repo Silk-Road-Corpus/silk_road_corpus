@@ -240,6 +240,12 @@
     "description": "Attribution for analysis"
   },
   {
+    "name": "source_type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Source type assumed for hypothesis"
+  },
+  {
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",

@@ -583,6 +583,12 @@ Console and set it as an environment variable:
 export GEMINI_API_KEY="YOUR_API_KEY_HERE"
 ```
 
+Put the GCP project ID in the environment:
+
+```shell
+GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID_HERE"
+```
+
 the alternative titles iterates over all the anonymous texts to find
 alternative titles and attempt to match them to Taisho entries.
 To run script:

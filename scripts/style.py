@@ -3,6 +3,7 @@
 
 import argparse
 import cszjj
+import json
 import os
 import sys
 
@@ -70,8 +71,94 @@ Put the explanation in the notes field.
 "notes": string}.
 """
 
+schema = {
+    "type": "object",
+        "properties": {
+            "verse_or_prose": {
+                "type": "string",
+            },
+            "syllables_per_line": {
+                "type": "integer",
+            },
+            "vernacular_or_literary": {
+                "type": "string",
+            },
+            "literal_or_fluent": {
+                "type": "string",
+            },
+            "ornate_or_plain_language": {
+                "type": "string",
+            },
+            "terse_or_verbose": {
+                "type": "string",
+            },
+            "idioms_used": {
+                "type": "boolean",
+            },
+            "factual_or_spiritual": {
+                "type": "string",
+            },
+            "indigenous_chinese": {
+                "type": "boolean",
+            },
+            "interpolations": {
+                "type": "boolean",
+            },
+            "interlinear_commentary": {
+                "type": "boolean",
+            },
+            "oral_transmission": {
+                "type": "boolean",
+            },
+            "explicit_sentence_subject": {
+                "type": "string",
+            },
+            "plural_zhu": {
+                "type": "boolean",
+            },
+            "tense": {
+                "type": "string",
+            },
+            "abbreviations": {
+                "type": "boolean",
+            },
+            "wei_for_cupola": {
+                "type": "boolean",
+            },
+            "wei_call_cupola": {
+                "type": "boolean",
+            },
+            "notes": {
+                "type": "string",
+            },
+        }
+}
+
+DEFAULT_STYLE = {
+    "verse_or_prose": "",
+    "syllables_per_line": 0,
+    "vernacular_or_literary": "",
+    "literal_or_fluent": "",
+    "ornate_or_plain_language": "",
+    "terse_or_verbose": "",
+    "idioms_used": False,
+    "factual_or_spiritual": "",
+    "indigenous_chinese": False,
+    "interpolations": False,
+    "interlinear_commentary": False,
+    "oral_transmission": False,
+    "explicit_sentence_subject": "",
+    "plural_zhu": False,
+    "tense": "",
+    "abbreviations": False,
+    "wei_for_cupola": False,
+    "wei_call_cupola": False,
+    "notes": "",
+}
+
+
 def analyze_style(nti, entry):
-    """Analysze style of the given text.
+    """Analyze style of the given text.
 
     Returns:
         dictionary: a dictionary following the rubric in the prompt.
@@ -79,167 +166,46 @@ def analyze_style(nti, entry):
     if "title_zh" not in entry:
         print(f"title_zh not in entry {entry}")
         return {}
+
     title_zh = entry["title_zh"]
+    taisho_no = entry.get("taisho_no")
+
+    result = {
+        "title_zh": title_zh,
+        "taisho_no": taisho_no,
+        "error": None,
+    }
+    # Initialize with default style values for the success case.
+    result.update(DEFAULT_STYLE)
+
     if "filepath" not in entry:
-        print(f"filepath not in {title_zh}")
-        return {
-            "title_zh": title_zh,
-            "taisho_no": entry["taisho_no"],
-            "style": {},
-            "error": "filepath not given",
-        }
-    fname = entry["filepath"]
-    filepath = fname
-    if fname.startswith("$nti"):
-        filepath = nti + fname[4:]
-    # print(f"Analyzing style for entry {title_zh}, {filepath}")
-    try:
-        with open(filepath, 'r', encoding='utf-8') as file:
-            error = ""
-            content = file.read()
-            try:
-                result = cszjj.send_prompt(prompt_template, file_path=filepath)
-                if isinstance(result, str):
-                    error += result
-                    result = {}
-            except Exception as e:
-                error += f"Got a error from the model: {e}"
-            verse_or_prose = ""
-            syllables_per_line = 0
-            vernacular_or_literary = ""
-            literal_or_fluent = ""
-            ornate_or_plain_language = ""
-            terse_or_verbose = ""
-            idioms_used = False
-            factual_or_spiritual = ""
-            indigenous_chinese = False
-            interpolations = False
-            interlinear_commentary = False
-            oral_transmission = False
-            explicit_sentence_subject = ""
-            plural_zhu = False
-            tense = ""
-            abbreviations = False
-            wei_for_cupola = False
-            wei_call_cupola = False
-            notes = ""
-            if "verse_or_prose" in result:
-                verse_or_prose = result["verse_or_prose"]
-            if "syllables_per_line" in result:
-                syllables_per_line = result["syllables_per_line"]
-            if "vernacular_or_literary" in result:
-                vernacular_or_literary = result["vernacular_or_literary"]
-            if "literal_or_fluent" in result:
-                literal_or_fluent = result["literal_or_fluent"] 
-            if "ornate_or_plain_language" in result:
-                ornate_or_plain_language = result["ornate_or_plain_language"]
-            if "terse_or_verbose" in result:
-                terse_or_verbose = result["terse_or_verbose"]
-            if "idioms_used" in result:
-                idioms_used = result["idioms_used"]
-            if "factual_or_spiritual" in result:
-                factual_or_spiritual = result["factual_or_spiritual"]
-            if "indigenous_chinese" in result:
-                indigenous_chinese = result["indigenous_chinese"]
-            if "interpolations" in result:
-                interpolations = result["interpolations"]
-            if "interlinear_commentary" in result:
-                interlinear_commentary = result["interlinear_commentary"]
-            if "oral_transmission" in result:
-                oral_transmission = result["oral_transmission"]
-            if "explicit_sentence_subject" in result:
-                explicit_sentence_subject = result["explicit_sentence_subject"]
-            if "plural_zhu" in result:
-                plural_zhu = result["plural_zhu"]
-            if "tense" in result:
-                tense = result["tense"]
-            if "abbreviations" in result:
-                abbreviations = result["abbreviations"]
-            if "wei_for_cupola" in result:
-                wei_for_cupola = result["wei_for_cupola"]
-            if "wei_call_cupola" in result:
-                wei_call_cupola = result["wei_call_cupola"]
-            if "notes" in result:
-                notes = result["notes"]
-            else:
-                print(f"No notes found for entry {title_zh}: {result}")
-            return {
-                "title_zh": title_zh,
-                "taisho_no": entry["taisho_no"],
-                "verse_or_prose": verse_or_prose,
-                "syllables_per_line": syllables_per_line,
-                "vernacular_or_literary": vernacular_or_literary,
-                "literal_or_fluent": literal_or_fluent,
-                "ornate_or_plain_language": ornate_or_plain_language,
-                "terse_or_verbose": terse_or_verbose,
-                "idioms_used": idioms_used,
-                "factual_or_spiritual": factual_or_spiritual,
-                "indigenous_chinese": indigenous_chinese,
-                "interpolations": interpolations,
-                "interlinear_commentary": interlinear_commentary,
-                "oral_transmission": oral_transmission,
-                "explicit_sentence_subject": explicit_sentence_subject,
-                "plural_zhu": plural_zhu,
-                "tense": tense,
-                "abbreviations": abbreviations,
-                "wei_for_cupola": wei_for_cupola,
-                "wei_call_cupola": wei_call_cupola,
-                "notes": notes,
-                "error": error,
-            }
-    except FileNotFoundError:
-        print(f"Error: The file '{filepath}' was not found.")
-        return {
-            "title_zh": title_zh,
-            "taisho_no": entry["taisho_no"],
-            "verse_or_prose": None,
-            "syllables_per_line": None,
-            "vernacular_or_literary": None,
-            "literal_or_fluent": None,
-            "ornate_or_plain_language": None,
-            "terse_or_verbose": None,
-            "idioms_used": None,
-            "factual_or_spiritual": None,
-            "indigenous_chinese": None,
-            "interpolations": None,
-            "interlinear_commentary": None,
-            "oral_transmission": None,
-            "explicit_sentence_subject": None,
-            "plural_zhu": None,
-            "tense": None,
-            "abbreviations": None,
-            "wei_for_cupola": None,
-            "wei_call_cupola": None,
-            "notes": None,
-            "error": f"The file '{filepath}' was not found.",
-        }
-    except Exception as e:
-        print(f"An error occurred while reading the file: {e}")
-        return {
-            "title_zh": title_zh,
-            "taisho_no": entry["taisho_no"],
-            "verse_or_prose": None,
-            "syllables_per_line": None,
-            "vernacular_or_literary": None,
-            "literal_or_fluent": None,
-            "ornate_or_plain_language": None,
-            "terse_or_verbose": None,
-            "idioms_used": None,
-            "factual_or_spiritual": None,
-            "indigenous_chinese": None,
-            "interpolations": None,
-            "interlinear_commentary": None,
-            "oral_transmission": None,
-            "explicit_sentence_subject": None,
-            "plural_zhu": None,
-            "tense": None,
-            "abbreviations": None,
-            "wei_for_cupola": None,
-            "wei_call_cupola": None,
-            "notes": None,
-            "error": f"An error occurred while reading the file: {e}",
-        }
-    return {}
+        result["error"] = "filepath not given"
+    else:
+        fname = entry["filepath"]
+        filepath = fname
+        if fname.startswith("$nti"):
+            filepath = nti + fname[4:]
+
+        try:
+            response = cszjj.send_prompt_file_and_schema(prompt_template,
+                                                         file_path=filepath,
+                                                         response_schema=schema)
+            # Populate result with data from style_data, using defaults from DEFAULT_STYLE
+            for key, default_value in DEFAULT_STYLE.items():
+                result[key] = response.get(key, default_value)
+
+        except FileNotFoundError:
+            result["error"] = f"The file '{filepath}' was not found."
+        except Exception as e:
+            result["error"] = f"An error occurred: {e}"
+
+    if result["error"]:
+        print(f"Error for entry {title_zh}: {result['error']}")
+        # For errors, null out the style fields.
+        for key in DEFAULT_STYLE:
+            result[key] = None
+
+    return result
 
 
 def append_result(filename, entry):
