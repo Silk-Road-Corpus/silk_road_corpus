@@ -101,6 +101,21 @@ GROUP BY cszjj_attribution
 ```
 
 ```sql
+-- Summary of CSZJJ titles with key variables
+FROM cszjj.chusanzangjiji
+|> WHERE modern_ref IS NOT NULL
+   AND (STARTS_WITH(modern_ref, "T ") OR STARTS_WITH(modern_ref, "X "))
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  attribution_analysis,
+  COALESCE(indic_manuscript,pali_parallel) AS indic_parallel,
+  source_type
+```
+
+```sql
 -- How many anonymous texts?
 FROM cszjj.chusanzangjiji
 |> WHERE fascicle = 3 or fascicle = 4
