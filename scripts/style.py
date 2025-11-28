@@ -3,7 +3,6 @@
 
 import argparse
 import cszjj
-import json
 import os
 import sys
 
@@ -44,8 +43,6 @@ the style of source text from translation style. Use the following rubric:
     'Buddhas' 諸佛? Return: a Boolean value.
 16. How is tense indicated? Is it left unspecified or explicitly indicated?
     Options: 'unspecified', 'explicit'.
-17. Is 為 wèi used as a cupola (wei_for_cupola)? Return: a Boolean value.
-18. Is 謂 wèi used as a cupola (wei_call_cupola)? Return: a Boolean value.
 
 Return the result in the following JSON format. For the string types use only
 the enumerations given, for example, 'verse' or 'prose', not an explanation.
@@ -66,8 +63,6 @@ Put the explanation in the notes field.
 "plural_zhu": Boolean,
 "tense": string,
 "abbreviations": Boolean,
-"wei_for_cupola": Boolean,
-"wei_call_cupola": Boolean,
 "notes": string}.
 """
 
@@ -120,12 +115,6 @@ schema = {
                 "type": "string",
             },
             "abbreviations": {
-                "type": "boolean",
-            },
-            "wei_for_cupola": {
-                "type": "boolean",
-            },
-            "wei_call_cupola": {
                 "type": "boolean",
             },
             "notes": {
