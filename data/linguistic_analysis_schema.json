@@ -1,0 +1,188 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "length",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Text length"
+  },
+  {
+    "name": "rushiwowen",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 如是我聞"
+  },
+  {
+    "name": "wenrushi",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 聞如是"
+  },
+  {
+    "name": "wowenrushi",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 我聞如是"
+  },
+  {
+    "name": "rushiwen",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Presence of 如是聞"
+  },
+  {
+    "name": "not_in_shanzai",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times the final particle 哉 is used outside of 善哉善哉"
+  },
+  {
+    "name": "ye2_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耶 occurs"
+  },
+  {
+    "name": "er3_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耳 occurs"
+  },
+  {
+    "name": "ye3_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 也 occurs"
+  },
+  {
+    "name": "ye2_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耶 occurs as a final particle"
+  },
+  {
+    "name": "er3_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 耳 occurs as a final particle"
+  },
+  {
+    "name": "ye3_final_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 也 occurs as a final particle"
+  },
+  {
+    "name": "wei4_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 謂 wèi occurs"
+  },
+  {
+    "name": "wei4_grammar_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 謂 wèi occurs in delegated agency or as a semi-copula"
+  },
+  {
+    "name": "bei_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 被 bèi occurs"
+  },
+  {
+    "name": "bei_grammar_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that the character 被 bèi occurs in passive constructions"
+  },
+  {
+    "name": "hezhe_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 何者 hézhě occurs as an interrogative pronoun"
+  },
+  {
+    "name": "hedengren_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 何等人 héděng rén occurs"
+  },
+  {
+    "name": "cun_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 村 cūn occurs"
+  },
+  {
+    "name": "tian_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 添 tiān occurs"
+  },
+  {
+    "name": "sixiang_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 思想 sīxiǎng occurs"
+  },
+  {
+    "name": "di_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 的 dì occurs"
+  },
+  {
+    "name": "di_sense_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 的 dì occurs in the sense of indeed or certainly"
+  },
+  {
+    "name": "shigu_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 事故 shìgù occurs"
+  },
+  {
+    "name": "shigu_sense_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 事故 shìgù occurs in the sense of misfortune"
+  },
+  {
+    "name": "yiqie_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 一切 yīqiè occurs"
+  },
+  {
+    "name": "yiqie_sense_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Number of times that 一切 yīqiè occurs in the sense of all"
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Error encountered by the script"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Validation notes"
+  }
+]

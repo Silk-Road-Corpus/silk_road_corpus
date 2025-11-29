@@ -226,100 +226,7 @@ FROM cszjj.chusanzangjiji
 
 ### Language Analysis
 
-Load the CSV file into the bucket:
-
-```shell
-gcloud storage cp data/language_analysis.csv gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv
-```
-
-Load the language analysis file into into BQ:
-
-```shell
-bq --project_id=${PROJECT_ID} load \
-    --source_format=CSV \
-    --skip_leading_rows=1 \
-    --replace \
-    ${PROJECT_ID}:${DATASETID}.language_analysis \
-    gs://${CSZJJ_BUCKET_NAME}/language_analysis.csv \
-    data/language_analysis_schema.json
-```
-
-SQL queries:
-
-```sql
--- Number of texts analyzed
-FROM cszjj.language_analysis
-|> AGGREGATE COUNT(*)
-```
-
-```sql
--- Number of anonymous texts analyzed
-FROM cszjj.language_analysis AS LA
-|> JOIN cszjj.chusanzangjiji AS C
-   ON LA.czsjj_title_zh = C.title_zh
-|> WHERE C.fascicle = 3 OR C.fascicle = 4
-|> AGGREGATE COUNT(*)
-```
-
-```sql
--- Median length in characters of anonymous texts
-FROM cszjj.chusanzangjiji AS C
-|> INNER JOIN cszjj.language_analysis AS LA
-  ON C.title_zh = LA.czsjj_title_zh
-|> WHERE C.fascicle = 3 OR C.fascicle = 4
-|> SELECT PERCENTILE_CONT(LA.length, 0.5) OVER () AS media_length
-|> LIMIT 1
-```
-
-```sql
--- Number of anonymous texts analyzed by ru shi wo wen
-FROM cszjj.language_analysis AS LA
-|> JOIN cszjj.chusanzangjiji AS C
-   ON LA.czsjj_title_zh = C.title_zh
-|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
-|> AGGREGATE COUNT(*) AS num_texts GROUP BY LA.rushiwowen, LA.wenrushi
-```
-
-```sql
--- List of anonymous texts analyzed by ru shi wo wen
-FROM cszjj.language_analysis AS LA
-|> JOIN cszjj.chusanzangjiji AS C
-   ON LA.czsjj_title_zh = C.title_zh
-|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
-|> SELECT LA.taisho_no, LA.rushiwowen, LA.wenrushi
-```
-
-```sql
--- Counts of anonymous texts with We Ru Shi by section
-FROM cszjj.language_analysis AS LA
-|> JOIN cszjj.chusanzangjiji AS C
-   ON LA.czsjj_title_zh = C.title_zh
-|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
-   AND LA.wenrushi
-|> SELECT C.title_zh, LA.taisho_no, C.modern_title, C.fascicle, C.section
-|> AGGREGATE COUNT(*) num_texts GROUP BY fascicle, section
-|> ORDER BY fascicle, section
-```
-
-```sql
--- Number of anonymous texts with Wen Ru Shi and no final particles
-FROM cszjj.language_analysis AS LA
-|> JOIN cszjj.chusanzangjiji AS C
-   ON LA.czsjj_title_zh = C.title_zh
-|> WHERE (C.fascicle = 3 OR C.fascicle = 4)
-   AND LA.wenrushi
-   and not_in_shanzai = 0
-   AND ye2_final_count = 0
-   AND er3_final_count = 0
-   AND ye3_final_count = 0
-|> AGGREGATE COUNT(*) AS num_texts
-```
-
-```sql
--- Terminology usage lookup
-FROM cszjj.terminology_usage
-|> WHERE term = '佛'
-```
+Language analysis is found in [Linguistic Analysis](linguistic_analysis.md).
 
 ### Terminology Usage
 
@@ -342,6 +249,12 @@ bq --project_id=${PROJECT_ID} load \
 ```
 
 SQL queries:
+
+```sql
+-- Terminology usage lookup
+FROM cszjj.terminology_usage
+|> WHERE term = '佛'
+```
 
 ```sql
 -- Teminology evolution: number of terms used grouped by who used them and who introduced them
@@ -620,16 +533,9 @@ for the presence of 如是我聞 and variants, first clone the NTI Reader
 project and then set the NTI environment variable:
 
 ```shell
-cd ..
 git clone https://github.com/alexamies/buddhist-dictionary.git
 export NTI=$PWD/buddhist-dictionary/corpus/taisho
-cd silk_road_corpus
-python3 scripts/language_analysis.py
 ```
-
-The results will be written to data/linguistic_analysis.csv. This can also take a long
-time to run. If you need to restart it use the `--restart` flag. If you need to run
-it for a single entry use the `--title` flag.
 
 To run the terminology extraction from the corpus:
 

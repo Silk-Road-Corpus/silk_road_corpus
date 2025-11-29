@@ -246,6 +246,12 @@
     "description": "Source type assumed for hypothesis"
   },
   {
+    "name": "century",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Century assigned for classification model"
+  },
+  {
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",
