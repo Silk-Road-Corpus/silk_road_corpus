@@ -533,6 +533,7 @@ for the presence of 如是我聞 and variants, first clone the NTI Reader
 project and then set the NTI environment variable:
 
 ```shell
+sudo apt-get install git
 git clone https://github.com/alexamies/buddhist-dictionary.git
 export NTI=$PWD/buddhist-dictionary/corpus/taisho
 ```
