@@ -9,9 +9,26 @@ To explore the data in this repository, you can use the included Colab notebook:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/eda.ipynb)
 
+## Basic Setup
+
+Clone this repo:
+
+```shell
+sudo apt-get install git
+git clone https://github.com/Silk-Road-Corpus/silk_road_corpus.git
+```
+
+Install [gcloud](https://docs.cloud.google.com/sdk/docs/install#linux).
+
+Change to the project directory:
+
+```shell
+cd silk_road_corpus
+```
+
 ## Loading the Chu San Zang Ji Ji Data into BigQuery
 
-### Project setup
+### Import Data
 
 Create a GCS bucket:
 
@@ -533,7 +550,6 @@ for the presence of 如是我聞 and variants, first clone the NTI Reader
 project and then set the NTI environment variable:
 
 ```shell
-sudo apt-get install git
 git clone https://github.com/alexamies/buddhist-dictionary.git
 export NTI=$PWD/buddhist-dictionary/corpus/taisho
 ```

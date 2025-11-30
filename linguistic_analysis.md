@@ -11,9 +11,20 @@ cd silk_road_corpus
 python3 scripts/language_analysis.py
 ```
 
-The results will be written to data/linguistic_analysis.csv. This can also take a long
+The results will be written to data/linguistic_analysis.csv. This takes a long
 time to run. If you need to restart it use the `--restart` flag. If you need to run
-it for a single entry use the `--title` flag.
+it for a single entry use the `--title` flag. It takes a long time so you can run it in
+the background like this:
+
+```shell
+nohup python3 scripts/language_analysis.py --restart="中文" 2>&1 &
+```
+
+Copy the remotely generated file from your VM back to your local workstation with scp:
+
+```shell
+gcloud compute scp --zone "$ZONE" linguistic-analysis:~/silk_road_corpus/data/linguistic_analysis.csv linguistic_analysis_update.csv
+```
 
 Load the CSV file into the bucket:
 
