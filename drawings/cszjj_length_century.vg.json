@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A histogram of the average length of texts in the Chu San Zang Ji Ji corpus with translator attribution, grouped by century.",
+  "width": 600,
+  "height": 400,
+  "data": {"url": "../data/linguistic_stats_by_century.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "century",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 16,
+        "titleFontSize": 16,
+        "title": "Century produced"
+      },
+      "sort": {
+        "op": "min",
+        "field": "century"
+      }
+    },
+    "y": {
+      "field": "length_average",
+      "type": "quantitative",
+      "axis": {
+        "labelFontSize": 16, 
+        "titleFontSize": 16,
+        "title": "Average Length (characters)"
+      }
+    }
+  }
+}

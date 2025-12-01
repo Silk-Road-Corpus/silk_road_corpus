@@ -1,4 +1,4 @@
-"""This script searches texts for Buddhist terminology and language useage.
+"""This script searches texts for Buddhist language useage.
 """
 
 import argparse

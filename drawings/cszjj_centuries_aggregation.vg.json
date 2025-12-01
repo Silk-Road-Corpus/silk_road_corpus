@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A histogram of the number of records in the Chu San Zang Ji Ji, grouped by century.",
+  "description": "A histogram of the number of records in the Chu San Zang Ji Ji corpus with translator attribution, grouped by century.",
   "width": 600,
   "height": 400,
   "data": {"url": "../data/chusanzangjiji.csv"},

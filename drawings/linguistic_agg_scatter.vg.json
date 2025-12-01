@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A scatter plot of linguistic characteristics in the Chu San Zang Ji Ji corpus, grouped by century.",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "../data/linguistic_agg_century.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "er3_frequency1000",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 1.0]
+      },
+      "axis": {
+        "labelFontSize": 16, 
+        "titleFontSize": 16,
+        "title": "Frequency of final particle 耳 ěr (per 1000 characters)"
+      }
+    },
+    "y": {
+      "field": "wei4_frequency1000",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 1.0]
+     },
+      "axis": {
+        "labelFontSize": 16, 
+        "titleFontSize": 16,
+        "title": "Frequency of 謂 wèi (per 1000 characters)"
+      }
+    },
+    "color": {"field": "century", "type": "nominal"},
+    "shape": {"field": "century", "type": "nominal"}
+  }
+}

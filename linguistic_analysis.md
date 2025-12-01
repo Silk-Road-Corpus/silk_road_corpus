@@ -14,7 +14,7 @@ python3 scripts/language_analysis.py
 The results will be written to data/linguistic_analysis.csv. This takes a long
 time to run. If you need to restart it use the `--restart` flag. If you need to run
 it for a single entry use the `--title` flag. It takes a long time so you can run it in
-the background like this:
+the background on a VM like this:
 
 ```shell
 nohup python3 scripts/language_analysis.py --restart="中文" 2>&1 &
@@ -53,27 +53,8 @@ FROM cszjj.linguistic_analysis
 ```
 
 ```sql
--- What at the centuries were the texts produced in?
-FROM cszjj.chusanzangjiji
-|> WHERE century IS NOT NULL
-|> SELECT
-     id,
-     title_zh,
-     modern_ref,
-     attribution_analysis,
-     century
-```
-
-```sql
--- Histogram of the centuries were the texts produced in
-FROM cszjj.chusanzangjiji
-|> WHERE century IS NOT NULL
-|> AGGREGATE COUNT(*) as count_century GROUP BY century
-|> ORDER BY CENTURY
-```
-
-```sql
--- Aggreate results from indivual fascicles into results for each title, join with century from CSZJJ
+-- Aggreate frequencies per 1000 characters from indivual fascicles into results for
+-- each title, joined with century from CSZJJ
 WITH Frequencies
 AS (
   SELECT
@@ -82,20 +63,20 @@ AS (
       ELSE t.taisho_no
     END AS base_taisho_no,
     SUM(t.length) AS total_length,
-    SAFE_DIVIDE(SUM(t.not_in_shanzai), SUM(t.length))*10000 AS not_in_shanzai_frequency10000,
-    SAFE_DIVIDE(SUM(t.ye2_final_count), SUM(t.length))*10000 AS ye2_frequency10000,
-    SAFE_DIVIDE(SUM(t.er3_final_count), SUM(t.length))*10000 AS er3_frequency10000,
-    SAFE_DIVIDE(SUM(t.ye3_final_count), SUM(t.length))*10000 AS ye3_frequency10000,
-    SAFE_DIVIDE(SUM(t.wei4_grammar_count), SUM(t.length))*10000 AS wei4_frequency10000,
-    SAFE_DIVIDE(SUM(t.bei_grammar_count), SUM(t.length))*10000 AS bei_frequency10000,
-    SAFE_DIVIDE(SUM(t.hezhe_count), SUM(t.length))*10000 AS hezhe_frequency10000,
-    SAFE_DIVIDE(SUM(t.hedengren_count), SUM(t.length))*10000 AS hedengren_frequency10000,
-    SAFE_DIVIDE(SUM(t.cun_count), SUM(t.length))*10000 AS cun_frequency10000,
-    SAFE_DIVIDE(SUM(t.tian_count), SUM(t.length))*10000 AS tian_frequency10000,
-    SAFE_DIVIDE(SUM(t.sixiang_count), SUM(t.length))*10000 AS sixiang_frequency10000,
-    SAFE_DIVIDE(SUM(t.di_sense_count), SUM(t.length))*10000 AS di_frequency10000,
-    SAFE_DIVIDE(SUM(t.shigu_sense_count), SUM(t.length))*10000 AS shigu_frequency10000,
-    SAFE_DIVIDE(SUM(t.yiqie_sense_count), SUM(t.length))*10000 AS yiqie_frequency10000,
+    SAFE_DIVIDE(SUM(t.not_in_shanzai), SUM(t.length))*1000 AS not_in_shanzai_frequency1000,
+    SAFE_DIVIDE(SUM(t.ye2_final_count), SUM(t.length))*1000 AS ye2_frequency1000,
+    SAFE_DIVIDE(SUM(t.er3_final_count), SUM(t.length))*1000 AS er3_frequency1000,
+    SAFE_DIVIDE(SUM(t.ye3_final_count), SUM(t.length))*1000 AS ye3_frequency1000,
+    SAFE_DIVIDE(SUM(t.wei4_grammar_count), SUM(t.length))*1000 AS wei4_frequency1000,
+    SAFE_DIVIDE(SUM(t.bei_grammar_count), SUM(t.length))*1000 AS bei_frequency1000,
+    SAFE_DIVIDE(SUM(t.hezhe_count), SUM(t.length))*1000 AS hezhe_frequency1000,
+    SAFE_DIVIDE(SUM(t.hedengren_count), SUM(t.length))*1000 AS hedengren_frequency1000,
+    SAFE_DIVIDE(SUM(t.cun_count), SUM(t.length))*1000 AS cun_frequency1000,
+    SAFE_DIVIDE(SUM(t.tian_count), SUM(t.length))*1000 AS tian_frequency1000,
+    SAFE_DIVIDE(SUM(t.sixiang_count), SUM(t.length))*1000 AS sixiang_frequency1000,
+    SAFE_DIVIDE(SUM(t.di_sense_count), SUM(t.length))*1000 AS di_frequency1000,
+    SAFE_DIVIDE(SUM(t.shigu_sense_count), SUM(t.length))*1000 AS shigu_frequency1000,
+    SAFE_DIVIDE(SUM(t.yiqie_sense_count), SUM(t.length))*1000 AS yiqie_frequency1000,
   FROM
     cszjj.linguistic_analysis AS t
   GROUP BY base_taisho_no
@@ -103,25 +84,86 @@ AS (
 SELECT
   f.base_taisho_no AS taisho_no,
   f.total_length,
-  f.not_in_shanzai_frequency10000,
-  f.ye2_frequency10000,
-  f.er3_frequency10000,
-  f.ye3_frequency10000,
-  f.wei4_frequency10000,
-  f.bei_frequency10000,
-  f.hezhe_frequency10000,
-  f.hedengren_frequency10000,
-  f.cun_frequency10000,
-  f.tian_frequency10000,
-  f.sixiang_frequency10000,
-  f.di_frequency10000,
-  f.shigu_frequency10000,
-  f.yiqie_frequency10000,
-  c.century
+  f.not_in_shanzai_frequency1000,
+  f.ye2_frequency1000,
+  f.er3_frequency1000,
+  f.ye3_frequency1000,
+  f.wei4_frequency1000,
+  f.bei_frequency1000,
+  f.hezhe_frequency1000,
+  f.hedengren_frequency1000,
+  f.cun_frequency1000,
+  f.tian_frequency1000,
+  f.sixiang_frequency1000,
+  f.di_frequency1000,
+  f.shigu_frequency1000,
+  f.yiqie_frequency1000,
+  c.century,
+  c.attribution_analysis,
 FROM Frequencies AS f
 INNER JOIN cszjj.chusanzangjiji AS c
   ON f.base_taisho_no = c.modern_ref
 WHERE c.century IS NOT NULL
+```
+
+```sql
+-- Aggregate counts from indivual fascicles into results for each century from CSZJJ for texts with
+-- translator attribution
+WITH Frequencies
+AS (
+  SELECT
+    CASE
+      WHEN INSTR(t.taisho_no, '(') > 0 THEN TRIM(SUBSTR(t.taisho_no, 1, INSTR(t.taisho_no, '(') - 1))
+      ELSE t.taisho_no
+    END AS base_taisho_no,
+    SUM(t.length) AS total_length,
+    SUM(t.not_in_shanzai) AS not_in_shanzai_total,
+    SUM(t.ye2_final_count) AS ye2_total,
+    SUM(t.er3_final_count) AS er3_total,
+    SUM(t.ye3_final_count) AS ye3_total,
+    SUM(t.wei4_grammar_count) AS wei4_total,
+    SUM(t.bei_grammar_count) AS bei_total,
+    SUM(t.hezhe_count) AS hezhe_total,
+    SUM(t.hedengren_count) AS hedengren_total,
+    SUM(t.cun_count) AS cun_total,
+    SUM(t.tian_count) AS tian_total,
+    SUM(t.sixiang_count) AS sixiang_total,
+    SUM(t.di_sense_count) AS di_total,
+    SUM(t.shigu_sense_count) AS shigu_total,
+    SUM(t.yiqie_sense_count) AS yiqie_total,
+  FROM
+    cszjj.linguistic_analysis AS t
+  GROUP BY base_taisho_no
+)
+SELECT
+  c.century,
+  AVG(f.total_length) AS length_average,
+  SAFE_DIVIDE(SUM(f.not_in_shanzai_total), SUM(f.total_length))*1000 AS not_in_shanzai_frequency1000,
+  SAFE_DIVIDE(SUM(f.ye2_total), SUM(f.total_length))*1000 AS ye2_frequency1000,
+  SAFE_DIVIDE(SUM(f.er3_total), SUM(f.total_length))*1000 AS er3_frequency1000,
+  SAFE_DIVIDE(SUM(f.ye3_total), SUM(f.total_length))*1000 AS ye3_frequency1000,
+  SAFE_DIVIDE(SUM(f.wei4_total), SUM(f.total_length))*1000 AS wei4_frequency1000,
+  SAFE_DIVIDE(SUM(f.bei_total), SUM(f.total_length))*1000 AS bei_frequency1000,
+  SAFE_DIVIDE(SUM(f.hezhe_total), SUM(f.total_length))*1000 AS hezhe_frequency1000,
+  SAFE_DIVIDE(SUM(f.hedengren_total), SUM(f.total_length))*1000 AS hedengren_frequency1000,
+  SAFE_DIVIDE(SUM(f.cun_total), SUM(f.total_length))*1000 AS cun_frequency1000,
+  SAFE_DIVIDE(SUM(f.tian_total), SUM(f.total_length))*1000 AS tian_frequency1000,
+  SAFE_DIVIDE(SUM(f.sixiang_total), SUM(f.total_length))*1000 AS sixiang_frequency1000,
+  SAFE_DIVIDE(SUM(f.di_total), SUM(f.total_length))*1000 AS di_frequency1000,
+  SAFE_DIVIDE(SUM(f.shigu_total), SUM(f.total_length))*1000 AS shigu_frequency1000,
+  SAFE_DIVIDE(SUM(f.yiqie_total), SUM(f.total_length))*1000 AS yiqie_frequency1000,
+FROM Frequencies AS f
+INNER JOIN cszjj.chusanzangjiji AS c
+  ON f.base_taisho_no = c.modern_ref
+WHERE c.century IS NOT NULL
+GROUP BY c.century
+ORDER BY c.century
+```
+
+Try to fit a random forest classifier to the data:
+
+```shell
+python scripts/linguistics_fit_model_century.py
 ```
 
 Older queries:

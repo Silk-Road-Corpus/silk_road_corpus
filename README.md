@@ -118,6 +118,27 @@ GROUP BY cszjj_attribution
 ```
 
 ```sql
+-- What at the centuries were the texts produced in?
+FROM cszjj.chusanzangjiji
+|> WHERE century IS NOT NULL
+|> SELECT
+     id,
+     title_zh,
+     modern_ref,
+     attribution_analysis,
+     century
+|> ORDER BY century
+```
+
+```sql
+-- Histogram of the centuries were the texts produced in
+FROM cszjj.chusanzangjiji
+|> WHERE century IS NOT NULL
+|> AGGREGATE COUNT(*) as count_century GROUP BY century
+|> ORDER BY century
+```
+
+```sql
 -- Summary of CSZJJ titles with key variables
 FROM cszjj.chusanzangjiji
 |> WHERE modern_ref IS NOT NULL
@@ -512,7 +533,7 @@ source venv/bin/activate
 Install dependencies
 
 ```shell
-pip install requests
+pip install -r requirements.txt
 ```
 
 To deactivate the virtual env:
