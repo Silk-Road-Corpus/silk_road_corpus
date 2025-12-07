@@ -11,8 +11,7 @@ term_dict_output = "data/terminology_analysis.csv"
 prompt_template = """
 For the term '{term}', give whether the term is valid Buddhist terminology,
 Hanyu pinyin for the Chinese, the type of translation, English equivalent,
-Sanskrit equivalent, Middle Chinese pronunciation, Later Han pronunciation,
-Middle Chinese pronunciation in Baxter-Sargart notation, and any notes. The
+Sanskrit equivalent, and any notes. The
 translation type may be one of the following values: 'Semantic', 'Mixed',
 'Transliteration', 'New meaning', 'Buddhist idiom', 'Buddhist saying',
 'Generic phrase', or 'Partial term' (if not valid Buddhist terminology). 
@@ -26,14 +25,11 @@ traditional four-character Chinese idioms 成語, for example,
 'a deluge of heavenly flowers' 天華亂墜. A 'Buddhist saying' is a concise
 form of a proverb. 'Generic phrase' and 'Partial term' apply only if the
 phrase is not valid Buddhist terminology. The Sanskrit equivalent should be
-provided in International Alphabet of Sanskrit Transliteration (IAST). Only
-provide the Old Chinese, Later Han, and Middle Chinese if the translation type
-is transliteration. If the Old Chinese, Later Han, and Middle Chinese is not
-available for any character use the placeholder '?'. Return the result in the
+provided in International Alphabet of Sanskrit Transliteration (IAST). 
+Return the result in the
 following JSON format: {"valid_terminology": Boolean, "hanyu_pinyin": string,
 "translation_type": string, "english_equivalent": string,
-"sanskrit_equivalent": string, "old_chinese": string,
-"later_han": string, "middle_chinese": string, "notes": string}. 
+"sanskrit_equivalent": string, "notes": string}. 
 """
 
 
@@ -59,7 +55,6 @@ def parse_term_dict_file(file_path):
                     entry = {
                         "term": row[0],
                         "introduced_by": row[1],
-                        "document_frequency":  row[2],
                     }
                     data.append(entry)
     except FileNotFoundError:
@@ -84,9 +79,6 @@ def analyze_terminology(entry):
     introduced_by = None
     if "introduced_by" in entry:
         introduced_by = entry["introduced_by"]
-    document_frequency = None
-    if "document_frequency" in entry:
-        document_frequency = entry["document_frequency"]
     prompt = prompt_template.replace("{term}", term)
     schema = {
         "type": "object",
@@ -104,15 +96,6 @@ def analyze_terminology(entry):
                     "type": "string",
                 },
                 "sanskrit_equivalent": {
-                    "type": "string",
-                },
-                "old_chinese": {
-                    "type": "string",
-                },
-                "later_han": {
-                    "type": "string",
-                },
-                "middle_chinese": {
                     "type": "string",
                 },
                 "notes": {
@@ -137,15 +120,6 @@ def analyze_terminology(entry):
         sanskrit_equivalent = ""
         if "sanskrit_equivalent" in result:
             sanskrit_equivalent = result["sanskrit_equivalent"]
-        old_chinese = ""
-        if "old_chinese" in result:
-            old_chinese = result["old_chinese"]
-        later_han = ""
-        if "later_han" in result:
-            later_han = result["later_han"]
-        middle_chinese = ""
-        if "middle_chinese" in result:
-            middle_chinese = result["middle_chinese"]
         notes = ""
         if "notes" in result:
             notes = result["notes"]
@@ -157,11 +131,7 @@ def analyze_terminology(entry):
             "translation_type": translation_type,
             "english_equivalent": english_equivalent,
             "sanskrit_equivalent": sanskrit_equivalent,
-            "old_chinese": old_chinese,
-            "later_han": later_han,
-            "middle_chinese": middle_chinese,
             "notes": notes,
-            "document_frequency": document_frequency,
             "error": "",
         }
     except Exception as e:
@@ -169,15 +139,11 @@ def analyze_terminology(entry):
         return {
             "term": term,
             "term_introduced_by": introduced_by,
-            "document_frequency": document_frequency,
             "valid_terminology": False,
             "hanyu_pinyin": "",
             "translation_type": "",
             "english_equivalent": "",
             "sanskrit_equivalent": "",
-            "old_chinese": "",
-            "later_han": "",
-            "middle_chinese": "",
             "notes": "",
             "error": error,
         }
@@ -202,11 +168,7 @@ def write_result_to_csv(filename, data):
                  data["translation_type"],
                  data["english_equivalent"],
                  data["sanskrit_equivalent"],
-                 data["old_chinese"],
-                 data["later_han"],
-                 data["middle_chinese"],
                  data["notes"],
-                 data["document_frequency"],
                  data["error"],
                  ""]
             csv_writer.writerow(r)
@@ -233,11 +195,7 @@ def write_header_to_csv(filename):
                 "translation_type",
                 "english_equivalent",
                 "sanskrit_equivalent",
-                "old_chinese",
-                "later_han",
-                "middle_chinese",
                 "notes",
-                "document_frequency",
                 "error",
                 "validation"]
             csv_writer.writerow(header)

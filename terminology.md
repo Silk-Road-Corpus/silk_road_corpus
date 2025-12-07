@@ -20,18 +20,10 @@ python3 scripts/terminology_usage.py
 
 The output will be saved to `data/terminology_usage.csv`.
 
-To run the script that analyzes the validity and type terminology:
+To computes ngram counts, start this script with nohup because it takes a long time:
 
 ```shell
-python3 scripts/terminology_analysis.py
-```
-
-The output will be saved to data/terminology_analysis.csv.
-
-To computes ngram counts:
-
-```shell
-python3 scripts/ngrams.py
+nohup python3 scripts/ngrams.py 2>&1 &
 ```
 
 The result will be saved in `data/ngram_counts.csv`. This file is not saved to the repo
@@ -93,7 +85,7 @@ bq --project_id=${PROJECT_ID} load \
     data/terminology_analysis_schema.json
 ```
 
-Copy the ngram_counts CSV file into the GCS bucket:
+Copy the ngram_counts CSV file into the GCS bucket. It is big, so do it from the cloud.
 
 ```shell
 gcloud storage cp data/ngram_counts.csv gs://${CSZJJ_BUCKET_NAME}/ngram_counts.csv
@@ -111,9 +103,7 @@ bq --project_id=${PROJECT_ID} load \
     data/ngram_counts_schema.json
 ```
 
-## SQL queries
-
-### JOIN Terminology and Ngrams
+## JOIN Terminology and Ngrams
 
 ```sql
 -- Terminology create table with document frequency based on ngram counts
@@ -133,7 +123,31 @@ CREATE OR REPLACE TABLE `cszjj.terminology_ngram_df` AS
   LEFT JOIN NgramDF AS N
   ON T.term = N.ngram
   WHERE term NOT LIKE '%[%' AND term NOT LIKE '%]%'
-)```
+)
+```
+
+Export the results of
+
+```sql
+-- Terminology list with at least two occurrences in the corpus
+FROM cszjj.terminology_ngram_df
+|> WHERE document_frequency >= 2
+```
+
+to the file `data/terminology_list.csv`.
+
+## Terminology Analysis
+
+To run the script that analyzes the validity and type terminology. It will
+take a long time to run, so do it in the background on a VM.
+
+```shell
+nohup python3 scripts/terminology_analysis.py 2>&1 &
+```
+
+The output will be saved to data/terminology_analysis.csv.
+
+## SQL queries
 
 ### Terminology Useage
 
