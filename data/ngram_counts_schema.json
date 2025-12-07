@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cjzjj_title",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The title of the text in the Chu San Zang Ji Ji"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "The Taisho number and fascicle"
+  },
+  {
+    "name": "ngram",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Chinese ngram"
+  },
+  {
+    "name": "count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "The count of the ngram in the text"
+  }
+]

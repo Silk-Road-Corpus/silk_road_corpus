@@ -320,40 +320,15 @@ python3 scripts/alt_titles.py
 This script takes a long time to run. Edit the variable `restart_at` to
 restart the program if it is interupted.
 
-To analyze the language of all the texts in the collection, for example,
-for the presence of 如是我聞 and variants, first clone the NTI Reader
-project and then set the NTI environment variable:
+The NTI project has the corpus texts. Clone the repo and set an NTI
+environment variable:
 
 ```shell
 git clone https://github.com/alexamies/buddhist-dictionary.git
 export NTI=$PWD/buddhist-dictionary/corpus/taisho
 ```
 
-To run the terminology extraction from the corpus:
-
-```shell
-python3 scripts/terminology.py
-```
-
-For a single entry use the `--title` flag. The results are saved in the file
-data/terminology.csv.
-
-To run the script that compiles the terminology usage from the previous step and associates
-each term used with the translator that introduced the term:
-
-```shell
-python3 scripts/terminology_usage.py
-```
-
-The output will be saved to data/terminology_usage.csv.
-
-To run the script that analyzes the validity and type terminology:
-
-```shell
-python3 scripts/terminology_usage.py
-```
-
-The output will be saved to data/terminology_analysis.csv.
+For all Python scripts a single entry use the `--title` flag.
 
 To compute word embedding examples, in the virtual env install the Vertex client API:
 

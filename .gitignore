@@ -3,6 +3,7 @@ package-lock.json
 package.json
 silk_road_corpus.code-workspace
 bib_file_parts/
+data/ngram_counts.csv
 images/
 node_modules/
 paper/

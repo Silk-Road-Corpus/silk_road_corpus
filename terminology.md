@@ -1,8 +1,45 @@
 # Terminology Usage ad Analysis
 
-## Loading data
+## Python Scripts
 
-Load the CSV file into the GCS bucket:
+To run the terminology extraction from the corpus:
+
+```shell
+python3 scripts/terminology.py
+```
+
+The results are saved in the file `data/terminology.csv`.
+
+
+To run the script that compiles the terminology usage from the previous step and associates
+each term used with the translator that introduced the term:
+
+```shell
+python3 scripts/terminology_usage.py
+```
+
+The output will be saved to `data/terminology_usage.csv`.
+
+To run the script that analyzes the validity and type terminology:
+
+```shell
+python3 scripts/terminology_analysis.py
+```
+
+The output will be saved to data/terminology_analysis.csv.
+
+To computes ngram counts:
+
+```shell
+python3 scripts/ngrams.py
+```
+
+The result will be saved in `data/ngram_counts.csv`. This file is not saved to the repo
+because it is too big.
+
+## Loading data into BigQuery
+
+Copy the terminology_usage CSV file into the GCS bucket:
 
 ```shell
 gcloud storage cp data/terminology_usage.csv gs://${CSZJJ_BUCKET_NAME}/terminology_usage.csv
@@ -20,7 +57,85 @@ bq --project_id=${PROJECT_ID} load \
     data/terminology_usage_schema.json
 ```
 
-SQL queries:
+Load the CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/terminology_validation.csv gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv
+```
+
+Load the terminology usage file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.terminology_validation \
+    gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv \
+    data/terminology_validation_schema.json
+```
+
+Load the CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/terminology_analysis.csv gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv
+```
+
+Load the terminology usage file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.terminology_analysis \
+    gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv \
+    data/terminology_analysis_schema.json
+```
+
+Copy the ngram_counts CSV file into the GCS bucket:
+
+```shell
+gcloud storage cp data/ngram_counts.csv gs://${CSZJJ_BUCKET_NAME}/ngram_counts.csv
+```
+
+Load the ngram file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.ngram_counts \
+    gs://${CSZJJ_BUCKET_NAME}/ngram_counts.csv \
+    data/ngram_counts_schema.json
+```
+
+## SQL queries
+
+### JOIN Terminology and Ngrams
+
+```sql
+-- Terminology create table with document frequency based on ngram counts
+CREATE OR REPLACE TABLE `cszjj.terminology_ngram_df` AS
+  (WITH NgramDF AS (
+    SELECT
+      ngram,
+      COUNT(*) AS document_frequency
+    FROM cszjj.ngram_counts
+    GROUP BY ngram
+  )
+  SELECT
+    T.term,
+    T.term_introduced_by,
+    N.document_frequency,
+  FROM cszjj.terminology_usage AS T
+  LEFT JOIN NgramDF AS N
+  ON T.term = N.ngram
+  WHERE term NOT LIKE '%[%' AND term NOT LIKE '%]%'
+)```
+
+### Terminology Useage
 
 ```sql
 -- Terminology usage lookup
@@ -82,27 +197,7 @@ FROM cszjj.terminology_usage
 |> ORDER BY document_frequency DESC
 ```
 
-## Terminology Validation
-
-Load the CSV file into the GCS bucket:
-
-```shell
-gcloud storage cp data/terminology_validation.csv gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv
-```
-
-Load the terminology usage file into into BQ:
-
-```shell
-bq --project_id=${PROJECT_ID} load \
-    --source_format=CSV \
-    --skip_leading_rows=1 \
-    --replace \
-    ${PROJECT_ID}:${DATASETID}.terminology_validation \
-    gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv \
-    data/terminology_validation_schema.json
-```
-
-SQL queries:
+### Terminology Validation
 
 ```sql
 -- Terminology validation sample size
@@ -147,33 +242,7 @@ FROM cszjj.terminology_validation
 |> AGGREGATE COUNT(*) GROUP BY term_introduced_by, semantic_or_transiteration
 |> ORDER BY term_introduced_by```
 
-Run terminology analysis
-
-```shell
-python3 scripts/terminology_analysis.py
-```
-
 ### Terminology Analysis
-
-Load the CSV file into the GCS bucket:
-
-```shell
-gcloud storage cp data/terminology_analysis.csv gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv
-```
-
-Load the terminology usage file into into BQ:
-
-```shell
-bq --project_id=${PROJECT_ID} load \
-    --source_format=CSV \
-    --skip_leading_rows=1 \
-    --replace \
-    ${PROJECT_ID}:${DATASETID}.terminology_analysis \
-    gs://${CSZJJ_BUCKET_NAME}/terminology_analysis.csv \
-    data/terminology_analysis_schema.json
-```
-
-SQL queries:
 
 ```sql
 -- Valid and invalid terminology
@@ -273,4 +342,12 @@ WHERE
   AND term_introduced_by = "An Shigao"
   AND attribution IS NULL
   AND term NOT IN (SELECT term FROM Adopted)
+```
+
+### Ngrams
+
+```sql
+-- Look up an ngram
+FROM cszjj.ngram_counts
+|> WHERE ngram = "除饉"
 ```
