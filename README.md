@@ -262,13 +262,17 @@ FROM cszjj.chusanzangjiji
 |> SELECT id, title_zh, modern_ref, modern_title, secondary_lit_classification
 ```
 
-### Language Analysis
-
-Language analysis is found in [Linguistic Analysis](linguistic_analysis.md).
-
 ### Terminology Usage ad Analysis
 
 Terminology usage and analysis is found in [Terminology](terminology.md).
+
+### Linguistic Analysis
+
+Linguistic analysis is found in [Linguistic Analysis](linguistic_analysis.md).
+
+### Style Analysis
+
+Translation style analysis is found in [Style Analysis](style.md).
 
 ## Running the Python Scripts
 
