@@ -140,8 +140,6 @@ DEFAULT_STYLE = {
     "plural_zhu": False,
     "tense": "",
     "abbreviations": False,
-    "wei_for_cupola": False,
-    "wei_call_cupola": False,
     "notes": "",
 }
 
@@ -226,11 +224,10 @@ def append_result(filename, entry):
            entry["plural_zhu"],
            entry["tense"],
            entry["abbreviations"],
-           entry["wei_for_cupola"],
-           entry["wei_call_cupola"],
+           False,
+           False,
            entry["notes"],
            entry["error"],
-           "",
     ]
     cszjj.append_to_csv(filename, [row])
     print(f"Result appended for {title_zh}")
@@ -292,11 +289,10 @@ if __name__ == "__main__":
                    "plural_zhu",
                    "tense",
                    "abbreviations",
-                   "wei_for_cupola",
-                   "wei_call_cupola",
+                   "do_not_use1",
+                   "do_not_use2",
                    "notes",
                    "error",
-                   "notes",
                    ]
         print(f"Starting at the beginning\n")
         cszjj.write_headers_to_csv(output_filename, headers)

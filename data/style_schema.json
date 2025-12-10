@@ -1,0 +1,134 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "verse_or_prose",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "verse or prose?"
+  },
+  {
+    "name": "syllables_per_line",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "If verse, the number of syllables per line"
+  },
+  {
+    "name": "vernacular_or_literary",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Vernacular or literary translation style?"
+  },
+  {
+    "name": "literal_or_fluent",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Literal or fluent translation style?"
+  },
+  {
+    "name": "ornate_or_plain_language",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Ornate or plain language?"
+  },
+  {
+    "name": "terse_or_verbose",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Taisho no."
+  },
+  {
+    "name": "idioms_used",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the translation use idioms?"
+  },
+  {
+    "name": "factual_or_spiritual",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Is the tone factual or spiritual?"
+  },
+  {
+    "name": "indigenous_chinese",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Were Buddhist teachings interpreted according to indigenous Chinese philosophical concepts?"
+  },
+  {
+    "name": "interpolations",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text include interpolations?"
+  },
+  {
+    "name": "interlinear_commentary",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Is there any interlinear commentary?"
+  },
+  {
+    "name": "oral_transmission",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Are there signs of oral transmission?"
+  },
+  {
+    "name": "explicit_sentence_subject",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Does the text use implicit or explicit sentence subjects?"
+  },
+  {
+    "name": "plural_zhu",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Is the adverb 諸 zhū used to indicate plural form?"
+  },
+  {
+    "name": "tense",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+  },
+  {
+    "name": "abbreviations",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Are abbreviations used?"
+  },
+  {
+    "name": "do_not_use1",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Not used"
+  },
+  {
+    "name": "do_not_use2",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+  }
+]
