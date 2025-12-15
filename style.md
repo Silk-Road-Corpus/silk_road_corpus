@@ -35,3 +35,33 @@ bq --project_id=${PROJECT_ID} load \
 FROM cszjj.style
 |> AGGREGATE COUNT(*) AS Count GROUP BY verse_or_prose
 ```
+
+```sql
+-- Style - syllables per line
+FROM cszjj.style
+|> WHERE syllables_per_line != 0
+|> AGGREGATE COUNT(*) AS Count GROUP BY syllables_per_line
+|> ORDER BY Count DESC
+```
+
+```sql
+-- Style - examples of four-syllables per line
+FROM cszjj.style AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.syllables_per_line = 5
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis
+```
+
+```sql
+-- Style - group by vernacular or literary
+FROM cszjj.style
+|> AGGREGATE COUNT(*) AS Count GROUP BY vernacular_or_literary
+```
+
+```sql
+-- Style - vernacular enumerate
+FROM cszjj.style AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.vernacular_or_literary = 'vernacular'
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis
+```
