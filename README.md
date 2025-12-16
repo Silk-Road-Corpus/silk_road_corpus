@@ -7,7 +7,11 @@ Chu San Zang Ji Ji data.
 
 To explore the data in this repository, you can use the included Colab notebook:
 
-[![# Anonymous Records in the Chu San Zang Ji Ji](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/eda.ipynb)
+[![Explore the Chu San Zang Ji Ji](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/cszjj.ipynb)
+
+or this one on anonymous records in the Chu San Zang Ji Ji:
+
+[![Anonymous Records in the Chu San Zang Ji Ji](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/eda.ipynb)
 
 ## Basic Setup
 
