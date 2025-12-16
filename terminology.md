@@ -129,9 +129,8 @@ CREATE OR REPLACE TABLE `cszjj.terminology_ngram_df` AS
 Export the results of
 
 ```sql
--- Terminology list with at least two occurrences in the corpus
+-- Terminology list
 FROM cszjj.terminology_ngram_df
-|> WHERE document_frequency >= 2
 ```
 
 to the file `data/terminology_list.csv`.
@@ -142,10 +141,11 @@ To run the script that analyzes the validity and type terminology. It will
 take a long time to run, so do it in the background on a VM.
 
 ```shell
-nohup python3 scripts/terminology_analysis.py 2>&1 &
+nohup python3 scripts/terminology_analysis.py --restart_at="十現色入" 2>&1 &
 ```
 
-The output will be saved to data/terminology_analysis.csv.
+The output will be saved to data/terminology_analysis.csv. The `restart_at`
+helps when restarting the script after an error, such as out of quota.
 
 ## SQL queries
 
