@@ -1,5 +1,9 @@
 # Terminology Usage ad Analysis
 
+Explore terminology analysis in this Colab sheet:
+
+[![Explore Terminology Analysis](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Silk-Road-Corpus/silk_road_corpus/blob/main/terminology.ipynb)
+
 ## Python Scripts
 
 To run the terminology extraction from the corpus:
