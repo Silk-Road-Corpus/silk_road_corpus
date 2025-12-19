@@ -1,6 +1,6 @@
 digraph D {
 
-  Relate [shape=box, fillcolor=lightgrey, style=filled, label="Relate CSZJJ to Taishō"]
+  Relate [shape=box, fillcolor=lightgrey, style=filled, label="Relate Chu San Zang Ji Ji to Taishō"]
   Extract [shape=box, fillcolor=lightgrey, style=filled, label="Extract terminology"]
   Analyze [shape=box, fillcolor=lightgrey, style=filled, label="Analyze terminology"]
   Database [shape=box, fillcolor=lightgreen, style=filled, label="Database"]

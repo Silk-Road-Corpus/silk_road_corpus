@@ -86,6 +86,15 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
+-- How many titles in the CXZJJ can be related to Taisho texts? Also, sum of fascicles.
+SELECT
+  COUNT(*) AS count_titles,
+  SUM(taisho_num_fascicles) AS taisho_fascicles,
+FROM cszjj.chusanzangjiji
+WHERE REGEXP_CONTAINS(modern_ref, r'T \d+')
+```
+
+```sql
 -- Count of entries and fascicles that can be related to a text in the modern canon, break down by attribution_analysis
 SELECT
   attribution_analysis,

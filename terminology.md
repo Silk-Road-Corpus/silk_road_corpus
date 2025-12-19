@@ -156,6 +156,14 @@ helps when restarting the script after an error, such as out of quota.
 ### Terminology Useage
 
 ```sql
+-- Terminology - histogram of document frequency
+FROM cszjj.terminology_ngram_df AS D
+|> INNER JOIN cszjj.terminology_analysis AS A ON D.term = A.term
+|> WHERE A.valid_terminology AND D.document_frequency < 51
+|> AGGREGATE COUNT(D.term) AS num_doc_frequency GROUP BY document_frequency
+```
+
+```sql
 -- Terminology usage lookup
 FROM cszjj.terminology_usage
 |> WHERE term = '佛'

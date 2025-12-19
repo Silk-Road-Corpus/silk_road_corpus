@@ -42,34 +42,10 @@
     "description": "Sanskrit equivalent"
   },
   {
-    "name": "old_chinese",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "Old Chinese"
-  },
-  {
-    "name": "late_han",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "Late Han"
-  },
-  {
-    "name": "middle_chinese",
-    "type": "STRING",
-    "mode": "NULLABLE",
-    "description": "Middle Chinese (Baxter-Sargart)"
-  },
-  {
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "Notes"
-  },
-  {
-    "name": "do_not_use",
-    "type": "INTEGER",
-    "mode": "NULLABLE",
-    "description": "The document frequencies have been recomputed since creating this table."
   },
   {
     "name": "error",
