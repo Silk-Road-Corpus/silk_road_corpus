@@ -173,7 +173,7 @@ FROM cszjj.terminology_usage
 -- Teminology evolution: number of terms used grouped by who used them and who introduced them
 FROM cszjj.terminology_usage AS TU
 |> INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
-|> WHERE TU.document_frequency > 1 AND TA.valid_terminology AND TU.attribution IS NOT NULL
+|> WHERE TA.valid_terminology AND TU.attribution IS NOT NULL
 |> AGGREGATE COUNT(DISTINCT TU.term) AS num_terms GROUP BY TU.attribution, TU.term_introduced_by
 ```
 
@@ -197,9 +197,10 @@ FROM cszjj.terminology_usage
 -- Count of distinct terms, grouped by translator
 FROM cszjj.terminology_usage AS TU
 |> INNER JOIN cszjj.terminology_analysis AS TA ON TU.term = TA.term
-|> WHERE TU.document_frequency > 1 AND TA.valid_terminology AND TU.attribution IS NOT NULL
+|> WHERE TA.valid_terminology
 |> SELECT DISTINCT TU.term, TU.term_introduced_by
-|> AGGREGATE COUNT(*) GROUP BY term_introduced_by
+|> AGGREGATE COUNT(*) introduced_count GROUP BY term_introduced_by
+|> ORDER BY introduced_count DESC
 ```
 
 ```sql
@@ -350,11 +351,11 @@ JOIN cszjj.terminology_analysis as TA ON TU.term = TA.term
 -- Terms established by An Shigao only adopted in anonymous texts
 WITH Adopted AS (
   SELECT
-    DISTINCT term,
-  FROM cszjj.terminology_usage
-  WHERE document_frequency > 1
-    AND attribution IS NOT NULL
-    AND attribution != "An Shigao"
+    DISTINCT N.ngram AS term
+  FROM cszjj.ngram_counts AS N
+  INNER JOIN cszjj.chusanzangjiji AS C ON N.cjzjj_title = C.title_zh
+  WHERE C.attribution_analysis IS NOT NULL
+    AND C.attribution_analysis != "An Shigao"
 )
 SELECT
   term,
@@ -368,12 +369,15 @@ WHERE
   AND term_introduced_by = "An Shigao"
   AND attribution IS NULL
   AND term NOT IN (SELECT term FROM Adopted)
+ORDER BY czsjj_title_zh
 ```
 
 ### Ngrams
 
 ```sql
 -- Look up an ngram
-FROM cszjj.ngram_counts
-|> WHERE ngram = "除饉"
+FROM cszjj.ngram_counts AS N
+|> INNER JOIN cszjj.chusanzangjiji AS C ON N.cjzjj_title = C.title_zh
+|> WHERE ngram = "不思想"
+|> SELECT DISTINCT N.ngram, N.cjzjj_title, N.taisho_no, C.attribution_analysis
 ```

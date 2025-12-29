@@ -67,6 +67,132 @@ bq --project_id=${PROJECT_ID} load \
     data/chusanzangjiji_schema.json
 ```
 
+### Terminology Usage ad Analysis
+
+Terminology usage and analysis is found in [Terminology](terminology.md).
+
+### Linguistic Analysis
+
+Linguistic analysis is found in [Linguistic Analysis](linguistic_analysis.md).
+
+### Style Analysis
+
+Translation style analysis is found in [Style Analysis](style.md).
+
+### Content Analysis
+
+Translation style analysis is found in [Content Analysis](content.md).
+
+## Running the Python Scripts
+
+Setup a virtual env:
+
+```shell
+python3 -m venv venv
+```
+
+Activate it
+
+```shell
+source venv/bin/activate
+```
+
+Install dependencies
+
+```shell
+pip install -r requirements.txt
+```
+
+To deactivate the virtual env:
+
+```shell
+deactivate
+```
+
+Enable the Gemini API in the Google Cloud Console. Generate an API in the
+Console and set it as an environment variable:
+
+```shell
+export GEMINI_API_KEY="YOUR_API_KEY_HERE"
+```
+
+Put the GCP project ID in the environment:
+
+```shell
+GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID_HERE"
+```
+
+the alternative titles iterates over all the anonymous texts to find
+alternative titles and attempt to match them to Taisho entries.
+To run script:
+
+```shell
+python3 scripts/alt_titles.py
+```
+
+This script takes a long time to run. Edit the variable `restart_at` to
+restart the program if it is interupted.
+
+The NTI project has the corpus texts. Clone the repo and set an NTI
+environment variable:
+
+```shell
+git clone https://github.com/alexamies/buddhist-dictionary.git
+export NTI=$PWD/buddhist-dictionary/corpus/taisho
+```
+
+For all Python scripts a single entry use the `--title` flag.
+
+To compute word embedding examples, in the virtual env install the Vertex client API:
+
+```shell
+pip install --upgrade google-genai
+```
+
+Authenticate with 
+
+```shell
+gcloud auth application-default login
+```
+Run the code:
+
+```shell
+python3 scripts/embedding.py
+```
+
+## Updating the Flutter app
+
+To update the Silk Road Corpus app after changing the bibliography:
+
+1. Update the server by copying bibliography.csv and bib_parts.csv to silk_road_go/data.
+2. Update the clients by copying bibliography.csv to silk_road_app/assets.
+3. Update the authors dropdown in the client app.
+4. Copy the new files to bib_file_parts
+5. Upload the new PDF files to the GCS bucket.
+6. Update the Agent Builder index.
+
+## Drawings
+
+### Graphviz
+Network diagrams use [Graphviz](https://graphviz.org/). Images can be generated
+from DOT files with the [DOT CLI](https://graphviz.org/doc/info/command.html).
+For example,
+
+```shell
+dot -Tpng drawings/terminology_processing.dot > images/terminology_processing.png
+```
+
+and 
+
+```shell
+dot -Tpng drawings/big_picture.dot > images/big_picture.png
+```
+
+### Vega Diagrams
+
+Histograms and related charts use [Vega](https://vega.github.io/vega/).
+JSON Vega files can be used to generate images using the Vega VSC plugin.
+
 ## Query the Chu San Zang Ji Ji Catalog
 
 SQL queries use
@@ -274,125 +400,3 @@ FROM cszjj.chusanzangjiji
    AND (fascicle = 3 OR fascicle = 4)
 |> SELECT id, title_zh, modern_ref, modern_title, secondary_lit_classification
 ```
-
-### Terminology Usage ad Analysis
-
-Terminology usage and analysis is found in [Terminology](terminology.md).
-
-### Linguistic Analysis
-
-Linguistic analysis is found in [Linguistic Analysis](linguistic_analysis.md).
-
-### Style Analysis
-
-Translation style analysis is found in [Style Analysis](style.md).
-
-## Running the Python Scripts
-
-Setup a virtual env:
-
-```shell
-python3 -m venv venv
-```
-
-Activate it
-
-```shell
-source venv/bin/activate
-```
-
-Install dependencies
-
-```shell
-pip install -r requirements.txt
-```
-
-To deactivate the virtual env:
-
-```shell
-deactivate
-```
-
-Enable the Gemini API in the Google Cloud Console. Generate an API in the
-Console and set it as an environment variable:
-
-```shell
-export GEMINI_API_KEY="YOUR_API_KEY_HERE"
-```
-
-Put the GCP project ID in the environment:
-
-```shell
-GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID_HERE"
-```
-
-the alternative titles iterates over all the anonymous texts to find
-alternative titles and attempt to match them to Taisho entries.
-To run script:
-
-```shell
-python3 scripts/alt_titles.py
-```
-
-This script takes a long time to run. Edit the variable `restart_at` to
-restart the program if it is interupted.
-
-The NTI project has the corpus texts. Clone the repo and set an NTI
-environment variable:
-
-```shell
-git clone https://github.com/alexamies/buddhist-dictionary.git
-export NTI=$PWD/buddhist-dictionary/corpus/taisho
-```
-
-For all Python scripts a single entry use the `--title` flag.
-
-To compute word embedding examples, in the virtual env install the Vertex client API:
-
-```shell
-pip install --upgrade google-genai
-```
-
-Authenticate with 
-
-```shell
-gcloud auth application-default login
-```
-Run the code:
-
-```shell
-python3 scripts/embedding.py
-```
-
-## Updating the Flutter app
-
-To update the Silk Road Corpus app after changing the bibliography:
-
-1. Update the server by copying bibliography.csv and bib_parts.csv to silk_road_go/data.
-2. Update the clients by copying bibliography.csv to silk_road_app/assets.
-3. Update the authors dropdown in the client app.
-4. Copy the new files to bib_file_parts
-5. Upload the new PDF files to the GCS bucket.
-6. Update the Agent Builder index.
-
-## Drawings
-
-### Graphviz
-Network diagrams use [Graphviz](https://graphviz.org/). Images can be generated
-from DOT files with the [DOT CLI](https://graphviz.org/doc/info/command.html).
-For example,
-
-```shell
-dot -Tpng drawings/terminology_processing.dot > images/terminology_processing.png
-```
-
-and 
-
-```shell
-dot -Tpng drawings/big_picture.dot > images/big_picture.png
-```
-
-### Vega Diagrams
-
-Histograms and related charts use [Vega](https://vega.github.io/vega/).
-JSON Vega files can be used to generate images using the Vega VSC plugin.

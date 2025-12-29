@@ -1,8 +1,8 @@
 # Translation Style Analysis
 
-## Python Scripts
+## Python Script
 
-To run the terminology extraction from the corpus:
+To run the style analysis:
 
 ```shell
 nohup python3 scripts/style.py  2>&1 &

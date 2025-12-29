@@ -1,4 +1,5 @@
-"""This script extracts writing style from Taisho texts and saves the result.
+"""This script analyzes translation style from Taisho texts and saves the
+results.
 """
 
 import argparse
