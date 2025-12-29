@@ -15,8 +15,9 @@ You are a Buddhist scholar specializing in early Chinese Buddhist texts.
 Evaluate the content of the following text using the following rubric
 and return the results in JSON format.
 
-1. Top level genre: is the given text a sūtra, commentary, or Vinaya?
-   Possible values: 'sutra', 'commentary', 'vinaya'.
+1. Top level genre: is the given text a sūtra, jātaka, commentary,
+   or Vinaya?
+   Possible values: 'sutra', 'jataka', 'commentary', 'vinaya'.
 2. Taishō genre: what is the Taishō genre classification of the text?
    The Taishō genres and their corresponding English equivalents are:
    Āgama 阿含, Jātaka and Avadāna 本緣, Prajñāpāramitā 般若, Lotus 法華,
