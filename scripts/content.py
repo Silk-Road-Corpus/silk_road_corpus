@@ -17,7 +17,8 @@ and return the results in JSON format.
 
 1. Top level genre: is the given text a sūtra, jātaka, commentary,
    Vinaya, or history?
-   Possible values: 'sutra', 'jataka', 'commentary', 'vinaya'.
+   Possible values: 'sutra', 'jataka', 'commentary', 'vinaya', or
+   'history'.
 2. Taishō genre: what is the Taishō genre classification of the text?
    The Taishō genres and their corresponding English equivalents are:
    Āgama 阿含, Jātaka and Avadāna 本緣, Prajñāpāramitā 般若, Lotus 法華,
