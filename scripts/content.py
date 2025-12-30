@@ -16,7 +16,7 @@ Evaluate the content of the following text using the following rubric
 and return the results in JSON format.
 
 1. Top level genre: is the given text a sūtra, jātaka, commentary,
-   or Vinaya?
+   Vinaya, or history?
    Possible values: 'sutra', 'jataka', 'commentary', 'vinaya'.
 2. Taishō genre: what is the Taishō genre classification of the text?
    The Taishō genres and their corresponding English equivalents are:
@@ -34,7 +34,9 @@ and return the results in JSON format.
 4. Parable or miracle tale: A parable is an expedient means for explaining
    a teaching of the Buddha. A miracle tale is a story of being saved through
    belief in a divine power, especially by Avalokiteśvara, Amitābha, or the
-   recitation of a dhāraṇī. Possible values: 'parable', 'miracle_tale', or
+   recitation of a dhāraṇī. OOr does the text consist of one or more
+   biographies, possibly in the form of a hagiography?
+   Possible values: 'parable', 'miracle_tale', 'biographies', or
    empty string.
 5. Commentary type: A sūtra commentary explains the meanings of the terms
    used in the sūtra and the background context. Abhidharma relates to
