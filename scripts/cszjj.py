@@ -312,7 +312,7 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
         return f"JSON decoding error: {json_err} - Response text: {response.text}"
 
 
-def send_prompt_file_and_schema(prompt: str, file_path: str = None, response_schema: dict = None) -> dict:
+def send_prompt_file_and_schema(prompt: str, file_path: str = None, response_schema: dict = None, model: str = model) -> dict:
     """
     Sends a text prompt and a text file and schema for a JSON response to the AI model.
 

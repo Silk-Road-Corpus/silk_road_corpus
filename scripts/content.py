@@ -8,7 +8,8 @@ import sys
 
 
 file_index_path = "data/canonical_summaries.csv"
-output_filename = "data/content.csv"
+default_outfile = "data/content.csv"
+default_model = "gemini-2.5-flash"
 prompt_template = """
 You are a Buddhist scholar specializing in early Chinese Buddhist texts.
 
@@ -184,7 +185,7 @@ DEFAULT_CONTENT = {
 }
 
 
-def analyze_content(nti, entry):
+def analyze_content(nti, entry, model):
     """Analyze content of the given text.
     Returns:
         dictionary: a dictionary following the rubric in the prompt.
@@ -296,13 +297,31 @@ if __name__ == "__main__":
         required=False,
         help='Begin processing starting at the given title'
     )
+    parser.add_argument(
+        '-m', '--model',
+        type=str,
+        required=False,
+        help='AI Mmodel to use'
+    )
+    parser.add_argument(
+        '-o', '--outfile',
+        type=str,
+        required=False,
+        help='Name of file to write output to'
+    )
     args = parser.parse_args()
+    model = default_model
+    if args.model:
+        model = args.model
+    output_filename = default_outfile
+    if args.outfile:
+        output_filename = args.outfile
     if args.title:
         print(f"Processing args, title: {args.title}, fascicle: {args.fascicle}, "
               f"start_title: {args.restart_at}")
         entries = cszjj.find_entry(file_index_path, args.title, args.fascicle, None)
         for entry in entries:
-            result = analyze_content(nti, entry)
+            result = analyze_content(nti, entry, model)
             append_result(output_filename, result)
         sys.exit()
 
@@ -334,7 +353,7 @@ if __name__ == "__main__":
     entries = cszjj.parse_file_index(file_index_path, args.restart_at)
     num = len(entries)
     for entry in entries:
-        result = analyze_content(nti, entry)
+        result = analyze_content(nti, entry, model)
         append_result(output_filename, result)
         
     print(f"Results written to {output_filename}")
