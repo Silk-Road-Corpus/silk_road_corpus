@@ -1,0 +1,116 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "top_level_genre",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "One of: sutra, jataka, commentary, vinaya, or history. "
+  },
+  {
+    "name": "taisho_genre",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "One of: Āgama, Jātaka and Avadāna, Prajñāpāramitā, ... "
+  },
+  {
+    "name": "is_mahayana",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Used as to evaluate the model"
+  },
+  {
+    "name": "parable_or_miracle_tale",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sub-genre: Possible values: 'parable', 'miracle_tale', 'biographies', or 'none'."
+  },
+  {
+    "name": "commentary_type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sub-genre for commentaries"
+  },
+  {
+    "name": "is_dialog",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Is the text in the form of a dialog?"
+  },
+  {
+    "name": "speaker",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The identity of the speaker or empty if there is no speaker."
+  },
+  {
+    "name": "contains_dharani",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text contain a dhāraṇī?"
+  },
+  {
+    "name": "philosophical_argumentation",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text contain philosophical argumentation?"
+  },
+  {
+    "name": "contains_rhetoric",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text contain rhetoric?"
+  },
+  {
+    "name": "karmic_retribution",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text contain a story of karmic retribution?"
+  },
+  {
+    "name": "historical_people",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "JSON array of historical people mentioned in the text."
+  },
+  {
+    "name": "deities",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "JSON array of deities mentioned in the text."
+  },
+  {
+    "name": "places",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "JSON array of places mentioned in the text."
+  },
+  {
+    "name": "text_references",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "JSON array of historical people mentioned in the text."
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Notes from the AI model"
+  },
+  {
+    "name": "validation_notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Validation notes"
+  }
+]

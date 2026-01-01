@@ -16,7 +16,8 @@ Evaluate the content of the following text using the following rubric
 and return the results in JSON format.
 
 1. Top level genre: is the given text a sūtra, jātaka, commentary,
-   Vinaya, or history?
+   Vinaya, or history? Do not assume that the genre is a sūtra just because
+   the title includes the Chinese character 經 jīng.
    Possible values: 'sutra', 'jataka', 'commentary', 'vinaya', or
    'history'.
 2. Taishō genre: what is the Taishō genre classification of the text?
@@ -38,16 +39,17 @@ and return the results in JSON format.
    recitation of a dhāraṇī. OOr does the text consist of one or more
    biographies, possibly in the form of a hagiography?
    Possible values: 'parable', 'miracle_tale', 'biographies', or
-   empty string.
+   'none'.
 5. Commentary type: A sūtra commentary explains the meanings of the terms
    used in the sūtra and the background context. Abhidharma relates to
    mainstream (non-Mahāyāna) Buddhism. A treatise, also known as a Śastra,
    covers a subject area and may refer to multiple texts. Possible values:
-   sūtra commentary, Abhidharma, or treatise. 
+   'sūtra commentary', 'Abhidharma', 'treatise', or 'none'.
 6. Is a dialog: Is the text mostly in the form of a dialog? Possible values:
    True or False. 
 7. Speaker: The value of this parameter is the identity of the speaker
-   empty if there is no speaker. 
+   empty if there is no speaker. Give the name of the speaker in English with
+   IAST Sanskrit transliteration, if needed, e.g., Śākyamuni.
 8. Contains a dhāraṇī: Does the text contain a dhāraṇī? Possible values: True or False.
 9. Philosophical argumentation: Does the text contain philosophical argumentation?
    Possible values: True or False.
@@ -55,11 +57,15 @@ and return the results in JSON format.
 11. Karmic retribution: Does the text contain a story of karmic retribution or
     karmic causes and conditions? Possible values: True or False.
 12. Historical people: List the historical people mentioned in the text.
+    Give the names in English with IAST Sanskrit transliteration, if needed.
 13. Deities: List the deities mentioned in the text, including bodhisattvas and
     Buddhas other than Śākyamuni.
+    Give the names in English with IAST Sanskrit transliteration, if needed.
 14. Places: List the historical places mentioned in the text.
+    Give the place names in English with IAST Sanskrit transliteration, if needed.
 15. Text references: If the text is a commentary, list the names in Chinese and
     English of any texts referred to.
+    Give the titles in English with IAST Sanskrit transliteration, if needed.
 
 Put any comments explaining the decisions in the notes field.
 
@@ -89,18 +95,26 @@ schema = {
         "properties": {
             "top_level_genre": {
                 "type": "string",
+                "enum": ["sutra", "jataka", "commentary", "vinaya", "history"],
             },
             "taisho_genre": {
                 "type": "string",
+                "enum": ["Āgama", "Jātaka and Avadāna", "Prajñāpāramitā",
+                         "Lotus", "Huayan", "Ratnakūṭa", "Nirvāṇa", "Mahāsaṃnipāta",
+                         "Collected Sūtras", "Esoteric", "Vinaya", "Śastra",
+                         "Abhidharma", "Madhyamaka", "Yogācāra", "Śastra",
+                         "Sūtra Commentary", "Vinaya", "Śāstra Commentary"],
             },
             "is_mahayana": {
                 "type": "boolean",
             },
             "parable_or_miracle_tale": {
                 "type": "string",
+                "enum": ["parable", "miracle_tale", "biographies", "none"],
             },
             "commentary_type": {
                 "type": "string",
+                "enum": ["sūtra commentary", "Abhidharma", "treatise", "none"],
             },
             "is_dialog": {
                 "type": "boolean",
@@ -152,16 +166,16 @@ schema = {
 
 DEFAULT_CONTENT = {
     "top_level_genre": "",
-    "taisho_genre": 0,
-    "is_mahayana": False,
+    "taisho_genre": "",
+    "is_mahayana": "",
     "parable_or_miracle_tale": "",
     "commentary_type": "",
-    "is_dialog": False,
+    "is_dialog": "",
     "speaker": "",
-    "contains_dharani": False,
-    "philosophical_argumentation": False,
-    "contains_rhetoric": False,
-    "karmic_retribution": False,
+    "contains_dharani": "",
+    "philosophical_argumentation": "",
+    "contains_rhetoric": "",
+    "karmic_retribution": "",
     "historical_people": [],
     "deities": [],
     "places": [],

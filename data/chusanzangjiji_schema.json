@@ -228,10 +228,16 @@
     "description": "Tibetan canon ref"
   },
   {
+    "name": "top_level_genre",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Top Level Genre"
+  },
+  {
     "name": "secondary_lit_classification",
     "type": "STRING",
     "mode": "NULLABLE",
-    "description": "Secondary literature classification"
+    "description": "Secondary literature classification (Chinese indigenous or empty)"
   },
   {
     "name": "attribution_analysis",
