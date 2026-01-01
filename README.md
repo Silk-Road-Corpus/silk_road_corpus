@@ -143,6 +143,12 @@ export NTI=$PWD/buddhist-dictionary/corpus/taisho
 
 For all Python scripts a single entry use the `--title` flag.
 
+To generate canonical summaries
+
+```shell
+python3 scripts/canonical_summaries.py
+```
+
 To compute word embedding examples, in the virtual env install the Vertex client API:
 
 ```shell
