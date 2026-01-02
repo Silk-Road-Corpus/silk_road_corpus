@@ -381,6 +381,25 @@ schema_references = {
         }
 }
 
+DEFAULT_CONTENT = {
+    "top_level_genre": "",
+    "taisho_genre": "",
+    "is_mahayana": "",
+    "parable_or_miracle_tale": "",
+    "commentary_type": "",
+    "is_dialog": "",
+    "speaker": "",
+    "contains_dharani": "",
+    "philosophical_argumentation": "",
+    "contains_rhetoric": "",
+    "karmic_retribution": "",
+    "historical_people": "",
+    "deities": "",
+    "places": "",
+    "text_references": "",
+    "notes": "",
+}
+
 
 def analyze_content(nti, entry, model):
     """Analyze content of the given text.
@@ -399,6 +418,7 @@ def analyze_content(nti, entry, model):
         "taisho_no": taisho_no,
         "error": None,
     }
+    result.update(DEFAULT_CONTENT)
 
     if "filepath" not in entry:
         result["error"] = "filepath not given"

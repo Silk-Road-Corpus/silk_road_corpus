@@ -228,7 +228,7 @@ def analyze_content(nti, entry, model):
 
     if result["error"]:
         print(f"Error for entry {title_zh}: {result['error']}")
-        # For errors, null out the style fields.
+        # For errors, null out the fields.
         for key in DEFAULT_CONTENT:
             result[key] = None
 
