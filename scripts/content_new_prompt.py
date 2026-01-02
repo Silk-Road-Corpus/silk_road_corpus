@@ -577,7 +577,7 @@ def analyze_content(nti, entry, model):
 
     result["notes"] = notes.join(", ")
     if errors:
-        print(f"Error for entry {title_zh}: {errors.join(", ")}")
+        print(f"Error for entry {title_zh}: {errors.join(', ')}")
         result['error'] = errors.join(", ")
     return result
 
