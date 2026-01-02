@@ -536,7 +536,8 @@ def analyze_content(nti, entry, model):
         r12 = cszjj.send_prompt_file_and_schema(p12,
                                                 file_path=filepath,
                                                 response_schema=schema_people)
-        result["historical_people"] = r12.get("historical_people", "")
+        people = r12.get("historical_people", [])
+        result["historical_people"] = ", ".join(people)
         if r12.get("notes"):
             notes.append("historical_people: " + r12.get("notes"))
     except Exception as e:
@@ -547,7 +548,8 @@ def analyze_content(nti, entry, model):
         r13 = cszjj.send_prompt_file_and_schema(p13,
                                                 file_path=filepath,
                                                 response_schema=schema_deities)
-        result["deities"] = r13.get("deities", "")
+        deities = r13.get("deities", [])
+        result["deities"] = ", ".join(deities)
         if r13.get("notes"):
             notes.append("deities: " + r13.get("notes"))
     except Exception as e:
@@ -558,7 +560,8 @@ def analyze_content(nti, entry, model):
         r14 = cszjj.send_prompt_file_and_schema(p14,
                                                 file_path=filepath,
                                                 response_schema=schema_places)
-        result["places"] = r14.get("places", "")
+        places = r14.get("places", [])
+        result["places"] = ", ".join(places)
         if r14.get("notes"):
             notes.append("places: " + r14.get("notes"))
     except Exception as e:
@@ -569,7 +572,8 @@ def analyze_content(nti, entry, model):
         r15 = cszjj.send_prompt_file_and_schema(p15,
                                                 file_path=filepath,
                                                 response_schema=schema_references)
-        result["text_references"] = r15.get("text_references", "")
+        text_references = r15.get("text_references", [])
+        result["text_references"] = ", ".join(text_references)
         if r15.get("notes"):
             notes.append("text_references: " + r15.get("notes"))
     except Exception as e:
