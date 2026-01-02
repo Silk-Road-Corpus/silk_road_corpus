@@ -407,8 +407,8 @@ def analyze_content(nti, entry, model):
     filepath = fname
     if fname.startswith("$nti"):
         filepath = nti + fname[4:]
-    notes = ""
-    error = ""
+    notes = []
+    errors = []
 
     try:
         p1 = prompt_system + prompt_top_genre
@@ -416,11 +416,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_top_genre)
         result["top_level_genre"] = r1.get("top_level_genre", "")
-        n1 += r1.get("notes", "")
-        if len(n1) > 0:
-            notes += "top_level_genre: " + n1
+        if r1.get("notes"):
+            notes.append("top_level_genre: " + r1.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing top_level_genre: {e}. "
+        errors.append(f"An error occurred processing top_level_genre: {e}.")
 
     try:
         p2 = prompt_system + prompt_taisho_genre
@@ -428,11 +427,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_taisho_genre)
         result["taisho_genre"] = r2.get("taisho_genre", "")
-        n2 += r2.get("notes", "")
-        if len(notes) > 0:
-            notes += ", taisho_genre: " + n2
+        if r2.get("notes"):
+            notes.append("taisho_genre: " + r2.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing taisho_genre: {e}. "
+        errors.append(f"An error occurred processing taisho_genre: {e}.")
 
     try:
         p3 = prompt_system + prompt_is_mahayana
@@ -440,11 +438,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_is_mahayana)
         result["is_mahayana"] = r3.get("is_mahayana", "")
-        n3 += r3.get("notes", "")
-        if len(notes) > 0:
-            notes += ", is_mahayana: " + n3
+        if r3.get("notes"):
+            notes.append("is_mahayana: " + r3.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing is_mahayana: {e}. "
+        errors.append(f"An error occurred processing is_mahayana: {e}.")
 
     try:
         p4 = prompt_system + prompt_parable
@@ -452,11 +449,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_parable)
         result["parable_or_miracle_tale"] = r4.get("parable_or_miracle_tale", "")
-        n4 += r4.get("notes", "")
-        if len(notes) > 0:
-            notes += ", is_mahayana: " + n4
+        if r4.get("notes"):
+            notes.append("parable_or_miracle_tale: " + r4.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing parable_or_miracle_tale: {e}. "
+        errors.append(f"An error occurred processing parable_or_miracle_tale: {e}.")
 
     try:
         p5 = prompt_system + prompt_commentary_type
@@ -464,11 +460,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_commentary_type)
         result["commentary_type"] = r5.get("commentary_type", "")
-        n5 += r5.get("notes", "")
-        if len(notes) > 0:
-            notes += ", commentary_type: " + n5
+        if r4.get("notes"):
+            notes.append("commentary_type: " + r4.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing commentary_type: {e}. "
+        errors.append(f"An error occurred processing commentary_type: {e}.")
 
     try:
         p6 = prompt_system + prompt_dialog
@@ -476,11 +471,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_is_dialog)
         result["is_dialog"] = r6.get("is_dialog", "")
-        n6 += r6.get("notes", "")
-        if len(notes) > 0:
-            notes += ", is_dialog: " + n6
+        if r6.get("notes"):
+            notes.append("is_dialog: " + r6.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing is_dialog: {e}. "
+        errors.append(f"An error occurred processing is_dialog: {e}.")
 
     try:
         p7 = prompt_system + prompt_speaker
@@ -488,11 +482,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_speaker)
         result["speaker"] = r7.get("speaker", "")
-        n7 += r7.get("notes", "")
-        if len(notes) > 0:
-            notes += ", speaker: " + n7
+        if r7.get("notes"):
+            notes.append("speaker: " + r7.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing speaker: {e}. "
+        errors.append(f"An error occurred processing speaker: {e}.")
 
     try:
         p8 = prompt_system + prompt_dharani
@@ -500,11 +493,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_contains_dharani)
         result["contains_dharani"] = r8.get("contains_dharani", "")
-        n8 += r8.get("notes", "")
-        if len(notes) > 0:
-            notes += ", contains_dharani: " + n8
+        if r8.get("notes"):
+            notes.append("contains_dharani: " + r8.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing contains_dharani: {e}. "
+        errors.append(f"An error occurred processing contains_dharani: {e}.")
 
     try:
         p9 = prompt_system + prompt_argumentation
@@ -512,11 +504,10 @@ def analyze_content(nti, entry, model):
                                                file_path=filepath,
                                                response_schema=schema_argumentation)
         result["philosophical_argumentation"] = r9.get("philosophical_argumentation", "")
-        n9 += r9.get("notes", "")
-        if len(notes) > 0:
-            notes += ", philosophical_argumentation: " + n9
+        if r9.get("notes"):
+            notes.append("philosophical_argumentation: " + r9.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing philosophical_argumentation: {e}. "
+        errors.append(f"An error occurred processing philosophical_argumentation: {e}.")
 
     try:
         p10 = prompt_system + prompt_rhetoric
@@ -524,11 +515,10 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_rhetoric)
         result["contains_rhetoric"] = r10.get("contains_rhetoric", "")
-        n10 += r10.get("notes", "")
-        if len(notes) > 0:
-            notes += ", contains_rhetoric: " + n10
+        if r10.get("notes"):
+            notes.append("contains_rhetoric: " + r10.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing contains_rhetoric: {e}. "
+        errors.append(f"An error occurred processing contains_rhetoric: {e}.")
 
     try:
         p11 = prompt_system + prompt_retribution
@@ -536,11 +526,10 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_karmic_retribution)
         result["karmic_retribution"] = r11.get("karmic_retribution", "")
-        n11 += r11.get("notes", "")
-        if len(notes) > 0:
-            notes += ", karmic_retribution: " + n11
+        if r11.get("notes"):
+            notes.append("karmic_retribution: " + r11.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing karmic_retribution: {e}. "
+        errors.append(f"An error occurred processing karmic_retribution: {e}.")
 
     try:
         p12 = prompt_system + prompt_people
@@ -548,11 +537,10 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_people)
         result["historical_people"] = r12.get("historical_people", "")
-        n12 += r12.get("notes", "")
-        if len(notes) > 0:
-            notes += ", historical_people: " + n12
+        if r12.get("notes"):
+            notes.append("historical_people: " + r12.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing historical_people: {e}. "
+        errors.append(f"An error occurred processing historical_people: {e}.")
 
     try:
         p13 = prompt_system + prompt_deities
@@ -560,11 +548,10 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_deities)
         result["deities"] = r13.get("deities", "")
-        n13 += r13.get("notes", "")
-        if len(notes) > 0:
-            notes += ", deities: " + n13
+        if r13.get("notes"):
+            notes.append("deities: " + r13.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing deities: {e}. "
+        errors.append(f"An error occurred processing deities: {e}.")
 
     try:
         p14 = prompt_system + prompt_places
@@ -572,11 +559,10 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_places)
         result["places"] = r14.get("places", "")
-        n14 += r14.get("notes", "")
-        if len(notes) > 0:
-            notes += ", places: " + n14
+        if r14.get("notes"):
+            notes.append("places: " + r14.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing places: {e}. "
+        errors.append(f"An error occurred processing places: {e}.")
 
     try:
         p15 = prompt_system + prompt_references
@@ -584,16 +570,15 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_references)
         result["text_references"] = r15.get("text_references", "")
-        n15 += r15.get("notes", "")
-        if len(notes) > 0:
-            notes += ", text_references: " + n15
+        if r15.get("notes"):
+            notes.append("text_references: " + r15.get("notes"))
     except Exception as e:
-        error = f"An error occurred processing text_references: {e}. "
+        errors.append(f"An error occurred processing text_references: {e}.")
 
-    result["notes"] = notes
-    if error:
-        print(f"Error for entry {title_zh}: {error}")
-        result['error'] = error
+    result["notes"] = notes.join(", ")
+    if errors:
+        print(f"Error for entry {title_zh}: {errors.join(", ")}")
+        result['error'] = errors.join(", ")
     return result
 
 
