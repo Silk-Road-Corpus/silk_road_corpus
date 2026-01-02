@@ -575,10 +575,10 @@ def analyze_content(nti, entry, model):
     except Exception as e:
         errors.append(f"An error occurred processing text_references: {e}.")
 
-    result["notes"] = notes.join(", ")
+    result["notes"] = ", ".join(notes)
     if errors:
-        print(f"Error for entry {title_zh}: {errors.join(', ')}")
-        result['error'] = errors.join(", ")
+        print(f"Error for entry {title_zh}: {', '.join(errors)}")
+        result['error'] = ", ".join(errors)
     return result
 
 
