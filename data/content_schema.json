@@ -108,7 +108,7 @@
     "description": "Notes from the AI model"
   },
   {
-    "name": "validation_notes",
+    "name": "error",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "Validation notes"

@@ -557,7 +557,7 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_people)
         people = r12.get("historical_people", [])
-        result["historical_people"] = ", ".join(people)
+        result["historical_people"] = ", ".join(people)[:500]
         if r12.get("notes"):
             notes.append("historical_people: " + r12.get("notes"))
     except Exception as e:
@@ -569,7 +569,7 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_deities)
         deities = r13.get("deities", [])
-        result["deities"] = ", ".join(deities)
+        result["deities"] = ", ".join(deities)[:500]
         if r13.get("notes"):
             notes.append("deities: " + r13.get("notes"))
     except Exception as e:
@@ -581,7 +581,7 @@ def analyze_content(nti, entry, model):
                                                 file_path=filepath,
                                                 response_schema=schema_places)
         places = r14.get("places", [])
-        result["places"] = ", ".join(places)
+        result["places"] = ", ".join(places)[:500]
         if r14.get("notes"):
             notes.append("places: " + r14.get("notes"))
     except Exception as e:
@@ -592,7 +592,7 @@ def analyze_content(nti, entry, model):
         r15 = cszjj.send_prompt_file_and_schema(p15,
                                                 file_path=filepath,
                                                 response_schema=schema_references)
-        text_references = r15.get("text_references", [])
+        text_references = r15.get("text_references", [])[:500]
         result["text_references"] = ", ".join(text_references)
         if r15.get("notes"):
             notes.append("text_references: " + r15.get("notes"))
