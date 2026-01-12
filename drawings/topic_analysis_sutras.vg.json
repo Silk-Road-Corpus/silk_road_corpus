@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A pie chart showing topic analysis of sutras",
+  "width": 400,
+  "height": 400,
+  "padding": 5,
+  "data": [
+    {
+      "name": "table",
+      "url": "../data/topic_analysis_sutras.csv",
+      "format": {"type": "csv", "parse": {"count_topic": "number"}},
+      "transform": [
+        {
+          "type": "pie",
+          "field": "count_topic"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "topic"},
+      "range": {"scheme": "category10"}
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Topic",
+      "orient": "right"
+    }
+  ],
+  "marks": [
+    {
+      "type": "arc",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "topic"},
+          "x": {"signal": "width / 2"},
+          "y": {"signal": "height / 2"}
+        },
+        "update": {
+          "startAngle": {"field": "startAngle"},
+          "endAngle": {"field": "endAngle"},
+          "outerRadius": {"signal": "width / 2"}
+        }
+      }
+    }
+  ]
+}

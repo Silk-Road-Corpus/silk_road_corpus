@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A pie chart showing topic analysis of commentaries",
+  "width": 400,
+  "height": 400,
+  "padding": 5,
+  "data": [
+    {
+      "name": "table",
+      "url": "../data/topic_analysis_commentaries.csv",
+      "format": {"type": "csv", "parse": {"count_topic": "number"}},
+      "transform": [
+        {
+          "type": "pie",
+          "field": "count_commentary_type"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "commentary_type"},
+      "range": {"scheme": "category10"}
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Commentary Type",
+      "orient": "right"
+    }
+  ],
+  "marks": [
+    {
+      "type": "arc",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "commentary_type"},
+          "x": {"signal": "width / 2"},
+          "y": {"signal": "height / 2"}
+        },
+        "update": {
+          "startAngle": {"field": "startAngle"},
+          "endAngle": {"field": "endAngle"},
+          "outerRadius": {"signal": "width / 2"}
+        }
+      }
+    }
+  ]
+}

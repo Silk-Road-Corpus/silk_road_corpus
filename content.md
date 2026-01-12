@@ -43,6 +43,12 @@ bq --project_id=${PROJECT_ID} load \
 SQL Statements
 
 ```sql
+-- Content - Total records
+FROM cszjj.content AS CO
+|> AGGREGATE COUNT (CO.taisho_no) AS count_total
+```
+
+```sql
 -- Content - Correct prediction of top level genre
 FROM cszjj.content AS CO
 |> INNER JOIN cszjj.chusanzangjiji AS CZ ON CO.czsjj_title_zh = CZ.title_zh
@@ -56,4 +62,52 @@ FROM cszjj.content AS CO
 |> INNER JOIN cszjj.chusanzangjiji AS CZ ON CO.czsjj_title_zh = CZ.title_zh
 |> WHERE CO.top_level_genre != CZ.top_level_genre
 |> AGGREGATE COUNT (CO.taisho_no) AS count_incorrect
+```
+
+```sql
+-- Content - Correct prediction of Taisho genre
+FROM cszjj.content AS CO
+|> INNER JOIN cszjj.chusanzangjiji AS CZ ON CO.czsjj_title_zh = CZ.title_zh
+|> WHERE CO.taisho_genre = CZ.taisho_classification
+|> AGGREGATE COUNT (CO.taisho_no) AS count_correct
+```
+
+```sql
+-- Content - Incorrect prediction of Taisho genre
+FROM cszjj.content AS CO
+|> INNER JOIN cszjj.chusanzangjiji AS CZ ON CO.czsjj_title_zh = CZ.title_zh
+|> WHERE CO.taisho_genre != CZ.taisho_classification
+|> AGGREGATE COUNT (CO.taisho_no) AS count_correct
+```
+
+```sql
+-- Content - Number of errors
+FROM cszjj.content
+|> WHERE error IS NOT NULL
+|> AGGREGATE COUNT (czsjj_title_zh) AS count_total
+```
+
+```sql
+-- Content - Topic analysis of sutras
+FROM cszjj.content
+|> WHERE top_level_genre = 'sutra'
+|> EXTEND CASE parable_or_miracle_tale
+  WHEN 'parable' THEN 'parable'
+  WHEN 'miracle_tale' THEN 'miracle_tale'
+  WHEN 'biographies' THEN 'biographies'
+  ELSE 'other'
+  END AS topic
+|> AGGREGATE COUNT (czsjj_title_zh) AS count_topic GROUP BY topic
+```
+
+```sql
+-- Content - Topic analysis other
+FROM cszjj.content
+|> EXTEND CASE parable_or_miracle_tale
+  WHEN 'parable' THEN 'parable'
+  WHEN 'miracle_tale' THEN 'miracle_tale'
+  WHEN 'biographies' THEN 'biographies'
+  ELSE 'other'
+  END AS topic
+|> WHERE top_level_genre = 'sutra' AND topic = 'other'
 ```
