@@ -1,0 +1,32 @@
+[
+  {
+    "name": "corpus_item_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "An identifier for the corpus item"
+  },
+  {
+    "name": "title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "file",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Path to file"
+  },
+  {
+    "name": "Summary",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "An AI generated summary"
+  }
+]

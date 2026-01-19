@@ -67,6 +67,11 @@ bq --project_id=${PROJECT_ID} load \
     data/chusanzangjiji_schema.json
 ```
 
+## Corpus of Related Chinese Texts
+
+Loading and SQL queries of the Corpus of Related Chinese Texts can be found in
+[Corpus](corpus.md).
+
 ### Indic Corpus
 
 Loading and use of the Indic corpus can be found in [Indic Catalog](indic_catalog.md).
@@ -291,6 +296,45 @@ FROM cszjj.chusanzangjiji
   modern_title,
   cszjj_manuscript,
   indic_manuscript
+```
+
+```sql
+-- CSZJJ - Pali parallels
+FROM cszjj.chusanzangjiji
+|> WHERE pali_parallel IS NOT NULL
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  pali_parallel
+```
+
+```sql
+-- CSZJJ - Tibetan parallels
+FROM cszjj.chusanzangjiji
+|> WHERE tibetan_parallel IS NOT NULL
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  tibetan_parallel
+```
+
+```sql
+-- CSZJJ - Oral transmission mentioned
+FROM cszjj.chusanzangjiji
+|> WHERE cszjj_oral IS NOT NULL
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  cszjj_oral
 ```
 
 ```sql
