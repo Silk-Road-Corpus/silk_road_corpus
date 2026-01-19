@@ -39,8 +39,7 @@ bq --project_id=${PROJECT_ID} load \
     data/content_schema.json
 ```
  
-
-SQL Statements
+## SQL Statements
 
 ```sql
 -- Content - Total records
@@ -110,4 +109,37 @@ FROM cszjj.content
   ELSE 'other'
   END AS topic
 |> WHERE top_level_genre = 'sutra' AND topic = 'other'
+```
+
+```sql
+-- Content - Topic analysis of commentaries
+FROM cszjj.content
+|> WHERE top_level_genre = 'commentary'
+|> AGGREGATE COUNT (czsjj_title_zh) AS count_commentary_type GROUP BY commentary_type
+```
+
+```sql
+-- Content - Topic analysis other that contains philosophical argumentation
+FROM cszjj.content
+|> EXTEND CASE parable_or_miracle_tale
+  WHEN 'parable' THEN 'parable'
+  WHEN 'miracle_tale' THEN 'miracle_tale'
+  WHEN 'biographies' THEN 'biographies'
+  ELSE 'other'
+  END AS topic
+|> WHERE top_level_genre = 'sutra' AND topic = 'other'
+|> AGGREGATE COUNT (czsjj_title_zh) AS count_phil_arg GROUP BY philosophical_argumentation
+```
+
+```sql
+-- Content - Rhetoric
+FROM cszjj.content
+|> AGGREGATE COUNT (czsjj_title_zh) AS count_rhetoric GROUP BY contains_rhetoric 
+```
+
+```sql
+-- Content - Rhetoric Examples
+FROM cszjj.content
+|> WHERE contains_rhetoric
+|> LIMIT 200
 ```

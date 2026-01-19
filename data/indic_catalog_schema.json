@@ -1,0 +1,50 @@
+[
+  {
+    "name": "corpus_item_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "An identifier for the item"
+  },
+  {
+    "name": "title",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "A title describing the item"
+  },
+  {
+    "name": "sources",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sources documenting the item"
+  },
+  {
+    "name": "description",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "A description of the item"
+  },
+  {
+    "name": "rights",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Who has the rights to this item?"
+  },
+  {
+    "name": "type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Manuscript, inscription, or something else"
+  },
+  {
+    "name": "languages",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The languages used in the item"
+  },
+  {
+    "name": "scripts",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The scripts used in the item"
+  }
+]

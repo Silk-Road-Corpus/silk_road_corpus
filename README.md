@@ -67,21 +67,25 @@ bq --project_id=${PROJECT_ID} load \
     data/chusanzangjiji_schema.json
 ```
 
+### Indic Corpus
+
+Loading and use of the Indic corpus can be found in [Indic Catalog](indic_catalog.md).
+
 ### Terminology Usage ad Analysis
 
-Terminology usage and analysis is found in [Terminology](terminology.md).
+Terminology usage and analysis can be found in [Terminology](terminology.md).
 
 ### Linguistic Analysis
 
-Linguistic analysis is found in [Linguistic Analysis](linguistic_analysis.md).
+Linguistic analysis can be found in [Linguistic Analysis](linguistic_analysis.md).
 
 ### Style Analysis
 
-Translation style analysis is found in [Style Analysis](style.md).
+Translation style analysis can be found in [Style Analysis](style.md).
 
 ### Content Analysis
 
-Translation style analysis is found in [Content Analysis](content.md).
+Translation style analysis can be found in [Content Analysis](content.md).
 
 ## Running the Python Scripts
 
@@ -260,6 +264,33 @@ SELECT
 FROM cszjj.chusanzangjiji
 GROUP BY cszjj_attribution
 |> WHERE count_titles >= 5
+```
+
+```sql
+-- CSZJJ titles mentioning translation from a manuscript
+FROM cszjj.chusanzangjiji
+|> WHERE cszjj_manuscript IS NOT NULL
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  cszjj_manuscript,
+  COALESCE(indic_manuscript,pali_parallel) AS indic_parallel
+```
+
+```sql
+-- CSZJJ - Indic parallels
+FROM cszjj.chusanzangjiji
+|> WHERE indic_manuscript IS NOT NULL
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  cszjj_manuscript,
+  indic_manuscript
 ```
 
 ```sql
