@@ -92,6 +92,10 @@ Translation style analysis can be found in [Style Analysis](style.md).
 
 Translation style analysis can be found in [Content Analysis](content.md).
 
+### Bibliographic Database
+
+Details on the bibliographic database can be found in [bibliography](bibliography.md).
+
 ## Running the Python Scripts
 
 Setup a virtual env:
@@ -236,6 +240,15 @@ WHERE REGEXP_CONTAINS(modern_ref, r'T \d+')
 ```
 
 ```sql
+-- How many titles in the CXZJJ can be related to Taisho or Manji texts? Also, sum of fascicles.
+SELECT
+  COUNT(*) AS count_titles,
+  SUM(taisho_num_fascicles) AS num_fascicles,
+FROM cszjj.chusanzangjiji
+WHERE (REGEXP_CONTAINS(modern_ref, r'T \d+') or REGEXP_CONTAINS(modern_ref, r'X \d+'))
+```
+
+```sql
 -- Count of entries and fascicles that can be related to a text in the modern canon, break down by attribution_analysis
 SELECT
   attribution_analysis,
@@ -296,6 +309,43 @@ FROM cszjj.chusanzangjiji
   modern_title,
   cszjj_manuscript,
   indic_manuscript
+```
+
+```sql
+-- CSZJJ - No Indic manuscript
+FROM cszjj.chusanzangjiji
+|> WHERE indic_manuscript IS NULL
+   AND modern_ref IS NOT NULL
+   AND (STARTS_WITH(modern_ref, 'T') OR STARTS_WITH(modern_ref, 'X'))
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  cszjj_manuscript,
+  indic_manuscript
+```
+
+```sql
+-- CSZJJ - No manuscript mention, no Indic manuscript, no Pali, and no Tibetan Parallel
+FROM cszjj.chusanzangjiji
+|> WHERE cszjj_manuscript IS NULL
+   AND indic_manuscript IS NULL
+   AND pali_parallel IS NULL
+   AND tibetan_parallel IS NULL
+   AND modern_ref IS NOT NULL
+   AND (STARTS_WITH(modern_ref, 'T') OR STARTS_WITH(modern_ref, 'X'))
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title,
+  cszjj_manuscript,
+  indic_manuscript,
+  pali_parallel,
+  tibetan_parallel
 ```
 
 ```sql

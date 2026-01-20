@@ -1,0 +1,50 @@
+[
+  {
+    "name": "bib_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "An identifier for the item"
+  },
+  {
+    "name": "abbreviation",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "An abbreviation"
+  },
+  {
+    "name": "authors",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Names of the authors"
+  },
+  {
+    "name": "title",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Title of the item"
+  },
+  {
+    "name": "type",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "The type of document"
+  },
+  {
+    "name": "ref",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Chicago style reference"
+  },
+  {
+    "name": "file",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "file"
+  },
+  {
+    "name": "num_pages",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": "Number of pages"
+  }
+]

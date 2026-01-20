@@ -3,7 +3,13 @@
 The files for the corpus are defined by the
 [data/canonical_summaries.csv](data/canonical_summaries.csv) file.
 
+Load into GCS:
+
+```shell
 gcloud storage cp data/canonical_summaries.csv gs://${CSZJJ_BUCKET_NAME}/canonical_summaries.csv
+```
+
+Load into BigQuery:
 
 ```shell
 bq --project_id=${PROJECT_ID} load \

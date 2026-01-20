@@ -1,14 +1,15 @@
 CSZJJ No.,CSZJJ Chinese title,bib_id,pages
-1,四十二章經,funayama2013sutras,22-23
+1,四十二章經,funayama2013sutras,22-24
 1,四十二章經,hengching2017fortytwo,27-44
 1,四十二章經,nattier2008,35-37
 1,四十二章經,zurcher2007conquest,22
 1,四十二章經,zurcher2013earliest,427
+2,安般守意經,deleanu2003found,
 2,安般守意經,funayama2013sutras,24
 2,安般守意經,hureau2009translations,743
 2,安般守意經,nattier2008,"60-61, 64"
 2,安般守意經,teng2008anapana,
-,安般守意經,zacchetti2004Kongoji,
+2,安般守意經,zacchetti2004Kongoji,
 3,陰持入經,hureau2009translations,743
 3,陰持入經,nattier2008,61
 3,陰持入經,zurcher2013earliest,442
@@ -39,11 +40,13 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 18,七處三觀經,nakamura1987indian,38
 18,七處三觀經,nattier2008,52-53
 18,七處三觀經,zurcher2013earliest,442
+19,九橫經,liang2008hanyushi,
 19,九橫經,nattier2008,53
 20,八正道經,nakamura1987indian,38
 20,八正道經,nattier2008,50
 20,八正道經,hureau2009translations,743
 20,八正道經,zurcher2013earliest,442
+21,雜經四十四篇,harrison1997anshigao,
 21,雜經四十四篇,nattier2008,52
 22,五十校計經,greene2017doctrinal,
 23,大安般經,nattier2008,60-61
@@ -55,6 +58,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 26,五陰喻經,thanissaro2013phena,
 26,五陰喻經,zurcher2013earliest,444
 27,轉法輪經,nattier2008,"51,68-71"
+27,轉法輪經,zhao2020unturned,
 27,轉法輪經,zurcher2013earliest,444
 28,流攝經,nattier2008,50
 28,流攝經,zurcher2013earliest,442
@@ -75,6 +79,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 38,般若道行品經,conze1973perfection,
 38,般若道行品經,funayama2013sutras,25
 38,般若道行品經,harrison1993earliest,141-145
+38,般若道行品經,lancaster1968astasahasrika,
 38,般若道行品經,lancaster1975,
 38,般若道行品經,nattier2008,76-81
 38,般若道行品經,orsborn2012chiasmus,
@@ -93,6 +98,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 42,方等部古品曰遺日說般若經,silk2025kasyapaparivarta,
 42,方等部古品曰遺日說般若經,zurcher2013earliest,444
 43,光明三昧經,harrison1993earliest,168-169
+43,光明三昧經,liang2008hanyushi,
 43,光明三昧經,nattier2008,88
 44,阿闍世王經,harrison1993earliest,152-153
 44,阿闍世王經,shingan2022ajatasatru,
@@ -162,6 +168,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 76,釋摩男經,nattier2008,121-148
 77,孛抄經,nattier2008,121-148
 78,明度經,harrison1993earliest,144
+78,明度經,lancaster1969zhiqian,
 78,明度經,nattier2008,121-148
 78,明度經,karashima2005qiuluzi,162
 79,老女人經,nattier2008,121-148
@@ -184,6 +191,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 92,賴吒和羅經,nattier2008,121-148
 93,六度集經,chen2003liudu,
 93,六度集經,hureau2009translations,744
+93,六度集經,liang2001cihui,109-121
 93,六度集經,nakamura1987indian,139
 93,六度集經,nattier2008,152-154
 94,吳品,nattier2008,154
@@ -199,6 +207,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 100,賢劫經,suzuki1995translation,
 101,正法華經,boucher2006harmaraksa,24
 101,正法華經,hureau2009translations,746
+101,正法華經,karashima1998dharmaraksa,
 101,正法華經,kawano2006early,87
 101,正法華經,mei1996fahu,55-62
 101,正法華經,suzuki1995translation,
@@ -220,7 +229,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 106,持心經,boucher2006harmaraksa,24
 106,持心經,mei1996fahu,60-62
 106,持心經,suzuki1995translation,
-107,修行經,boucher2006harmaraksa,24
+107,修行經,boucher2006harmaraksa,"24, 180-181"
 107,修行經,kragh2013yogacarabhumi,
 107,修行經,mei1996fahu,56
 107,修行經,salguero2014medicine,46-47
@@ -433,9 +442,11 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 297,新小品經,funayama2013sutras,28
 297,新小品經,harrison1993earliest,145
 297,新小品經,hureau2009translations,748
+297,新小品經,karashima2010astahasrika,
 297,新小品經,kimura1986kumarajiva,67
 297,新小品經,walser2018genealogies,129-151
 298,新法華經,hureau2009translations,747
+298,新法華經,karashima2001kumarajiva,
 298,新法華經,kimura1986kumarajiva,67
 299,新賢劫經,kimura1986kumarajiva,67
 300,華首經,kimura1986kumarajiva,67
@@ -742,6 +753,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 684,胎中女經,hayashiya1941kyoroku,775-777
 686,普達王經,zurcher1995obscure,
 699,長者威勢經,hayashiya1941kyoroku,493-496
+699,長者威勢經,iwamatsu1976nirvana,
 700,鹹水喻經,zurcher1995obscure,
 701,薩和達王經,zurcher1995obscure,
 707,放鉢經,zurcher1995obscure,
@@ -772,6 +784,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 810,大方便報恩經,fang2001da,
 810,大方便報恩經,fang_lu2023Suspicious,11
 810,大方便報恩經,funayama2013sutras,138-139
+811,雜譬喻經,cao200dating,
 813,分別功德經,fang2003fen,
 813,分別功德經,palumbo2013ekottarikaagama,
 813,分別功德經,wang2012fen,
@@ -956,6 +969,7 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 1425,摩訶剎頭經,radich2019anonymous,
 1424,救護身命經,zhang2017apocryphal,
 1425,清淨法行經,liang_chen2007phrases,
+1425,清淨法行經,liang2008hanyushi,36-39
 1438,淨除業障經,radich2019anonymous,
 1443,相應相可經,radich2019anonymous,
 1450,前世三轉經,radich2019anonymous,
@@ -995,6 +1009,9 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 1597,灌頂宮宅神王守鎮左右呪經,strickmann1990consecration,
 1598,灌頂塚墓因緣四方神呪經,strickmann1990consecration,
 1599,灌頂伏魔封印大神呪經,strickmann1990consecration,
+1600,灌頂摩尼羅亶大神呪經,strickmann1990consecration,
+1601,灌頂召五方龍王攝疫毒神呪經,strickmann1990consecration,
+1602,灌頂梵天神策經,strickmann1990consecration,
 1611,華積陀羅尼神呪,radich2019anonymous,
 1624,摩尼羅亶神呪,radich2019anonymous,
 1624,摩尼羅亶神呪,strickmann2002magical,109-113
@@ -1016,3 +1033,4 @@ CSZJJ No.,CSZJJ Chinese title,bib_id,pages
 2190,觀月光菩薩記,hureau2009translations,
 2190,觀月光菩薩記,zurcher2013earliest,
 2192,彌勒下教,hureau2009translations,
+2193,仁王護國般若波羅蜜經,swanson1998apocryphal,250-251

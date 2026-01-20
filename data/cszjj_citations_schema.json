@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cszjj_id",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "CSZJJ No."
+  },
+  {
+    "name": "cszjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ title"
+  },
+  {
+    "name": "bib_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Identifier for the bibliographic item"
+  },
+  {
+    "name": "page_no",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Page numbers"
+  }
+]
