@@ -156,12 +156,6 @@ export NTI=$PWD/buddhist-dictionary/corpus/taisho
 
 For all Python scripts a single entry use the `--title` flag.
 
-To generate canonical summaries
-
-```shell
-python3 scripts/canonical_summaries.py
-```
-
 To compute word embedding examples, in the virtual env install the Vertex client API:
 
 ```shell
@@ -205,6 +199,12 @@ and
 
 ```shell
 dot -Tpng drawings/big_picture.dot > images/big_picture.png
+```
+
+and 
+
+```shell
+dot -Tpng drawings/database_erd.dot > images/database_erd.png
 ```
 
 ### Vega Diagrams
@@ -530,4 +530,31 @@ FROM cszjj.chusanzangjiji
 |> WHERE secondary_lit_classification IS NOT NULL
    AND (fascicle = 3 OR fascicle = 4)
 |> SELECT id, title_zh, modern_ref, modern_title, secondary_lit_classification
+```
+
+```sql
+-- How many entries are Chinese native compositions but not anonymous?
+FROM cszjj.chusanzangjiji
+|> WHERE secondary_lit_classification IS NOT NULL
+   AND modern_ref IS NOT NULL
+   AND fascicle = 2
+|> SELECT id, title_zh, modern_ref, modern_title, secondary_lit_classification
+```
+
+```sql
+-- CSZJJ - Origin not accounted for
+FROM cszjj.chusanzangjiji
+|> WHERE indic_manuscript IS NULL
+   AND pali_parallel IS NULL
+   AND tibetan_parallel IS NULL
+   AND cszjj_oral IS NULL
+   AND secondary_lit_classification IS NULL
+   AND modern_ref IS NOT NULL
+   AND (STARTS_WITH(modern_ref, 'T') OR STARTS_WITH(modern_ref, 'X'))
+|> SELECT
+  id,
+  title_zh,
+  title_en,
+  modern_ref,
+  modern_title
 ```

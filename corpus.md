@@ -3,6 +3,12 @@
 The files for the corpus are defined by the
 [data/canonical_summaries.csv](data/canonical_summaries.csv) file.
 
+To generate canonical summaries
+
+```shell
+python3 scripts/canonical_summaries.py
+```
+
 Load into GCS:
 
 ```shell

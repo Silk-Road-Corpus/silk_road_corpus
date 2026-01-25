@@ -1,0 +1,26 @@
+digraph D {
+
+  cszjj [shape=box, fillcolor=lightgrey, style=filled, label="Catalog"]
+  corpus [shape=box, fillcolor=lightgrey, style=filled, label="Corpus"]
+  terminology [shape=box, fillcolor=lightgrey, style=filled, label="Terminology"]
+  usage [shape=box, fillcolor=lightgrey, style=filled, label="Terminology Usage"]
+  terminology_analysis [shape=box, fillcolor=lightgrey, style=filled, label="Terminology Analysis"]
+  ngram [shape=box, fillcolor=lightgrey, style=filled, label="N-gram Analysis"]
+  linguistic [shape=box, fillcolor=lightgrey, style=filled, label="Linguistic Analysis"]
+  style_analysis [shape=box, fillcolor=lightgrey, style=filled, label="Style Analysis"]
+  content [shape=box, fillcolor=lightgrey, style=filled, label="Content Analysis"]
+  citations [shape=box, fillcolor=lightgrey, style=filled, label="Citations"]
+  bibliography [shape=box, fillcolor=lightgrey, style=filled, label="Bibliography"]
+
+  cszjj -> corpus
+  cszjj -> usage
+  corpus -> usage
+  usage ->  terminology
+  terminology -> terminology_analysis
+  corpus -> ngram
+  corpus -> linguistic
+  corpus -> style_analysis
+  corpus -> content
+  cszjj -> citations
+  citations -> bibliography
+}
