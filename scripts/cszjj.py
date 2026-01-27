@@ -113,7 +113,8 @@ def index_cszjj_file(file_path):
                         "title_zh": title_zh,
                         "fascicle": int(row[2]),
                         "modern_ref": row[19],
-                        "attribution_analysis": row[39],
+                        "secondary_lit_classification": row[39],
+                        "attribution_analysis": row[40],
                     }
                     catalog[title_zh] = entry
     except FileNotFoundError:
@@ -521,3 +522,16 @@ def strip_boiler_plate(content):
                 not line.startswith("Copyright")):
             stripped += line
     return stripped
+
+
+def phrase_count(content, char_to_find):
+    """Find the number of occurence of a phrase in a string content
+
+    Return:
+        int: The number of occurences
+    """
+    count = 0
+    for char in content:
+        if char == char_to_find:
+            count += 1
+    return count

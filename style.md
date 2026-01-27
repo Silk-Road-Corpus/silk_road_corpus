@@ -28,6 +28,19 @@ bq --project_id=${PROJECT_ID} load \
     data/style_schema.json
 ```
 
+The counts of Chinese characters used for translation of Indic grammatical
+constucts are computed by the script:
+
+```shell
+python3 scripts/style_indic.py
+```
+
+The mutual information is computed by the script:
+
+```shell
+python3 scripts/style_mutual_info.py
+```
+
 ## SQL Queries
 
 ```sql
@@ -237,4 +250,72 @@ FROM cszjj.style AS S
 |> WHERE S.interlinear_commentary
    AND C.top_level_genre = "sutra"
    AND C.secondary_lit_classification IS NOT NULL
+```
+
+```sql
+-- Style - uses explicit sentence subject
+FROM cszjj.style
+|> AGGREGATE COUNT(*) GROUP BY explicit_sentence_subject
+```
+
+```sql
+-- Style - explicit sentence subject notes
+FROM cszjj.style
+|> WHERE notes LIKE "%explicit%"
+|> SELECT czsjj_title_zh, taisho_no, explicit_sentence_subject, notes
+```
+
+```sql
+-- Style - not using 諸 zhū to indicate plural
+FROM cszjj.style
+|> WHERE NOT plural_zhu
+```
+
+```sql
+-- Style - Plural zhu, Chinese native compositions
+FROM cszjj.style AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE NOT S.plural_zhu
+   AND C.modern_ref IS NOT NULL
+   AND C.secondary_lit_classification IS NOT NULL
+|> SELECT DISTINCT
+     C.title_en,
+     C.modern_title,
+     C.modern_ref
+```
+
+```sql
+-- Style - tense
+FROM cszjj.style
+|> AGGREGATE COUNT(*) GROUP BY tense
+```
+
+```sql
+-- Style - tense, notes
+FROM cszjj.style
+|> WHERE tense = "explicit"
+   AND notes LIKE "%tense%"
+|> SELECT czsjj_title_zh, taisho_no, notes
+```
+
+```sql
+-- Style - tense by translator
+FROM cszjj.style AS S
+|> JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.tense = "explicit"
+|> AGGREGATE COUNT(DISTINCT C.title_zh) AS count_titles GROUP BY C.attribution_analysis
+|> ORDER BY count_titles DESC
+```
+
+```sql
+-- Style - Tense, Chinese native compositions
+FROM cszjj.style AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE NOT S.tense = "explicit"
+   AND C.modern_ref IS NOT NULL
+   AND C.secondary_lit_classification IS NOT NULL
+|> SELECT DISTINCT
+     C.title_en,
+     C.modern_title,
+     C.modern_ref
 ```

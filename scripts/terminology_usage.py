@@ -59,7 +59,7 @@ def introduced_by(rows, catalog):
             print(f"Title {title_zh} is not in the catalog")
             continue
         cat_entry = catalog[title_zh]
-        id = cat_entry["id"]
+        # id = cat_entry["id"]
         # print(f"Adding title {title_zh} CSZJJ No. {id}")
         if "attribution_analysis" not in cat_entry:
             print(f"Title {title_zh} does not have _attribution")
