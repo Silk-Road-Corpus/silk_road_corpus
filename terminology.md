@@ -378,6 +378,6 @@ ORDER BY czsjj_title_zh
 -- Look up an ngram
 FROM cszjj.ngram_counts AS N
 |> INNER JOIN cszjj.chusanzangjiji AS C ON N.cjzjj_title = C.title_zh
-|> WHERE ngram = "不思想"
-|> SELECT DISTINCT N.ngram, N.cjzjj_title, N.taisho_no, C.attribution_analysis
+|> WHERE ngram = "龍樹"
+|> SELECT DISTINCT C.title_en, C.modern_title, N.taisho_no, C.attribution_analysis
 ```

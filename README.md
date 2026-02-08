@@ -469,7 +469,7 @@ FROM cszjj.chusanzangjiji
 
 
 ```sql
--- How many Taisho titles are exactly the same as the titles in CSZJJ?
+-- How many Taisho titles are exactly the same as the anoymous titles in CSZJJ?
 FROM cszjj.chusanzangjiji
 |> WHERE modern_title = title_zh
    AND (fascicle = 3 OR fascicle = 4)
@@ -557,4 +557,30 @@ FROM cszjj.chusanzangjiji
   title_en,
   modern_ref,
   modern_title
+```
+
+```sql
+-- What locations were the texts produced in?
+FROM cszjj.chusanzangjiji
+|> SELECT
+     title_zh,
+     cszjj_location
+|> AGGREGATE COUNT(*) AS count_location GROUP BY cszjj_location
+|> ORDER BY count_location DESC
+```
+
+```sql
+-- Total anonymous texts in corpus
+FROM cszjj.chusanzangjiji
+|> WHERE (fascicle = 3 or fascicle = 4)
+   AND (REGEXP_CONTAINS(modern_ref, r'T \d+') or REGEXP_CONTAINS(modern_ref, r'X \d+'))
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- How many Taisho titles are exactly the same as the titles in CSZJJ?
+FROM cszjj.chusanzangjiji
+|> WHERE modern_title = title_zh
+|> SELECT modern_ref, modern_title
+|> AGGREGATE COUNT(*)
 ```
