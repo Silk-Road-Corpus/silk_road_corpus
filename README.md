@@ -469,7 +469,7 @@ FROM cszjj.chusanzangjiji
 
 
 ```sql
--- How many Taisho titles are exactly the same as the anoymous titles in CSZJJ?
+-- How many Taisho titles are exactly the same as the anonymous titles in CSZJJ?
 FROM cszjj.chusanzangjiji
 |> WHERE modern_title = title_zh
    AND (fascicle = 3 OR fascicle = 4)
@@ -478,7 +478,7 @@ FROM cszjj.chusanzangjiji
 ```
 
 ```sql
--- How many Taisho titles have 佛說 prepended compared with CSZJJ?
+-- How many Taisho titles have 佛說 prepended compared with anonymous titles in the CSZJJ?
 FROM cszjj.chusanzangjiji
 |> WHERE STARTS_WITH(modern_title, "佛說") AND NOT STARTS_WITH(title_zh, "佛說")
    AND (fascicle = 3 OR fascicle = 4)
@@ -582,5 +582,13 @@ FROM cszjj.chusanzangjiji
 FROM cszjj.chusanzangjiji
 |> WHERE modern_title = title_zh
 |> SELECT modern_ref, modern_title
+|> AGGREGATE COUNT(*)
+```
+
+```sql
+-- How many Taisho titles have 佛說 prepended compared with CSZJJ?
+FROM cszjj.chusanzangjiji
+|> WHERE STARTS_WITH(modern_title, "佛說") AND NOT STARTS_WITH(title_zh, "佛說")
+|> SELECT id, title_zh, modern_ref, modern_title
 |> AGGREGATE COUNT(*)
 ```
