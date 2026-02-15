@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A histogram of the frequency of 耶 yé as a final particle per 1000 characters in the Chu San Zang Ji Ji corpus by translator attribution.",
+  "width": 600,
+  "height": 400,
+  "data": {"url": "../data/linguistic_by_translator_limited.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "attribution_analysis",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 16,
+        "titleFontSize": 16,
+        "title": "Translator"
+      },
+      "sort": {
+        "op": "min",
+        "field": "century"
+      }
+    },
+    "y": {
+      "field": "ye2_frequency1000",
+      "type": "quantitative",
+      "axis": {
+        "labelFontSize": 16, 
+        "titleFontSize": 16,
+        "title": "Frequency of 耶 yé as a final (per 1000 characters)"
+      }
+    }
+  }
+}

@@ -136,7 +136,7 @@ AS (
   GROUP BY base_taisho_no
 )
 SELECT
-  c.century,
+  -- c.modern_ref,
   AVG(f.total_length) AS length_average,
   SAFE_DIVIDE(SUM(f.not_in_shanzai_total), SUM(f.total_length))*1000 AS not_in_shanzai_frequency1000,
   SAFE_DIVIDE(SUM(f.ye2_total), SUM(f.total_length))*1000 AS ye2_frequency1000,
@@ -152,12 +152,13 @@ SELECT
   SAFE_DIVIDE(SUM(f.di_total), SUM(f.total_length))*1000 AS di_frequency1000,
   SAFE_DIVIDE(SUM(f.shigu_total), SUM(f.total_length))*1000 AS shigu_frequency1000,
   SAFE_DIVIDE(SUM(f.yiqie_total), SUM(f.total_length))*1000 AS yiqie_frequency1000,
+  c.attribution_analysis,
 FROM Frequencies AS f
 INNER JOIN cszjj.chusanzangjiji AS c
   ON f.base_taisho_no = c.modern_ref
-WHERE c.century IS NOT NULL
-GROUP BY c.century
-ORDER BY c.century
+WHERE c.attribution_analysis IS NOT NULL
+GROUP BY c.attribution_analysis
+ORDER BY c.attribution_analysis
 ```
 
 Try to fit a random forest classifier to the data:
@@ -229,4 +230,25 @@ FROM cszjj.language_analysis AS LA
    AND er3_final_count = 0
    AND ye3_final_count = 0
 |> AGGREGATE COUNT(*) AS num_texts
+```
+
+```sql
+-- Use of ‘village’ 村 cūn
+FROM cszjj.linguistic_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE LA.cun_count > 0
+|> AGGREGATE SUM(LA.cun_count) AS cun_sum GROUP BY C.attribution_analysis
+|> ORDER BY cun_sum DESC
+```
+
+```sql
+-- Use of ‘village’ 村 cūn in texts attributed to An Shigao in the Taisho
+FROM cszjj.linguistic_analysis AS LA
+|> JOIN cszjj.chusanzangjiji AS C
+   ON LA.czsjj_title_zh = C.title_zh
+|> WHERE LA.cun_count > 0
+   AND C.taisho_attribution = "An Shigao" 
+   AND C.attribution_analysis IS NULL
+|> SELECT C.title_en, C.modern_title, LA.taisho_no
 ```

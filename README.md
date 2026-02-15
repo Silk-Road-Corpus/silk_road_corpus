@@ -261,6 +261,29 @@ GROUP BY attribution_analysis
 ```
 
 ```sql
+-- Texts attributed to a specific translator in the Chu San Zang Ji Ji
+SELECT
+  title_zh,
+  title_en,
+  cszjj_attribution,
+  modern_ref,
+  attribution_analysis,
+  taisho_attribution
+FROM cszjj.chusanzangjiji
+|> WHERE cszjj_attribution = "Tan Wulan"
+```
+
+```sql
+-- Texts attributed to a specific translator in the Taisho
+FROM cszjj.chusanzangjiji
+|> WHERE taisho_attribution = "Tan Wulan"
+|> SELECT
+  title_en,
+  modern_title,
+  modern_ref,
+```
+
+```sql
 -- Count of entries and fascicles that can be related to a text in the modern canon break, down by cszjj_attribution
 SELECT
   cszjj_attribution,

@@ -16,19 +16,27 @@ def report_mi_scores(X, y):
     print(mi_scores[::3])
 
 def main():
-    df = pd.read_csv("data/linguistic_agg_century.csv")
-    X = df.copy()
-    y = X.pop("attribution_analysis")
-    X.pop("taisho_no")
-    X.pop("total_length")
-    X.pop("century")
+    df = pd.read_csv("data/linguistic_by_translator.csv")
+
+    # Separate target and features
+    y = df["attribution_analysis"].astype(str)
+    X = df.drop(columns=["attribution_analysis", "length_average"])
+
+    # Ensure all feature data is numeric
+    X = X.apply(pd.to_numeric, errors='coerce')
+
+    # Align X and y and drop NaNs
+    data = pd.concat([X, y], axis=1).dropna()
+    y = data.pop("attribution_analysis")
+    X = data
+
     train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
     model = RandomForestClassifier()
     model.fit(train_X, train_y)
     y_pred = model.predict(val_X)
     print(classification_report(val_y, y_pred))
-    print(classification_report(val_y, y_pred))
-    report_mi_scores(X, y)
+    y_encoded, _ = pd.factorize(y)
+    report_mi_scores(X, y_encoded)
 
 if __name__ == "__main__":
     print("Fitting linguistic model by translator...")
