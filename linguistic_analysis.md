@@ -44,7 +44,7 @@ bq --project_id=${PROJECT_ID} load \
     data/linguistic_analysis_schema.json
 ```
 
-SQL queries:
+## SQL queries
 
 ```sql
 -- Number of texts analyzed

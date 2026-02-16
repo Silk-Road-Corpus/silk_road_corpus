@@ -31,10 +31,44 @@ bq --project_id=${PROJECT_ID} load \
 The counts of Chinese characters used for translation of Indic grammatical
 constucts are computed by the script:
 
+## Vernacular elements
+
+Run the script for the identification of vernacular elements:
+
+```shell
+nohup python3 scripts/style_vernacular.py &
+```
+
+The results will be written to data/style_vernacular.csv:
+
+```shell
+gcloud compute scp --zone "$ZONE" linguistic-analysis:~/silk_road_corpus/data/style_vernacular.csv style_vernacular.csv
+```
+
+Load the CSV file into the bucket:
+
+```shell
+gcloud storage cp data/style_vernacular.csv gs://${CSZJJ_BUCKET_NAME}/style_vernacular.csv
+```
+
+Load the vernacular analysis file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.style_vernacular \
+    gs://${CSZJJ_BUCKET_NAME}/style_vernacular.csv \
+    data/style_vernacular_schema.json
+```
+
+## Indic source analysis
 ```shell
 python3 scripts/style_indic.py
 ```
 
+## Mutual information
 The mutual information is computed by the script:
 
 ```shell
@@ -77,6 +111,16 @@ FROM cszjj.style AS S
 |> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
 |> WHERE S.vernacular_or_literary = 'vernacular'
 |> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis
+```
+
+```sql
+-- Style - vernacular by translator
+FROM cszjj.style AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.vernacular_or_literary = 'vernacular'
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+|> AGGREGATE COUNT(taisho_no) AS num_fascicles GROUP BY attribution_analysis
+|> ORDER BY num_fascicles DESC
 ```
 
 ```sql
