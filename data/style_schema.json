@@ -123,12 +123,12 @@
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",
-    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+    "description": "Notes on the translation style."
   },
   {
     "name": "error",
     "type": "STRING",
     "mode": "NULLABLE",
-    "description": "How is tense indicated? Is it left unspecified or explicitly indicated?"
+    "description": "Error message if any issues occurred during analysis."
   }
 ]

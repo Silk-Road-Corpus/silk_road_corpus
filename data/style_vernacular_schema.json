@@ -1,0 +1,68 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "prefix_a",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the prefix 阿 ā, not as part of a transliteration?"
+  },
+  {
+    "name": "prefix_lao",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the prefix 老 lǎo?"
+  },
+  {
+    "name": "suffix_er",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the suffix 兒 ér?"
+  },
+  {
+    "name": "reduplicated_nouns",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use reduplicated nouns?"
+  },
+  {
+    "name": "pronoun_qu",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the second-person pronoun ‘he / she’ 渠 qú"
+  },
+  {
+    "name": "personal_pronoun_ta",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the personal pronoun 他 tā?"
+  },
+  {
+    "name": "personal_pronoun_yi",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the personal pronoun 伊 yī?"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Notes on the vernacular elements of style."
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Error message if any issues occurred during analysis."
+  }
+]

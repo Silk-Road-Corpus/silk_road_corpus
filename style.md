@@ -42,7 +42,7 @@ nohup python3 scripts/style_vernacular.py &
 The results will be written to data/style_vernacular.csv:
 
 ```shell
-gcloud compute scp --zone "$ZONE" linguistic-analysis:~/silk_road_corpus/data/style_vernacular.csv style_vernacular.csv
+gcloud compute scp --zone "$ZONE" style-analysis:~/silk_road_corpus/data/style_vernacular.csv data/style_vernacular.csv
 ```
 
 Load the CSV file into the bucket:
@@ -362,4 +362,44 @@ FROM cszjj.style AS S
      C.title_en,
      C.modern_title,
      C.modern_ref
+```
+
+```sql
+-- Style - vernacular with prefix 阿 ā
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.prefix_a
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with prefix 老 lǎo
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.prefix_lao
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with suffix 兒 ér
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.suffix_er
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with reduplicated nouns
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.reduplicated_nouns
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with the second-person pronoun ‘he / she’ 渠 qú
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.pronoun_qu
+|> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
 ```
