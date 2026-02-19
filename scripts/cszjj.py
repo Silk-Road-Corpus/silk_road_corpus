@@ -102,11 +102,11 @@ def index_cszjj_file(file_path):
                     if title_zh in catalog:
                         ent = catalog[title_zh]
                         # Some texts occur multiple times in the catalog, eg 中阿鋡經
-                        print(f"index_cszjj_file, found in catalog: {ent}")
+                        # print(f"index_cszjj_file, found in catalog: {ent}")
                         if ("modern_ref" in ent):
                             modern_ref = ent["modern_ref"]
                             if len(modern_ref) > 0:
-                                print(f"index_cszjj_file, {modern_ref}, modern_ref is not empty, skipping")
+                                # print(f"index_cszjj_file, {modern_ref}, modern_ref is not empty, skipping")
                                 continue
                     entry = {
                         "id": row[0],
@@ -524,14 +524,10 @@ def strip_boiler_plate(content):
     return stripped
 
 
-def phrase_count(content, char_to_find):
+def phrase_count(content, phrase):
     """Find the number of occurence of a phrase in a string content
 
     Return:
         int: The number of occurences
     """
-    count = 0
-    for char in content:
-        if char == char_to_find:
-            count += 1
-    return count
+    return content.count(phrase)

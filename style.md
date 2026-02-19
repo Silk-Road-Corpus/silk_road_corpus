@@ -68,6 +68,24 @@ bq --project_id=${PROJECT_ID} load \
 python3 scripts/style_indic.py
 ```
 
+Load the CSV file into the bucket:
+
+```shell
+gcloud storage cp data/style_indic.csv gs://${CSZJJ_BUCKET_NAME}/style_indic.csv
+```
+
+Load the vernacular analysis file into into BQ:
+
+```shell
+bq --project_id=${PROJECT_ID} load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    --replace \
+    ${PROJECT_ID}:${DATASETID}.style_indic \
+    gs://${CSZJJ_BUCKET_NAME}/style_indic.csv \
+    data/style_indic_schema.json
+```
+
 ## Mutual information
 The mutual information is computed by the script:
 
@@ -402,4 +420,49 @@ FROM cszjj.style_vernacular AS S
 |> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
 |> WHERE S.pronoun_qu
 |> SELECT S.czsjj_title_zh, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with the second-person pronoun ‘he / she’ 渠 qú
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.pronoun_qu
+|> SELECT C.modern_title, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with the personal pronoun 他 tā
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.personal_pronoun_ta
+|> SELECT C.modern_title, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Style - vernacular with the personal pronoun 伊 yī
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.personal_pronoun_yi
+|> SELECT C.modern_title, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
+-- Rates of terms used in literal translation of Indic source texts grouped by Indigenous composition
+SELECT
+  secondary_lit_classification,
+  ROUND(AVG(1000*subject_wu/char_count), 2) AS subject_wu1000,
+  ROUND(AVG(1000*subject_wo/char_count), 2) AS subject_wo1000,
+  ROUND(AVG(1000*subject_ru/char_count), 2) AS subject_ru1000,
+  ROUND(AVG(1000*plural_zhu/char_count), 2) AS plural_zhu1000,
+  ROUND(AVG(1000*plural_deng/char_count), 2) AS plural_deng1000,
+  ROUND(AVG(1000*plural_bei/char_count), 2) AS plural_bei1000,
+  ROUND(AVG(1000*past_tense_yi/char_count), 2) AS past_tense_yi1000,
+  ROUND(AVG(1000*past_tense_xi/char_count), 2) AS past_tense_xi1000,
+  ROUND(AVG(1000*present_tense_jin/char_count), 2) AS present_tense_jin1000,
+  ROUND(AVG(1000*future_tense_dang/char_count), 2) AS future_tense_dang1000,
+  ROUND(AVG(1000*future_tense_danglai/char_count), 2) AS future_tense_danglai1000,
+FROM cszjj.style_indic AS S
+INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+GROUP BY secondary_lit_classification
+ORDER BY secondary_lit_classification
 ```

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "czsjj_title_zh",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "CSZJJ Chinese Title"
+  },
+  {
+    "name": "taisho_no",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Taisho no."
+  },
+  {
+    "name": "subject_wu",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 吾"
+  },
+  {
+    "name": "subject_wo",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 我"
+  },
+  {
+    "name": "subject_ru",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 汝"
+  },
+  {
+    "name": "plural_zhu",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 諸 zhū"
+  },
+  {
+    "name": "plural_deng",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 等 děng"
+  },
+  {
+    "name": "plural_bei",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 輩 bèi"
+  },
+  {
+    "name": "past_tense_yi",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 已 yǐ"
+  },
+  {
+    "name": "past_tense_xi",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 昔 xī"
+  },
+  {
+    "name": "present_tense_jin",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 今 jīn"
+  },
+  {
+    "name": "future_tense_dang",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 當 dāng"
+  },
+  {
+    "name": "future_tense_danglai",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of the character 當來 dānglái"
+  },
+  {
+    "name": "char_count",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Count of characters in the document"
+  },
+  {
+    "name": "is_indiginous",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Indicates if the text is indigenous (1) or not (0)."
+  },
+  {
+    "name": "error",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Error message if any issues occurred during analysis."
+  }
+]

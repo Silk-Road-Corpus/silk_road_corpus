@@ -15,6 +15,8 @@ DEFAULT_STYLE = {
     "subject_wo": 0,
     "subject_ru": 0,
     "plural_zhu": 0,
+    "plural_deng": 0,
+    "plural_bei": 0,
     "past_tense_yi": 0,
     "past_tense_xi": 0,
     "present_tense_jin": 0,
@@ -61,6 +63,8 @@ def analyze_style(nti, entry, catalog):
                 result["subject_wo"] = cszjj.phrase_count(content, "我")
                 result["subject_ru"] = cszjj.phrase_count(content, "汝")
                 result["plural_zhu"] = cszjj.phrase_count(content, "諸")
+                result["plural_deng"] = cszjj.phrase_count(content, "等")
+                result["plural_bei"] = cszjj.phrase_count(content, "輩")
                 result["past_tense_yi"] = cszjj.phrase_count(content, "已")
                 result["past_tense_xi"] = cszjj.phrase_count(content, "昔")
                 result["present_tense_jin"] = cszjj.phrase_count(content, "今")
@@ -114,6 +118,8 @@ def append_result(filename, entry):
            entry["subject_wo"],
            entry["subject_ru"],
            entry["plural_zhu"],
+           entry["plural_deng"],
+           entry["plural_bei"],
            entry["past_tense_yi"],
            entry["past_tense_xi"],
            entry["present_tense_jin"],
@@ -155,12 +161,13 @@ if __name__ == "__main__":
         help='Begin processing starting at the given title'
     )
     args = parser.parse_args()
+    catalog = cszjj.index_cszjj_file(cszjj_path)
     if args.title:
         print(f"Processing args, title: {args.title}, fascicle: {args.fascicle}, "
               f"start_title: {args.restart_at}")
         entries = cszjj.find_entry(file_index_path, args.title, args.fascicle, None)
         for entry in entries:
-            result = analyze_style(nti, entry)
+            result = analyze_style(nti, entry, catalog)
             append_result(output_filename, result)
         sys.exit()
 
@@ -170,6 +177,9 @@ if __name__ == "__main__":
                    "subject_wu",
                    "subject_wo",
                    "subject_ru",
+                   "plural_zhu",
+                   "plural_deng",
+                   "plural_bei",
                    "past_tense_yi",
                    "past_tense_xi",
                    "present_tense_jin",
@@ -184,7 +194,6 @@ if __name__ == "__main__":
     else:
         print(f"Starting at {args.restart_at}\n")
     entries = cszjj.parse_file_index(file_index_path, args.restart_at)
-    catalog = cszjj.index_cszjj_file(cszjj_path)
     for entry in entries:
         result = analyze_style(nti, entry, catalog)
         append_result(output_filename, result)
