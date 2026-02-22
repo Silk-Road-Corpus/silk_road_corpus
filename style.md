@@ -124,6 +124,128 @@ FROM cszjj.style
 ```
 
 ```sql
+-- Summary of style indicators for most prolific early translators
+WITH
+  MostCommonVerseProse AS (
+    SELECT
+      C.attribution_analysis,
+      S.verse_or_prose,
+      COUNT(S.verse_or_prose) AS verse_prose_count
+    FROM cszjj.style AS S
+    INNER JOIN cszjj.chusanzangjiji AS C
+      ON S.czsjj_title_zh = C.title_zh
+    WHERE
+      C.attribution_analysis IN (
+        "An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+    GROUP BY C.attribution_analysis, S.verse_or_prose
+    QUALIFY
+      ROW_NUMBER()
+        OVER (
+          PARTITION BY C.attribution_analysis
+          ORDER BY COUNT(S.verse_or_prose) DESC, S.verse_or_prose
+        )
+      = 1
+  ),
+  MostCommonSyllables AS (
+    SELECT
+      C.attribution_analysis,
+      S.syllables_per_line,
+      COUNT(S.syllables_per_line) AS syllables_count
+    FROM cszjj.style AS S
+    INNER JOIN cszjj.chusanzangjiji AS C
+      ON S.czsjj_title_zh = C.title_zh
+    WHERE
+      C.attribution_analysis IN (
+        "An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+    GROUP BY C.attribution_analysis, S.syllables_per_line
+    QUALIFY
+      ROW_NUMBER()
+        OVER (
+          PARTITION BY C.attribution_analysis
+          ORDER BY COUNT(S.syllables_per_line) DESC, S.syllables_per_line
+        )
+      = 1
+  ),
+  MostCommonVernacular AS (
+    SELECT
+      C.attribution_analysis,
+      S.vernacular_or_literary,
+      COUNT(S.vernacular_or_literary) AS vernacular_count
+    FROM cszjj.style AS S
+    INNER JOIN cszjj.chusanzangjiji AS C
+      ON S.czsjj_title_zh = C.title_zh
+    WHERE
+      C.attribution_analysis IN (
+        "An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+    GROUP BY C.attribution_analysis, S.vernacular_or_literary
+    QUALIFY
+      ROW_NUMBER()
+        OVER (
+          PARTITION BY C.attribution_analysis
+          ORDER BY COUNT(S.vernacular_or_literary) DESC, S.vernacular_or_literary
+        )
+      = 1
+  ),
+  MostCommonLiteral AS (
+    SELECT
+      C.attribution_analysis,
+      S.literal_or_fluent,
+      COUNT(S.literal_or_fluent) AS literal_count
+    FROM cszjj.style AS S
+    INNER JOIN cszjj.chusanzangjiji AS C
+      ON S.czsjj_title_zh = C.title_zh
+    WHERE
+      C.attribution_analysis IN (
+        "An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+    GROUP BY C.attribution_analysis, S.literal_or_fluent
+    QUALIFY
+      ROW_NUMBER()
+        OVER (
+          PARTITION BY C.attribution_analysis
+          ORDER BY COUNT(S.literal_or_fluent) DESC, S.literal_or_fluent
+        )
+      = 1
+  ),
+  MostCommonOrnate AS (
+    SELECT
+      C.attribution_analysis,
+      S.ornate_or_plain_language,
+      COUNT(S.ornate_or_plain_language) AS ornate_count
+    FROM cszjj.style AS S
+    INNER JOIN cszjj.chusanzangjiji AS C
+      ON S.czsjj_title_zh = C.title_zh
+    WHERE
+      C.attribution_analysis IN (
+        "An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+    GROUP BY C.attribution_analysis, S.ornate_or_plain_language
+    QUALIFY
+      ROW_NUMBER()
+        OVER (
+          PARTITION BY C.attribution_analysis
+          ORDER BY COUNT(S.ornate_or_plain_language) DESC, S.ornate_or_plain_language
+        )
+      = 1
+  )
+SELECT
+  MVP.attribution_analysis,
+  MVP.verse_or_prose,
+  MCS.syllables_per_line,
+  MCV.vernacular_or_literary,
+  MCL.literal_or_fluent,
+  MCO.ornate_or_plain_language
+FROM MostCommonVerseProse AS MVP
+JOIN MostCommonSyllables AS MCS
+  ON MVP.attribution_analysis = MCS.attribution_analysis
+JOIN MostCommonVernacular AS MCV
+  ON MVP.attribution_analysis = MCV.attribution_analysis
+JOIN MostCommonLiteral AS MCL
+  ON MVP.attribution_analysis = MCL.attribution_analysis
+JOIN MostCommonOrnate AS MCO
+  ON MVP.attribution_analysis = MCO.attribution_analysis
+
+```
+
+```sql
 -- Style - vernacular enumerate
 FROM cszjj.style AS S
 |> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
@@ -465,4 +587,45 @@ FROM cszjj.style_indic AS S
 INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
 GROUP BY secondary_lit_classification
 ORDER BY secondary_lit_classification
+```
+
+```sql
+-- Rates of terms used in literal translation of Indic source texts grouped by literal translation
+SELECT
+  S.literal_or_fluent,
+  ROUND(AVG(1000*subject_wu/char_count), 2) AS subject_wu1000,
+  ROUND(AVG(1000*subject_wo/char_count), 2) AS subject_wo1000,
+  ROUND(AVG(1000*subject_ru/char_count), 2) AS subject_ru1000,
+  ROUND(AVG(1000*I.plural_zhu/char_count), 2) AS plural_zhu1000,
+  ROUND(AVG(1000*plural_deng/char_count), 2) AS plural_deng1000,
+  ROUND(AVG(1000*plural_bei/char_count), 2) AS plural_bei1000,
+  ROUND(AVG(1000*past_tense_yi/char_count), 2) AS past_tense_yi1000,
+  ROUND(AVG(1000*past_tense_xi/char_count), 2) AS past_tense_xi1000,
+  ROUND(AVG(1000*present_tense_jin/char_count), 2) AS present_tense_jin1000,
+  ROUND(AVG(1000*future_tense_dang/char_count), 2) AS future_tense_dang1000,
+  ROUND(AVG(1000*future_tense_danglai/char_count), 2) AS future_tense_danglai1000,
+FROM cszjj.style_indic AS I
+INNER JOIN cszjj.style AS S ON I.czsjj_title_zh = S.czsjj_title_zh
+GROUP BY S.literal_or_fluent
+```
+
+```sql
+-- Rates of terms used in literal translation of Indic source texts grouped by Indigenous composition
+SELECT
+  C.attribution_analysis,
+  ROUND(AVG(1000*S.subject_wu/char_count), 2) AS subject_wu1000,
+  ROUND(AVG(1000*S.subject_wo/char_count), 2) AS subject_wo1000,
+  ROUND(AVG(1000*S.subject_ru/char_count), 2) AS subject_ru1000,
+  ROUND(AVG(1000*S.plural_zhu/char_count), 2) AS plural_zhu1000,
+  ROUND(AVG(1000*S.plural_deng/char_count), 2) AS plural_deng1000,
+  ROUND(AVG(1000*S.plural_bei/char_count), 2) AS plural_bei1000,
+  ROUND(AVG(1000*S.past_tense_yi/char_count), 2) AS past_tense_yi1000,
+  ROUND(AVG(1000*S.past_tense_xi/char_count), 2) AS past_tense_xi1000,
+  ROUND(AVG(1000*S.present_tense_jin/char_count), 2) AS present_tense_jin1000,
+  ROUND(AVG(1000*S.future_tense_dang/char_count), 2) AS future_tense_dang1000,
+  ROUND(AVG(1000*S.future_tense_danglai/char_count), 2) AS future_tense_danglai1000,
+FROM cszjj.style_indic AS S
+INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+WHERE attribution_analysis IN ("An Shigao", "Lokakṣema", "Dharmarakṣa", "Kumārajīva")
+GROUP BY attribution_analysis
 ```
