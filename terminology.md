@@ -14,7 +14,6 @@ python3 scripts/terminology.py
 
 The results are saved in the file `data/terminology.csv`.
 
-
 To run the script that compiles the terminology usage from the previous step and associates
 each term used with the translator that introduced the term:
 
@@ -53,7 +52,7 @@ bq --project_id=${PROJECT_ID} load \
     data/terminology_usage_schema.json
 ```
 
-Load the CSV file into the GCS bucket:
+Load the terminology_validation file into the GCS bucket:
 
 ```shell
 gcloud storage cp data/terminology_validation.csv gs://${CSZJJ_BUCKET_NAME}/terminology_validation.csv
@@ -138,6 +137,51 @@ FROM cszjj.terminology_ngram_df
 ```
 
 to the file `data/terminology_list.csv`.
+
+If the terminology_usage file is updated then terminology_list.csv needs to be
+updated. Avoid repeating all the AI analysis again by finding the difference.
+
+
+```sql
+-- Terminology - updated table with document frequency based on ngram counts
+CREATE OR REPLACE TABLE `cszjj.terminology_ngram_update` AS
+  (WITH NgramDF AS (
+    SELECT
+      ngram,
+      COUNT(*) AS document_frequency
+    FROM cszjj.ngram_counts
+    GROUP BY ngram
+  )
+  SELECT
+    T.term,
+    T.term_introduced_by,
+    N.document_frequency,
+  FROM cszjj.terminology_usage AS T
+  LEFT JOIN NgramDF AS N
+  ON T.term = N.ngram
+  WHERE term NOT LIKE '%[%' AND term NOT LIKE '%]%'
+)
+```
+
+Get the difference between terminology_ngram_update and terminology_ngram_df
+
+```sql
+-- Compute the difference between the old and new ngram tables
+WITH NewTerms AS (
+  SELECT term FROM cszjj.terminology_ngram_update
+  EXCEPT DISTINCT
+  SELECT term FROM cszjj.terminology_ngram_df
+)
+SELECT 
+  U.term,
+  U.term_introduced_by,
+  U.document_frequency
+FROM cszjj.terminology_ngram_update AS U
+INNER JOIN NewTerms AS N on N.term = U.term
+```
+
+Export the result to the file `data/terminology_list_diff.csv` and append it to
+`data/terminology_list.csv`.
 
 ## Terminology Analysis
 
