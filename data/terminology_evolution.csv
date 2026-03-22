@@ -1,5 +1,5 @@
 attribution,term_introduced_by,num_terms
-An Shigao,An Shigao,849
+An Shigao,An Shigao,850
 Lokakṣema,An Shigao,171
 Lokakṣema,Lokakṣema,988
 Zhi Yao,An Shigao,44
@@ -25,14 +25,14 @@ Zhi Qian,Kang Mengxiang,57
 Zhi Qian,Lokakṣema,247
 Zhi Qian,Vighna and Zhi Qian,22
 Zhi Qian,Yan Fotiao and An Xuan,37
-Zhi Qian,Zhi Qian,1097
+Zhi Qian,Zhi Qian,1098
 Zhi Qian,Zhi Yao,16
 Zhi Qian,Dharmarakṣa,11
 Zhi Qian,Kang Senghui,2
 Zhi Qian,Mokṣala,3
 Kang Senghui,An Shigao,98
 Kang Senghui,Kang Mengxiang,28
-Kang Senghui,Kang Senghui,223
+Kang Senghui,Kang Senghui,224
 Kang Senghui,Lokakṣema,88
 Kang Senghui,Vighna and Zhi Qian,5
 Kang Senghui,Yan Fotiao and An Xuan,14
@@ -47,24 +47,29 @@ Mokṣala,Vighna and Zhi Qian,11
 Mokṣala,Yan Fotiao and An Xuan,15
 Mokṣala,Zhi Qian,101
 Mokṣala,Zhi Yao,16
-Dharmarakṣa,An Shigao,362
-Dharmarakṣa,Dharmarakṣa,7427
+Dharmarakṣa,An Shigao,368
+Dharmarakṣa,Dharmarakṣa,7686
 Dharmarakṣa,Kang Mengxiang,94
 Dharmarakṣa,Kang Senghui,53
-Dharmarakṣa,Lokakṣema,495
-Dharmarakṣa,Mokṣala,272
-Dharmarakṣa,Vighna and Zhi Qian,62
+Dharmarakṣa,Lokakṣema,502
+Dharmarakṣa,Mokṣala,280
+Dharmarakṣa,Vighna and Zhi Qian,66
 Dharmarakṣa,Yan Fotiao and An Xuan,56
-Dharmarakṣa,Zhi Qian,408
+Dharmarakṣa,Zhi Qian,419
 Dharmarakṣa,Zhi Yao,46
-Dharmarakṣa,Dharmanandi and Zhu Fonian,6
-Dharmarakṣa,Dharmarakṣa and Nie Chengyuan,1
-Dharmarakṣa,Fa Ju and Fa Li,2
-Dharmarakṣa,Kumārajīva,10
-Dharmarakṣa,Kumārajīva and Xiao Yaoyuan,16
-Dharmarakṣa,Sajghabhūti and Zhu Fonian,6
-Dharmarakṣa,Saṃghadeva,6
-Dharmarakṣa,Zhu Fonian,4
+Dharmarakṣa,Buddhabhadra,11
+Dharmarakṣa,Buddhayaśas,3
+Dharmarakṣa,Daotai and Buddhavarman,4
+Dharmarakṣa,Dharmakṣema,36
+Dharmarakṣa,Dharmanandi and Zhu Fonian,12
+Dharmarakṣa,Dharmarakṣa and Nie Chengyuan,2
+Dharmarakṣa,Fa Ju and Fa Li,4
+Dharmarakṣa,Kumārajīva,57
+Dharmarakṣa,Kumārajīva and Xiao Yaoyuan,27
+Dharmarakṣa,Saṃghabhūti and Zhu Fonian,28
+Dharmarakṣa,Saṃghadeva,22
+Dharmarakṣa,Zhu Fonian,36
+Dharmarakṣa,Zhu Fonian and Buddhapalita,2
 Dharmarakṣa and Nie Chengyuan,An Shigao,62
 Dharmarakṣa and Nie Chengyuan,Dharmarakṣa,64
 Dharmarakṣa and Nie Chengyuan,Dharmarakṣa and Nie Chengyuan,133
@@ -99,30 +104,30 @@ Fa Ju and Fa Li,Vighna and Zhi Qian,28
 Fa Ju and Fa Li,Yan Fotiao and An Xuan,12
 Fa Ju and Fa Li,Zhi Qian,32
 Fa Ju and Fa Li,Zhi Yao,10
-Zhu Fonian,An Shigao,317
-Zhu Fonian,Dharmarakṣa,737
-Zhu Fonian,Fa Ju,8
-Zhu Fonian,Kang Senghui,33
-Zhu Fonian,Lokakṣema,385
-Zhu Fonian,Mokṣala,216
+Zhu Fonian,An Shigao,325
+Zhu Fonian,Dharmarakṣa,787
+Zhu Fonian,Fa Ju,10
+Zhu Fonian,Kang Senghui,34
+Zhu Fonian,Lokakṣema,404
+Zhu Fonian,Mokṣala,240
 Zhu Fonian,Vighna and Zhi Qian,62
-Zhu Fonian,Zhi Qian,257
-Zhu Fonian,Zhi Yao,40
-Zhu Fonian,Zhu Fonian,3396
-Sajghabhūti and Zhu Fonian,An Shigao,256
-Sajghabhūti and Zhu Fonian,Dharmarakṣa,261
-Sajghabhūti and Zhu Fonian,Dharmarakṣa and Nie Chengyuan,2
-Sajghabhūti and Zhu Fonian,Fa Ju and Fa Li,4
-Sajghabhūti and Zhu Fonian,Kang Mengxiang,36
-Sajghabhūti and Zhu Fonian,Kang Senghui,8
-Sajghabhūti and Zhu Fonian,Lokakṣema,180
-Sajghabhūti and Zhu Fonian,Mokṣala,80
-Sajghabhūti and Zhu Fonian,Sajghabhūti and Zhu Fonian,1358
-Sajghabhūti and Zhu Fonian,Vighna and Zhi Qian,16
-Sajghabhūti and Zhu Fonian,Yan Fotiao and An Xuan,19
-Sajghabhūti and Zhu Fonian,Zhi Qian,99
-Sajghabhūti and Zhu Fonian,Zhi Yao,13
-Sajghabhūti and Zhu Fonian,Zhu Fonian,1
+Zhu Fonian,Zhi Qian,270
+Zhu Fonian,Zhi Yao,43
+Zhu Fonian,Zhu Fonian,3809
+Saṃghabhūti and Zhu Fonian,An Shigao,256
+Saṃghabhūti and Zhu Fonian,Dharmarakṣa,261
+Saṃghabhūti and Zhu Fonian,Dharmarakṣa and Nie Chengyuan,2
+Saṃghabhūti and Zhu Fonian,Fa Ju and Fa Li,4
+Saṃghabhūti and Zhu Fonian,Kang Mengxiang,36
+Saṃghabhūti and Zhu Fonian,Kang Senghui,8
+Saṃghabhūti and Zhu Fonian,Lokakṣema,180
+Saṃghabhūti and Zhu Fonian,Mokṣala,80
+Saṃghabhūti and Zhu Fonian,Saṃghabhūti and Zhu Fonian,1358
+Saṃghabhūti and Zhu Fonian,Vighna and Zhi Qian,16
+Saṃghabhūti and Zhu Fonian,Yan Fotiao and An Xuan,19
+Saṃghabhūti and Zhu Fonian,Zhi Qian,99
+Saṃghabhūti and Zhu Fonian,Zhi Yao,13
+Saṃghabhūti and Zhu Fonian,Zhu Fonian,1
 Zhu Fonian and Buddhapalita,An Shigao,112
 Zhu Fonian and Buddhapalita,Dharmarakṣa,35
 Zhu Fonian and Buddhapalita,Dharmarakṣa and Nie Chengyuan,1
@@ -132,7 +137,7 @@ Zhu Fonian and Buddhapalita,Kang Mengxiang,9
 Zhu Fonian and Buddhapalita,Kang Senghui,3
 Zhu Fonian and Buddhapalita,Lokakṣema,45
 Zhu Fonian and Buddhapalita,Mokṣala,12
-Zhu Fonian and Buddhapalita,Sajghabhūti and Zhu Fonian,25
+Zhu Fonian and Buddhapalita,Saṃghabhūti and Zhu Fonian,25
 Zhu Fonian and Buddhapalita,Vighna and Zhi Qian,3
 Zhu Fonian and Buddhapalita,Yan Fotiao and An Xuan,2
 Zhu Fonian and Buddhapalita,Zhi Qian,16
@@ -148,20 +153,20 @@ Dharmanandi and Zhu Fonian,Kang Mengxiang,73
 Dharmanandi and Zhu Fonian,Kang Senghui,15
 Dharmanandi and Zhu Fonian,Lokakṣema,237
 Dharmanandi and Zhu Fonian,Mokṣala,86
-Dharmanandi and Zhu Fonian,Sajghabhūti and Zhu Fonian,133
+Dharmanandi and Zhu Fonian,Saṃghabhūti and Zhu Fonian,133
 Dharmanandi and Zhu Fonian,Vighna and Zhi Qian,36
 Dharmanandi and Zhu Fonian,Yan Fotiao and An Xuan,21
 Dharmanandi and Zhu Fonian,Zhi Qian,130
 Dharmanandi and Zhu Fonian,Zhi Yao,16
 Dharmanandi and Zhu Fonian,Zhu Fonian,1
 Dharmanandi and Zhu Fonian,Zhu Fonian and Buddhapalita,7
-Zhu Fonian,Dharmanandi and Zhu Fonian,159
-Zhu Fonian,Dharmarakṣa and Nie Chengyuan,5
-Zhu Fonian,Fa Ju and Fa Li,15
+Zhu Fonian,Dharmanandi and Zhu Fonian,171
+Zhu Fonian,Dharmarakṣa and Nie Chengyuan,9
+Zhu Fonian,Fa Ju and Fa Li,17
 Zhu Fonian,Kang Mengxiang,89
-Zhu Fonian,Sajghabhūti and Zhu Fonian,168
-Zhu Fonian,Yan Fotiao and An Xuan,35
-Zhu Fonian,Zhu Fonian and Buddhapalita,7
+Zhu Fonian,Saṃghabhūti and Zhu Fonian,184
+Zhu Fonian,Yan Fotiao and An Xuan,37
+Zhu Fonian,Zhu Fonian and Buddhapalita,11
 Saṃghadeva,An Shigao,324
 Saṃghadeva,Dharmanandi and Zhu Fonian,103
 Saṃghadeva,Dharmarakṣa,356
@@ -172,67 +177,49 @@ Saṃghadeva,Kang Mengxiang,53
 Saṃghadeva,Kang Senghui,14
 Saṃghadeva,Lokakṣema,178
 Saṃghadeva,Mokṣala,93
-Saṃghadeva,Sajghabhūti and Zhu Fonian,348
-Saṃghadeva,Saṃghadeva,2547
+Saṃghadeva,Saṃghabhūti and Zhu Fonian,348
+Saṃghadeva,Saṃghadeva,2532
 Saṃghadeva,Vighna and Zhi Qian,38
 Saṃghadeva,Yan Fotiao and An Xuan,24
 Saṃghadeva,Zhi Qian,122
 Saṃghadeva,Zhi Yao,15
-Saṃghadeva,Zhu Fonian,72
+Saṃghadeva,Zhu Fonian,87
 Saṃghadeva,Zhu Fonian and Buddhapalita,18
-Kumārajīva and Xiao Yaoyuan,An Shigao,224
+Kumārajīva and Xiao Yaoyuan,An Shigao,228
 Kumārajīva and Xiao Yaoyuan,Dharmanandi and Zhu Fonian,36
-Kumārajīva and Xiao Yaoyuan,Dharmarakṣa,253
+Kumārajīva and Xiao Yaoyuan,Dharmarakṣa,258
 Kumārajīva and Xiao Yaoyuan,Dharmarakṣa and Nie Chengyuan,2
 Kumārajīva and Xiao Yaoyuan,Fa Ju and Fa Li,3
 Kumārajīva and Xiao Yaoyuan,Kang Mengxiang,24
 Kumārajīva and Xiao Yaoyuan,Kang Senghui,6
-Kumārajīva and Xiao Yaoyuan,Kumārajīva and Xiao Yaoyuan,1498
-Kumārajīva and Xiao Yaoyuan,Lokakṣema,213
-Kumārajīva and Xiao Yaoyuan,Mokṣala,211
-Kumārajīva and Xiao Yaoyuan,Sajghabhūti and Zhu Fonian,95
-Kumārajīva and Xiao Yaoyuan,Saṃghadeva,90
+Kumārajīva and Xiao Yaoyuan,Kumārajīva and Xiao Yaoyuan,1512
+Kumārajīva and Xiao Yaoyuan,Lokakṣema,216
+Kumārajīva and Xiao Yaoyuan,Mokṣala,213
+Kumārajīva and Xiao Yaoyuan,Saṃghabhūti and Zhu Fonian,95
+Kumārajīva and Xiao Yaoyuan,Saṃghadeva,89
 Kumārajīva and Xiao Yaoyuan,Vighna and Zhi Qian,24
 Kumārajīva and Xiao Yaoyuan,Yan Fotiao and An Xuan,15
-Kumārajīva and Xiao Yaoyuan,Zhi Qian,102
+Kumārajīva and Xiao Yaoyuan,Zhi Qian,104
 Kumārajīva and Xiao Yaoyuan,Zhi Yao,9
-Kumārajīva and Xiao Yaoyuan,Zhu Fonian,57
+Kumārajīva and Xiao Yaoyuan,Zhu Fonian,86
 Kumārajīva and Xiao Yaoyuan,Zhu Fonian and Buddhapalita,3
 Kumārajīva,An Shigao,404
 Kumārajīva,Dharmanandi and Zhu Fonian,215
-Kumārajīva,Dharmarakṣa,1109
+Kumārajīva,Dharmarakṣa,1108
 Kumārajīva,Fa Ju,14
 Kumārajīva,Fa Ju and Fa Li,23
 Kumārajīva,Kang Mengxiang,91
 Kumārajīva,Kang Senghui,32
-Kumārajīva,Kumārajīva,10621
-Kumārajīva,Kumārajīva and Xiao Yaoyuan,857
+Kumārajīva,Kumārajīva,10579
+Kumārajīva,Kumārajīva and Xiao Yaoyuan,854
 Kumārajīva,Lokakṣema,413
 Kumārajīva,Mokṣala,352
-Kumārajīva,Sajghabhūti and Zhu Fonian,360
-Kumārajīva,Saṃghadeva,339
+Kumārajīva,Saṃghabhūti and Zhu Fonian,360
+Kumārajīva,Saṃghadeva,332
 Kumārajīva,Vighna and Zhi Qian,72
 Kumārajīva,Yan Fotiao and An Xuan,36
 Kumārajīva,Zhi Qian,342
 Kumārajīva,Zhi Yao,48
-Kumārajīva,Zhu Fonian,267
+Kumārajīva,Zhu Fonian,320
 Kumārajīva,Zhu Fonian and Buddhapalita,21
 Kumārajīva,Dharmarakṣa and Nie Chengyuan,10
-Kumārajīva and Dao,An Shigao,29
-Kumārajīva and Dao,Dharmanandi and Zhu Fonian,1
-Kumārajīva and Dao,Dharmarakṣa,10
-Kumārajīva and Dao,Fa Ju,1
-Kumārajīva and Dao,Fa Ju and Fa Li,1
-Kumārajīva and Dao,Kang Mengxiang,6
-Kumārajīva and Dao,Kumārajīva,2
-Kumārajīva and Dao,Kumārajīva and Dao,17
-Kumārajīva and Dao,Kumārajīva and Xiao Yaoyuan,1
-Kumārajīva and Dao,Lokakṣema,30
-Kumārajīva and Dao,Mokṣala,4
-Kumārajīva and Dao,Sajghabhūti and Zhu Fonian,1
-Kumārajīva and Dao,Saṃghadeva,2
-Kumārajīva and Dao,Vighna and Zhi Qian,2
-Kumārajīva and Dao,Yan Fotiao and An Xuan,2
-Kumārajīva and Dao,Zhi Qian,11
-Kumārajīva and Dao,Zhu Fonian,1
-Kumārajīva,Kumārajīva and Dao,5
