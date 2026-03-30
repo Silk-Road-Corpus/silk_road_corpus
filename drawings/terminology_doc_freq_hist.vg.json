@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v6.json",
   "description": "A line chart showing the distribution of term document frequencies.",
+  "background": "white",
   "width": 600,
   "height": 200,
   "padding": 5,

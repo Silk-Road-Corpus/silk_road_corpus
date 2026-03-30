@@ -53,6 +53,12 @@ FROM cszjj.linguistic_analysis
 ```
 
 ```sql
+-- Number of characters analyzed
+FROM cszjj.linguistic_analysis
+|> AGGREGATE SUM(length)
+```
+
+```sql
 -- Aggreate frequencies per 1000 characters from indivual fascicles into results for
 -- each title, joined with century from CSZJJ
 WITH Frequencies

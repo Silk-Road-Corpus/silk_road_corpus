@@ -247,7 +247,7 @@ def send_prompt(prompt: str, file_path: str = None) -> str:
     api_key = os.environ.get("GEMINI_API_KEY", "")
 
     if not api_key:
-        return "Warning: API_KEY environment variable not set."
+        return "Warning: GEMINI_API_KEY environment variable not set."
 
     api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
 
