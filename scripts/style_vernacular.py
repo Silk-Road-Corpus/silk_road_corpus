@@ -27,6 +27,10 @@ elements:
    Return a Boolean value.
 7. Does the text use the personal pronoun 伊 yī?
    Return a Boolean value.
+8. Does the text use the verb ‘to say’ 道 dào?
+   Return a Boolean value.
+9. Does the text use the pronoun ‘this’ 這 zhè?
+   Return a Boolean value.
 
 Return the result in the following JSON format.
 Put the explanation in the notes field. Do not use newlines in the notes.
@@ -37,6 +41,8 @@ Put the explanation in the notes field. Do not use newlines in the notes.
 "pronoun_qu": Boolean,
 "personal_pronoun_ta": Boolean,
 "personal_pronoun_yi": Boolean,
+"verb_dao": Boolean,
+"pronoun_zhe": Boolean,
 "notes": string}.
 """
 
@@ -63,6 +69,12 @@ schema = {
                 "type": "boolean",
             },
             "personal_pronoun_yi": {
+                "type": "boolean",
+            },
+            "verb_dao": {
+                "type": "boolean",
+            },
+            "pronoun_zhe": {
                 "type": "boolean",
             },
             "notes": {
