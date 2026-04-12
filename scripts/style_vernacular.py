@@ -91,6 +91,8 @@ DEFAULT_STYLE = {
     "pronoun_qu": False,
     "personal_pronoun_ta": False,
     "personal_pronoun_yi": False,
+    "verb_dao": False,
+    "pronoun_zhe": False,
     "notes": "",
 }
 
@@ -166,6 +168,8 @@ def append_result(filename, entry):
            entry["pronoun_qu"],
            entry["personal_pronoun_ta"],
            entry["personal_pronoun_yi"],
+           entry["verb_dao"],
+           entry["pronoun_zhe"],
            entry["notes"],
            entry["error"],
     ]
@@ -220,6 +224,8 @@ if __name__ == "__main__":
                    "pronoun_qu",
                    "personal_pronoun_ta",
                    "personal_pronoun_yi",
+                   "verb_dao",
+                   "pronoun_zhe",
                    "notes",
                    "error",
                    ]
