@@ -569,6 +569,14 @@ FROM cszjj.style_vernacular AS S
 ```
 
 ```sql
+-- Style - vernacular with verb 道 dào
+FROM cszjj.style_vernacular AS S
+|> INNER JOIN cszjj.chusanzangjiji AS C ON S.czsjj_title_zh = C.title_zh
+|> WHERE S.verb_dao
+|> SELECT C.modern_title, S.taisho_no, C.attribution_analysis, S.notes
+```
+
+```sql
 -- Rates of terms used in literal translation of Indic source texts grouped by Indigenous composition
 SELECT
   secondary_lit_classification,

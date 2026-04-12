@@ -54,6 +54,18 @@
     "description": "Does the text use the personal pronoun 伊 yī?"
   },
   {
+    "name": "verb_dao",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the verb ‘to say’ 道 dào?"
+  },
+  {
+    "name": "pronoun_zhe",
+    "type": "BOOL",
+    "mode": "NULLABLE",
+    "description": "Does the text use the pronoun ‘this’ 這 zhè?"
+  },
+  {
     "name": "notes",
     "type": "STRING",
     "mode": "NULLABLE",
